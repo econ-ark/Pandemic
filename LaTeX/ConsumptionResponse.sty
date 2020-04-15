@@ -1,0 +1,74 @@
+
+\usepackage{xr-hyper}
+\usepackage{refcount}
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+\newcommand\labelprefix{} % https://tex.stackexchange.com/questions/463699/proper-reference-numbers-with-subfiles
+\newcommand\localorexternallabel[1]{%
+  \expandafter\ifx\csname r@#1\endcsname\relax
+  \labelprefix
+  \fi #1%
+}
+\usepackage{subfiles}
+
+\usepackage{\econtexSetup}
+\usepackage{\econtexShortcuts}
+\usepackage[nolists,nomarkers,tablesonly]{endfloat}
+\usepackage{datetime}
+\usepackage{rotating}
+\setcounter{secnumdepth}{4}
+
+\usepackage{dcolumn}
+
+% \begin{Web}
+\provideboolean{ifWeb}
+\setboolean{ifWeb}{false}
+\opt{Web}{\setboolean{ifWeb}{true}}
+\provideboolean{ifBig}
+\setboolean{ifBig}{true}
+\opt{Biggen}{\setboolean{ifBig}{true}}
+\newcommand{\Biggen}{\ifthenelse{\boolean{ifBig}}{\large}{}}
+% \end{Web}
+
+% \begin{Web}
+\ifthenelse{\boolean{ifWeb}}{\usepackage{grfext}
+  \PrependGraphicsExtensions*{.svg,.jpg,.JPG,.png,.PNG,.pdf,.PDF}
+  \usepackage{enotez}
+  \let\footnote=\endnote
+  \newcommand{\webWidth}{1.0}
+}{}
+% \end{Web}
+
+%\titleformat{\paragraph}
+%{\sffamily\mdseries\normalsize}{\theparagraph}{1em}{}
+%\titlespacing*{\paragraph}
+%{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\hypersetup{pdfauthor={Christopher Carroll <ccarroll@jhu.edu>, Edmund Crawley <edmund.s.crawley@frb.gov>, Jiri Slacalek <jiri.slacalek@ecb.europa.eu>, Matthew N White <mnwecon@udel.edu>},
+            pdftitle={The Consumption Response to Coronavirus Stimulus Checks},
+            pdfsubject={The Consumption Response to Coronavirus Stimulus Checks},
+            pdfkeywords={Consumption, Coronavirus, Stimulus; JEL: E21, F41},
+            pdfproducer = {LaTeX with hyperref and thumbpdf},
+            pdfcreator = {pdflatex}
+            }
+
+\newlength\TableWidth
+
+\provideboolean{StandAlone}
+\setboolean{StandAlone}{false}
+%\write18{\TabsDir/StandAloneOff.command} % Tell input files that they are being pulled in from the master (and are not standalone documents)
+%\usepackage{changepage}
+%\input Switches.tex
+%\end{preamble}
+
+% AEJM section numbering
+\setcounter{secnumdepth}{2}
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}}
+\makeatletter
+\renewcommand{\p@subsection}{\thesection.}
+\renewcommand{\p@subsubsection}{\thesection.\thesubsection.}
+\makeatother
+\bibliographystyle{\econtexBibStyle}

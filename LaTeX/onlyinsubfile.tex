@@ -1,0 +1,12 @@
+\onlyinsubfile{% https://tex.stackexchange.com/questions/463699/proper-reference-numbers-with-subfiles
+    \csname @ifpackageloaded\endcsname{xr-hyper}{%
+      \externaldocument{\econtexRoot/ConsumptionResponse}% xr-hyper in use; optional argument for url of main.pdf for hyperlinks
+    }{%
+      \externaldocument{main}% xr in use
+    }%
+    \renewcommand\labelprefix{}%
+    % Initialize the counters via the labels belonging to the main document:
+%    \setcounter{equation}{1}% There are no equations in the main body (!)
+}
+
+
