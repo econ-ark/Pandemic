@@ -77,7 +77,7 @@ In Q3 2020, when the consumption response to the act peaks, unemployment benefit
 Spending of unemployed households is strongly supported by the unemployment benefits, which arrive earlier and are, individually, of much greater magnitude than the stimulus checks.
 
 Our results depend on many assumptions that others might dispute, or that evidence currently unavailable might be able to improve.
-To make it easy for others to see how results would change with different assumptions, we are making available the complete economic modeling toolkit as an open-source software repository.  \href{https://github.com/econ-ark/Pandemic#reproduction-instructions}{See instructions here} to run the software on the web or install it on your own computer.
+To make it easy for others to see how results would change with different assumptions, we are making available the complete economic modeling toolkit as an open-source software repository.  \href{https://github.com/econ-ark/Pandemic#reproduction-instructions}{See instructions here} to install and run our software on your own computer, or use our \href{http://www.google.com}{interactive dashboard} to explore alternate parametrizations in your browser.
 %  \end{verbatimwrite}
 %  \input{./LaTeX/\jobname-abstract.metadata}
 \end{abstract}
@@ -117,7 +117,8 @@ Second, even consumers who remain employed will have restricted spending options
 
 On the first count, we model the likelihood that many of the people unemployed during the lockdown will be able to quickly return to their old jobs (or similar ones) by assuming that the typical job loser has a two-thirds chance of being reemployed in the same or a similar job after each quarter of unemployment.
 However, we expect that some kinds of jobs will not come back quickly after the lockdown,\footnote{The cruise industry, for example, is likely to take a long time to recover.} and that people who worked in these kinds of jobs will have more difficulty finding a new job.
-We call these people the `deeply unemployed' and assume that there is a one-third chance each quarter that they become merely `normal unemployed.'  (`Normal unemployed' people have a jobfinding rate that matches average historical rates of 1.5 quarters for unemployed people.)
+We call these people the `deeply unemployed' and assume that there is a one-third chance each quarter that they become merely `normal unemployed'.
+The `normall unemployed' have a jobfinding rate that matches average historical unemployment spell of 1.5 quarters.
 Thus a deeply unemployed person expects to remain that way for three quarters on average, and then unemployed for another one and a half quarters.
 When the pandemic hits, 10 percent of model households become normal unemployed and an additional 5 percent become deeply unemployed; in line with empirical evidence, the unemployment probabilities are skewed toward households who are young, unskilled and have low income.
 
@@ -158,13 +159,13 @@ Perhaps surprisingly, we find the effectiveness of the combined stimulus checks 
 The reason for this is twofold: first, the extra unemployment benefits in the CARES act as passed are generous enough that many of the `normally' unemployed remain financially sound and can afford to save a good portion of those benefits; second, the deeply unemployed expect their income to remain depressed for some time and therefore save more of the stimulus for the future.  In the model, the fact that they do \textit{not} spend immediately is actually a reflection of how desperately they anticipate these funds will be needed to make it through a long period of uncertainty.
 While unemployment benefits do not strongly stimulate current consumption of the deeply unemployed, they do provide important disaster relief for those who may not be able to return to work for several quarters (see \cite{krugman_corona} for an informal discussion).
 
-In addition to the baseline relatively short lockdown period, we also consider a worse scenario in which the lockdown is expected to last for four quarters and the unemployment rate increases to 20 percent. In this adverse scenario the return of spending toward its no-pandemic path takes roughly 3 years. In this scenario, we find that the spending of deeply unemployed households will fall steeply unless the temporary unemployment benefits in the CARES act are extended for the length of the lockdown.
-
+In addition to our primary scenario's relatively short lockdown period, we also consider a worse scenario in which the lockdown is expected to last for four quarters and the unemployment rate increases to 20 percent.
+In this case, we find that the return of spending toward its no-pandemic path takes roughly three years. Moreover, the spending of deeply unemployed households will fall steeply unless the temporary unemployment benefits in the CARES Act are extended for the length of the lockdown.
 
 Our modeling assumptions --- about who will become unemployed, how long it will take them to return to employment, and the direct effect of the lockdown on consumption utility --- are not ironclad.
 Reasonable analysts may differ on all of these points, and prefer a different calibration.
 To this end, we have made available our modeling and prediction software, with an eye toward making it easy for fellow researchers to test alternative assumptions.
-Instructions for installing and running our code can be found HERE; alternatively, the software can be run in a web browser HERE.
+Instructions for installing and running our code can be found \href{https://github.com/econ-ark/Pandemic#reproduction-instructions}{here}; alternatively, you can explore adjustments to our parametrization in with an interactive dashboard \href{http://www.google.com}{here}.
 
 
 \subsection*{Existing Work on the Effects of the Pandemic}
@@ -201,7 +202,7 @@ First, our new category of `deeply unemployed' households was created to capture
 
 Each quarter, our `deeply unemployed' households have a two-thirds chance of remaining deeply unemployed, and a one-third chance of becoming `normal unemployed.'
 The expected time to employment for a `deeply unemployed' household is four and a half quarters, much longer than the historical average length of a typical unemployment spell.
-Permanent income of both `normal unemployed' and `deeply unemployed' households declines by 0.5 percent each quarter due to `skill rot' (rather than following its usual age profile).
+Permanent income of both `normal' and `deeply' households declines by 0.5 percent each quarter due to `skill rot' (rather than following its usual age profile).
 
 Second, a temporary negative shock to the \href{https://www.investopedia.com/terms/m/marginalutility.asp}{marginal utility of consumption} captures the idea that, during the period of the pandemic, many forms of consumption are undesirable or illegal.
 
@@ -210,21 +211,22 @@ Households act optimally in their new circumstances (according to their beliefs 
 
 \subsubsection{Calibration}
 The calibration choices for the pandemic scenario are very much open for debate. Here we have tried to capture something like median expectations from early analyses, but there is considerable variation in points of view around those medians. 
-Section~\ref{sec:longPandemic} below presents a more adverse scenario with a long lockdown and a large increase of unemployment.
+Section~\ref{sec:longPandemic} below presents a more adverse scenario with a long lockdown and a larger increase in unemployment.
 
-We therefore invite readers to use our scenario as a starting point, but to explore for themselves the consequences of alternative assumptions, using a computational toolkit whose \href{https://econ-ark.org/about}{explicit purpose} is to make these kinds of things easy to do.
+%We therefore invite readers to use our scenario as a starting point, but to explore for themselves the consequences of alternative assumptions, using a computational toolkit whose \href{https://econ-ark.org/about}{explicit purpose} is to make these kinds of things easy to do.
+%[MNW: Removing this because it's getting redundant.  We say it four times in the paper.]
 
 Unemployment estimates for Q2 2020 range widely, from less than 10 percent to over 30 percent, but all point to an unprecedented sudden increase in unemployment.\footnote{As of April 9, about 16.5 million new unemployment claims have been filed in three weeks, representing a loss of over 10\% of total jobs.  JP Morgan Global Research forecast 8.5 percent unemployment (\cite{JPMorganBlog2020}, from March 27); Treasury Secretary Steven Mnuchin predicted unemployment could rise to 20 percent without a significant fiscal response (\cite{Bloomberg1}); St.\ Louis Fed president James Bullard said the unemployment rate may hit 30\% (\cite{Bloomberg2} --- see \cite{FariaBlog2020} for the analysis behind this claim.}
 We choose a total unemployment rate in Q2 2020 of just over 15 percent, consisting of five percent `deeply unemployed' and ten percent `normal unemployed' households.
 
-We calibrate the likelihood of becoming unemployed to match empirical facts about the relationship of unemployment to education level, permanent income and age, which is likely to matter because the sectors hardest hit skew young and unskilled.\footnote{See \cite{GasconCOVID2020}, \cite{LeiboviciSocial2020} and \cite{covid_USsurvey} for breakdowns of which workers are at most risk of unemployment from the crisis.
+We calibrate the likelihood of becoming unemployed to match empirical facts about the relationship of unemployment to education level, permanent income and age, which is likely to matter because the hardest hit sectors skew young and unskilled.\footnote{See \cite{GasconCOVID2020}, \cite{LeiboviciSocial2020} and \cite{covid_USsurvey} for breakdowns of which workers are at most risk of unemployment from the crisis.
 See additional evidence in \cite{kmv_pandemics} and modeling of implications for optimal policies in \cite{healthWealth}.}
 Figure \ref{unemployment_demographics} shows our assumptions on unemployment along these dimensions.
-In each education category, the solid line represents the probability of unemployment type (`normal' or `deep') for a household with the median permanent income at each age, while the dotted lines represent the probability of unemployment type for a household at the 5th and 95th percentile of permanent income at each age; Appendix \ref{model_details} with table \ref{table:PandemicAssumptions} detail the parametrization and calibration we used.
+In each education category, the solid line represents the probability of unemployment type (`normal' or `deep') for a household with the median permanent income at each age, while the dotted lines represent the probability of unemployment type for a household at the 5th and 95th percentile of permanent income at each age; Appendix \ref{model_details} with Table \ref{table:PandemicAssumptions} detail the parametrization and calibration we used.
 
 To calibrate the drop in marginal utility, we estimate that 10.9 percent of the goods that make up the consumer price index become highly undesirable, or illegal, during the pandemic: food away from home, public transportation including airlines, and motor fuel.
 We therefore multiply utility from consumption during the period of the epidemic by a factor of 0.891.
-Furthermore, we choose a one-half probability of exiting the period of lower marginal utility each quarter, accounting for the possibility of a `second wave' if restrictions are lifted to early --- see \cite{cyranoski_we_2020}.\footnote{The CBO expects social distancing to last for three months, and predicts it to have diminished, on average and in line with our calibration, by three-quarters in the second half of the year; see \cite{SwagelCBO2020}.}
+Furthermore, we choose a one-half probability of exiting the period of lower marginal utility each quarter, accounting for the possibility of a `second wave' if restrictions are lifted too early --- see \cite{cyranoski_we_2020}.\footnote{The CBO expects social distancing to last for three months, and predicts it to have diminished, on average and in line with our calibration, by three-quarters in the second half of the year; see \cite{SwagelCBO2020}.}
 
 \begin{figure}
 	\centering
@@ -242,9 +244,9 @@ Furthermore, we choose a one-half probability of exiting the period of lower mar
 
 We model the two elements of the CARES Act that directly affect the income of households:
 \begin{itemize}
-\item The stimulus check of \$1,200 for every adult taxpayer, means tested for previous years' income.\footnote{The act also includes \$500 for every child. In the model, an agent is somewhere between a household and an individual. While we do not model the \$500 payments to children, we also do not account for the fact that some adults will not receive a check. In aggregate we are close to the Joint Committee on Taxation estimate of the size of the stimulus checks.}
+\item The stimulus check of \$1,200 for every adult taxpayer, means tested for previous years' income.\footnote{The act also includes \$500 for every child. In the model, an agent is somewhere between a household and an individual. While we do not model the \$500 payments to children, we also do not account for the fact that some adults will not receive a check. In aggregate we are close to the Joint Committee on Taxation's estimate of the total cost of the stimulus checks.}
 \item The extra unemployment benefits of \$600 for up to 13 weeks, a total of \$7,800.
-For normal unemployed, we assume they receive only \$5,200 reflecting the idea that they may not be unemployed the entire 13 weeks.
+For normal unemployed, we assume they receive only \$5,200 to reflect the idea that they may not be unemployed the entire 13 weeks.
 \end{itemize}
 
 We model the stimulus checks as being announced at the same time as the crisis hits.
@@ -274,7 +276,7 @@ After two years, aggregate labor income is almost fully recovered.
 
 \section{Results}
 
-This section presents our simulation results for the scenario described above. In addition, we then model a more pessimistic scenario with longer lockdown and higher unemployment rate.
+This section presents our simulation results for the scenario described above. In addition, we then model a more pessimistic scenario with longer lockdown and higher initial unemployment rate.
 
 \begin{figure}
 	\centering
@@ -314,7 +316,7 @@ Moreover, most households hold at least some liquid assets, allowing them to smo
 \end{figure}
 
 Figure \ref{cons_response_emp} shows how the consumption response varies depending on the employment status of households in Q2 2020.
-For each employment category (employed, unemployed, and deeply unemployed), the figure shows consumption relative to the same households' consumption in the baseline scenario with no pandemic (dotted lines).\footnote{Households that become unemployed during the pandemic may or may not have been unemployed otherwise. We assume that all households that would have been unemployed otherwise are either unemployed or deeply unemployed in the pandemic scenario. However, there are many more households that are unemployed in the pandemic scenario than in the baseline.}
+For each employment category (employed, unemployed, and deeply unemployed), the figure shows consumption relative to the same households' consumption in the baseline scenario with no pandemic (dashed lines).\footnote{Households that become unemployed during the pandemic may or may not have been unemployed otherwise. We assume that all households that would have been unemployed otherwise are either unemployed or deeply unemployed in the pandemic scenario. However, there are many more households that are unemployed in the pandemic scenario than in the baseline.}
 The upper panel shows consumption without any policy response, while the lower panel includes the CARES Act.
 The figure illustrates an important feature of the unemployment benefits that is lost at the aggregate level: the response provides relief to households whose consumption is most affected by the pandemic.
 For the unemployed --- and especially for the deeply unemployed --- the consumption drop when the pandemic hits is much shallower and returns faster toward the baseline when the fiscal stimulus is in place.
@@ -333,11 +335,11 @@ For the unemployed --- and especially for the deeply unemployed --- the consumpt
 		\includegraphics[width=0.8\textwidth]{./Figures/ConRespByEmpStateWStim}}
 \end{figure}
 
-Indeed, this targeted response is again shown in Figure~\ref{stim_by_emp}.
-This figure shows the extra consumption relative to the pandemic scenario without the CARES Act.
-The dotted lines show the effect of the stimulus check in isolation (for employed workers this is the same as the total fiscal response).
+Indeed, this targeted response is again seen in Figure~\ref{stim_by_emp},
+showing the extra consumption relative to the pandemic scenario without the CARES Act.
+The dashed lines show the effect of the stimulus check in isolation (for employed workers this is the same as the total fiscal response).
 For unemployed households, this is dwarfed by the increased unemployment benefits.
-These benefits both arrive earlier, and are much larger.
+These benefits both arrive earlier and are much larger.
 Specifically, in Q3 2020, when households receive the stimulus checks, the effect of unemployment benefits on consumption makes up about 70 percent and 85 percent of the total effect for the normally and deeply unemployed, respectively.
 
 \begin{figure}
@@ -353,7 +355,7 @@ Specifically, in Q3 2020, when households receive the stimulus checks, the effec
 
 Figure~\ref{checks_vs_unemp} aggregates the decomposition of the CARES Act in Figure~\ref{stim_by_emp} across all households.
 In our model economy, the extra unemployment benefits amount to \$544 per household, while the stimulus checks amount to \$1,054 per household (as means testing reduces or eliminates the stimulus checks for high income households).
-Aggregated, stimulus checks amount to \$267 billion, while the extended unemployment benefits amount to just over half that, \$137 billion.\footnote{See appendix \ref{sec:aggregation} for details on how we aggregate households.}
+Aggregated, stimulus checks amount to \$267 billion, while the extended unemployment benefits amount to just over half that, \$137 billion.\footnote{See Appendix \ref{sec:aggregation} for details on how we aggregate households.}
 The figure shows that during the peak consumption response in Q3 2020, the stimulus checks account for about 70~percent of the total effect on consumption for the average household and the unemployment benefits for about 30~percent.  Thus, although the unemployment benefits make a much larger difference to the spending of the individual recipients than the stimulus checks, a small enough proportion of households becomes unemployed that the total extra spending coming from these people is less than the total extra spending from the more widely distributed stimulus checks.
 
 \begin{figure}
@@ -390,7 +392,7 @@ The interesting conclusion is that, while the net spending response is similar f
 Given the uncertainty about how long and deep the current recession will be, we further investigate an alternative, worse scenario in which the lockdown is expected to last for four quarters.  
 In addition, the unemployment rate will increase to 20 percent, consisting of 15 percent of deeply unemployed and 5 percent of normal unemployed.  
 In this setup we compare how effectively the CARES package stimulates consumption, also considering a more generous plan in which the unemployment benefits continue until the lockdown is over.
-We model the receipt of unemployment benefits each quarter as an unexpected, MIT shock.
+We model the receipt of unemployment benefits each quarter as an unexpected shock, representing a series of policy renewals.
 
 \begin{figure}
 	\centering
@@ -420,9 +422,9 @@ In contrast, the scenario with unemployment benefits extended as long as the loc
 \end{figure}
 
 Figure~\ref{cons_response_pandemic} shows the implications of the two stimulus packages for aggregate consumption. 
-The long lockdown causes a much longer decline in spending than the one-quarter lockdown: Under the shorter pandemic scenario (Figure~\ref{cons_response}) consumption returns to the baseline path after roughly 1 year. The long lockdown shown here takes around 3 years.  
-The CARES stimulus shortens the consumption drop to about 2 years.
-The scenario with extended unemployment benefits ensures that aggregate spending returns to the no pandemic path after roughly 1 year, and does so by targeting the funds to the people who are worst hurt by the crisis and to whom the cash will make the most difference.  
+The long lockdown causes a much longer decline in spending than the shorter lockdown in our primary scenario. In the shorter pandemic scenario (Figure~\ref{cons_response}) consumption returns to the baseline path after roughly one year, while the long lockdown shown here takes around three years;
+the CARES stimulus shortens the consumption drop to about 2 years.
+The scenario with extended unemployment benefits ensures that aggregate spending returns to the baseline path after roughly one year, and does so by targeting the funds to the people who are worst hurt by the crisis and to whom the cash will make the most difference.  
 
 \section{Conclusions}
 
@@ -441,7 +443,7 @@ A fuller analysis that incorporates both the kinds of heterogeneity that are of 
 
 
 \small
-\bibliography{LaTeX/\texname}
+\bibliography{LaTeX/\texname,\economics}
 %\bibliography{\texname,/Volumes/Data/GitHub/ccarrollATjhuecon/Methods/Tools/Config/tool/texlive/texmf-local/bibtex/bib/economics}
 \normalsize
 \pagebreak
