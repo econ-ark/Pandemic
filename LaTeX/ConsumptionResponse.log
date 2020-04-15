@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.7)  15 APR 2020 15:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.7)  15 APR 2020 15:09
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**\input ConsumptionResponse.tex
+**\newcommand\UseOption{FromShell}\input{ConsumptionResponse}
 (./ConsumptionResponse.tex (./LaTeX/econtexRoot.tex) (./LaTeX/econtexPaths.tex) (./LaTeX/texmf-local/tex/latex/econtex.cls
 
 LaTeX Warning: You have requested document class `./LaTeX/texmf-local/tex/latex/econtex',
@@ -625,7 +625,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/optional/optional.sty
 Package: optional 2005/01/26 ver 2.2b;  Optional inclusion/omission
 )
-Using optional text marked with econtex. 
+Using optional text marked with FromShell,econtex. 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip82
@@ -1136,127 +1136,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--83
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 92.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
+) [1
 
-Package natbib Warning: Citation `matthew_n_white_2017_1001068' on page 1 undefined on input line 98.
-
-[1
-
-{/usr/local/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package natbib Warning: Citation `carroll_sticky_2020' on page 1 undefined on input line 114.
-
-
-Package natbib Warning: Citation `SpanishSpending' on page 1 undefined on input line 126.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+{/usr/local/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.131 \item T
-             he boost to unemployment insurance benefits, amounting to \$7,8... [1]
-
-Package natbib Warning: Citation `krugman_corona' on page 2 undefined on input line 159.
-
-[2]
-
-Package natbib Warning: Citation `ert_covid' on page 3 undefined on input line 173.
-
-
-Package natbib Warning: Citation `aal_covid' on page 3 undefined on input line 173.
-
-
-Package natbib Warning: Citation `covidMacroImpl' on page 3 undefined on input line 174.
-
-
-Package natbib Warning: Citation `kmv_pandemics' on page 3 undefined on input line 175.
-
-
-Package natbib Warning: Citation `healthWealth' on page 3 undefined on input line 176.
-
-
-Package natbib Warning: Citation `faria_FPpandemic' on page 3 undefined on input line 177.
-
-
-Package natbib Warning: Citation `baker_Cpandemic' on page 3 undefined on input line 181.
-
-
-Package natbib Warning: Citation `jorda_pandemics' on page 3 undefined on input line 181.
-
-
-Package natbib Warning: Citation `verner_pandemics' on page 3 undefined on input line 181.
-
-[3]
-
-Package natbib Warning: Citation `cstwMPC' on page 4 undefined on input line 190.
-
-
-LaTeX Warning: Reference `model_details' on page 4 undefined on input line 194.
-
-[4]
-
-LaTeX Warning: Reference `sec:longPandemic' on page 5 undefined on input line 213.
-
-
-Package natbib Warning: Citation `JPMorganBlog2020' on page 5 undefined on input line 217.
-
-
-Package natbib Warning: Citation `Bloomberg1' on page 5 undefined on input line 217.
-
-
-Package natbib Warning: Citation `Bloomberg2' on page 5 undefined on input line 217.
-
-
-Package natbib Warning: Citation `FariaBlog2020' on page 5 undefined on input line 217.
-
-
-Package natbib Warning: Citation `GasconCOVID2020' on page 5 undefined on input line 221.
-
-
-Package natbib Warning: Citation `LeiboviciSocial2020' on page 5 undefined on input line 221.
-
-
-Package natbib Warning: Citation `covid_USsurvey' on page 5 undefined on input line 221.
-
-
-Package natbib Warning: Citation `kmv_pandemics' on page 5 undefined on input line 221.
-
-
-Package natbib Warning: Citation `healthWealth' on page 5 undefined on input line 221.
-
-
-LaTeX Warning: Reference `unemployment_demographics' on page 5 undefined on input line 222.
-
-
-LaTeX Warning: Reference `model_details' on page 5 undefined on input line 223.
-
-
-LaTeX Warning: Reference `table:PandemicAssumptions' on page 5 undefined on input line 223.
-
-
-Package natbib Warning: Citation `cyranoski_we_2020' on page 5 undefined on input line 227.
-
-
-Package natbib Warning: Citation `SwagelCBO2020' on page 5 undefined on input line 227.
-
-
+l.129 O
+       ur model captures the two primary features of the CARES Act that aim ... [1] [2] [3] [4]
 Overfull \hbox (31.298pt too wide) detected at line 231
  [] 
  []
 
-
-./ConsumptionResponse.tex:237: LaTeX Error: File `./Figures/UnempProbByDemogBasic' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...twidth]{./Figures/UnempProbByDemogBasic}}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<./Figures/UnempProbByDemogBasic.pdf, id=144, 393.60803pt x 292.07495pt>
+File: ./Figures/UnempProbByDemogBasic.pdf Graphic file (type pdf)
+<use ./Figures/UnempProbByDemogBasic.pdf>
+Package pdftex.def Info: ./Figures/UnempProbByDemogBasic.pdf  used on input line 237.
+(pdftex.def)             Requested size: 333.46762pt x 247.45374pt.
 [5]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 245.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
@@ -1264,281 +1159,123 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 245.
-
-
-Package natbib Warning: Citation `carroll_sticky_2020' on page 6 undefined on input line 253.
-
-
-Package natbib Warning: Citation `psjmMPC2008' on page 6 undefined on input line 253.
-
-
-Package natbib Warning: Citation `brodaParker' on page 6 undefined on input line 253.
-
-
-Package natbib Warning: Citation `parker25million' on page 6 undefined on input line 253.
-
-
-LaTeX Warning: Reference `labor_income' on page 6 undefined on input line 258.
-
-
+ [6 <./Figures/UnempProbByDemogBasic.pdf>]
 Overfull \hbox (31.298pt too wide) detected at line 265
  [] 
  []
 
-
-./ConsumptionResponse.tex:271: LaTeX Error: File `./Figures/AggLT' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.271 ...cs[width=0.8\textwidth]{./Figures/AggLT}}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<./Figures/AggLT.pdf, id=230, 433.62pt x 289.08pt>
+File: ./Figures/AggLT.pdf Graphic file (type pdf)
+<use ./Figures/AggLT.pdf>
+Package pdftex.def Info: ./Figures/AggLT.pdf  used on input line 271.
+(pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
 
 Overfull \hbox (31.298pt too wide) detected at line 281
  [] 
  []
 
-
-./ConsumptionResponse.tex:287: LaTeX Error: File `./Figures/AggConResp_examples' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.287 ...extwidth]{./Figures/AggConResp_examples}}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `cons_response' on page 6 undefined on input line 292.
-
-[6]
-
-LaTeX Warning: Reference `cons_response2' on page 7 undefined on input line 299.
-
-
-Package natbib Warning: Citation `baker_Cpandemic' on page 7 undefined on input line 300.
-
-
-Package natbib Warning: Citation `nyFedCoronaBlog' on page 7 undefined on input line 300.
-
-
-LaTeX Warning: Reference `labor_income' on page 7 undefined on input line 303.
-
-
-LaTeX Warning: Reference `cons_response2' on page 7 undefined on input line 303.
-
-
+<./Figures/AggConResp_examples.pdf, id=231, 433.62pt x 289.08pt>
+File: ./Figures/AggConResp_examples.pdf Graphic file (type pdf)
+<use ./Figures/AggConResp_examples.pdf>
+Package pdftex.def Info: ./Figures/AggConResp_examples.pdf  used on input line 287.
+(pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
+[7 <./Figures/AggLT.pdf>]
 Overfull \hbox (31.298pt too wide) detected at line 307
  [] 
  []
 
-
-./ConsumptionResponse.tex:313: LaTeX Error: File `./Figures/Decomposition' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.313 ...=0.8\textwidth]{./Figures/Decomposition}}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `cons_response_emp' on page 7 undefined on input line 316.
-
-[7]
+<./Figures/Decomposition.pdf, id=300, 433.62pt x 289.08pt>
+File: ./Figures/Decomposition.pdf Graphic file (type pdf)
+<use ./Figures/Decomposition.pdf>
+Package pdftex.def Info: ./Figures/Decomposition.pdf  used on input line 313.
+(pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
+[8 <./Figures/AggConResp_examples.pdf>]
 Overfull \hbox (31.298pt too wide) detected at line 324
  [] 
  []
 
-
-./ConsumptionResponse.tex:333: LaTeX Error: File `./Figures/ConRespByEmpStateNoStim' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.333 ...width]{./Figures/ConRespByEmpStateWStim}}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./ConsumptionResponse.tex:333: LaTeX Error: File `./Figures/ConRespByEmpStateWStim' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.333 ...width]{./Figures/ConRespByEmpStateWStim}}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `stim_by_emp' on page 8 undefined on input line 336.
-
+<./Figures/ConRespByEmpStateNoStim.pdf, id=357, 433.62pt x 289.08pt>
+File: ./Figures/ConRespByEmpStateNoStim.pdf Graphic file (type pdf)
+<use ./Figures/ConRespByEmpStateNoStim.pdf>
+Package pdftex.def Info: ./Figures/ConRespByEmpStateNoStim.pdf  used on input line 333.
+(pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
+<./Figures/ConRespByEmpStateWStim.pdf, id=358, 433.62pt x 289.08pt>
+File: ./Figures/ConRespByEmpStateWStim.pdf Graphic file (type pdf)
+<use ./Figures/ConRespByEmpStateWStim.pdf>
+Package pdftex.def Info: ./Figures/ConRespByEmpStateWStim.pdf  used on input line 333.
+(pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
 
 Overfull \hbox (31.298pt too wide) detected at line 345
  [] 
  []
 
+<./Figures/ConDeltaByEmpState.pdf, id=360, 433.62pt x 289.08pt>
+File: ./Figures/ConDeltaByEmpState.pdf Graphic file (type pdf)
+<use ./Figures/ConDeltaByEmpState.pdf>
+Package pdftex.def Info: ./Figures/ConDeltaByEmpState.pdf  used on input line 351.
+(pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
+[9 <./Figures/Decomposition.pdf>] [10 <./Figures/ConRespByEmpStateNoStim.pdf> <./Figures/ConRespByEmpStateWStim.pdf
 
-./ConsumptionResponse.tex:351: LaTeX Error: File `./Figures/ConDeltaByEmpState' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.351 ...textwidth]{./Figures/ConDeltaByEmpState}}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `checks_vs_unemp' on page 8 undefined on input line 354.
-
-
-LaTeX Warning: Reference `stim_by_emp' on page 8 undefined on input line 354.
-
-
-LaTeX Warning: Reference `sec:aggregation' on page 8 undefined on input line 356.
-
-
+pdfTeX warning: pdflatex (file ./Figures/ConRespByEmpStateWStim.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
 Overfull \hbox (31.298pt too wide) detected at line 361
  [] 
  []
 
+<./Figures/Checks_vs_Unemp.pdf, id=511, 433.62pt x 289.08pt>
+File: ./Figures/Checks_vs_Unemp.pdf Graphic file (type pdf)
+<use ./Figures/Checks_vs_Unemp.pdf>
+Package pdftex.def Info: ./Figures/Checks_vs_Unemp.pdf  used on input line 367.
+(pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
 
-./ConsumptionResponse.tex:367: LaTeX Error: File `./Figures/Checks_vs_Unemp' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.367 ....8\textwidth]{./Figures/Checks_vs_Unemp}}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `EffectTargeting' on page 8 undefined on input line 371.
-
-[8]
 Overfull \hbox (31.298pt too wide) detected at line 378
  [] 
  []
 
+<./Figures/EffectTargeting.pdf, id=513, 433.62pt x 289.08pt>
+File: ./Figures/EffectTargeting.pdf Graphic file (type pdf)
+<use ./Figures/EffectTargeting.pdf>
+Package pdftex.def Info: ./Figures/EffectTargeting.pdf  used on input line 384.
+(pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
+[11 <./Figures/ConDeltaByEmpState.pdf>] [12 <./Figures/Checks_vs_Unemp.pdf> <./Figures/EffectTargeting.pdf
 
-./ConsumptionResponse.tex:384: LaTeX Error: File `./Figures/EffectTargeting' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.384 ....8\textwidth]{./Figures/EffectTargeting}}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
+pdfTeX warning: pdflatex (file ./Figures/EffectTargeting.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
 Overfull \hbox (31.298pt too wide) detected at line 397
  [] 
  []
 
-
-./ConsumptionResponse.tex:403: LaTeX Error: File `./Figures/AggLT_long_pandemic' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.403 ...extwidth]{./Figures/AggLT_long_pandemic}}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `inc_response_pandemic' on page 9 undefined on input line 406.
-
+<./Figures/AggLT_long_pandemic.pdf, id=656, 433.62pt x 289.08pt>
+File: ./Figures/AggLT_long_pandemic.pdf Graphic file (type pdf)
+<use ./Figures/AggLT_long_pandemic.pdf>
+Package pdftex.def Info: ./Figures/AggLT_long_pandemic.pdf  used on input line 403.
+(pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
 
 Overfull \hbox (31.298pt too wide) detected at line 413
  [] 
  []
 
-
-./ConsumptionResponse.tex:419: LaTeX Error: File `./Figures/DeepPandemic' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.419 ...h=0.8\textwidth]{./Figures/DeepPandemic}}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<./Figures/DeepPandemic.pdf, id=658, 433.62pt x 289.08pt>
+File: ./Figures/DeepPandemic.pdf Graphic file (type pdf)
+<use ./Figures/DeepPandemic.pdf>
+Package pdftex.def Info: ./Figures/DeepPandemic.pdf  used on input line 419.
+(pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
+[13 <./Figures/AggLT_long_pandemic.pdf>] [14 <./Figures/DeepPandemic.pdf>] (LaTeX/ConsumptionResponse.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
+[]\T1/cmr/m/sc/10.95 Carroll, Christo-pher D., Jiri Sla-calek, Ki-ichi Tokuoka, and
+ []
 
 
-LaTeX Warning: Reference `cons_response_pandemic' on page 9 undefined on input line 422.
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
+\T1/cmr/m/sc/10.95 Matthew N. White \T1/cmr/m/n/10.95 (2017): ``The Dis-tri-bu-tion of Wealth and the
+ []
 
+[15]
+Underfull \hbox (badness 3536) in paragraph at lines 120--122
+[]\T1/cmr/m/sc/10.95 Gascon, Charles \T1/cmr/m/n/10.95 (2020): ``COVID-19: Which Work-ers Face the High-est
+ []
 
-LaTeX Warning: Reference `cons_response' on page 9 undefined on input line 423.
-
-[9] (LaTeX/ConsumptionResponse.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 6.
-
-) [10] (./ModelAppendix.tex (./LaTeX/econtexRoot.tex) (./LaTeX/onlyinsubfile.tex)
-
-Package natbib Warning: Citation `cstwMPC' on page 11 undefined on input line 10.
-
-
-LaTeX Warning: Reference `table:ParametersLifeCycle' on page 11 undefined on input line 16.
-
-
-Package natbib Warning: Citation `cstwMPC' on page 11 undefined on input line 17.
-
-
-Package natbib Warning: Citation `BrownLiebmanPollet' on page 11 undefined on input line 20.
-
-[11]
-
-Package natbib Warning: Citation `SabelhausSong' on page 12 undefined on input line 35.
-
-
-Package natbib Warning: Citation `Cagetti' on page 12 undefined on input line 35.
-
-
-Package natbib Warning: Citation `cstwMPC' on page 12 undefined on input line 36.
-
-[12]
+[16]) [17] (./ModelAppendix.tex (./LaTeX/econtexRoot.tex) (./LaTeX/onlyinsubfile.tex) [18] [19]
 Underfull \hbox (badness 10000) in paragraph at lines 67--70
 
  []
@@ -1549,14 +1286,11 @@ Overfull \hbox (24.86821pt too wide) in alignment at lines 70--77
  []
 
 
-Package natbib Warning: Citation `carroll_EGM' on page 13 undefined on input line 80.
-
-
 Overfull \hbox (36.34418pt too wide) in alignment at lines 82--85
  [][][] []
  []
 
-[13]
+[20]
 LaTeX Font Info:    Try loading font information for U+euf on input line 89.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
@@ -1567,37 +1301,22 @@ Overfull \hbox (67.16306pt too wide) detected at line 90
 
 \openout3 = `ConsumptionResponse.ttt'.
 
-(ConsumptionResponse.ttt)
-
-LaTeX Warning: Reference `table:PandemicAssumptions' on page 14 undefined on input line 149.
-
-[14]
-
-Package natbib Warning: Citation `Cagetti' on page 15 undefined on input line 245.
-
-)
-
-Package natbib Warning: There were undefined citations.
-
-AED endfloat: Processing end Figures and Tables [15] (LaTeX/ConsumptionResponse.ttt
+(ConsumptionResponse.ttt) [21]) AED endfloat: Processing end Figures and Tables [22] (LaTeX/ConsumptionResponse.ttt
 Overfull \hbox (31.298pt too wide) detected at line 2
  [] 
  []
 
-[16]
+[23]
 Overfull \hbox (31.298pt too wide) detected at line 41
  [] 
  []
 
-[17]
+[24]
 Overfull \hbox (31.298pt too wide) detected at line 86
  [] 
  []
 
-
-LaTeX Warning: Reference `sec:aggregation' on page 18 undefined on input line 104.
-
-) [18]
+) [25]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 475.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 475.
  (LaTeX/ConsumptionResponse.aux)
@@ -1611,21 +1330,18 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 475.
 Package rerunfilecheck Info: File `ConsumptionResponse.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 475.
  ) 
 Here is how much of TeX's memory you used:
- 26250 strings out of 492616
- 460084 string characters out of 6128998
- 673415 words of memory out of 5000000
- 29636 multiletter control sequences out of 15000+600000
- 562235 words of font info for 104 fonts, out of 8000000 for 9000
+ 26451 strings out of 492616
+ 465132 string characters out of 6128998
+ 677796 words of memory out of 5000000
+ 29798 multiletter control sequences out of 15000+600000
+ 565005 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,14n,73p,9324b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,14n,73p,9353b,518s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
@@ -1634,15 +1350,16 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist,
 18/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
 12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2018/texmf
+-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public
 /cm-super/sfrm0500.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pfb>
-Output written on LaTeX/ConsumptionResponse.pdf (19 pages, 474325 bytes).
+texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
+ublic/cm-super/sftt1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pfb>
+Output written on LaTeX/ConsumptionResponse.pdf (26 pages, 701573 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
- 285 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1038 PDF objects out of 1200 (max. 8388607)
+ 530 compressed objects within 6 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 
