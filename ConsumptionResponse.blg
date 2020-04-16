@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: ConsumptionResponse.aux
+The style file: ./LaTeX/texmf-local/bibtex/bst/econtex.bst
+Database file #1: LaTeX/ConsumptionResponse.bib
+Done.
+You've used 31 entries,
+            2309 wiz_defined-function locations,
+            688 strings with 9093 characters,
+and the built_in function-call counts, 14958 in all, are:
+= -- 1414
+> -- 1084
+< -- 7
++ -- 356
+- -- 334
+* -- 1362
+:= -- 3017
+add.period$ -- 32
+call.type$ -- 31
+change.case$ -- 220
+chr.to.int$ -- 29
+cite$ -- 31
+duplicate$ -- 479
+empty$ -- 761
+format.name$ -- 350
+if$ -- 2815
+int.to.chr$ -- 3
+int.to.str$ -- 0
+missing$ -- 10
+newline$ -- 100
+num.names$ -- 187
+pop$ -- 170
+preamble$ -- 2
+purify$ -- 207
+quote$ -- 0
+skip$ -- 439
+stack$ -- 0
+substring$ -- 559
+swap$ -- 87
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 341
+warning$ -- 0
+while$ -- 146
+width$ -- 0
+write$ -- 377
