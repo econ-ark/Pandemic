@@ -58,7 +58,7 @@
   Second, some of the jobs that disappear during the lockdown will not reappear when it is lifted.
   We estimate that, if the lockdown is short-lived, the combination of expanded unemployment insurance benefits and stimulus payments should be sufficient to allow a swift recovery in consumer spending to its pre-crisis levels.
   In Q3 2020, when the consumption response to the act peaks, unemployment benefits account for about 30 percent of the total aggregate consumption response and stimulus payments for the remainder.
-  Spending of unemployed households is strongly supported by the unemployment benefits, which arrive earlier and, per recipient, per recipient, are of much greater importance than the stimulus checks are to their recipients.
+  Spending of unemployed households is strongly supported by the unemployment benefits, which arrive earlier and, per recipient, are of much greater importance than the stimulus checks are to their recipients.
 
   Our results depend on many assumptions that others might dispute, or that evidence currently unavailable might be able to improve.
   To make it easy for others to see how our results would change with different assumptions, we are making available our complete economic modeling toolkit as an open-source software repository.  \href{https://github.com/econ-ark/Pandemic#reproduction-instructions}{See instructions here} to install and run our software on your own computer, or use our \href{http://www.google.com}{interactive dashboard} to explore alternate parametrizations in your browser.
@@ -94,7 +94,7 @@ On the first count, we model the likelihood that many of the people unemployed d
 On the second count, we model the restricted spending options by assuming that during the lockdown spending money is less enjoyable (there is a negative shock to the `marginal utility of consumption.')
 Based on a tally of sectors that we judge to be substantially shuttered during the `lockdown,' we calibrate an $11$ percent reduction to spending.
 Thus households will prefer to defer some of their consumption into the future, when it will yield them greater utility. (See \cite{SpanishSpending} for Spanish data already showing a strong effect of this kind in recent weeks).
-In our primary scenario, we assume that this condition is removed with probability one-half after each quarter, so on average remains for two quarters.  When the `lockdown' ends, the buildup of savings by households who did not lose their jobs but whose spending was suppressed should result in a partial recovery in consumer spending, but in our primary scenario (without the CARES act), total consumer spending remains below its pre-crisis peak through the forseeable future.  
+In our primary scenario, we assume that this condition is removed with probability one-half after each quarter, so on average remains for two quarters.  When the `lockdown' ends, the buildup of savings by households who did not lose their jobs but whose spending was suppressed should result in a partial recovery in consumer spending, but in our primary scenario (without the CARES act), total consumer spending remains below its pre-crisis peak through the foreseeable future.  
 
 Our model captures the two primary features of the CARES Act that aim to bolster consumer spending:
 \begin{enumerate}
@@ -102,7 +102,7 @@ Our model captures the two primary features of the CARES Act that aim to bolster
 \item The direct stimulus payments to households, amounting to \$1,200 per adult.
 \end{enumerate}
 
-We estimate that the combination of expanded unemployment insurance benefits and stimulus payments should be sufficient to allow a swift recovery in consumer spending to its pre-crisis levels under our baseline scenario in which the lockdown ends after two quarters. 
+We estimate that the combination of expanded unemployment insurance benefits and stimulus payments should be sufficient to allow a swift recovery in consumer spending to its pre-crisis levels under our primary scenario in which the lockdown ends after two quarters on average. 
 Overall, unemployment benefits account for about 30 percent of the total aggregate consumption response and stimulus payments explain the remainder.
 
 Our analysis partitions households into three groups based on their employment state when the pandemic strikes and the lockdown begins.
@@ -120,13 +120,13 @@ Even so, the act makes a big difference to their spending, particularly in the f
 For both groups of unemployed households, the effect of the stimulus checks is dwarfed by the increased unemployment benefits, which arrive earlier and are much larger (per recipient).
 
 Perhaps surprisingly, we find the effectiveness of the combined stimulus checks and unemployment benefits package for aggregate consumption is not substantially different from a package that distributed the same quantity of money equally between households.
-The reason for this is twofold: first, the extra unemployment benefits in the CARES act are generous enough that many of the `normally' unemployed remain financially sound and can afford to save a good portion of those benefits; second, the deeply unemployed expect their income to remain depressed for some time and therefore save more of the stimulus for the future.  In the model, the fact that they do \textit{not} spend immediately is actually a reflection of how desperately they anticipate these funds will be needed to make it through a long period of uncertainty.
+The reason for this is twofold: first, the extra unemployment benefits in the CARES Act are generous enough that many of the `normally' unemployed remain financially sound and can afford to save a good portion of those benefits; second, the deeply unemployed expect their income to remain depressed for some time and therefore save more of the stimulus for the future.  In the model, the fact that they do \textit{not} spend immediately is actually a reflection of how desperately they anticipate these funds will be needed to make it through a long period of uncertainty.
 While unemployment benefits do not strongly stimulate current consumption of the deeply unemployed, they do provide important disaster relief for those who may not be able to return to work for several quarters (see \cite{krugman_corona} for an informal discussion).
 
 In addition to our primary scenario's relatively short lockdown period, we also consider a worse scenario in which the lockdown is expected to last for four quarters and the unemployment rate increases to 20 percent.
 In this case, we find that the return of spending toward its no-pandemic path takes roughly three years. Moreover, the spending of deeply unemployed households will fall steeply unless the temporary unemployment benefits in the CARES Act are extended for the duration of the lockdown.  
 
-Inevitably, our modeling assumptions --- about who will become unemployed, how long it will take them to return to employment, and the direct effect of the lockdown on consumption utility --- are guesswork.
+Our modeling assumptions --- about who will become unemployed, how long it will take them to return to employment, and the direct effect of the lockdown on consumption utility --- are not ironclad.
 Reasonable analysts may differ on all of these points, and prefer a different calibration.
 To encourage such exploration, we have made available our modeling and prediction software, with the goal of making it easy for fellow researchers to test alternative assumptions.  Instructions for installing and running our code can be found \href{https://github.com/econ-ark/Pandemic#reproduction-instructions}{here}; alternatively, you can explore adjustments to our parametrization with an interactive dashboard \href{http://www.google.com}{here}.
 
@@ -137,7 +137,7 @@ Several papers combine the classic susceptible--infected--recovered (SIR) epidem
 \cite{covidMacroImpl} shows how an initial supply shock (such as a pandemic) can be amplified by the reaction of aggregate demand.
 The ongoing work of \cite{kmv_pandemics} allows for realistic household heterogeneity in how household income and consumption are affected by the pandemic.
 \cite{healthWealth} studies distributional effects of optimal health and economic policies.
-Closest to our work is \cite{faria_FPpandemic}, who analyzes the effects of the fiscal response to the pandemic in a two-agent DSGE model.
+Closest to our paper, work analyzing the effects of the fiscal response to the pandemic includes \cite{faria_FPpandemic}, in a two-agent DSGE model, and \cite{bayer_corona} in a HANK model.
 
 All of this work accounts for general equilibrium effects on consumption and employment, which we omit, but none of it is based on a modeling framework explicitly constructed to match micro and macroeconomic effects of past stimulus policies, as ours is.
 
@@ -171,7 +171,7 @@ The pandemic is modeled as an unexpected (MIT) shock, sending many households in
 The calibration choices for the pandemic scenario are very much open for debate. Here we have tried to capture something like median expectations from early analyses, but there is considerable variation in points of view around those medians. 
 Section~\ref{sec:longPandemic} below presents a more adverse scenario with a long lockdown and a larger increase in unemployment.
 
-Unemployment forecasts for Q2 2020 range widely, from less than 10 percent to over 30 percent, but all point to an unprecedented sudden increase in unemployment.\footnote{As of April 9, about 16.5 million new unemployment claims have been filed in three weeks, representing a loss of over 10 percent  of total jobs.  JP Morgan Global Research forecast 8.5 percent unemployment (\cite{JPMorganBlog2020}, from March 27); Treasury Secretary Steven Mnuchin predicted unemployment could rise to 20 percent without a significant fiscal response (\cite{Bloomberg1}); St.\ Louis Fed president James Bullard said the unemployment rate may hit 30 percent  (\cite{Bloomberg2} --- see \cite{FariaBlog2020} for the analysis behind this claim.}
+Unemployment forecasts for Q2 2020 range widely, from less than 10 percent to over 30 percent, but all point to an unprecedented sudden increase in unemployment.\footnote{As of April 16, about 22 million new unemployment claims have been filed in four weeks, representing a loss of over 14 percent  of total jobs.  JP Morgan Global Research forecast 8.5 percent unemployment (\cite{JPMorganBlog2020}, from March 27); Treasury Secretary Steven Mnuchin predicted unemployment could rise to 20 percent without a significant fiscal response (\cite{Bloomberg1}); St.\ Louis Fed president James Bullard said the unemployment rate may hit 30 percent  (\cite{Bloomberg2} --- see \cite{FariaBlog2020} for the analysis behind this claim.  Based on a survey that closely follows the CPS, \cite{BickBlandin2020} calculate a 20.2 percent unemployment rate at the beginning of April.}
 We choose a total unemployment rate in Q2 2020 of just over 15 percent, consisting of five percent `deeply unemployed' and ten percent `normal unemployed' households.
 
 We calibrate the likelihood of becoming unemployed to match empirical facts about the relationship of unemployment to education level, permanent income and age, which is likely to matter because the hardest hit sectors skew young and unskilled.\footnote{See \cite{GasconCOVID2020}, \cite{LeiboviciSocial2020} and \cite{covid_USsurvey} for breakdowns of which workers are at most risk of unemployment from the crisis.
@@ -255,7 +255,7 @@ Figure \ref{cons_response2} decomposes the effect of the pandemic on aggregate c
 The figure illustrates that the constrained consumption choices are quantitatively key in capturing the expected depth in the slump of spending, which is already under way; see \cite{baker_Cpandemic} and \cite{nyFedCoronaBlog} for early evidence.
 The marginal utility shock hits all households, and directly affects their spending decisions in the early quarters after the pandemic; its effect cannot be mitigated by fiscal stimulus.
 The loss of income from unemployment is large, but affects only a fraction of households, who are disproportionately low income and thus account for a smaller share of aggregate consumption.
-Moreover, most households hold at least some liquid assets, allowing them to smooth their consumption drop --- the 5 perent  decrease in labor income in Figure~\ref{labor_income} induces only a 1.5 percent  decrease in consumption in Figure~\ref{cons_response2}.
+Moreover, most households hold at least some liquid assets, allowing them to smooth their consumption drop --- the 5 percent  decrease in labor income in Figure~\ref{labor_income} induces only a 1.5 percent  decrease in consumption in Figure~\ref{cons_response2}.
 
 \begin{figure}
   \centering
@@ -326,7 +326,7 @@ The previous graphs show the importance of the targeted unemployment benefits at
 Figure~\ref{EffectTargeting} compares the effect of the CARES Act (both unemployment insurance and stimulus checks) to a policy of the same absolute size that distributes checks to everybody.
 While unemployment benefits arrive sooner, resulting in higher aggregate consumption in Q2 2020, the un-targeted policy leads to higher aggregate consumption in the following quarters.
 
-The interesting conclusion is that, while the net spending response is similar for alternative ways of distributing the funds, the choice to extend unemployment benfits means that much more of the extra spending is coming from the people who will be worst hurt by the crisis.  This has obvious implications for the design of any further stimulus packages that might be necessary if the crisis lasts longer than our baseline scenario assumes.
+The interesting conclusion is that, while the net spending response is similar for alternative ways of distributing the funds, the choice to extend unemployment benefits means that much more of the extra spending is coming from the people who will be worst hurt by the crisis.  This has obvious implications for the design of any further stimulus packages that might be necessary if the crisis lasts longer than our baseline scenario assumes.
 
 \begin{figure}
   \centering
@@ -396,7 +396,7 @@ A fuller analysis that incorporates both the kinds of heterogeneity that are of 
 
 
 \small
-\bibliography{LaTeX/\texname}
+\bibliography{LaTeX/\texname,LaTeX/\texname-Add,\economics}
 \normalsize
 \pagebreak
 \appendix
