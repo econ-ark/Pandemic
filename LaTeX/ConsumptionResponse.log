@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.7)  15 APR 2020 23:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.7)  16 APR 2020 00:31
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -971,31 +971,31 @@ Package: layouts 2009/09/02 v2.6d graphical depiction of document elements
 ) (LaTeX/ConsumptionResponse.aux)
 \openout1 = `ConsumptionResponse.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 22.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 11.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 11.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 22.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 11.
  (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count395
@@ -1027,7 +1027,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package hyperref Warning: Height of page (\stockheight) is invalid (0.0pt),
 (hyperref)                using 11in.
 
-Package hyperref Info: Link coloring ON on input line 22.
+Package hyperref Info: Link coloring ON on input line 11.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1035,9 +1035,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count401
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
  (LaTeX/ConsumptionResponse.out) (LaTeX/ConsumptionResponse.out)
 \@outlinefile=\write4
 \openout4 = `ConsumptionResponse.out'.
@@ -1048,7 +1048,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           You can avoid loading `bookmark' with KOMA-Script option
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message with `\usepackage{bookmark}'
-(scrartcl)           before \begin{document} on input line 22.
+(scrartcl)           before \begin{document} on input line 11.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
@@ -1093,30 +1093,30 @@ Package auxhook Info: \AddLineBeginMainAux comes a little late,
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 22.
+Package layouts Warning: Layout scale set to 0.5 on input line 11.
 
 
 Package xr Warning: 
 No file ModelAppendix.aux
 LABELS NOT IMPORTED.
- on input line 25.
+ on input line 14.
 
 \verbatim@out=\write5
 \openout5 = `ConsumptionResponse.title'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 34.
+LaTeX Font Info:    Try loading font information for U+msa on input line 19.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 34.
+LaTeX Font Info:    Try loading font information for U+msb on input line 19.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 34.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 19.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 34.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 19.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
@@ -1124,16 +1124,16 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 Class econtex Warning: {\forcedate} is undefined in the .tex file; please define it and rerun.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--83
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 92.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 68.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [1
@@ -1141,131 +1141,126 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 {/usr/local/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.132 \item T
+l.101 \item T
              he boost to unemployment insurance benefits, amounting to \$7,8... [1] [2] [3] [4]
-Overfull \hbox (31.298pt too wide) detected at line 233
+Overfull \hbox (31.298pt too wide) detected at line 188
  [] 
  []
 
-<./Figures/UnempProbByDemogBasic.pdf, id=146, 393.60803pt x 292.07495pt>
+<./Figures/UnempProbByDemogBasic.pdf, id=150, 393.60803pt x 292.07495pt>
 File: ./Figures/UnempProbByDemogBasic.pdf Graphic file (type pdf)
 <use ./Figures/UnempProbByDemogBasic.pdf>
-Package pdftex.def Info: ./Figures/UnempProbByDemogBasic.pdf  used on input line 239.
+Package pdftex.def Info: ./Figures/UnempProbByDemogBasic.pdf  used on input line 194.
 (pdftex.def)             Requested size: 333.46762pt x 247.45374pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 247.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+[5]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 202.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 247.
- [5] [6 <./Figures/UnempProbByDemogBasic.pdf>]
-Overfull \hbox (31.298pt too wide) detected at line 267
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 202.
+ [6 <./Figures/UnempProbByDemogBasic.pdf>]
+Overfull \hbox (31.298pt too wide) detected at line 220
  [] 
  []
 
-<./Figures/AggLT.pdf, id=238, 433.62pt x 289.08pt>
+<./Figures/AggLT.pdf, id=236, 433.62pt x 289.08pt>
 File: ./Figures/AggLT.pdf Graphic file (type pdf)
 <use ./Figures/AggLT.pdf>
-Package pdftex.def Info: ./Figures/AggLT.pdf  used on input line 273.
+Package pdftex.def Info: ./Figures/AggLT.pdf  used on input line 226.
 (pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
 
-Overfull \hbox (31.298pt too wide) detected at line 283
+Overfull \hbox (31.298pt too wide) detected at line 236
  [] 
  []
 
-<./Figures/AggConResp_examples.pdf, id=239, 433.62pt x 289.08pt>
+<./Figures/AggConResp_examples.pdf, id=237, 433.62pt x 289.08pt>
 File: ./Figures/AggConResp_examples.pdf Graphic file (type pdf)
 <use ./Figures/AggConResp_examples.pdf>
-Package pdftex.def Info: ./Figures/AggConResp_examples.pdf  used on input line 289.
+Package pdftex.def Info: ./Figures/AggConResp_examples.pdf  used on input line 242.
 (pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
-[7 <./Figures/AggLT.pdf> <./Figures/AggConResp_examples.pdf
-
-pdfTeX warning: pdflatex (file ./Figures/AggConResp_examples.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Overfull \hbox (31.298pt too wide) detected at line 309
+[7 <./Figures/AggLT.pdf>]
+Overfull \hbox (31.298pt too wide) detected at line 262
  [] 
  []
 
-<./Figures/Decomposition.pdf, id=346, 433.62pt x 289.08pt>
+<./Figures/Decomposition.pdf, id=306, 433.62pt x 289.08pt>
 File: ./Figures/Decomposition.pdf Graphic file (type pdf)
 <use ./Figures/Decomposition.pdf>
-Package pdftex.def Info: ./Figures/Decomposition.pdf  used on input line 315.
+Package pdftex.def Info: ./Figures/Decomposition.pdf  used on input line 268.
 (pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
-
-Overfull \hbox (31.298pt too wide) detected at line 326
+[8 <./Figures/AggConResp_examples.pdf>]
+Overfull \hbox (31.298pt too wide) detected at line 279
  [] 
  []
 
-<./Figures/ConRespByEmpStateNoStim.pdf, id=349, 433.62pt x 289.08pt>
+<./Figures/ConRespByEmpStateNoStim.pdf, id=363, 433.62pt x 289.08pt>
 File: ./Figures/ConRespByEmpStateNoStim.pdf Graphic file (type pdf)
 <use ./Figures/ConRespByEmpStateNoStim.pdf>
-Package pdftex.def Info: ./Figures/ConRespByEmpStateNoStim.pdf  used on input line 335.
+Package pdftex.def Info: ./Figures/ConRespByEmpStateNoStim.pdf  used on input line 288.
 (pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
-<./Figures/ConRespByEmpStateWStim.pdf, id=350, 433.62pt x 289.08pt>
+<./Figures/ConRespByEmpStateWStim.pdf, id=364, 433.62pt x 289.08pt>
 File: ./Figures/ConRespByEmpStateWStim.pdf Graphic file (type pdf)
 <use ./Figures/ConRespByEmpStateWStim.pdf>
-Package pdftex.def Info: ./Figures/ConRespByEmpStateWStim.pdf  used on input line 335.
+Package pdftex.def Info: ./Figures/ConRespByEmpStateWStim.pdf  used on input line 288.
 (pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
-[8]
-Overfull \hbox (31.298pt too wide) detected at line 347
+
+Overfull \hbox (31.298pt too wide) detected at line 300
  [] 
  []
 
-<./Figures/ConDeltaByEmpState.pdf, id=363, 433.62pt x 289.08pt>
+<./Figures/ConDeltaByEmpState.pdf, id=366, 433.62pt x 289.08pt>
 File: ./Figures/ConDeltaByEmpState.pdf Graphic file (type pdf)
 <use ./Figures/ConDeltaByEmpState.pdf>
-Package pdftex.def Info: ./Figures/ConDeltaByEmpState.pdf  used on input line 353.
-(pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
-
-Overfull \hbox (31.298pt too wide) detected at line 363
- [] 
- []
-
-<./Figures/Checks_vs_Unemp.pdf, id=368, 433.62pt x 289.08pt>
-File: ./Figures/Checks_vs_Unemp.pdf Graphic file (type pdf)
-<use ./Figures/Checks_vs_Unemp.pdf>
-Package pdftex.def Info: ./Figures/Checks_vs_Unemp.pdf  used on input line 369.
+Package pdftex.def Info: ./Figures/ConDeltaByEmpState.pdf  used on input line 306.
 (pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
 [9 <./Figures/Decomposition.pdf>] [10 <./Figures/ConRespByEmpStateNoStim.pdf> <./Figures/ConRespByEmpStateWStim.pdf
 
 pdfTeX warning: pdflatex (file ./Figures/ConRespByEmpStateWStim.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [11 <./Figures/ConDeltaByEmpState.pdf> <./Figures/Checks_vs_Unemp.pdf
-
-pdfTeX warning: pdflatex (file ./Figures/Checks_vs_Unemp.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Overfull \hbox (31.298pt too wide) detected at line 380
+Overfull \hbox (31.298pt too wide) detected at line 316
  [] 
  []
 
-<./Figures/EffectTargeting.pdf, id=608, 433.62pt x 289.08pt>
+<./Figures/Checks_vs_Unemp.pdf, id=517, 433.62pt x 289.08pt>
+File: ./Figures/Checks_vs_Unemp.pdf Graphic file (type pdf)
+<use ./Figures/Checks_vs_Unemp.pdf>
+Package pdftex.def Info: ./Figures/Checks_vs_Unemp.pdf  used on input line 322.
+(pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
+
+Overfull \hbox (31.298pt too wide) detected at line 333
+ [] 
+ []
+
+<./Figures/EffectTargeting.pdf, id=519, 433.62pt x 289.08pt>
 File: ./Figures/EffectTargeting.pdf Graphic file (type pdf)
 <use ./Figures/EffectTargeting.pdf>
-Package pdftex.def Info: ./Figures/EffectTargeting.pdf  used on input line 386.
+Package pdftex.def Info: ./Figures/EffectTargeting.pdf  used on input line 339.
 (pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
+[11 <./Figures/ConDeltaByEmpState.pdf>] [12 <./Figures/Checks_vs_Unemp.pdf> <./Figures/EffectTargeting.pdf
 
-Overfull \hbox (31.298pt too wide) detected at line 399
+pdfTeX warning: pdflatex (file ./Figures/EffectTargeting.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Overfull \hbox (31.298pt too wide) detected at line 352
  [] 
  []
 
-<./Figures/AggLT_long_pandemic.pdf, id=609, 433.62pt x 289.08pt>
+<./Figures/AggLT_long_pandemic.pdf, id=662, 433.62pt x 289.08pt>
 File: ./Figures/AggLT_long_pandemic.pdf Graphic file (type pdf)
 <use ./Figures/AggLT_long_pandemic.pdf>
-Package pdftex.def Info: ./Figures/AggLT_long_pandemic.pdf  used on input line 405.
+Package pdftex.def Info: ./Figures/AggLT_long_pandemic.pdf  used on input line 358.
 (pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
-[12 <./Figures/EffectTargeting.pdf>]
-Overfull \hbox (31.298pt too wide) detected at line 415
+
+Overfull \hbox (31.298pt too wide) detected at line 368
  [] 
  []
 
-<./Figures/DeepPandemic.pdf, id=660, 433.62pt x 289.08pt>
+<./Figures/DeepPandemic.pdf, id=664, 433.62pt x 289.08pt>
 File: ./Figures/DeepPandemic.pdf Graphic file (type pdf)
 <use ./Figures/DeepPandemic.pdf>
-Package pdftex.def Info: ./Figures/DeepPandemic.pdf  used on input line 421.
+Package pdftex.def Info: ./Figures/DeepPandemic.pdf  used on input line 374.
 (pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
-[13 <./Figures/AggLT_long_pandemic.pdf> <./Figures/DeepPandemic.pdf
-
-pdfTeX warning: pdflatex (file ./Figures/DeepPandemic.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] (LaTeX/ConsumptionResponse.bbl [14]
+[13 <./Figures/AggLT_long_pandemic.pdf>] [14 <./Figures/DeepPandemic.pdf>] (LaTeX/ConsumptionResponse.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 77--80
 []\T1/cmr/m/sc/10.95 Carroll, Christo-pher D., Jiri Sla-calek, Ki-ichi Tokuoka, and
  []
@@ -1280,7 +1275,7 @@ Underfull \hbox (badness 3536) in paragraph at lines 120--122
 []\T1/cmr/m/sc/10.95 Gascon, Charles \T1/cmr/m/n/10.95 (2020): ``COVID-19: Which Work-ers Face the High-est
  []
 
-) [16] (./ModelAppendix.tex (./LaTeX/econtexRoot.tex) (./LaTeX/onlyinsubfile.tex) [17] [18]
+[16]) [17] (./ModelAppendix.tex (./LaTeX/econtexRoot.tex) (./LaTeX/onlyinsubfile.tex) [18] [19]
 Underfull \hbox (badness 10000) in paragraph at lines 67--70
 
  []
@@ -1295,7 +1290,7 @@ Overfull \hbox (36.34418pt too wide) in alignment at lines 82--85
  [][][] []
  []
 
-[19]
+[20]
 LaTeX Font Info:    Try loading font information for U+euf on input line 89.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
@@ -1306,44 +1301,47 @@ Overfull \hbox (67.16306pt too wide) detected at line 90
 
 \openout3 = `ConsumptionResponse.ttt'.
 
-(ConsumptionResponse.ttt) [20]) AED endfloat: Processing end Figures and Tables [21] (LaTeX/ConsumptionResponse.ttt
+(ConsumptionResponse.ttt) [21]) AED endfloat: Processing end Figures and Tables [22] (LaTeX/ConsumptionResponse.ttt
 Overfull \hbox (31.298pt too wide) detected at line 2
  [] 
  []
 
-[22]
+[23]
 Overfull \hbox (31.298pt too wide) detected at line 41
  [] 
  []
 
-[23]
+[24]
 Overfull \hbox (31.298pt too wide) detected at line 86
  [] 
  []
 
-) [24]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 477.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 477.
+) [25]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 421.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 421.
  (LaTeX/ConsumptionResponse.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 477.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 421.
 \snap@out=\write6
 \openout6 = `ConsumptionResponse.dep'.
 
 
 Dependency list written on ConsumptionResponse.dep.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 477.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 421.
 Package rerunfilecheck Info: File `ConsumptionResponse.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 477.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 421.
  ) 
 Here is how much of TeX's memory you used:
- 26450 strings out of 492616
- 465125 string characters out of 6128998
+ 26451 strings out of 492616
+ 465136 string characters out of 6128998
  677796 words of memory out of 5000000
- 29798 multiletter control sequences out of 15000+600000
+ 29797 multiletter control sequences out of 15000+600000
  565005 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,14n,73p,9353b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,14n,73p,9239b,518s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
@@ -1358,10 +1356,10 @@ texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loc
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/local/texlive/2018/
 texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pfb>
-Output written on LaTeX/ConsumptionResponse.pdf (25 pages, 700851 bytes).
+Output written on LaTeX/ConsumptionResponse.pdf (26 pages, 702444 bytes).
 PDF statistics:
- 1034 PDF objects out of 1200 (max. 8388607)
- 527 compressed objects within 6 object streams
- 107 named destinations out of 1000 (max. 500000)
+ 1046 PDF objects out of 1200 (max. 8388607)
+ 538 compressed objects within 6 object streams
+ 109 named destinations out of 1000 (max. 500000)
  152 words of extra memory for PDF output out of 10000 (max. 10000000)
 
