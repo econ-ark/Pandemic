@@ -13,7 +13,7 @@ Households are \textit{ex ante} heterogeneous: household $i$ has a quarterly tim
 Each quarter, the household receives (after tax) income, chooses how much of their market resources $\mLevBF_{it}$ to consume $\cLevBF_{it}$ and how much to retain as assets $\aLevBF_{it}$; they then transition to the next quarter by receiving shocks to mortality, income, their employment state, and their marginal utility of consumption.
 
 For each education group $e$, we assign a uniform distribution of time preference factors between $\grave{\Discount}_e-\nabla$ and $\grave{\Discount}_e+\nabla$, chosen to match the distribution of liquid wealth and retirement assets.
-Specifically, the calibrated values in table \ref{table:ParametersLifeCycle} fit the ratio of liquid wealth to permanent income in aggregate for each education level, as computed from the 2004 Survey of Consumer Finance.
+Specifically, the calibrated values in Table \ref{table:ParametersLifeCycle} fit the ratio of liquid wealth to permanent income in aggregate for each education level, as computed from the 2004 Survey of Consumer Finance.
 The width of the distribution of discount factors was calibrated to minimize the difference between simulated and empirical Lorenz shares of liquid wealth for the bottom 20\%, 40\%, 60\%, and 80\% of households, as in \cite{cstwMPC}.
 
 When transitioning from one period to the next, a household with education $e$ that has already lived for $j$ periods faces a $\PDies_{ej}$ probability of death.
@@ -21,7 +21,7 @@ The quarterly mortality probabilities are calculated from the Social Security Ad
 The assets of a household that dies are completely taxed by the government to fund activities outside the model.
 Households who survive to period $t+1$ experience a return factor of $\RProd$ on their assets, assumed constant.
 
-Household $i$'s state in period $t$, at the time it makes its consumption--saving decision, is characterized by its age $j$,\footnote{Households enter the model aged 24 years, so model age $j=0$ corresponds to being 24 years, 0 quarters old.} a level of market resources $\mLevBF_{it} \in \mathbb{R}_+$, a permanent income level $\pLev_{it} \in \mathbb{R}_{++}$, a discrete employment state $\ell_{it} \in \{0,1,2\}$ (indicating whether the individual is employed, normal unemployed, or deeply unemployed), and a discrete state $\eta_{it} \in \{1,\underline{\eta}\}$ that represents whether its marginal utility of consumption has been temporarily reduced ($\underline{\eta} \leq 1$).
+Household $i$'s state in period $t$, at the time it makes its consumption--saving decision, is characterized by its age $j$,\footnote{Households enter the model aged 24 years, so model age $j=0$ corresponds to being 24 years, 0 quarters old.} a level of market resources $\mLevBF_{it} \in \mathbb{R}_+$, a permanent income level $\pLev_{it} \in \mathbb{R}_{++}$, a discrete employment state $\ell_{it} \in \{0,1,2\}$ (indicating whether the individual is employed, normal unemployed, or deeply unemployed), and a discrete state $\eta_{it} \in \{1,\underline{\eta}\}$ that represents whether its marginal utility of consumption has been temporarily reduced ($\underline{\eta} < 1$).
 Denote the joint discrete state as $n_{it} = (\ell_{it},\eta_{it})$.
 
 Each household inelastically participates in the labor market when it is younger than 65 years ($j < 164$) and retires with certainty at age 65.
@@ -65,7 +65,7 @@ If a household does find itself with $\eta_{it} = \underline{\eta}$, this condit
 In this way, the consequences of a pandemic are fully unanticipated by households, a so-called ``MIT shock''; households act optimally once in these states, but did not account for them in their consumption--saving problem during ``normal'' times.\footnote{Our computational model also allows households' beliefs about the duration of the reduced marginal utility state (via social distancing) to deviate from the true probability.  The code also permits the possibility that the reduction in marginal utility is lifted as an aggregate or shared outcome, rather than idiosyncratically.  We do not present results utilizing these features here, but invite the reader to investigate their predicted consequences using our public repository.}
 
 The household's permanent income level can be normalized out of the problem, dividing all boldface variables (absolute levels) by the individual's permanent income $\pLev_{it}$, yielding non-bold normalized variables, e.g., $\mRat_{it} = \mLevBF_{it}/\pLev_{it}$.
-Thus the only state variables that affect the choice of optimal consumption are normalized market resources $\mRat_{it}$, and the discrete Markov states $n_{it}$.
+Thus the only state variables that affect the choice of optimal consumption are normalized market resources $\mRat_{it}$ and the discrete Markov states $n_{it}$.
 After this normalization, the household consumption functions $\cFunc_{e,j}$ satisfy:\\
 \begin{eqnarray*}
   \valfn_{e,j}(\mRat_{it}, n_{it})&=&\underset{\cFunc_{e,j}}{\max } ~~ \uFunc(\cFunc_{e,j}(\mRat_{it}, n_{it}), \eta_{it})+\Discount_{i} (1-\PDies_{e,j}) \Ex_{t}\left[ \widehat{\Gamma}_{it+1}^{1-\CRRA} \valfn_{e,j+1}(\mRat_{it+1}, n_{it+1}) \right] \\
@@ -213,7 +213,7 @@ Our chosen logistic parameters are presented in Table~\ref{table:PandemicAssumpt
       \bottomrule
     \end{tabular}
 	\begin{flushleft}
-	\footnotesize Note: The unemployment benefits are multiplied by 0.8 to account for the fact that 20 percent of the working age population is out of the labor force. See aggregation appendix \ref{sec:aggregation}
+	\footnotesize Note: The unemployment benefits are multiplied by 0.8 to account for the fact that 20 percent of the working age population is out of the labor force. See aggregation details in Appendix \ref{sec:aggregation}
 	\normalsize
 \end{flushleft}
   \end{center}

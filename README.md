@@ -1,4 +1,4 @@
-# Pandemic-ConsumptionResponse
+# GiveItAwayNow
  
 This repository represents a complete software archive for the paper "Modeling the Consumption
 Response to the CARES Act" by Carroll, Crawley, Slacalek, and White (2020).  This README file
