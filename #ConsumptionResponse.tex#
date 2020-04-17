@@ -100,6 +100,9 @@
 \section{Introduction}
 
 To predict the effect of the `CARES' (Coronavirus Aid, Relief, and Economic Security) Act on consumption, we extend a model from \cite{carroll_sticky_2020} that matches microeconomic evidence on the response to previous `consumption stimulus' packages, as well as aggregate consumption dynamics.
+
+
+
 To model the coronavirus `lockdown' we add two features to this model. First, because the tidal wave of layoffs for employees of shuttered businesses will have a large impact on their income and spending, assumptions must be made about the employment dynamics of laid off workers.
 Second, even consumers who remain employed will have restricted spending options (nobody can eat dinner at a shuttered restaurant).
 
@@ -410,7 +413,7 @@ A fuller analysis that incorporates both the kinds of heterogeneity that are of 
 
 
 \small
-\bibliography{LaTeX/\texname,LaTeX/\texname-Add,economics}
+\bibliography{LaTeX/\texname,LaTeX/\texname-Add,\economics}
 \normalsize
 \pagebreak
 \appendix
