@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.7)  17 APR 2020 12:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.7)  17 APR 2020 13:19
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1129,9 +1129,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--55
  []
 
 
-Package hyperref Warning: Suppressing empty link on input line 59.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 64--64
 
  []
@@ -1156,7 +1153,7 @@ Overfull \hbox (31.298pt too wide) detected at line 208
  [] 
  []
 
-<./Figures/UnempProbByDemogBasic.pdf, id=168, 397.12115pt x 292.07495pt>
+<./Figures/UnempProbByDemogBasic.pdf, id=169, 397.12115pt x 292.07495pt>
 File: ./Figures/UnempProbByDemogBasic.pdf Graphic file (type pdf)
 <use ./Figures/UnempProbByDemogBasic.pdf>
 Package pdftex.def Info: ./Figures/UnempProbByDemogBasic.pdf  used on input line 214.
@@ -1173,7 +1170,7 @@ Overfull \hbox (31.298pt too wide) detected at line 240
  [] 
  []
 
-<./Figures/AggLT.pdf, id=255, 433.62pt x 289.08pt>
+<./Figures/AggLT.pdf, id=256, 433.62pt x 289.08pt>
 File: ./Figures/AggLT.pdf Graphic file (type pdf)
 <use ./Figures/AggLT.pdf>
 Package pdftex.def Info: ./Figures/AggLT.pdf  used on input line 246.
@@ -1183,7 +1180,7 @@ Overfull \hbox (31.298pt too wide) detected at line 256
  [] 
  []
 
-<./Figures/AggConResp_examples.pdf, id=256, 433.62pt x 289.08pt>
+<./Figures/AggConResp_examples.pdf, id=257, 433.62pt x 289.08pt>
 File: ./Figures/AggConResp_examples.pdf Graphic file (type pdf)
 <use ./Figures/AggConResp_examples.pdf>
 Package pdftex.def Info: ./Figures/AggConResp_examples.pdf  used on input line 262.
@@ -1193,7 +1190,7 @@ Overfull \hbox (31.298pt too wide) detected at line 282
  [] 
  []
 
-<./Figures/Decomposition.pdf, id=326, 433.62pt x 289.08pt>
+<./Figures/Decomposition.pdf, id=327, 433.62pt x 289.08pt>
 File: ./Figures/Decomposition.pdf Graphic file (type pdf)
 <use ./Figures/Decomposition.pdf>
 Package pdftex.def Info: ./Figures/Decomposition.pdf  used on input line 288.
@@ -1203,12 +1200,12 @@ Overfull \hbox (31.298pt too wide) detected at line 299
  [] 
  []
 
-<./Figures/ConRespByEmpStateNoStim.pdf, id=383, 433.62pt x 289.08pt>
+<./Figures/ConRespByEmpStateNoStim.pdf, id=384, 433.62pt x 289.08pt>
 File: ./Figures/ConRespByEmpStateNoStim.pdf Graphic file (type pdf)
 <use ./Figures/ConRespByEmpStateNoStim.pdf>
 Package pdftex.def Info: ./Figures/ConRespByEmpStateNoStim.pdf  used on input line 308.
 (pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
-<./Figures/ConRespByEmpStateWStim.pdf, id=384, 433.62pt x 289.08pt>
+<./Figures/ConRespByEmpStateWStim.pdf, id=385, 433.62pt x 289.08pt>
 File: ./Figures/ConRespByEmpStateWStim.pdf Graphic file (type pdf)
 <use ./Figures/ConRespByEmpStateWStim.pdf>
 Package pdftex.def Info: ./Figures/ConRespByEmpStateWStim.pdf  used on input line 308.
@@ -1218,7 +1215,7 @@ Overfull \hbox (31.298pt too wide) detected at line 320
  [] 
  []
 
-<./Figures/ConDeltaByEmpState.pdf, id=386, 433.62pt x 289.08pt>
+<./Figures/ConDeltaByEmpState.pdf, id=387, 433.62pt x 289.08pt>
 File: ./Figures/ConDeltaByEmpState.pdf Graphic file (type pdf)
 <use ./Figures/ConDeltaByEmpState.pdf>
 Package pdftex.def Info: ./Figures/ConDeltaByEmpState.pdf  used on input line 326.
@@ -1231,7 +1228,7 @@ Overfull \hbox (31.298pt too wide) detected at line 336
  [] 
  []
 
-<./Figures/Checks_vs_Unemp.pdf, id=537, 433.62pt x 289.08pt>
+<./Figures/Checks_vs_Unemp.pdf, id=538, 433.62pt x 289.08pt>
 File: ./Figures/Checks_vs_Unemp.pdf Graphic file (type pdf)
 <use ./Figures/Checks_vs_Unemp.pdf>
 Package pdftex.def Info: ./Figures/Checks_vs_Unemp.pdf  used on input line 342.
@@ -1241,7 +1238,7 @@ Overfull \hbox (31.298pt too wide) detected at line 353
  [] 
  []
 
-<./Figures/EffectTargeting.pdf, id=539, 433.62pt x 289.08pt>
+<./Figures/EffectTargeting.pdf, id=540, 433.62pt x 289.08pt>
 File: ./Figures/EffectTargeting.pdf Graphic file (type pdf)
 <use ./Figures/EffectTargeting.pdf>
 Package pdftex.def Info: ./Figures/EffectTargeting.pdf  used on input line 359.
@@ -1254,7 +1251,7 @@ Overfull \hbox (31.298pt too wide) detected at line 372
  [] 
  []
 
-<./Figures/AggLT_long_pandemic.pdf, id=682, 433.62pt x 289.08pt>
+<./Figures/AggLT_long_pandemic.pdf, id=683, 433.62pt x 289.08pt>
 File: ./Figures/AggLT_long_pandemic.pdf Graphic file (type pdf)
 <use ./Figures/AggLT_long_pandemic.pdf>
 Package pdftex.def Info: ./Figures/AggLT_long_pandemic.pdf  used on input line 378.
@@ -1264,7 +1261,7 @@ Overfull \hbox (31.298pt too wide) detected at line 388
  [] 
  []
 
-<./Figures/DeepPandemic.pdf, id=684, 433.62pt x 289.08pt>
+<./Figures/DeepPandemic.pdf, id=685, 433.62pt x 289.08pt>
 File: ./Figures/DeepPandemic.pdf Graphic file (type pdf)
 <use ./Figures/DeepPandemic.pdf>
 Package pdftex.def Info: ./Figures/DeepPandemic.pdf  used on input line 394.
@@ -1365,10 +1362,10 @@ texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loc
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/local/texlive/2018/
 texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pfb>
-Output written on LaTeX/ConsumptionResponse.pdf (26 pages, 708220 bytes).
+Output written on LaTeX/ConsumptionResponse.pdf (26 pages, 708326 bytes).
 PDF statistics:
- 1068 PDF objects out of 1200 (max. 8388607)
- 560 compressed objects within 6 object streams
+ 1069 PDF objects out of 1200 (max. 8388607)
+ 561 compressed objects within 6 object streams
  115 named destinations out of 1000 (max. 500000)
  152 words of extra memory for PDF output out of 10000 (max. 10000000)
 
