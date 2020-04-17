@@ -6,7 +6,7 @@
 
 \usepackage[twoside,marginparwidth=0in,left=1.25in,right=1.25in,top=1.25in,bottom=1.25in]{geometry}\usepackage{layouts}
 
-\renewcommand{\forcedate}{April 17, 2020}
+\renewcommand{\forcedate}{April 16, 2020}
 
 \begin{document}
 
@@ -53,35 +53,16 @@
 
 \hypertarget{Abstract}{} \opt{JournalFormatting}{\doublespacing}
 \begin{abstract}
-  To predict the effects of the 2020 U.S.\ \href{https://en.wikipedia.org/wiki/Coronavirus_Aid,_Relief,_and_Economic_Security_Act}{`CARES'} act on consumption, we extend \href{http://www.econ2.jhu.edu/people/ccarroll/papers/cAndCwithStickyE}{a model} that \href{http://www.econ2.jhu.edu/people/ccarroll/papers/cAndCwithStickyE/#Excess-Sensitivity}{matches responses of households to past consumption stimulus packages.}  The extension allows us to account for two novel features of the coronavirus crisis.
-  First, during the lockdown, many types of spending are undesirable or impossible.
+  To predict the effects of the 2020 U.S.\ \href{https://en.wikipedia.org/wiki/Coronavirus_Aid,_Relief,_and_Economic_Security_Act}{`CARES'} fiscal stimulus package on household spending, we extend a model that matches responses of households to past consumption stimulus packages.  The extension allows us to account for two novel features of the coronavirus crisis.
+  First, during the lockdown, many types of spending are impossible.
   Second, some of the jobs that disappear during the lockdown will not reappear when it is lifted.
-  We estimate that, if the lockdown is short-lived, the combination of expanded unemployment insurance benefits and stimulus payments should be sufficient to allow a swift recovery in consumer spending to its pre-crisis levels.  If the lockdown lasts longer, an extension of \href{enhanced unemployment benefits}{} will likely be necessary if consumption spending is to recover.
-  %In Q3 2020, when the consumption response to the act peaks, unemployment benefits account for about 30 percent of the total aggregate consumption response and stimulus payments for the remainder.
-  %Spending of unemployed households is strongly supported by the unemployment benefits, which arrive earlier and, per recipient, are of much greater importance than the stimulus checks are to their recipients.
+  We estimate that, if the lockdown is short-lived, the combination of expanded unemployment insurance benefits and stimulus payments should be sufficient to allow a swift recovery in consumer spending to its pre-crisis levels.
+  In Q3 2020, when the consumption response to the act peaks, unemployment benefits account for about 30 percent of the total aggregate consumption response and stimulus payments for the remainder.
+  Spending of unemployed households is strongly supported by the unemployment benefits, which arrive earlier and, per recipient, are of much greater importance than the stimulus checks are to their recipients.
 
-  %Our results depend on many assumptions that others might dispute, or that evidence currently unavailable might be able to improve.  To make it easy for others to see how our results would change with different assumptions, we are making available our complete economic modeling toolkit as an open-source software repository.  \href{https://github.com/econ-ark/Pandemic#reproduction-instructions}{See instructions here} to install and run our software on your own computer, or use our \href{https://mybinder.org/v2/gh/econ-ark/Pandemic/master?urlpath=voila/render/Code/Python/dashboard.ipynb} to explore alternate parametrizations in your browser.
+  Our results depend on many assumptions that others might dispute, or that evidence currently unavailable might be able to improve.
+  To make it easy for others to see how our results would change with different assumptions, we are making available our complete economic modeling toolkit as an open-source software repository.  \href{https://github.com/econ-ark/Pandemic#reproduction-instructions}{See instructions here} to install and run our software on your own computer, or use our \href{http://www.google.com}{interactive dashboard} to explore alternate parametrizations in your browser.
 \end{abstract}
-
-\hypertarget{links}{}
-\begin{small}
-  \parbox{\textwidth}{
-    \begin{center}
-      \begin{tabbing}
-%        \texttt{~~~~~~Web:~}
-        \= \url{econ-ark.github.io/Pandemic}                                  \= \textit{~~HTML version of paper}                                         \\
-%        \texttt{~~~~~~~~~~~} \> \textit{~~~~HTML version of paper}                                         \> \\
-%        \texttt{Dashboard:~}
-        \> \href{econ-ark.org/pandemicdashboard}{Interactive-Jupyter-Notebook} \> \textit{~~Allows user to modify some assumptions}                      \\
-%        \texttt{~~~~~~~~~~~} \> \textit{~~~~Allows user to modify some assumptions}                        \> \\
-%        \texttt{~~~GitHub:~}
-        \> \url{github.com/econ-ark/Pandemic}                                  \> \textit{~~Full codebase; configurator to explore all assumptions} \\
-%        \texttt{~~~~~~~~~~~} \> \textit{~~~~Codebase; configurator allows modifying all main assumptions}  \> \\
-      \end{tabbing}
-    \end{center}
-  }
-\end{small}
-
 
 \begin{authorsinfo}
   \name{Carroll: Department of Economics, Johns Hopkins University, \url{http://econ.jhu.edu/people/ccarroll/}, \href{mailto:ccarroll@jhu.edu}{\texttt{ccarroll@jhu.edu}}}
@@ -90,24 +71,23 @@
   \name{White: Department of Economics, University of Delaware,  \href{mailto:mnwecon@udel.edu}{\texttt{mnwecon@udel.edu}}}
 \end{authorsinfo}
 \ifthenelse{\boolean{ifWeb}}{}{
-  \thanks{Thanks to the Sloan foundation for funding of the [Econ-ARK](https://econ-ark.org) toolkit.  We are grateful to Kiichi Tokuoka, who provided valuable feedback and input as this project progressed, and to Mridul Seth, who created the dashboard and configurator.  The computational results in this paper were constructed using tools in the \href{http://github.com/Econ-ARK/HARK}{Econ-ARK/HARK} toolkit.  The toolkit can be cited by its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001068}{10.5281/zenodo.1001068}, as is done in the paper's own references as \cite{matthew_n_white_2017_1001068}. The views presented in this paper are those of the authors, and should not be attributed to the Federal Reserve Board or the European Central Bank.} \medskip}
+  \thanks{We are grateful to Kiichi Tokuoka, who provided valuable feedback and input as this project progressed, and to Mridul Seth, who created the dashboard and configurator.  The computational results in this paper were constructed using tools in the \href{http://github.com/Econ-ARK/HARK}{Econ-ARK/HARK} toolkit.  The toolkit can be cited by its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001068}{10.5281/zenodo.1001068}, as is done in the paper's own references as \cite{matthew_n_white_2017_1001068}. The views presented in this paper are those of the authors, and should not be attributed to the Federal Reserve Board or the European Central Bank.}}
 
+\titlepagefinish
 \setcounter{page}{1}
 
 \ifthenelse{\boolean{ifWeb}}{\medskip \noindent {\footnotesize
-    Thanks to the Sloan foundation for funding of the [Econ-ARK](https://econ-ark.org) toolkit.  We are grateful to Kiichi Tokuoka, who provided valuable feedback and input as this project progressed, and to Mridul Seth, who created the dashboard and configurator.  The computational results in this paper were constructed using tools in the \href{http://github.com/Econ-ARK/HARK}{Econ-ARK/HARK} toolkit.  The toolkit can be cited by its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001068}{10.5281/zenodo.1001068}, as is done in the paper's own references as \cite{matthew_n_white_2017_1001068}. The views presented in this paper are those of the authors, and should not be attributed to the Federal Reserve Board or the European Central Bank.
+    We are grateful to Kiichi Tokuoka, who provided valuable feedback and input as this project progressed, and to Mridul Seth, who created the dashboard and configurator.  The computational results in this paper were constructed using tools in the \href{http://github.com/Econ-ARK/HARK}{Econ-ARK/HARK} toolkit.  The toolkit can be cited by its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001068}{10.5281/zenodo.1001068}, as is done in the paper's own references as \cite{matthew_n_white_2017_1001068}. The views presented in this paper are those of the authors, and should not be attributed to the Federal Reserve Board or the European Central Bank.
   }}{\pagebreak
 } % \end{Web}
-
-\titlepagefinish
 
 \noindent \textit{``Economic booms are all alike; each recession contracts output in its own way.''} \\ \indent --- with apologies to Leo Tolstoy
 
 \section{Introduction}
 
-%To predict the effect of the `CARES' (Coronavirus Aid, Relief, and Economic Security) Act on consumption, we extend a model from \cite{carroll_sticky_2020} that matches microeconomic evidence on the response to previous `consumption stimulus' packages, as well as aggregate consumption dynamics.
-
-In the decade since the Great Recession, macroeconomics has made great progress by insisting that models be consistent with microeconomic evidence (see \cite{kmpHandbook} for a survey).  From the new generation of models, we take one specifically focused on reconciling apparent \href{https://doi.org/10.1016/j.euroecorev.2017.03.009}{conflicts between micro and macro evidence about consumption dynamics}\footnote{\cite{hrsHabit}.} and adapt it to incorporate two aspects of the coronavirus crisis. First, because the tidal wave of layoffs for employees of shuttered businesses will have a large impact on their income and spending, assumptions must be made about the employment dynamics of laid off workers.  Second, even consumers who remain employed will have restricted spending options (nobody can eat dinner at a shuttered restaurant).
+To predict the effect of the `CARES' (Coronavirus Aid, Relief, and Economic Security) Act on consumption, we extend a model from \cite{carroll_sticky_2020} that matches microeconomic evidence on the response to previous `consumption stimulus' packages, as well as aggregate consumption dynamics.
+To model the coronavirus `lockdown' we add two features to this model. First, because the tidal wave of layoffs for employees of shuttered businesses will have a large impact on their income and spending, assumptions must be made about the employment dynamics of laid off workers.
+Second, even consumers who remain employed will have restricted spending options (nobody can eat dinner at a shuttered restaurant).
 
 On the first count, we model the likelihood that many of the people unemployed during the lockdown will be able to quickly return to their old jobs (or similar ones) by assuming that the typical job loser has a two-thirds chance of being reemployed in the same or a similar job after each quarter of unemployment.  However, we expect that some kinds of jobs will not come back quickly after the lockdown,\footnote{The cruise industry, for example, is likely to take a long time to recover.} and that people who worked in these kinds of jobs will have more difficulty finding a new job.  We call these people the `deeply unemployed' and assume that there is a one-third chance each quarter that they become merely `normal unemployed'.  The `normal unemployed' have a jobfinding rate that matches average historical unemployment spell of 1.5 quarters.  Thus a deeply unemployed person expects to remain that way for three quarters on average, and then unemployed for another one and a half quarters.  When the pandemic hits, 10 percent of model households become normal unemployed and an additional 5 percent become deeply unemployed; in line with empirical evidence, the unemployment probabilities are skewed toward households who are young, unskilled and have low income.
 
@@ -148,7 +128,7 @@ In this case, we find that the return of spending toward its no-pandemic path ta
 
 Our modeling assumptions --- about who will become unemployed, how long it will take them to return to employment, and the direct effect of the lockdown on consumption utility --- are not ironclad.
 Reasonable analysts may differ on all of these points, and prefer a different calibration.
-To encourage such exploration, we have made available our modeling and prediction software, with the goal of making it easy for fellow researchers to test alternative assumptions.  Instructions for installing and running our code can be found \href{https://github.com/econ-ark/Pandemic#reproduction-instructions}{here}; alternatively, you can explore adjustments to our parametrization with an interactive dashboard \href{http://econ-ark.org/pandemicdashboard}{here}.
+To encourage such exploration, we have made available our modeling and prediction software, with the goal of making it easy for fellow researchers to test alternative assumptions.  Instructions for installing and running our code can be found \href{https://github.com/econ-ark/Pandemic#reproduction-instructions}{here}; alternatively, you can explore adjustments to our parametrization with an interactive dashboard \href{http://www.google.com}{here}.
 
 \subsection*{Existing Work on the Effects of the Pandemic}
 
@@ -209,9 +189,9 @@ Furthermore, we choose a one-half probability of exiting the period of lower mar
   \label{unemployment_demographics}
   % \begin{Web}
   \ifthenelse{\boolean{ifWeb}}{
-    \includegraphics[width=8in]{./Figures/UnempProbByDemogBasic}
+    \includegraphics[width=\webWidth\textwidth]{./Figures/UnempProbByDemogBasic}
   } %\end{Web}
-  { \includegraphics[width=8in]{./Figures/UnempProbByDemogBasic}}
+  { \includegraphics[width=0.8\textwidth]{./Figures/UnempProbByDemogBasic}}
 \end{figure}
 
 
@@ -241,9 +221,9 @@ After two years, aggregate labor income is almost fully recovered.  (See below f
   \label{labor_income}
   % \begin{Web}
   \ifthenelse{\boolean{ifWeb}}{
-    \includegraphics[width=8in]{./Figures/LaborIncome_examples}
+    \includegraphics[width=\webWidth\textwidth]{./Figures/LaborIncome_examples}
   } %\end{Web}
-  { \includegraphics[width=8in]{./Figures/AggLT}}
+  { \includegraphics[width=0.8\textwidth]{./Figures/AggLT}}
 \end{figure}
 
 
@@ -257,9 +237,9 @@ This section presents our simulation results for the scenario described above. I
   \label{cons_response}
   % \begin{Web}
   \ifthenelse{\boolean{ifWeb}}{
-    \includegraphics[width=8in]{./Figures/AggConResp_examples}
+    \includegraphics[width=\webWidth\textwidth]{./Figures/AggConResp_examples}
   } %\end{Web}
-  { \includegraphics[width=8in]{./Figures/AggConResp_examples}}
+  { \includegraphics[width=0.8\textwidth]{./Figures/AggConResp_examples}}
 \end{figure}
 
 \subsection{Short-lived Pandemic}
@@ -283,9 +263,9 @@ Moreover, most households hold at least some liquid assets, allowing them to smo
   \label{cons_response2}
   % \begin{Web}
   \ifthenelse{\boolean{ifWeb}}{
-    \includegraphics[width=8in]{./Figures/Decomposition}
+    \includegraphics[width=\webWidth\textwidth]{./Figures/Decomposition}
   } %\end{Web}
-  { \includegraphics[width=8in]{./Figures/Decomposition}}
+  { \includegraphics[width=0.8\textwidth]{./Figures/Decomposition}}
 \end{figure}
 
 Figure \ref{cons_response_emp} shows how the consumption response varies depending on the employment status of households in Q2 2020.
@@ -300,12 +280,12 @@ For the unemployed --- and especially for the deeply unemployed --- the consumpt
   \label{cons_response_emp}
   % \begin{Web}
   \ifthenelse{\boolean{ifWeb}}{
-    \includegraphics[width=8in]{./Figures/ConRespByEmpStateNoStim}
+    \includegraphics[width=0.8\webWidth\textwidth]{./Figures/ConRespByEmpStateNoStim}
     
-    \includegraphics[width=8in]{./Figures/ConRespByEmpStateWStim}
+    \includegraphics[width=0.8\webWidth\textwidth]{./Figures/ConRespByEmpStateWStim}
   } %\end{Web}
-  { \includegraphics[width=8in]{./Figures/ConRespByEmpStateNoStim}
-    \includegraphics[width=8in]{./Figures/ConRespByEmpStateWStim}}
+  { \includegraphics[width=0.8\textwidth]{./Figures/ConRespByEmpStateNoStim}
+    \includegraphics[width=0.8\textwidth]{./Figures/ConRespByEmpStateWStim}}
 \end{figure}
 
 Indeed, this targeted response is again seen in Figure~\ref{stim_by_emp},
@@ -321,9 +301,9 @@ Specifically, in Q3 2020, when households receive the stimulus checks, the effec
   \label{stim_by_emp}
   % \begin{Web}
   \ifthenelse{\boolean{ifWeb}}{
-    \includegraphics[width=8in]{./Figures/ConDeltaByEmpState}
+    \includegraphics[width=\webWidth\textwidth]{./Figures/ConDeltaByEmpState}
   } %\end{Web}
-  { \includegraphics[width=8in]{./Figures/ConDeltaByEmpState}}
+  { \includegraphics[width=0.8\textwidth]{./Figures/ConDeltaByEmpState}}
 \end{figure}
 
 Figure~\ref{checks_vs_unemp} aggregates the decomposition of the CARES Act in Figure~\ref{stim_by_emp} across all households.
@@ -337,9 +317,9 @@ The figure shows that during the peak consumption response in Q3 2020, the stimu
   \label{checks_vs_unemp}
   % \begin{Web}
   \ifthenelse{\boolean{ifWeb}}{
-    \includegraphics[width=8in]{./Figures/Checks_vs_Unemp}
+    \includegraphics[width=\webWidth\textwidth]{./Figures/Checks_vs_Unemp}
   } %\end{Web}
-  { \includegraphics[width=8in]{./Figures/Checks_vs_Unemp}}
+  { \includegraphics[width=0.8\textwidth]{./Figures/Checks_vs_Unemp}}
 \end{figure}
 
 The previous graphs show the importance of the targeted unemployment benefits at the individual level, but the aggregate effect is less striking.
@@ -354,9 +334,9 @@ The interesting conclusion is that, while the net spending response is similar f
   \label{EffectTargeting}
   % \begin{Web}
   \ifthenelse{\boolean{ifWeb}}{
-    \includegraphics[width=8in]{./Figures/EffectTargeting}
+    \includegraphics[width=\webWidth\textwidth]{./Figures/EffectTargeting}
   } %\end{Web}
-  { \includegraphics[width=8in]{./Figures/EffectTargeting}}
+  { \includegraphics[width=0.8\textwidth]{./Figures/EffectTargeting}}
 \end{figure}
 
 
@@ -373,9 +353,9 @@ We model the receipt of unemployment benefits each quarter as an unexpected shoc
   \label{inc_response_pandemic}
   % \begin{Web}
   \ifthenelse{\boolean{ifWeb}}{
-    \includegraphics[width=8in]{./Figures/AggLT_long_pandemic}
+    \includegraphics[width=\webWidth\textwidth]{./Figures/AggLT_long_pandemic}
   } %\end{Web}
-  { \includegraphics[width=8in]{./Figures/AggLT_long_pandemic}}
+  { \includegraphics[width=0.8\textwidth]{./Figures/AggLT_long_pandemic}}
 \end{figure}
 
 Figure~\ref{inc_response_pandemic} compares the effects of the two fiscal stimulus scenarios on income. 
@@ -389,9 +369,9 @@ In contrast, the scenario with unemployment benefits extended as long as the loc
   \label{cons_response_pandemic}
   % \begin{Web}
   \ifthenelse{\boolean{ifWeb}}{
-    \includegraphics[width=8in]{./Figures/DeepPandemic}
+    \includegraphics[width=\webWidth\textwidth]{./Figures/DeepPandemic}
   } %\end{Web}
-  { \includegraphics[width=8in]{./Figures/DeepPandemic}}
+  { \includegraphics[width=0.8\textwidth]{./Figures/DeepPandemic}}
 \end{figure}
 
 Figure~\ref{cons_response_pandemic} shows the implications of the two stimulus packages for aggregate consumption. 
@@ -441,5 +421,5 @@ A fuller analysis that incorporates both the kinds of heterogeneity that are of 
 \end{document}
 % Local Variables:
 % TeX-PDF-mode: t
-% 
+% TeX-command-extra-options: "-output-directory=LaTeX"
 % End:

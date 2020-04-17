@@ -1,6 +1,0 @@
-# requirements for dashboard on binder
-bqplot
-scipy
-voila
-numpy
-pandas
