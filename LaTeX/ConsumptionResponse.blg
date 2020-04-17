@@ -5,45 +5,50 @@ The style file: ./LaTeX/texmf-local/bibtex/bst/econtex.bst
 Database file #1: LaTeX/ConsumptionResponse.bib
 Database file #2: LaTeX/ConsumptionResponse-Add.bib
 Database file #3: economics.bib
+Repeated entry---line 1777 of file economics.bib
+ : @article{hrsHabit
+ :                  ,
+I'm skipping whatever remains of this entry
 Done.
-You've used 33 entries,
+You've used 36 entries,
             2309 wiz_defined-function locations,
-            773 strings with 10560 characters,
-and the built_in function-call counts, 15906 in all, are:
-= -- 1502
-> -- 1162
+            795 strings with 11113 characters,
+and the built_in function-call counts, 17692 in all, are:
+= -- 1661
+> -- 1304
 < -- 8
-+ -- 382
-- -- 358
-* -- 1448
-:= -- 3211
-add.period$ -- 34
-call.type$ -- 33
-change.case$ -- 235
-chr.to.int$ -- 31
-cite$ -- 33
-duplicate$ -- 508
-empty$ -- 803
-format.name$ -- 374
-if$ -- 2992
++ -- 434
+- -- 398
+* -- 1629
+:= -- 3571
+add.period$ -- 37
+call.type$ -- 36
+change.case$ -- 258
+chr.to.int$ -- 34
+cite$ -- 36
+duplicate$ -- 556
+empty$ -- 888
+format.name$ -- 434
+if$ -- 3324
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 10
-newline$ -- 106
-num.names$ -- 199
-pop$ -- 182
+missing$ -- 12
+newline$ -- 115
+num.names$ -- 217
+pop$ -- 199
 preamble$ -- 2
-purify$ -- 221
+purify$ -- 243
 quote$ -- 0
-skip$ -- 467
+skip$ -- 510
 stack$ -- 0
-substring$ -- 583
-swap$ -- 92
+substring$ -- 668
+swap$ -- 100
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 363
+type$ -- 396
 warning$ -- 0
-while$ -- 154
+while$ -- 173
 width$ -- 0
-write$ -- 401
+write$ -- 437
+(There was 1 error message)
