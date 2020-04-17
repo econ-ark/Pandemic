@@ -8,6 +8,7 @@ from time import time
 import numpy as np
 from copy import deepcopy
 import pickle
+from HARK.distribution import DiscreteDistribution
 from importlib import reload
 
 def run_web(spec_name):
@@ -34,7 +35,7 @@ def run_web(spec_name):
     BaseTypeList = [DropoutType, HighschoolType, CollegeType]
     
     # Fill in the Markov income distribution for each base type
-    IncomeDstn_unemp = [np.array([1.0]), np.array([1.0]), np.array([DropoutType.IncUnemp])]
+    IncomeDstn_unemp = DiscreteDistribution(np.array([1.0]), [np.array([1.0]), np.array([DropoutType.IncUnemp])])
     IncomeDstn_big = []
     for ThisType in BaseTypeList:
         for t in range(ThisType.T_cycle):
@@ -49,10 +50,10 @@ def run_web(spec_name):
     # Make the overall list of types
     TypeList = []
     n = 0
-    for b in range(DiscFacDstns[0][0].size):
+    for b in range(DiscFacDstns[0].X.size):
         for e in range(3):
-            DiscFac = DiscFacDstns[e][1][b]
-            AgentCount = int(np.floor(AgentCountTotal*EducShares[e]*DiscFacDstns[e][0][b]))
+            DiscFac = DiscFacDstns[e].X[b]
+            AgentCount = int(np.floor(AgentCountTotal*EducShares[e]*DiscFacDstns[e].pmf[b]))
             ThisType = deepcopy(BaseTypeList[e])
             ThisType.AgentCount = AgentCount
             ThisType.DiscFac = DiscFac

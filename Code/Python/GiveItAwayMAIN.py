@@ -7,6 +7,7 @@ from Parameters import T_sim, init_dropout, init_highschool, init_college, EducS
 from GiveItAwayModel import GiveItAwayNowType
 from GiveItAwayTools import runExperiment, makePandemicShockProbsFigure, calcCSTWmpcStats
 from HARK import multiThreadCommands, multiThreadCommandsFake
+from HARK.distribution import DiscreteDistribution
 from time import time
 import numpy as np
 import matplotlib.pyplot as plt
@@ -24,7 +25,7 @@ if __name__ == '__main__':
     BaseTypeList = [DropoutType, HighschoolType, CollegeType]
     
     # Fill in the Markov income distribution for each base type
-    IncomeDstn_unemp = [np.array([1.0]), np.array([1.0]), np.array([DropoutType.IncUnemp])]
+    IncomeDstn_unemp = DiscreteDistribution(np.array([1.0]), [np.array([1.0]), np.array([DropoutType.IncUnemp])])
     IncomeDstn_big = []
     for ThisType in BaseTypeList:
         for t in range(ThisType.T_cycle):
@@ -39,10 +40,10 @@ if __name__ == '__main__':
     # Make the overall list of types
     TypeList = []
     n = 0
-    for b in range(DiscFacDstns[0][0].size):
+    for b in range(DiscFacDstns[0].X.size):
         for e in range(3):
-            DiscFac = DiscFacDstns[e][1][b]
-            AgentCount = int(np.floor(AgentCountTotal*EducShares[e]*DiscFacDstns[e][0][b]))
+            DiscFac = DiscFacDstns[e].X[b]
+            AgentCount = int(np.floor(AgentCountTotal*EducShares[e]*DiscFacDstns[e].pmf[b]))
             ThisType = deepcopy(BaseTypeList[e])
             ThisType.AgentCount = AgentCount
             ThisType.DiscFac = DiscFac

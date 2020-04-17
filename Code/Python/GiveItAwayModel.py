@@ -2,7 +2,8 @@
 This file has an extension of MarkovConsumerType that is used for the GiveItAwayNow project.
 '''
 import numpy as np
-from HARK.simulation import drawDiscrete, drawUniform, drawBernoulli
+from HARK.simulation import drawUniform, drawBernoulli
+from HARK.distribution import DiscreteDistribution
 from HARK.ConsumptionSaving.ConsMarkovModel import MarkovConsumerType
 from HARK.ConsumptionSaving.ConsIndShockModel import MargValueFunc, ConsumerSolution
 from HARK.interpolation import LinearInterp, LowerEnvelope
@@ -109,7 +110,7 @@ class GiveItAwayNowType(MarkovConsumerType):
         LRagePrbs = vecs[:,idx].astype(float)
         LRagePrbs /= np.sum(LRagePrbs)
         age_vec = np.arange(self.T_cycle+1).astype(int)
-        self.LRageDstn = [LRagePrbs, age_vec]
+        self.LRageDstn = DiscreteDistribution(LRagePrbs, age_vec)
         
         
     def initializeAges(self):
@@ -117,10 +118,7 @@ class GiveItAwayNowType(MarkovConsumerType):
         Assign initial values of t_cycle to simulated agents, using the attribute
         LRageDstn as the distribution of discrete ages.
         '''
-        age = drawDiscrete(self.AgentCount,
-                           X=self.LRageDstn[1],
-                           P=self.LRageDstn[0],
-                           exact_match=False,
+        age = self.LRageDstn.drawDiscrete(self.AgentCount,
                            seed=self.RNG.randint(0,2**31-1))
         age = age.astype(int)
         self.t_cycle = age
@@ -375,12 +373,9 @@ def solveConsMarkovALT(solution_next,IncomeDstn,LivPrb,DiscFac,CRRA,Rfree,PermGr
     ----------
     solution_next : ConsumerSolution
         The solution to next period's one period problem.
-    IncomeDstn : [[np.array]]
-        A length N list of income distributions in each succeeding Markov
-        state.  Each income distribution contains three arrays of floats,
-        representing a discrete approximation to the income process at the
-        beginning of the succeeding period. Order: event probabilities,
-        permanent shocks, transitory shocks.
+    IncomeDstn : DiscreteDistribution
+        A representation of permanent and transitory income shocks that might
+        arrive at the beginning of next period.
     LivPrb : float
         Survival probability; likelihood of being alive at the beginning of
         the succeeding period.
@@ -440,9 +435,9 @@ def solveConsMarkovALT(solution_next,IncomeDstn,LivPrb,DiscFac,CRRA,Rfree,PermGr
         mNrmMinNext = solution_next.mNrmMin[j]
 
         # Unpack the income shocks
-        ShkPrbsNext = IncomeDstn[j][0]
-        PermShkValsNext = IncomeDstn[j][1]
-        TranShkValsNext = IncomeDstn[j][2]
+        ShkPrbsNext = IncomeDstn[j].pmf
+        PermShkValsNext = IncomeDstn[j].X[0]
+        TranShkValsNext = IncomeDstn[j].X[1]
         ShkCount = ShkPrbsNext.size
         aXtra_tiled = np.tile(np.reshape(aXtraGrid, (aCount, 1)), (1, ShkCount))
 

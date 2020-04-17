@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import csv
-from HARK.utilities import approxUniform
+from HARK.distribution import approxUniform
 from importlib import reload
 figs_dir = '../../Figures/'
 
