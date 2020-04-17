@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.7)  17 APR 2020 12:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.7)  17 APR 2020 12:32
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1270,17 +1270,17 @@ File: ./Figures/DeepPandemic.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Figures/DeepPandemic.pdf  used on input line 394.
 (pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
 [14 <./Figures/AggLT_long_pandemic.pdf>] [15 <./Figures/DeepPandemic.pdf>] (LaTeX/ConsumptionResponse.bbl [16]
-Underfull \hbox (badness 10000) in paragraph at lines 94--97
+Underfull \hbox (badness 10000) in paragraph at lines 88--91
 []\T1/cmr/m/sc/10.95 Carroll, Christo-pher D., Jiri Sla-calek, Ki-ichi Tokuoka, and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--97
+Underfull \hbox (badness 10000) in paragraph at lines 88--91
 \T1/cmr/m/sc/10.95 Matthew N. White \T1/cmr/m/n/10.95 (2017): ``The Dis-tri-bu-tion of Wealth and the
  []
 
 
-Underfull \hbox (badness 3536) in paragraph at lines 137--139
+Underfull \hbox (badness 3536) in paragraph at lines 131--133
 []\T1/cmr/m/sc/10.95 Gascon, Charles \T1/cmr/m/n/10.95 (2020): ``COVID-19: Which Work-ers Face the High-est
  []
 
@@ -1344,10 +1344,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 441.
  ) 
 Here is how much of TeX's memory you used:
- 26475 strings out of 492616
- 465553 string characters out of 6128998
- 678175 words of memory out of 5000000
- 29813 multiletter control sequences out of 15000+600000
+ 26470 strings out of 492616
+ 465456 string characters out of 6128998
+ 678087 words of memory out of 5000000
+ 29810 multiletter control sequences out of 15000+600000
  565005 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,14n,73p,9239b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1365,10 +1365,10 @@ texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loc
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/local/texlive/2018/
 texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pfb>
-Output written on LaTeX/ConsumptionResponse.pdf (26 pages, 708588 bytes).
+Output written on LaTeX/ConsumptionResponse.pdf (26 pages, 708220 bytes).
 PDF statistics:
- 1069 PDF objects out of 1200 (max. 8388607)
- 561 compressed objects within 6 object streams
- 117 named destinations out of 1000 (max. 500000)
+ 1068 PDF objects out of 1200 (max. 8388607)
+ 560 compressed objects within 6 object streams
+ 115 named destinations out of 1000 (max. 500000)
  152 words of extra memory for PDF output out of 10000 (max. 10000000)
 
