@@ -3,46 +3,47 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: LaTeX/ConsumptionResponse.aux
 The style file: ./LaTeX/texmf-local/bibtex/bst/econtex.bst
 Database file #1: LaTeX/ConsumptionResponse.bib
-Database file #2: economics.bib
+Database file #2: LaTeX/ConsumptionResponse-Add.bib
+Database file #3: economics.bib
 Done.
-You've used 31 entries,
+You've used 33 entries,
             2309 wiz_defined-function locations,
-            760 strings with 10178 characters,
-and the built_in function-call counts, 14958 in all, are:
-= -- 1414
-> -- 1084
-< -- 7
-+ -- 356
-- -- 334
-* -- 1362
-:= -- 3017
-add.period$ -- 32
-call.type$ -- 31
-change.case$ -- 220
-chr.to.int$ -- 29
-cite$ -- 31
-duplicate$ -- 479
-empty$ -- 761
-format.name$ -- 350
-if$ -- 2815
+            773 strings with 10560 characters,
+and the built_in function-call counts, 15906 in all, are:
+= -- 1502
+> -- 1162
+< -- 8
++ -- 382
+- -- 358
+* -- 1448
+:= -- 3211
+add.period$ -- 34
+call.type$ -- 33
+change.case$ -- 235
+chr.to.int$ -- 31
+cite$ -- 33
+duplicate$ -- 508
+empty$ -- 803
+format.name$ -- 374
+if$ -- 2992
 int.to.chr$ -- 3
 int.to.str$ -- 0
 missing$ -- 10
-newline$ -- 100
-num.names$ -- 187
-pop$ -- 170
+newline$ -- 106
+num.names$ -- 199
+pop$ -- 182
 preamble$ -- 2
-purify$ -- 207
+purify$ -- 221
 quote$ -- 0
-skip$ -- 439
+skip$ -- 467
 stack$ -- 0
-substring$ -- 559
-swap$ -- 87
-text.length$ -- 7
+substring$ -- 583
+swap$ -- 92
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 341
+type$ -- 363
 warning$ -- 0
-while$ -- 146
+while$ -- 154
 width$ -- 0
-write$ -- 377
+write$ -- 401

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.7)  16 APR 2020 00:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.7)  16 APR 2020 22:07
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1147,11 +1147,11 @@ Overfull \hbox (31.298pt too wide) detected at line 188
  [] 
  []
 
-<./Figures/UnempProbByDemogBasic.pdf, id=150, 393.60803pt x 292.07495pt>
+<./Figures/UnempProbByDemogBasic.pdf, id=154, 397.12115pt x 292.07495pt>
 File: ./Figures/UnempProbByDemogBasic.pdf Graphic file (type pdf)
 <use ./Figures/UnempProbByDemogBasic.pdf>
 Package pdftex.def Info: ./Figures/UnempProbByDemogBasic.pdf  used on input line 194.
-(pdftex.def)             Requested size: 333.46762pt x 247.45374pt.
+(pdftex.def)             Requested size: 333.46762pt x 245.27441pt.
 [5]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 202.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
@@ -1164,7 +1164,7 @@ Overfull \hbox (31.298pt too wide) detected at line 220
  [] 
  []
 
-<./Figures/AggLT.pdf, id=236, 433.62pt x 289.08pt>
+<./Figures/AggLT.pdf, id=241, 433.62pt x 289.08pt>
 File: ./Figures/AggLT.pdf Graphic file (type pdf)
 <use ./Figures/AggLT.pdf>
 Package pdftex.def Info: ./Figures/AggLT.pdf  used on input line 226.
@@ -1174,7 +1174,7 @@ Overfull \hbox (31.298pt too wide) detected at line 236
  [] 
  []
 
-<./Figures/AggConResp_examples.pdf, id=237, 433.62pt x 289.08pt>
+<./Figures/AggConResp_examples.pdf, id=242, 433.62pt x 289.08pt>
 File: ./Figures/AggConResp_examples.pdf Graphic file (type pdf)
 <use ./Figures/AggConResp_examples.pdf>
 Package pdftex.def Info: ./Figures/AggConResp_examples.pdf  used on input line 242.
@@ -1184,7 +1184,7 @@ Overfull \hbox (31.298pt too wide) detected at line 262
  [] 
  []
 
-<./Figures/Decomposition.pdf, id=306, 433.62pt x 289.08pt>
+<./Figures/Decomposition.pdf, id=311, 433.62pt x 289.08pt>
 File: ./Figures/Decomposition.pdf Graphic file (type pdf)
 <use ./Figures/Decomposition.pdf>
 Package pdftex.def Info: ./Figures/Decomposition.pdf  used on input line 268.
@@ -1194,12 +1194,12 @@ Overfull \hbox (31.298pt too wide) detected at line 279
  [] 
  []
 
-<./Figures/ConRespByEmpStateNoStim.pdf, id=363, 433.62pt x 289.08pt>
+<./Figures/ConRespByEmpStateNoStim.pdf, id=368, 433.62pt x 289.08pt>
 File: ./Figures/ConRespByEmpStateNoStim.pdf Graphic file (type pdf)
 <use ./Figures/ConRespByEmpStateNoStim.pdf>
 Package pdftex.def Info: ./Figures/ConRespByEmpStateNoStim.pdf  used on input line 288.
 (pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
-<./Figures/ConRespByEmpStateWStim.pdf, id=364, 433.62pt x 289.08pt>
+<./Figures/ConRespByEmpStateWStim.pdf, id=369, 433.62pt x 289.08pt>
 File: ./Figures/ConRespByEmpStateWStim.pdf Graphic file (type pdf)
 <use ./Figures/ConRespByEmpStateWStim.pdf>
 Package pdftex.def Info: ./Figures/ConRespByEmpStateWStim.pdf  used on input line 288.
@@ -1209,7 +1209,7 @@ Overfull \hbox (31.298pt too wide) detected at line 300
  [] 
  []
 
-<./Figures/ConDeltaByEmpState.pdf, id=366, 433.62pt x 289.08pt>
+<./Figures/ConDeltaByEmpState.pdf, id=371, 433.62pt x 289.08pt>
 File: ./Figures/ConDeltaByEmpState.pdf Graphic file (type pdf)
 <use ./Figures/ConDeltaByEmpState.pdf>
 Package pdftex.def Info: ./Figures/ConDeltaByEmpState.pdf  used on input line 306.
@@ -1222,7 +1222,7 @@ Overfull \hbox (31.298pt too wide) detected at line 316
  [] 
  []
 
-<./Figures/Checks_vs_Unemp.pdf, id=517, 433.62pt x 289.08pt>
+<./Figures/Checks_vs_Unemp.pdf, id=522, 433.62pt x 289.08pt>
 File: ./Figures/Checks_vs_Unemp.pdf Graphic file (type pdf)
 <use ./Figures/Checks_vs_Unemp.pdf>
 Package pdftex.def Info: ./Figures/Checks_vs_Unemp.pdf  used on input line 322.
@@ -1232,7 +1232,7 @@ Overfull \hbox (31.298pt too wide) detected at line 333
  [] 
  []
 
-<./Figures/EffectTargeting.pdf, id=519, 433.62pt x 289.08pt>
+<./Figures/EffectTargeting.pdf, id=524, 433.62pt x 289.08pt>
 File: ./Figures/EffectTargeting.pdf Graphic file (type pdf)
 <use ./Figures/EffectTargeting.pdf>
 Package pdftex.def Info: ./Figures/EffectTargeting.pdf  used on input line 339.
@@ -1245,7 +1245,7 @@ Overfull \hbox (31.298pt too wide) detected at line 352
  [] 
  []
 
-<./Figures/AggLT_long_pandemic.pdf, id=662, 433.62pt x 289.08pt>
+<./Figures/AggLT_long_pandemic.pdf, id=667, 433.62pt x 289.08pt>
 File: ./Figures/AggLT_long_pandemic.pdf Graphic file (type pdf)
 <use ./Figures/AggLT_long_pandemic.pdf>
 Package pdftex.def Info: ./Figures/AggLT_long_pandemic.pdf  used on input line 358.
@@ -1255,23 +1255,23 @@ Overfull \hbox (31.298pt too wide) detected at line 368
  [] 
  []
 
-<./Figures/DeepPandemic.pdf, id=664, 433.62pt x 289.08pt>
+<./Figures/DeepPandemic.pdf, id=669, 433.62pt x 289.08pt>
 File: ./Figures/DeepPandemic.pdf Graphic file (type pdf)
 <use ./Figures/DeepPandemic.pdf>
 Package pdftex.def Info: ./Figures/DeepPandemic.pdf  used on input line 374.
 (pdftex.def)             Requested size: 333.46762pt x 222.32321pt.
-[13 <./Figures/AggLT_long_pandemic.pdf>] [14 <./Figures/DeepPandemic.pdf>] (LaTeX/ConsumptionResponse.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 77--80
+[13 <./Figures/AggLT_long_pandemic.pdf>] [14 <./Figures/DeepPandemic.pdf>] (LaTeX/ConsumptionResponse.bbl [15]
+Underfull \hbox (badness 10000) in paragraph at lines 88--91
 []\T1/cmr/m/sc/10.95 Carroll, Christo-pher D., Jiri Sla-calek, Ki-ichi Tokuoka, and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--80
+Underfull \hbox (badness 10000) in paragraph at lines 88--91
 \T1/cmr/m/sc/10.95 Matthew N. White \T1/cmr/m/n/10.95 (2017): ``The Dis-tri-bu-tion of Wealth and the
  []
 
-[15]
-Underfull \hbox (badness 3536) in paragraph at lines 120--122
+
+Underfull \hbox (badness 3536) in paragraph at lines 131--133
 []\T1/cmr/m/sc/10.95 Gascon, Charles \T1/cmr/m/n/10.95 (2020): ``COVID-19: Which Work-ers Face the High-est
  []
 
@@ -1335,13 +1335,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 421.
  ) 
 Here is how much of TeX's memory you used:
- 26451 strings out of 492616
- 465136 string characters out of 6128998
- 677796 words of memory out of 5000000
- 29797 multiletter control sequences out of 15000+600000
+ 26459 strings out of 492616
+ 465302 string characters out of 6128998
+ 677934 words of memory out of 5000000
+ 29803 multiletter control sequences out of 15000+600000
  565005 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,14n,73p,9239b,518s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,14n,73p,9239b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
@@ -1356,10 +1356,10 @@ texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loc
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/local/texlive/2018/
 texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pfb>
-Output written on LaTeX/ConsumptionResponse.pdf (26 pages, 702444 bytes).
+Output written on LaTeX/ConsumptionResponse.pdf (26 pages, 703939 bytes).
 PDF statistics:
- 1046 PDF objects out of 1200 (max. 8388607)
- 538 compressed objects within 6 object streams
- 109 named destinations out of 1000 (max. 500000)
+ 1051 PDF objects out of 1200 (max. 8388607)
+ 543 compressed objects within 6 object streams
+ 111 named destinations out of 1000 (max. 500000)
  152 words of extra memory for PDF output out of 10000 (max. 10000000)
 

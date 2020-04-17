@@ -1,0 +1,52 @@
+# To control the parameters of experiments, you can edit the following configuration.
+
+# Currently this supports editing parameters available in the runExperiment tool.
+# If no parameters are provided, it will run with the default configuration.
+
+# A sample is given below, un-comment it to play with the parameters.
+# (Don't forget to save it after changing it, CMD+S/Ctlr+S)
+
+# Each unindented entry represents the name of a new specification.  All indented
+# lines below that name are changes to the default parameter values in parameter_config.py.
+
+DeepA1_n0.03:
+  DeepA1: -0.03
+
+DeepA1_n0.02:
+  DeepA1: -0.02
+
+DeepA1_n0.01:
+  DeepA1: -0.01
+
+DeepA1_0.00:
+  DeepA1: 0.00
+
+DeepA1_0.01:
+  DeepA1: 0.01
+
+Lspell_real_1.0:
+  Lspell_real: 1.0
+
+Lspell_real_2.0:
+  Lspell_real: 2.0
+
+Lspell_real_3.0:
+  Lspell_real: 3.0
+
+Lspell_real_4.0:
+  Lspell_real: 4.0
+
+Lspell_real_5.0:
+  Lspell_real: 5.0
+
+Lspell_real_6.0:
+  Lspell_real: 6.0
+
+uPfac_L_0.8:
+  uPfac_L: 0.8
+
+uPfac_L_0.9:
+  uPfac_L: 0.9
+
+uPfac_L_1.0:
+  uPfac_L: 1.0

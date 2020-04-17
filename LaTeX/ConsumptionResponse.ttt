@@ -101,7 +101,7 @@ Prob.\ exiting pandemic each quarter & $H_{1,0}$ & 0.25 \\
       \bottomrule
     \end{tabular}
 \begin{flushleft}
-\footnotesize Note: The unemployment benefits are multiplied by 0.8 to account for the fact that 20 percent of the working age population is out of the labor force. See aggregation details in Appendix \ref{sec:aggregation}
+\footnotesize Note: The unemployment benefits are multiplied by 0.8 to account for the fact that 20 percent of the working age population is out of the labor force. See aggregation details in Appendix~\ref{sec:aggregation}.
 \normalsize
 \end{flushleft}
   \end{center}

@@ -260,7 +260,8 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
         
     Returns
     -------
-    None
+    data: Dict
+        A dictionary with data to plot pandemic shock unemployment probablities.
     '''
     BigPop = 100000
     T = Agents[0].T_retire+1
@@ -306,20 +307,24 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     UnempPrbMean = np.mean(UnempPrbAll,axis=1)
     DeepPrbMean  = np.mean(DeepPrbAll,axis=1)
     
+    data = dict()
     # Plot overall unemployment probabilities in top left
     plt.subplot(2,2,1)
     AgeVec = np.arange(T)/4 + 24
     plt.plot(AgeVec,UnempPrbMean,'-b')
     plt.plot(AgeVec,DeepPrbMean,'-r')
+    data['overall'] = [AgeVec, UnempPrbMean, DeepPrbMean]
     plt.legend(['Unemployed', 'Deep unemp'], loc=1)
     plt.ylim(0,0.20)
     plt.xticks([])
     plt.ylabel('Probability')
     plt.title('All education (mean)')
+
     
     # Plot dropout unemployment probabilities by permanent income
     e = 0
     p = 0
+    data['dropout'] = dict()
     plt.subplot(2,2,2)
     UnempX = np.exp(Unemp0[e] + UnempP*np.log(pLvlPercentiles[e,p,:]) + UnempA1*AgeVec + UnempA2*AgeVec**2)
     DeepX  = np.exp(Deep0[e]  + DeepP*np.log(pLvlPercentiles[e,p,:])  + DeepA1*AgeVec  + DeepA2*AgeVec**2)
@@ -328,6 +333,8 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     DeepPrb = DeepX/denom
     plt.plot(AgeVec,UnempPrb,'--b')
     plt.plot(AgeVec,DeepPrb,'--r')
+    data['dropout'][p] = [AgeVec, UnempPrb, DeepPrb]
+
     p = 4
     UnempX = np.exp(Unemp0[e] + UnempP*np.log(pLvlPercentiles[e,p,:]) + UnempA1*AgeVec + UnempA2*AgeVec**2)
     DeepX  = np.exp(Deep0[e]  + DeepP*np.log(pLvlPercentiles[e,p,:])  + DeepA1*AgeVec  + DeepA2*AgeVec**2)
@@ -336,6 +343,8 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     DeepPrb = DeepX/denom
     plt.plot(AgeVec,UnempPrb,'--b')
     plt.plot(AgeVec,DeepPrb,'--r')
+    data['dropout'][p] = [AgeVec, UnempPrb, DeepPrb]
+
     p = 2
     UnempX = np.exp(Unemp0[e] + UnempP*np.log(pLvlPercentiles[e,p,:]) + UnempA1*AgeVec + UnempA2*AgeVec**2)
     DeepX  = np.exp(Deep0[e]  + DeepP*np.log(pLvlPercentiles[e,p,:])  + DeepA1*AgeVec  + DeepA2*AgeVec**2)
@@ -347,11 +356,13 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     plt.yticks([])
     plt.xticks([])
     plt.ylim(0,0.20)
+    data['dropout'][p] = [AgeVec, UnempPrb, DeepPrb]
     plt.title('Dropout')
     
     # Plot highschool unemployment probabilities by permanent income
     e = 1
     p = 0
+    data['highschool'] = dict()
     plt.subplot(2,2,3)
     UnempX = np.exp(Unemp0[e] + UnempP*np.log(pLvlPercentiles[e,p,:]) + UnempA1*AgeVec + UnempA2*AgeVec**2)
     DeepX  = np.exp(Deep0[e]  + DeepP*np.log(pLvlPercentiles[e,p,:])  + DeepA1*AgeVec  + DeepA2*AgeVec**2)
@@ -360,6 +371,8 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     DeepPrb = DeepX/denom
     plt.plot(AgeVec,UnempPrb,'--b')
     plt.plot(AgeVec,DeepPrb,'--r')
+    data['highschool'][p] = [AgeVec, UnempPrb, DeepPrb]
+
     p = 4
     UnempX = np.exp(Unemp0[e] + UnempP*np.log(pLvlPercentiles[e,p,:]) + UnempA1*AgeVec + UnempA2*AgeVec**2)
     DeepX  = np.exp(Deep0[e]  + DeepP*np.log(pLvlPercentiles[e,p,:])  + DeepA1*AgeVec  + DeepA2*AgeVec**2)
@@ -368,6 +381,8 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     DeepPrb = DeepX/denom
     plt.plot(AgeVec,UnempPrb,'--b')
     plt.plot(AgeVec,DeepPrb,'--r')
+    data['highschool'][p] = [AgeVec, UnempPrb, DeepPrb]
+
     p = 2
     UnempX = np.exp(Unemp0[e] + UnempP*np.log(pLvlPercentiles[e,p,:]) + UnempA1*AgeVec + UnempA2*AgeVec**2)
     DeepX  = np.exp(Deep0[e]  + DeepP*np.log(pLvlPercentiles[e,p,:])  + DeepA1*AgeVec  + DeepA2*AgeVec**2)
@@ -376,6 +391,7 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     DeepPrb = DeepX/denom
     plt.plot(AgeVec,UnempPrb,'-b')
     plt.plot(AgeVec,DeepPrb,'-r')
+    data['highschool'][p] = [AgeVec, UnempPrb, DeepPrb]
     plt.ylim(0,0.20)
     plt.xlabel('Age')
     plt.ylabel('Probability')
@@ -384,6 +400,8 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     # Plot college unemployment probabilities by permanent income
     e = 2
     p = 0
+    data['college'] = dict()
+
     plt.subplot(2,2,4)
     UnempX = np.exp(Unemp0[e] + UnempP*np.log(pLvlPercentiles[e,p,:]) + UnempA1*AgeVec + UnempA2*AgeVec**2)
     DeepX  = np.exp(Deep0[e]  + DeepP*np.log(pLvlPercentiles[e,p,:])  + DeepA1*AgeVec  + DeepA2*AgeVec**2)
@@ -392,6 +410,8 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     DeepPrb = DeepX/denom
     plt.plot(AgeVec,UnempPrb,'--b')
     plt.plot(AgeVec,DeepPrb,'--r')
+    data['college'][p] = [AgeVec, UnempPrb, DeepPrb]
+
     p = 4
     UnempX = np.exp(Unemp0[e] + UnempP*np.log(pLvlPercentiles[e,p,:]) + UnempA1*AgeVec + UnempA2*AgeVec**2)
     DeepX  = np.exp(Deep0[e]  + DeepP*np.log(pLvlPercentiles[e,p,:])  + DeepA1*AgeVec  + DeepA2*AgeVec**2)
@@ -400,6 +420,8 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     DeepPrb = DeepX/denom
     plt.plot(AgeVec,UnempPrb,'--b')
     plt.plot(AgeVec,DeepPrb,'--r')
+    data['college'][p] = [AgeVec, UnempPrb, DeepPrb]
+
     p = 2
     UnempX = np.exp(Unemp0[e] + UnempP*np.log(pLvlPercentiles[e,p,:]) + UnempA1*AgeVec + UnempA2*AgeVec**2)
     DeepX  = np.exp(Deep0[e]  + DeepP*np.log(pLvlPercentiles[e,p,:])  + DeepA1*AgeVec  + DeepA2*AgeVec**2)
@@ -408,6 +430,7 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     DeepPrb = DeepX/denom
     plt.plot(AgeVec,UnempPrb,'-b')
     plt.plot(AgeVec,DeepPrb,'-r')
+    data['college'][p] = [AgeVec, UnempPrb, DeepPrb]
     plt.ylim(0,0.20)
     plt.xlabel('Age')
     plt.yticks([])
@@ -418,6 +441,7 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     plt.savefig(figs_dir + 'UnempProbByDemog' + spec_name + '.pdf', bbox_inches='tight')
     plt.savefig(figs_dir + 'UnempProbByDemog' + spec_name + '.png', bbox_inches='tight')
     plt.show()
+    return data
     
     
 def calcCSTWmpcStats(Agents):

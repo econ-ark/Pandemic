@@ -1,5 +1,6 @@
 '''
-Blah blah
+This is the main script for the paper, "Modeling the Consumption Response to the
+CARES Act" by Carroll, Crawley, Slacalek, and White.  It produces all figures.
 '''
 from Parameters import T_sim, init_dropout, init_highschool, init_college, EducShares, DiscFacDstns,\
      AgentCountTotal, base_dict, stimulus_changes, pandemic_changes, deep_pandemic_changes, figs_dir, AggregationFactor
@@ -62,8 +63,6 @@ if __name__ == '__main__':
         t1 = time()
         print('Making unemployment probability by demographics figure took ' + mystr(t1-t0) + ' seconds.')
     
-    
-    
     # Solve and simulate each type to get to the initial distribution of states
     # and then prepare for new counterfactual simulations
     t0 = time()
@@ -92,7 +91,6 @@ if __name__ == '__main__':
     stim_deep_pan_dict = deep_pan_dict.copy()
     stim_deep_pan_dict.update(**stimulus_changes)
     
-
     # Run the baseline consumption level
     t0 = time()
     C_base, X_base, Z_base, cAll_base, Weight_base, Mrkv_base, U_base, ltAll_base, LT_by_inc_base = runExperiment(**base_dict)
@@ -129,13 +127,6 @@ if __name__ == '__main__':
     t1 = time()
     print('Calculating consumption with pandemic and unemployment benefits took ' + mystr(t1-t0) + ' seconds.')
     
-#    # Run the deep unemployment pandemic
-#    t0 = time()
-#    C_deep_pan, X_deep_pan, Z_deep_pan, cAll_deep_pan, Weight_deep_pan, Mrkv_deep_pan, U_deep_pan, ltAll_deep_pan, LT_by_inc_deep_pan = runExperiment(**deep_pan_dict)
-#    C_stim_deep_pan, X_stim_deep_pan, Z_stim_deep_pan, cAll_stim_deep_pan, Weight_stim_deep_pan, Mrkv_stim_deep_pan, U_stim_deep_pan, ltAll_stim_deep_pan, LT_by_inc_stim_deep_pan = runExperiment(**stim_deep_pan_dict)
-#    t1 = time()
-#    print('Computing deep unemployment pandemic consumption took ' + mystr(t1-t0) + ' seconds.')
-#    
     uniform_pan_dict = both_dict.copy()
     uniform_pan_dict["BonusUnemp"] = 0.0
     uniform_pan_dict["BonusDeep"] = 0.0
@@ -190,7 +181,6 @@ if __name__ == '__main__':
     for a in long_pandemic_dict['Agents']:
         a.ContUnempBenefits = False
 
-    
     do_no_utility_loss = True
     if (do_no_utility_loss):
         TypeList_no_utility_loss = []
@@ -220,7 +210,6 @@ if __name__ == '__main__':
         t1 = time()
         print('Calculating consumption with pandemic but no utility loss took ' + mystr(t1-t0) + ' seconds.')
      
-    
     # Calculate baseline consumption for those who *would* be in each Markov state in the pandemic
     X_alt = np.zeros((4,T_sim))
     X_alt[0,:] = np.sum(cAll_base*Weight_base*Mrkv_pan[0,:], axis=1) / np.sum(Weight_base*Mrkv_pan[0,:], axis=1)
@@ -654,7 +643,6 @@ if __name__ == '__main__':
     plt.savefig(figs_dir + 'ConRespByEmpStateWStim_long.png')
     plt.show()
     
-
     plt.plot(LT_long_pandemic_stim[0,:]*1000,'-b')
     plt.plot(LT_long_pandemic_stim[1,:]*1000,'-g')
     plt.plot(LT_long_pandemic_stim[2,:]*1000,'-r')    
