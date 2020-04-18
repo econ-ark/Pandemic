@@ -1,0 +1,64 @@
+# This config file perturbs the parameter Lspell_pcvd over 21 values between 1.0 and 5.0.
+
+Lspell_pcvd_1.000:
+    Lspell_pcvd: 1.000
+
+Lspell_pcvd_1.200:
+    Lspell_pcvd: 1.200
+
+Lspell_pcvd_1.400:
+    Lspell_pcvd: 1.400
+
+Lspell_pcvd_1.600:
+    Lspell_pcvd: 1.600
+
+Lspell_pcvd_1.800:
+    Lspell_pcvd: 1.800
+
+Lspell_pcvd_2.000:
+    Lspell_pcvd: 2.000
+
+Lspell_pcvd_2.200:
+    Lspell_pcvd: 2.200
+
+Lspell_pcvd_2.400:
+    Lspell_pcvd: 2.400
+
+Lspell_pcvd_2.600:
+    Lspell_pcvd: 2.600
+
+Lspell_pcvd_2.800:
+    Lspell_pcvd: 2.800
+
+Lspell_pcvd_3.000:
+    Lspell_pcvd: 3.000
+
+Lspell_pcvd_3.200:
+    Lspell_pcvd: 3.200
+
+Lspell_pcvd_3.400:
+    Lspell_pcvd: 3.400
+
+Lspell_pcvd_3.600:
+    Lspell_pcvd: 3.600
+
+Lspell_pcvd_3.800:
+    Lspell_pcvd: 3.800
+
+Lspell_pcvd_4.000:
+    Lspell_pcvd: 4.000
+
+Lspell_pcvd_4.200:
+    Lspell_pcvd: 4.200
+
+Lspell_pcvd_4.400:
+    Lspell_pcvd: 4.400
+
+Lspell_pcvd_4.600:
+    Lspell_pcvd: 4.600
+
+Lspell_pcvd_4.800:
+    Lspell_pcvd: 4.800
+
+Lspell_pcvd_5.000:
+    Lspell_pcvd: 5.000

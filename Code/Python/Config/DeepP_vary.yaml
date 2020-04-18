@@ -1,0 +1,64 @@
+# This config file perturbs the parameter DeepP over 21 values between -0.4 and 0.0.
+
+DeepP_n0.400:
+    DeepP: -0.400
+
+DeepP_n0.380:
+    DeepP: -0.380
+
+DeepP_n0.360:
+    DeepP: -0.360
+
+DeepP_n0.340:
+    DeepP: -0.340
+
+DeepP_n0.320:
+    DeepP: -0.320
+
+DeepP_n0.300:
+    DeepP: -0.300
+
+DeepP_n0.280:
+    DeepP: -0.280
+
+DeepP_n0.260:
+    DeepP: -0.260
+
+DeepP_n0.240:
+    DeepP: -0.240
+
+DeepP_n0.220:
+    DeepP: -0.220
+
+DeepP_n0.200:
+    DeepP: -0.200
+
+DeepP_n0.180:
+    DeepP: -0.180
+
+DeepP_n0.160:
+    DeepP: -0.160
+
+DeepP_n0.140:
+    DeepP: -0.140
+
+DeepP_n0.120:
+    DeepP: -0.120
+
+DeepP_n0.100:
+    DeepP: -0.100
+
+DeepP_n0.080:
+    DeepP: -0.080
+
+DeepP_n0.060:
+    DeepP: -0.060
+
+DeepP_n0.040:
+    DeepP: -0.040
+
+DeepP_n0.020:
+    DeepP: -0.020
+
+DeepP_0.000:
+    DeepP: 0.000

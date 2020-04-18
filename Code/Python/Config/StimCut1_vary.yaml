@@ -1,0 +1,64 @@
+# This config file perturbs the parameter StimCut1 over 21 values between 19.0 and 39.0.
+
+StimCut1_19.000:
+    StimCut1: 19.000
+
+StimCut1_20.000:
+    StimCut1: 20.000
+
+StimCut1_21.000:
+    StimCut1: 21.000
+
+StimCut1_22.000:
+    StimCut1: 22.000
+
+StimCut1_23.000:
+    StimCut1: 23.000
+
+StimCut1_24.000:
+    StimCut1: 24.000
+
+StimCut1_25.000:
+    StimCut1: 25.000
+
+StimCut1_26.000:
+    StimCut1: 26.000
+
+StimCut1_27.000:
+    StimCut1: 27.000
+
+StimCut1_28.000:
+    StimCut1: 28.000
+
+StimCut1_29.000:
+    StimCut1: 29.000
+
+StimCut1_30.000:
+    StimCut1: 30.000
+
+StimCut1_31.000:
+    StimCut1: 31.000
+
+StimCut1_32.000:
+    StimCut1: 32.000
+
+StimCut1_33.000:
+    StimCut1: 33.000
+
+StimCut1_34.000:
+    StimCut1: 34.000
+
+StimCut1_35.000:
+    StimCut1: 35.000
+
+StimCut1_36.000:
+    StimCut1: 36.000
+
+StimCut1_37.000:
+    StimCut1: 37.000
+
+StimCut1_38.000:
+    StimCut1: 38.000
+
+StimCut1_39.000:
+    StimCut1: 39.000

@@ -1,0 +1,64 @@
+# This config file perturbs the parameter UpdatePrb over 21 values between 0.0 and 1.0.
+
+UpdatePrb_0.000:
+    UpdatePrb: 0.000
+
+UpdatePrb_0.050:
+    UpdatePrb: 0.050
+
+UpdatePrb_0.100:
+    UpdatePrb: 0.100
+
+UpdatePrb_0.150:
+    UpdatePrb: 0.150
+
+UpdatePrb_0.200:
+    UpdatePrb: 0.200
+
+UpdatePrb_0.250:
+    UpdatePrb: 0.250
+
+UpdatePrb_0.300:
+    UpdatePrb: 0.300
+
+UpdatePrb_0.350:
+    UpdatePrb: 0.350
+
+UpdatePrb_0.400:
+    UpdatePrb: 0.400
+
+UpdatePrb_0.450:
+    UpdatePrb: 0.450
+
+UpdatePrb_0.500:
+    UpdatePrb: 0.500
+
+UpdatePrb_0.550:
+    UpdatePrb: 0.550
+
+UpdatePrb_0.600:
+    UpdatePrb: 0.600
+
+UpdatePrb_0.650:
+    UpdatePrb: 0.650
+
+UpdatePrb_0.700:
+    UpdatePrb: 0.700
+
+UpdatePrb_0.750:
+    UpdatePrb: 0.750
+
+UpdatePrb_0.800:
+    UpdatePrb: 0.800
+
+UpdatePrb_0.850:
+    UpdatePrb: 0.850
+
+UpdatePrb_0.900:
+    UpdatePrb: 0.900
+
+UpdatePrb_0.950:
+    UpdatePrb: 0.950
+
+UpdatePrb_1.000:
+    UpdatePrb: 1.000

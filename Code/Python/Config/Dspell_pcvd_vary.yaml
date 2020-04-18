@@ -1,0 +1,64 @@
+# This config file perturbs the parameter Dspell_pcvd over 21 values between 1.0 and 5.0.
+
+Dspell_pcvd_1.000:
+    Dspell_pcvd: 1.000
+
+Dspell_pcvd_1.200:
+    Dspell_pcvd: 1.200
+
+Dspell_pcvd_1.400:
+    Dspell_pcvd: 1.400
+
+Dspell_pcvd_1.600:
+    Dspell_pcvd: 1.600
+
+Dspell_pcvd_1.800:
+    Dspell_pcvd: 1.800
+
+Dspell_pcvd_2.000:
+    Dspell_pcvd: 2.000
+
+Dspell_pcvd_2.200:
+    Dspell_pcvd: 2.200
+
+Dspell_pcvd_2.400:
+    Dspell_pcvd: 2.400
+
+Dspell_pcvd_2.600:
+    Dspell_pcvd: 2.600
+
+Dspell_pcvd_2.800:
+    Dspell_pcvd: 2.800
+
+Dspell_pcvd_3.000:
+    Dspell_pcvd: 3.000
+
+Dspell_pcvd_3.200:
+    Dspell_pcvd: 3.200
+
+Dspell_pcvd_3.400:
+    Dspell_pcvd: 3.400
+
+Dspell_pcvd_3.600:
+    Dspell_pcvd: 3.600
+
+Dspell_pcvd_3.800:
+    Dspell_pcvd: 3.800
+
+Dspell_pcvd_4.000:
+    Dspell_pcvd: 4.000
+
+Dspell_pcvd_4.200:
+    Dspell_pcvd: 4.200
+
+Dspell_pcvd_4.400:
+    Dspell_pcvd: 4.400
+
+Dspell_pcvd_4.600:
+    Dspell_pcvd: 4.600
+
+Dspell_pcvd_4.800:
+    Dspell_pcvd: 4.800
+
+Dspell_pcvd_5.000:
+    Dspell_pcvd: 5.000

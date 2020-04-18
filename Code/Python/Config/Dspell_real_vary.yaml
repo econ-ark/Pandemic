@@ -1,0 +1,64 @@
+# This config file perturbs the parameter Dspell_real over 21 values between 1.0 and 5.0.
+
+Dspell_real_1.000:
+    Dspell_real: 1.000
+
+Dspell_real_1.200:
+    Dspell_real: 1.200
+
+Dspell_real_1.400:
+    Dspell_real: 1.400
+
+Dspell_real_1.600:
+    Dspell_real: 1.600
+
+Dspell_real_1.800:
+    Dspell_real: 1.800
+
+Dspell_real_2.000:
+    Dspell_real: 2.000
+
+Dspell_real_2.200:
+    Dspell_real: 2.200
+
+Dspell_real_2.400:
+    Dspell_real: 2.400
+
+Dspell_real_2.600:
+    Dspell_real: 2.600
+
+Dspell_real_2.800:
+    Dspell_real: 2.800
+
+Dspell_real_3.000:
+    Dspell_real: 3.000
+
+Dspell_real_3.200:
+    Dspell_real: 3.200
+
+Dspell_real_3.400:
+    Dspell_real: 3.400
+
+Dspell_real_3.600:
+    Dspell_real: 3.600
+
+Dspell_real_3.800:
+    Dspell_real: 3.800
+
+Dspell_real_4.000:
+    Dspell_real: 4.000
+
+Dspell_real_4.200:
+    Dspell_real: 4.200
+
+Dspell_real_4.400:
+    Dspell_real: 4.400
+
+Dspell_real_4.600:
+    Dspell_real: 4.600
+
+Dspell_real_4.800:
+    Dspell_real: 4.800
+
+Dspell_real_5.000:
+    Dspell_real: 5.000

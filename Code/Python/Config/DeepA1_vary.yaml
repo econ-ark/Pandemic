@@ -1,0 +1,64 @@
+# This config file perturbs the parameter DeepA1 over 21 values between -0.03 and 0.01.
+
+DeepA1_n0.030:
+    DeepA1: -0.030
+
+DeepA1_n0.028:
+    DeepA1: -0.028
+
+DeepA1_n0.026:
+    DeepA1: -0.026
+
+DeepA1_n0.024:
+    DeepA1: -0.024
+
+DeepA1_n0.022:
+    DeepA1: -0.022
+
+DeepA1_n0.020:
+    DeepA1: -0.020
+
+DeepA1_n0.018:
+    DeepA1: -0.018
+
+DeepA1_n0.016:
+    DeepA1: -0.016
+
+DeepA1_n0.014:
+    DeepA1: -0.014
+
+DeepA1_n0.012:
+    DeepA1: -0.012
+
+DeepA1_n0.010:
+    DeepA1: -0.010
+
+DeepA1_n0.008:
+    DeepA1: -0.008
+
+DeepA1_n0.006:
+    DeepA1: -0.006
+
+DeepA1_n0.004:
+    DeepA1: -0.004
+
+DeepA1_n0.002:
+    DeepA1: -0.002
+
+DeepA1_0.000:
+    DeepA1: 0.000
+
+DeepA1_0.002:
+    DeepA1: 0.002
+
+DeepA1_0.004:
+    DeepA1: 0.004
+
+DeepA1_0.006:
+    DeepA1: 0.006
+
+DeepA1_0.008:
+    DeepA1: 0.008
+
+DeepA1_0.010:
+    DeepA1: 0.010

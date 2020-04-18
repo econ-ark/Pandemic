@@ -1,0 +1,64 @@
+# This config file perturbs the parameter uPfac_L over 21 values between 0.8 and 1.0.
+
+uPfac_L_0.800:
+    uPfac_L: 0.800
+
+uPfac_L_0.810:
+    uPfac_L: 0.810
+
+uPfac_L_0.820:
+    uPfac_L: 0.820
+
+uPfac_L_0.830:
+    uPfac_L: 0.830
+
+uPfac_L_0.840:
+    uPfac_L: 0.840
+
+uPfac_L_0.850:
+    uPfac_L: 0.850
+
+uPfac_L_0.860:
+    uPfac_L: 0.860
+
+uPfac_L_0.870:
+    uPfac_L: 0.870
+
+uPfac_L_0.880:
+    uPfac_L: 0.880
+
+uPfac_L_0.890:
+    uPfac_L: 0.890
+
+uPfac_L_0.900:
+    uPfac_L: 0.900
+
+uPfac_L_0.910:
+    uPfac_L: 0.910
+
+uPfac_L_0.920:
+    uPfac_L: 0.920
+
+uPfac_L_0.930:
+    uPfac_L: 0.930
+
+uPfac_L_0.940:
+    uPfac_L: 0.940
+
+uPfac_L_0.950:
+    uPfac_L: 0.950
+
+uPfac_L_0.960:
+    uPfac_L: 0.960
+
+uPfac_L_0.970:
+    uPfac_L: 0.970
+
+uPfac_L_0.980:
+    uPfac_L: 0.980
+
+uPfac_L_0.990:
+    uPfac_L: 0.990
+
+uPfac_L_1.000:
+    uPfac_L: 1.000

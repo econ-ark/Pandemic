@@ -1,0 +1,64 @@
+# This config file perturbs the parameter StimMax over 21 values between 0.2 and 2.2.
+
+StimMax_0.200:
+    StimMax: 0.200
+
+StimMax_0.300:
+    StimMax: 0.300
+
+StimMax_0.400:
+    StimMax: 0.400
+
+StimMax_0.500:
+    StimMax: 0.500
+
+StimMax_0.600:
+    StimMax: 0.600
+
+StimMax_0.700:
+    StimMax: 0.700
+
+StimMax_0.800:
+    StimMax: 0.800
+
+StimMax_0.900:
+    StimMax: 0.900
+
+StimMax_1.000:
+    StimMax: 1.000
+
+StimMax_1.100:
+    StimMax: 1.100
+
+StimMax_1.200:
+    StimMax: 1.200
+
+StimMax_1.300:
+    StimMax: 1.300
+
+StimMax_1.400:
+    StimMax: 1.400
+
+StimMax_1.500:
+    StimMax: 1.500
+
+StimMax_1.600:
+    StimMax: 1.600
+
+StimMax_1.700:
+    StimMax: 1.700
+
+StimMax_1.800:
+    StimMax: 1.800
+
+StimMax_1.900:
+    StimMax: 1.900
+
+StimMax_2.000:
+    StimMax: 2.000
+
+StimMax_2.100:
+    StimMax: 2.100
+
+StimMax_2.200:
+    StimMax: 2.200

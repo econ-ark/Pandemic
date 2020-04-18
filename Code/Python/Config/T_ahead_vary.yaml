@@ -1,0 +1,13 @@
+# This config file perturbs the parameter T_ahead over 4 values between 0 and 3.
+
+T_ahead_0:
+    T_ahead: 0
+
+T_ahead_1:
+    T_ahead: 1
+
+T_ahead_2:
+    T_ahead: 2
+
+T_ahead_3:
+    T_ahead: 3

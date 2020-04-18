@@ -1,0 +1,64 @@
+# This config file perturbs the parameter UnempP over 21 values between -0.2 and 0.0.
+
+UnempP_n0.200:
+    UnempP: -0.200
+
+UnempP_n0.190:
+    UnempP: -0.190
+
+UnempP_n0.180:
+    UnempP: -0.180
+
+UnempP_n0.170:
+    UnempP: -0.170
+
+UnempP_n0.160:
+    UnempP: -0.160
+
+UnempP_n0.150:
+    UnempP: -0.150
+
+UnempP_n0.140:
+    UnempP: -0.140
+
+UnempP_n0.130:
+    UnempP: -0.130
+
+UnempP_n0.120:
+    UnempP: -0.120
+
+UnempP_n0.110:
+    UnempP: -0.110
+
+UnempP_n0.100:
+    UnempP: -0.100
+
+UnempP_n0.090:
+    UnempP: -0.090
+
+UnempP_n0.080:
+    UnempP: -0.080
+
+UnempP_n0.070:
+    UnempP: -0.070
+
+UnempP_n0.060:
+    UnempP: -0.060
+
+UnempP_n0.050:
+    UnempP: -0.050
+
+UnempP_n0.040:
+    UnempP: -0.040
+
+UnempP_n0.030:
+    UnempP: -0.030
+
+UnempP_n0.020:
+    UnempP: -0.020
+
+UnempP_n0.010:
+    UnempP: -0.010
+
+UnempP_0.000:
+    UnempP: 0.000

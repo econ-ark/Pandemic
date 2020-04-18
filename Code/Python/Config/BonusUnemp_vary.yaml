@@ -1,0 +1,64 @@
+# This config file perturbs the parameter BonusUnemp over 21 values between 3.0 and 7.0.
+
+BonusUnemp_3.000:
+    BonusUnemp: 3.000
+
+BonusUnemp_3.200:
+    BonusUnemp: 3.200
+
+BonusUnemp_3.400:
+    BonusUnemp: 3.400
+
+BonusUnemp_3.600:
+    BonusUnemp: 3.600
+
+BonusUnemp_3.800:
+    BonusUnemp: 3.800
+
+BonusUnemp_4.000:
+    BonusUnemp: 4.000
+
+BonusUnemp_4.200:
+    BonusUnemp: 4.200
+
+BonusUnemp_4.400:
+    BonusUnemp: 4.400
+
+BonusUnemp_4.600:
+    BonusUnemp: 4.600
+
+BonusUnemp_4.800:
+    BonusUnemp: 4.800
+
+BonusUnemp_5.000:
+    BonusUnemp: 5.000
+
+BonusUnemp_5.200:
+    BonusUnemp: 5.200
+
+BonusUnemp_5.400:
+    BonusUnemp: 5.400
+
+BonusUnemp_5.600:
+    BonusUnemp: 5.600
+
+BonusUnemp_5.800:
+    BonusUnemp: 5.800
+
+BonusUnemp_6.000:
+    BonusUnemp: 6.000
+
+BonusUnemp_6.200:
+    BonusUnemp: 6.200
+
+BonusUnemp_6.400:
+    BonusUnemp: 6.400
+
+BonusUnemp_6.600:
+    BonusUnemp: 6.600
+
+BonusUnemp_6.800:
+    BonusUnemp: 6.800
+
+BonusUnemp_7.000:
+    BonusUnemp: 7.000

@@ -1,0 +1,64 @@
+# This config file perturbs the parameter Lspell_real over 21 values between 1.0 and 5.0.
+
+Lspell_real_1.000:
+    Lspell_real: 1.000
+
+Lspell_real_1.200:
+    Lspell_real: 1.200
+
+Lspell_real_1.400:
+    Lspell_real: 1.400
+
+Lspell_real_1.600:
+    Lspell_real: 1.600
+
+Lspell_real_1.800:
+    Lspell_real: 1.800
+
+Lspell_real_2.000:
+    Lspell_real: 2.000
+
+Lspell_real_2.200:
+    Lspell_real: 2.200
+
+Lspell_real_2.400:
+    Lspell_real: 2.400
+
+Lspell_real_2.600:
+    Lspell_real: 2.600
+
+Lspell_real_2.800:
+    Lspell_real: 2.800
+
+Lspell_real_3.000:
+    Lspell_real: 3.000
+
+Lspell_real_3.200:
+    Lspell_real: 3.200
+
+Lspell_real_3.400:
+    Lspell_real: 3.400
+
+Lspell_real_3.600:
+    Lspell_real: 3.600
+
+Lspell_real_3.800:
+    Lspell_real: 3.800
+
+Lspell_real_4.000:
+    Lspell_real: 4.000
+
+Lspell_real_4.200:
+    Lspell_real: 4.200
+
+Lspell_real_4.400:
+    Lspell_real: 4.400
+
+Lspell_real_4.600:
+    Lspell_real: 4.600
+
+Lspell_real_4.800:
+    Lspell_real: 4.800
+
+Lspell_real_5.000:
+    Lspell_real: 5.000

@@ -1,0 +1,64 @@
+# This config file perturbs the parameter BonusDeep over 21 values between 5.0 and 10.0.
+
+BonusDeep_5.000:
+    BonusDeep: 5.000
+
+BonusDeep_5.250:
+    BonusDeep: 5.250
+
+BonusDeep_5.500:
+    BonusDeep: 5.500
+
+BonusDeep_5.750:
+    BonusDeep: 5.750
+
+BonusDeep_6.000:
+    BonusDeep: 6.000
+
+BonusDeep_6.250:
+    BonusDeep: 6.250
+
+BonusDeep_6.500:
+    BonusDeep: 6.500
+
+BonusDeep_6.750:
+    BonusDeep: 6.750
+
+BonusDeep_7.000:
+    BonusDeep: 7.000
+
+BonusDeep_7.250:
+    BonusDeep: 7.250
+
+BonusDeep_7.500:
+    BonusDeep: 7.500
+
+BonusDeep_7.750:
+    BonusDeep: 7.750
+
+BonusDeep_8.000:
+    BonusDeep: 8.000
+
+BonusDeep_8.250:
+    BonusDeep: 8.250
+
+BonusDeep_8.500:
+    BonusDeep: 8.500
+
+BonusDeep_8.750:
+    BonusDeep: 8.750
+
+BonusDeep_9.000:
+    BonusDeep: 9.000
+
+BonusDeep_9.250:
+    BonusDeep: 9.250
+
+BonusDeep_9.500:
+    BonusDeep: 9.500
+
+BonusDeep_9.750:
+    BonusDeep: 9.750
+
+BonusDeep_10.000:
+    BonusDeep: 10.000
