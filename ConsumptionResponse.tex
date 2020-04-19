@@ -1,11 +1,11 @@
-% This file should compile on a standard distribution of LaTeX (say, TeXLive)
-% The PDF file that it generates should be in ./LaTeX/ConsumptionResponse.pdf
+% This file compiles on a standard distribution of LaTeX (say, TeXLive)
+% The PDF file it generates is in ./LaTeX/ConsumptionResponse.pdf
 \input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage]{\econtex}
 \providecommand{\texname}{ConsumptionResponse}% Keyname for the bibtex entry corresponding to this paper
 \usepackage{\econtexRoot/LaTeX/ConsumptionResponse}
-\provideboolean{ifECB}
-\setboolean{ifECB}{false}\opt{ifECB}{\setboolean{ifECB}{false}}
-%\setboolean{ifECB}{true}\opt{ifECB}{\setboolean{ifECB}{true}}
+\provideboolean{ifECB}  
+\setboolean{ifECB}{false}\opt{ifECB}{\setboolean{ifECB}{false}} 
+%\setboolean{ifECB}{true}\opt{ifECB}{\setboolean{ifECB}{true}}  
 
 \usepackage[twoside,marginparwidth=0in,left=1.25in,right=1.25in,top=1.25in,bottom=1.25in]{geometry}\usepackage{layouts}
 
@@ -67,15 +67,9 @@
   \parbox{\textwidth}{
     \begin{center}
       \begin{tabbing}
-%        \texttt{~~~~~~Web:~}
-        \= \href{https://econ-ark.github.io/Pandemic}{econ-ark.github.io/Pandemic}                                  \= \textit{~~~~HTML version of paper}                                         \\
-%        \texttt{~~~~~~~~~~~} \> \textit{~~~~HTML version of paper}                                         \> \\
-%        \texttt{Dashboard:~}
+        \= \href{https://econ-ark.github.io/Pandemic}{econ-ark.github.io/Pandemic}     \= \textit{~~~~HTML version of paper}                                         \\
         \> \href{https://econ-ark.org/pandemicdashboard}{Interactive-Jupyter-Notebook} \> \textit{~~~~Allows user to modify some assumptions}                      \\
-%        \texttt{~~~~~~~~~~~} \> \textit{~~~~Allows user to modify some assumptions}                        \> \\
-%        \texttt{~~~GitHub:~}
-        \> \href{https://github.com/econ-ark/Pandemic}{github.com/econ-ark/Pandemic}                                  \> \textit{~~~~Full codebase; configurator to explore all assumptions} \\
-%        \texttt{~~~~~~~~~~~} \> \textit{~~~~Codebase; configurator allows modifying all main assumptions}  \> \\
+        \> \href{https://github.com/econ-ark/Pandemic}{github.com/econ-ark/Pandemic}   \> \textit{~~~~Full codebase; configurator to explore all assumptions} \\
       \end{tabbing}
     \end{center}
   }
@@ -106,7 +100,6 @@
 
 \section{Introduction}
 
-%To predict the effect of the `CARES' (Coronavirus Aid, Relief, and Economic Security) Act on consumption, we extend a model from \cite{carroll_sticky_2020} that matches microeconomic evidence on the response to previous `consumption stimulus' packages, as well as aggregate consumption dynamics.
 
 In the decade since the Great Recession, macroeconomics has made great progress by insisting that models be consistent with microeconomic evidence (see \cite{kmpHandbook} for a survey).  From the new generation of models, we take one specifically focused on reconciling apparent \href{https://doi.org/10.1016/j.euroecorev.2017.03.009}{conflicts between micro and macro evidence about consumption dynamics} (\cite{hrsHabit}) and adapt it to incorporate two aspects of the coronavirus crisis. First, because the tidal wave of layoffs for employees of shuttered businesses will have a large impact on their income and spending, assumptions must be made about the employment dynamics of laid off workers.  Second, even consumers who remain employed will have restricted spending options (nobody can eat dinner at a shuttered restaurant).
 
@@ -417,7 +410,7 @@ A fuller analysis that incorporates both the kinds of heterogeneity that are of 
 
 
 \small
-\bibliography{LaTeX/\texname,LaTeX/\texname-Add,\economics}
+\bibliography{LaTeX/\texname,LaTeX/\texname-Add,economics}
 \normalsize
 \pagebreak
 \appendix
