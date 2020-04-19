@@ -3,18 +3,17 @@
 \input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage]{\econtex}
 \providecommand{\texname}{ConsumptionResponse}% Keyname for the bibtex entry corresponding to this paper
 \usepackage{\econtexRoot/LaTeX/ConsumptionResponse}
+\provideboolean{ifECB}
+\setboolean{ifECB}{false}\opt{ifECB}{\setboolean{ifECB}{false}}
+%\setboolean{ifECB}{true}\opt{ifECB}{\setboolean{ifECB}{true}}
 
 \usepackage[twoside,marginparwidth=0in,left=1.25in,right=1.25in,top=1.25in,bottom=1.25in]{geometry}\usepackage{layouts}
 
-\renewcommand{\forcedate}{April 17, 2020}
+\renewcommand{\forcedate}{April 20, 2020}
 
 \begin{document}
 
 \externaldocument{ModelAppendix}
-
-\begin{verbatimwrite}{\jobname.title}
-  ConsumptionResponse
-\end{verbatimwrite}
 
 \hfill{\tiny \jobname, \today, \currenttime}
 
@@ -90,16 +89,18 @@
   \name{White: Department of Economics, University of Delaware,  \href{mailto:mnwecon@udel.edu}{\texttt{mnwecon@udel.edu}}}
 \end{authorsinfo}
 \ifthenelse{\boolean{ifWeb}}{}{
-  \thanks{Thanks to the Sloan foundation for funding of the \href{https://econ-ark.org}{Econ-ARK} toolkit.  We are grateful to Kiichi Tokuoka, who provided valuable feedback and input as this project progressed, and to Mridul Seth, who created the dashboard and configurator.  The computational results in this paper were constructed using tools in the \href{http://github.com/Econ-ARK/HARK}{Econ-ARK/HARK} toolkit.  The toolkit can be cited by its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001068}{10.5281/zenodo.1001068}, as is done in the paper's own references as \cite{matthew_n_white_2017_1001068}. The views presented in this paper are those of the authors, and should not be attributed to the Federal Reserve Board or the European Central Bank.} \medskip}
+  \thanks{Thanks to the Sloan Foundation for funding of the \href{https://econ-ark.org}{Econ-ARK} toolkit.  We are grateful to Kiichi Tokuoka, who provided valuable feedback and input as this project progressed, and to Mridul Seth, who created the dashboard and configurator.  The computational results in this paper were constructed using tools in the \href{http://github.com/Econ-ARK/HARK}{Econ-ARK/HARK} toolkit.  The toolkit can be cited by its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001068}{10.5281/zenodo.1001068}, as is done in the paper's own references as \cite{matthew_n_white_2017_1001068}. The views presented in this paper are those of the authors, and should not be attributed to the Federal Reserve Board or the European Central Bank.} \medskip}
 
 \setcounter{page}{1}
 
 \ifthenelse{\boolean{ifWeb}}{\medskip \noindent {\footnotesize
-    Thanks to the Sloan foundation for funding of the \href{https://econ-ark.org}{Econ-ARK} toolkit.  We are grateful to Kiichi Tokuoka, who provided valuable feedback and input as this project progressed, and to Mridul Seth, who created the dashboard and configurator.  The computational results in this paper were constructed using tools in the \href{http://github.com/Econ-ARK/HARK}{Econ-ARK/HARK} toolkit.  The toolkit can be cited by its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001068}{10.5281/zenodo.1001068}, as is done in the paper's own references as \cite{matthew_n_white_2017_1001068}. The views presented in this paper are those of the authors, and should not be attributed to the Federal Reserve Board or the European Central Bank.
+    Thanks to the Sloan Foundation for funding of the \href{https://econ-ark.org}{Econ-ARK} toolkit.  We are grateful to Kiichi Tokuoka, who provided valuable feedback and input as this project progressed, and to Mridul Seth, who created the dashboard and configurator.  The computational results in this paper were constructed using tools in the \href{http://github.com/Econ-ARK/HARK}{Econ-ARK/HARK} toolkit.  The toolkit can be cited by its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001068}{10.5281/zenodo.1001068}, as is done in the paper's own references as \cite{matthew_n_white_2017_1001068}. The views presented in this paper are those of the authors, and should not be attributed to the Federal Reserve Board or the European Central Bank.
   }}{\pagebreak
 } % \end{Web}
 
 \titlepagefinish
+
+\ifthenelse{\boolean{ifECB}}{\input{LaTeX/ECB-Nontechnical-Summary}}{}
 
 \noindent \textit{``Economic booms are all alike; each recession contracts output in its own way.''} \\ \indent --- with apologies to Leo Tolstoy
 

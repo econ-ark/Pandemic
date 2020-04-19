@@ -1,6 +1,7 @@
 '''
 This file has an extension of MarkovConsumerType that is used for the GiveItAwayNow project.
 '''
+import warnings
 import numpy as np
 from HARK.simulation import drawUniform, drawBernoulli
 from HARK.distribution import DiscreteDistribution
@@ -107,7 +108,9 @@ class GiveItAwayNowType(MarkovConsumerType):
         dist = np.abs(np.abs(vals) - 1.)
         idx = np.argmin(dist)
         
-        LRagePrbs = vecs[:,idx].astype(float)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore") # Ignore warning about casting complex eigenvector to float
+            LRagePrbs = vecs[:,idx].astype(float)
         LRagePrbs /= np.sum(LRagePrbs)
         age_vec = np.arange(self.T_cycle+1).astype(int)
         self.LRageDstn = DiscreteDistribution(LRagePrbs, age_vec)

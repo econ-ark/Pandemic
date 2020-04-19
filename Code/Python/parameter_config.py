@@ -14,7 +14,7 @@ DiscFacSpread = 0.0253  # Half-width of uniform distribution of discount factors
 uPfac_L = 0.891         # Factor on marginal utility when the pandemic hits (lockdown)
 Dspell_real = 3.0       # Actual average duration of deep unemployment spell, in quarters
 Dspell_pcvd = 3.0       # Perceived expected duration of deep unemloyment spell, in quarters
-Lspell_real = 2.0       # Actual average duration of the lockdown; L_shared is True, this must be an integer
+Lspell_real = 2.0       # Actual average duration of the lockdown; if L_shared is True, this must be an integer
 Lspell_pcvd = 2.0       # Perceived expected duration of the lockdown
 L_shared = False        # Indicator for whether the decrease in marginal utility is shared (True) or idiosyncratic (False)
 UnempD = -1.15          # Constant in unemployment shock logit for dropouts
@@ -28,7 +28,7 @@ DeepH = -1.75           # Constant in deep unemp shock logit for high school gra
 DeepC = -2.20           # Constant in deep unemp shock logit for college grads
 DeepP = -0.2            # Coefficient on log permanent income in deep unemp shock logit
 DeepA1 = -0.01          # Coefficient on age in deep unemp shock logit
-DeepA2 = 0.             # Coefficient on age squared in unemployment shock logit
+DeepA2 = 0.             # Coefficient on age squared in deep unemp shock logit
 DeepPanAdj1 = -0.3      # Coefficient to be added to Unemp parameters for a deep unemployment pandemic
 DeepPanAdj2 = 1.2       # Coefficient to be added to Deep parameters for a deep unemployment pandemic
 DeepPanAdj3 = -0.1      # Coefficient to be added to UnempP parameter for a deep unemployment pandemic
@@ -38,9 +38,8 @@ T_ahead = 1             # Lag between pandemic and arrival of stimulus checks (q
 StimMax = 1.2           # Maximum "normal" stimulus check an individual can receive, in $1000
 StimCut0 = 18.75        # Quarterly income threshold where stimulus begins to phase out (can be none)
 StimCut1 = 24.75        # Quarterly income threshold where stimulus is fully phased out (can be none)
-#Multiply unemployment benefits by 0.8 to reflect fact that labor force participation rate is 0.8
-BonusUnemp = 5.2*0.8    # Additional payment to unemployed households when the stimulus hits
-BonusDeep = 7.8*0.8     # Additional payment to deeply unemp households when the stimulus hits
+BonusUnemp = 5.2        # Additional payment to unemployed households when the pandemic hits
+BonusDeep = 7.8         # Additional payment to deeply unemp households when the pandemic hits
 UpdatePrb = 0.25        # Probability that a household anticipates stimulus check in each quarter before it arrives
 
 # Basic model parameters: CRRA, growth factors, unemployment parameters (for normal times)
@@ -72,3 +71,4 @@ TranShkCount = 7        # Number of points in equiprobable discrete approximatio
 # Aggregation factor - what do we mulitply the mean individual by to get aggregate numbers for the US economy
 # Resulting number is in billions of USD
 AggregationFactor = 253.0
+StimMax = 0.3 

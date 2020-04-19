@@ -1,6 +1,7 @@
 '''
 This file has major functions that are used by GiveItAwayMAIN.py
 '''
+import warnings
 import numpy as np
 import matplotlib.pyplot as plt
 from copy import deepcopy
@@ -9,6 +10,7 @@ from HARK import multiThreadCommands, multiThreadCommandsFake
 from Parameters import EducShares, figs_dir
 
 mystr = lambda x : '{:.2f}'.format(x)
+mystr2 = lambda x : '{:.3f}'.format(x)
 
 def runExperiment(Agents,PanShock,
                   StimMax,StimCut0,StimCut1,BonusUnemp,BonusDeep,T_ahead,
@@ -87,10 +89,11 @@ def runExperiment(Agents,PanShock,
     T = Agents[0].T_sim
     
     # Adjust fiscal stimulus parameters by the level of aggregate productivity,
-    # which is 96 years more advanced than you would expect because reasons
+    # which is 96 years more advanced than you would expect because reasons.
+    # Multiply unemployment benefits by 0.8 to reflect fact that labor force participation rate is 0.8.
     StimMax *= PlvlAgg_adjuster
-    BonusUnemp *= PlvlAgg_adjuster
-    BonusDeep *= PlvlAgg_adjuster
+    BonusUnemp *= PlvlAgg_adjuster * 0.8
+    BonusDeep *= PlvlAgg_adjuster * 0.8
     if StimCut0 is not None:
         StimCut0 *= PlvlAgg_adjuster
     if StimCut1 is not None:
@@ -201,11 +204,13 @@ def runExperiment(Agents,PanShock,
     U = np.sum(u_all*Weight_all, axis=1) / np.sum(w_all*Weight_all, axis=1)
     
     # Calculate mean consumption *among the working age* by initial Markov state
-    C_by_mrkv = np.zeros((4,T))
-    C_by_mrkv[0,:] = np.sum(cLvl_all*Weight_all*Employed, axis=1) / np.sum(Weight_all*Employed, axis=1)
-    C_by_mrkv[1,:] = np.sum(cLvl_all*Weight_all*Unemployed, axis=1) / np.sum(Weight_all*Unemployed, axis=1)
-    C_by_mrkv[2,:] = np.sum(cLvl_all*Weight_all*DeepUnemp, axis=1) / np.sum(Weight_all*DeepUnemp, axis=1)
-    C_by_mrkv[3,:] = np.sum(cLvl_all*Weight_all*WorkingAge, axis=1) / np.sum(Weight_all*WorkingAge, axis=1)
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore") # Ignore divide by zero warning when no one is deeply unemployed
+        C_by_mrkv = np.zeros((4,T))
+        C_by_mrkv[0,:] = np.sum(cLvl_all*Weight_all*Employed, axis=1) / np.sum(Weight_all*Employed, axis=1)
+        C_by_mrkv[1,:] = np.sum(cLvl_all*Weight_all*Unemployed, axis=1) / np.sum(Weight_all*Unemployed, axis=1)
+        C_by_mrkv[2,:] = np.sum(cLvl_all*Weight_all*DeepUnemp, axis=1) / np.sum(Weight_all*DeepUnemp, axis=1)
+        C_by_mrkv[3,:] = np.sum(cLvl_all*Weight_all*WorkingAge, axis=1) / np.sum(Weight_all*WorkingAge, axis=1)
     
     # Calculate mean consumption *among the working age* by income quintile
     C_by_inc = np.zeros((5,T))
@@ -218,7 +223,8 @@ def runExperiment(Agents,PanShock,
 
 def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
                                  UnempD,UnempH,UnempC,UnempP,UnempA1,UnempA2,
-                                 DeepD,DeepH,DeepC,DeepP,DeepA1,DeepA2):
+                                 DeepD,DeepH,DeepC,DeepP,DeepA1,DeepA2,
+                                 show_fig=True):
     '''
     Make figures showing the probability of becoming unemployed and deeply
     unemployed when the pandemic hits, by age, income, and education.
@@ -257,6 +263,8 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
         Coefficient on age in the Markov-shock logit for deep unemployment.
     DeepA2 : float
         Coefficient on age squared in the Markov-shock logit for deep unemployment.
+    show_fig : bool
+        Indicator for whether the figure should be displayed to screen; default True.
         
     Returns
     -------
@@ -440,7 +448,11 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     plt.suptitle('Unemployment probability after pandemic shock')
     plt.savefig(figs_dir + 'UnempProbByDemog' + spec_name + '.pdf', bbox_inches='tight')
     plt.savefig(figs_dir + 'UnempProbByDemog' + spec_name + '.png', bbox_inches='tight')
-    plt.show()
+    if show_fig:
+        plt.show()
+    else:
+        plt.clf()
+    
     return data
     
     
@@ -482,4 +494,52 @@ def calcCSTWmpcStats(Agents):
     print('Share of liquid wealth of the bottom 40% is ' + mystr(100*LorenzPts[1]) + '% (target 0.4%).')
     print('Share of liquid wealth of the bottom 60% is ' + mystr(100*LorenzPts[2]) + '% (target 2.5%).')
     print('Share of liquid wealth of the bottom 80% is ' + mystr(100*LorenzPts[3]) + '% (target 11.7%).')
-
+    
+    
+def makeConfigFile(param_name,param_min,param_max,N,int_bool=False):
+    '''
+    Makes a yaml file for the configurator to read, perturbing one parameter over
+    a specified range of values.  Saves the file to ./Code/Python/Config/
+    
+    Parameters
+    ----------
+    param_name : str
+        Name of parameter to perturb in the experiment.
+    param_min : float
+        Lower bound of values for the paramter to take on.
+    param_max : float
+        Upper bound of values for the parameter to take on.
+    N : int
+        Number of evenly spaced parameter values to use.
+    int_bool : bool
+        Indicator for whether parameter values should be integers.
+    '''
+    # Make a vector of parameter values
+    param_vec = np.linspace(param_min,param_max,N)
+    if int_bool:
+        param_vec = param_vec.astype(int)
+    
+    # Initialize the string to be written to the config file
+    out = '# This config file perturbs the parameter ' + param_name + ' over ' + str(N) + ' values between ' + str(param_min) + ' and ' + str(param_max) + '.\n'
+    
+    # Loop over parameter values, writing a new spec for each
+    for n in range(N):
+        if not int_bool:
+            val_str = mystr2(np.abs(param_vec[n]))
+        else:
+            val_str = str(param_vec[n])
+        if param_vec[n] < 0.:
+            val_str = 'n' + val_str
+        out += '\n'
+        out += param_name + '_' + val_str + ':\n'
+        if not int_bool:
+            out += '    ' + param_name + ': ' + mystr2(param_vec[n]) + '\n'
+        else:
+            out += '    ' + param_name + ': ' + str(param_vec[n]) + '\n'
+        
+    # Write the output string to a file
+    file_name = './Config/' + param_name + '_vary.yaml'
+    with open(file_name, 'w') as f:
+        f.write(out)
+        f.close()
+    print('Wrote config file to ' + file_name)

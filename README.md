@@ -25,14 +25,14 @@ All figures are produced after running all counterfactual scenarios.
 
 5. All figures are saved to the ./Figures subdirectory.
 
-6. All parameters can be adjusted in ./Python/Parameters.py, and are described below.  Each
-parameter should have an in-line description to give you a pretty good sense of what it does.
+6. All parameters can be adjusted in ./Python/parameter_config.py , and are described below.
+Each parameter should have an in-line description to give you a pretty good sense of what it does.
 
 
 ## STRUCTURAL PARAMETERS
 
-1. The parameters for the project are defined near the top of Parameters.py; they are divided
-into several blocks or types of parameters.
+1. The parameters for the project are defined in parameter_config.py and imported en masse into
+Parameters.py; they are divided into several blocks or types of parameters.
 
 2. The distribution of the intertemporal discount factor (beta) is defined by the parameters in
 the first block.  For each education level, we specify the center of a uniform distribution; the
