@@ -9,13 +9,13 @@
 %\usepackage[twoside,marginparwidth=0in,left=19.5mm,right=19.5mm,top=25.5mm,bottom=25.5mm]{geometry}\usepackage{layouts}
 \usepackage[twoside,marginparwidth=0in,left=19.5mm,right=19.5mm,top=25.5mm,bottom=25.5mm]{geometry}\usepackage{layouts}
 
-\renewcommand{\forcedate}{April 20, 2020}
+\renewcommand{\forcedate}{~}
 
 \begin{document}
 
 \externaldocument{ModelAppendix}
 
-\hfill{\tiny \jobname, \today, \currenttime}
+\hfill{\tiny \jobname}
 
 \title{Modeling the Consumption Response\\ to the CARES Act}
 
@@ -96,7 +96,7 @@
 
 \setcounter{page}{1}
 
-\titlepagefinish\pagestyle{empty}
+\titlepagefinish\newpage\pagestyle{empty}
 
 % If web version, then just incorporate thanks at beginning of text
 % instead of in frontmatter
@@ -247,7 +247,7 @@ After two years, aggregate labor income is almost fully recovered.  (See below f
   \label{labor_income}
   % \begin{Web}
   \ifthenelse{\boolean{ifWeb}}{
-    \includegraphics[width=\webWidth\textwidth]{./Figures/LaborIncome_examples}
+    \includegraphics[width=\webWidth\textwidth]{./Figures/AggLT}
   } %\end{Web}
   { \includegraphics[width=0.8\textwidth]{./Figures/AggLT}}
 \end{figure}
