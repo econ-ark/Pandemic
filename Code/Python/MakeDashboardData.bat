@@ -1,9 +1,10 @@
-python run_config.py ./Config/Dspell_real_vary.yaml
+python run_config.py ./Config/uPfac_L_vary.yaml
 python run_config.py ./Config/Lspell_real_vary.yaml
-python run_config.py ./Config/Dspell_pcvd_vary.yaml
+python run_config.py ./Config/Dspell_real_vary.yaml
 python run_config.py ./Config/Lspell_pcvd_vary.yaml
-python run_config.py ./Config/BonusDeep_vary.yaml
+python run_config.py ./Config/Dspell_pcvd_vary.yaml
 python run_config.py ./Config/BonusUnemp_vary.yaml
+python run_config.py ./Config/BonusDeep_vary.yaml
 python run_config.py ./Config/UpdatePrb_vary.yaml
 python run_config.py ./Config/StimMax_vary.yaml
 python run_config.py ./Config/StimCut0_vary.yaml
@@ -18,3 +19,4 @@ python run_config.py ./Config/DeepH_vary.yaml
 python run_config.py ./Config/DeepC_vary.yaml
 python run_config.py ./Config/DeepP_vary.yaml
 python run_config.py ./Config/DeepA1_vary.yaml
+python run_config.py ./Config/T_ahead_vary.yaml

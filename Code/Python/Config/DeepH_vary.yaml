@@ -1,64 +1,64 @@
-# This config file perturbs the parameter DeepH over 21 values between -0.75 and -2.75.
+# This config file perturbs the parameter DeepH over 21 values between -2.75 and -0.75.
 
-DeepH_n0.750:
-    DeepH: -0.750
-
-DeepH_n0.850:
-    DeepH: -0.850
-
-DeepH_n0.950:
-    DeepH: -0.950
-
-DeepH_n1.050:
-    DeepH: -1.050
-
-DeepH_n1.150:
-    DeepH: -1.150
-
-DeepH_n1.250:
-    DeepH: -1.250
-
-DeepH_n1.350:
-    DeepH: -1.350
-
-DeepH_n1.450:
-    DeepH: -1.450
-
-DeepH_n1.550:
-    DeepH: -1.550
-
-DeepH_n1.650:
-    DeepH: -1.650
-
-DeepH_n1.750:
-    DeepH: -1.750
-
-DeepH_n1.850:
-    DeepH: -1.850
-
-DeepH_n1.950:
-    DeepH: -1.950
-
-DeepH_n2.050:
-    DeepH: -2.050
-
-DeepH_n2.150:
-    DeepH: -2.150
-
-DeepH_n2.250:
-    DeepH: -2.250
-
-DeepH_n2.350:
-    DeepH: -2.350
-
-DeepH_n2.450:
-    DeepH: -2.450
-
-DeepH_n2.550:
-    DeepH: -2.550
+DeepH_n2.750:
+    DeepH: -2.750
 
 DeepH_n2.650:
     DeepH: -2.650
 
-DeepH_n2.750:
-    DeepH: -2.750
+DeepH_n2.550:
+    DeepH: -2.550
+
+DeepH_n2.450:
+    DeepH: -2.450
+
+DeepH_n2.350:
+    DeepH: -2.350
+
+DeepH_n2.250:
+    DeepH: -2.250
+
+DeepH_n2.150:
+    DeepH: -2.150
+
+DeepH_n2.050:
+    DeepH: -2.050
+
+DeepH_n1.950:
+    DeepH: -1.950
+
+DeepH_n1.850:
+    DeepH: -1.850
+
+DeepH_n1.750:
+    DeepH: -1.750
+
+DeepH_n1.650:
+    DeepH: -1.650
+
+DeepH_n1.550:
+    DeepH: -1.550
+
+DeepH_n1.450:
+    DeepH: -1.450
+
+DeepH_n1.350:
+    DeepH: -1.350
+
+DeepH_n1.250:
+    DeepH: -1.250
+
+DeepH_n1.150:
+    DeepH: -1.150
+
+DeepH_n1.050:
+    DeepH: -1.050
+
+DeepH_n0.950:
+    DeepH: -0.950
+
+DeepH_n0.850:
+    DeepH: -0.850
+
+DeepH_n0.750:
+    DeepH: -0.750

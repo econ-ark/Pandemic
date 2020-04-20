@@ -1,64 +1,64 @@
-# This config file perturbs the parameter DeepD over 21 values between -0.5 and -2.5.
+# This config file perturbs the parameter DeepD over 21 values between -2.5 and -0.5.
 
-DeepD_n0.500:
-    DeepD: -0.500
-
-DeepD_n0.600:
-    DeepD: -0.600
-
-DeepD_n0.700:
-    DeepD: -0.700
-
-DeepD_n0.800:
-    DeepD: -0.800
-
-DeepD_n0.900:
-    DeepD: -0.900
-
-DeepD_n1.000:
-    DeepD: -1.000
-
-DeepD_n1.100:
-    DeepD: -1.100
-
-DeepD_n1.200:
-    DeepD: -1.200
-
-DeepD_n1.300:
-    DeepD: -1.300
-
-DeepD_n1.400:
-    DeepD: -1.400
-
-DeepD_n1.500:
-    DeepD: -1.500
-
-DeepD_n1.600:
-    DeepD: -1.600
-
-DeepD_n1.700:
-    DeepD: -1.700
-
-DeepD_n1.800:
-    DeepD: -1.800
-
-DeepD_n1.900:
-    DeepD: -1.900
-
-DeepD_n2.000:
-    DeepD: -2.000
-
-DeepD_n2.100:
-    DeepD: -2.100
-
-DeepD_n2.200:
-    DeepD: -2.200
-
-DeepD_n2.300:
-    DeepD: -2.300
+DeepD_n2.500:
+    DeepD: -2.500
 
 DeepD_n2.400:
     DeepD: -2.400
 
-DeepD_n2.500:
-    DeepD: -2.500
+DeepD_n2.300:
+    DeepD: -2.300
+
+DeepD_n2.200:
+    DeepD: -2.200
+
+DeepD_n2.100:
+    DeepD: -2.100
+
+DeepD_n2.000:
+    DeepD: -2.000
+
+DeepD_n1.900:
+    DeepD: -1.900
+
+DeepD_n1.800:
+    DeepD: -1.800
+
+DeepD_n1.700:
+    DeepD: -1.700
+
+DeepD_n1.600:
+    DeepD: -1.600
+
+DeepD_n1.500:
+    DeepD: -1.500
+
+DeepD_n1.400:
+    DeepD: -1.400
+
+DeepD_n1.300:
+    DeepD: -1.300
+
+DeepD_n1.200:
+    DeepD: -1.200
+
+DeepD_n1.100:
+    DeepD: -1.100
+
+DeepD_n1.000:
+    DeepD: -1.000
+
+DeepD_n0.900:
+    DeepD: -0.900
+
+DeepD_n0.800:
+    DeepD: -0.800
+
+DeepD_n0.700:
+    DeepD: -0.700
+
+DeepD_n0.600:
+    DeepD: -0.600
+
+DeepD_n0.500:
+    DeepD: -0.500

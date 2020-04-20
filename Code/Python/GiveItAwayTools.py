@@ -448,6 +448,7 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     plt.suptitle('Unemployment probability after pandemic shock')
     plt.savefig(figs_dir + 'UnempProbByDemog' + spec_name + '.pdf', bbox_inches='tight')
     plt.savefig(figs_dir + 'UnempProbByDemog' + spec_name + '.png', bbox_inches='tight')
+    plt.savefig(figs_dir + 'UnempProbByDemog' + spec_name + '.svg', bbox_inches='tight')
     if show_fig:
         plt.show()
     else:

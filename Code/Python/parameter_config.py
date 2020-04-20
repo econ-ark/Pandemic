@@ -71,4 +71,3 @@ TranShkCount = 7        # Number of points in equiprobable discrete approximatio
 # Aggregation factor - what do we mulitply the mean individual by to get aggregate numbers for the US economy
 # Resulting number is in billions of USD
 AggregationFactor = 253.0
-StimMax = 0.3 

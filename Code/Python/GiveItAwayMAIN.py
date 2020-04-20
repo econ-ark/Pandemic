@@ -296,6 +296,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'Urate.pdf')
     plt.savefig(figs_dir + 'Urate.png')
+    plt.savefig(figs_dir + 'Urate.svg')
     plt.show()
     
     plt.plot(C_base*1000)
@@ -309,6 +310,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'ConResp_examples.pdf')
     plt.savefig(figs_dir + 'ConResp_examples.png')
+    plt.savefig(figs_dir + 'ConResp_examples.svg')
     plt.show()
     
     plt.plot(C_base*AggregationFactor)
@@ -322,6 +324,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'AggConResp_examples.pdf')
     plt.savefig(figs_dir + 'AggConResp_examples.png')
+    plt.savefig(figs_dir + 'AggConResp_examples.svg')
     plt.show()
     
     plt.plot(LT_base_all*AggregationFactor)
@@ -335,6 +338,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'AggLT.pdf')
     plt.savefig(figs_dir + 'AggLT.png')
+    plt.savefig(figs_dir + 'AggLT.svg')
     plt.show()
     
     plt.plot((C_stim-C_base)*1000)
@@ -347,6 +351,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'ConResp_pandemic_vs_normal.pdf')
     plt.savefig(figs_dir + 'ConResp_pandemic_vs_normal.png')
+    plt.savefig(figs_dir + 'ConResp_pandemic_vs_normal.svg')
     plt.show()
     
     plt.plot(X_pan[0,:]*1000,'-b')
@@ -365,6 +370,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'ConRespByEmpStateNoStim.pdf')
     plt.savefig(figs_dir + 'ConRespByEmpStateNoStim.png')
+    plt.savefig(figs_dir + 'ConRespByEmpStateNoStim.svg')
     plt.show()
     
     plt.plot(X_both[0,:]*1000,'-b')
@@ -382,6 +388,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'ConRespByEmpStateWStim.pdf')
     plt.savefig(figs_dir + 'ConRespByEmpStateWStim.png')
+    plt.savefig(figs_dir + 'ConRespByEmpStateWStim.svg')
     plt.show()
        
     colors = ['b','r','g','c','m']
@@ -395,6 +402,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'ConPctChangeByIncomeNoStim.pdf')
     plt.savefig(figs_dir + 'ConPctChangeByIncomeNoStim.png')
+    plt.savefig(figs_dir + 'ConPctChangeByIncomeNoStim.svg')
     plt.show()
     
     for q in range(5):
@@ -407,6 +415,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'ConPctChangeByIncome.pdf')
     plt.savefig(figs_dir + 'ConPctChangeByIncome.png')
+    plt.savefig(figs_dir + 'ConPctChangeByIncome.svg')
     plt.show()
         
     plt.plot((C_both-C_pan)*AggregationFactor)
@@ -420,6 +429,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'Checks_vs_Unemp.pdf')
     plt.savefig(figs_dir + 'Checks_vs_Unemp.png')
+    plt.savefig(figs_dir + 'Checks_vs_Unemp.svg')
     plt.show()
 
     plt.plot(LT_pan[0,:]*1000,'-b')
@@ -436,6 +446,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'IncomeByEmpStateNoStim.pdf')
     plt.savefig(figs_dir + 'IncomeByEmpStateNoStim.png')
+    plt.savefig(figs_dir + 'IncomeByEmpStateNoStim.svg')
     plt.show()
     
     plt.plot(LT_both[0,:]*1000,'-b')
@@ -452,6 +463,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'IncomeByEmpStateWStim.pdf')
     plt.savefig(figs_dir + 'IncomeByEmpStateWStim.png')
+    plt.savefig(figs_dir + 'IncomeByEmpStateWStim.svg')
     plt.show()
     
     plt.plot(LT_checks_pan[0,:]*1000,'-b')
@@ -468,6 +480,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'IncomeByEmpStateWChecks.pdf')
     plt.savefig(figs_dir + 'IncomeByEmpStateWChecks.png')
+    plt.savefig(figs_dir + 'IncomeByEmpStateWChecks.svg')
     plt.show()
     
     plt.plot(LT_unemp_pan[0,:]*1000,'-b')
@@ -484,6 +497,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'IncomeByEmpStateWUnemp.pdf')
     plt.savefig(figs_dir + 'IncomeByEmpStateWUnemp.png')
+    plt.savefig(figs_dir + 'IncomeByEmpStateWUnemp.svg')
     plt.show()
     
     plt.plot((X_both[0,:]-X_pan[0,:])*1000,'-b')
@@ -499,6 +513,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'ConDeltaByEmpState.pdf')
     plt.savefig(figs_dir + 'ConDeltaByEmpState.png')
+    plt.savefig(figs_dir + 'ConDeltaByEmpState.svg')
     plt.show()
     
     plt.plot((C_both-C_pan)*AggregationFactor)
@@ -511,6 +526,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'EffectTargeting.pdf')
     plt.savefig(figs_dir + 'EffectTargeting.png')
+    plt.savefig(figs_dir + 'EffectTargeting.svg')
     plt.show()
     
     colors = ['b','r','g','c','m']
@@ -524,6 +540,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'IncomePctChangeByIncomeNoStim.pdf')
     plt.savefig(figs_dir + 'IncomePctChangeByIncomeNoStim.png')
+    plt.savefig(figs_dir + 'IncomePctChangeByIncomeNoStim.svg')
     plt.show()
     
     for q in range(5):
@@ -536,6 +553,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'IncPctChangeByIncome.pdf')
     plt.savefig(figs_dir + 'IncPctChangeByIncome.png')
+    plt.savefig(figs_dir + 'IncPctChangeByIncome.svg')
     plt.show()
 
     plt.plot((C_both-C_pan)*1000, '-b')
@@ -550,6 +568,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'EffectTargeting_marginal.pdf')
     plt.savefig(figs_dir + 'EffectTargeting_marginal.png')
+    plt.savefig(figs_dir + 'EffectTargeting_marginal.svg')
     plt.show()
     
     if do_no_utility_loss:
@@ -564,6 +583,7 @@ if __name__ == '__main__':
         plt.tight_layout()
         plt.savefig(figs_dir + 'AggConResp_no_distancing.pdf')
         plt.savefig(figs_dir + 'AggConResp_no_distancing.png')
+        plt.savefig(figs_dir + 'AggConResp_no_distancing.svg')
         plt.show()
         
         plt.plot((C_pan-C_base)*AggregationFactor,'-k')
@@ -579,6 +599,7 @@ if __name__ == '__main__':
         plt.tight_layout()
         plt.savefig(figs_dir + 'Decomposition.pdf')
         plt.savefig(figs_dir + 'Decomposition.png')
+        plt.savefig(figs_dir + 'Decomposition.svg')
         plt.show()
         
     plt.plot((C_base)*AggregationFactor)
@@ -593,6 +614,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'DeepPandemic.pdf')
     plt.savefig(figs_dir + 'DeepPandemic.png')
+    plt.savefig(figs_dir + 'DeepPandemic.svg')
     plt.show()
       
     plt.plot(LT_base_all*AggregationFactor)
@@ -607,6 +629,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'AggLT_long_pandemic.pdf')
     plt.savefig(figs_dir + 'AggLT_long_pandemic.png')
+    plt.savefig(figs_dir + 'AggLT_long_pandemic.svg')
     plt.show()
     
     plt.plot(X_long_pandemic[0,:]*1000,'-b')
@@ -625,6 +648,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'ConRespByEmpStateNoStim_long.pdf')
     plt.savefig(figs_dir + 'ConRespByEmpStateNoStim_long.png')
+    plt.savefig(figs_dir + 'ConRespByEmpStateNoStim_long.svg')
     plt.show()
     
     plt.plot(X_long_pandemic_stim[0,:]*1000,'-b')
@@ -642,6 +666,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'ConRespByEmpStateWStim_long.pdf')
     plt.savefig(figs_dir + 'ConRespByEmpStateWStim_long.png')
+    plt.savefig(figs_dir + 'ConRespByEmpStateWStim_long.svg')
     plt.show()
     
     plt.plot(LT_long_pandemic_stim[0,:]*1000,'-b')
@@ -658,5 +683,6 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figs_dir + 'IncomeByEmpStateWStim_long.pdf')
     plt.savefig(figs_dir + 'IncomeByEmpStateWStim_long.png')
+    plt.savefig(figs_dir + 'IncomeByEmpStateWStim_long.svg')
     plt.show()
     
