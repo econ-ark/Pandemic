@@ -3,8 +3,8 @@ uPfac_L:
     desc: 'Factor on marginal utility during lockdown'
     min: 0.8
     max: 1.0
-    step: 0.05
-    default: 0.9
+    step: 0.01
+    default: 0.89
 
 Dspell_real:
     desc: 'Actual average duration of deep unemployment spell'
@@ -33,6 +33,13 @@ Lspell_pcvd:
     max: 5.0
     step: 0.2
     default: 2.0
+
+Unemp0:
+    desc: 'Shifter on unemployment logit (all education)'
+    min: -1.0
+    max: 1.0
+    step: 0.1
+    default: 0.0
 
 UnempD:
     desc: 'Constant in unemployment shock logit for dropout'
@@ -74,6 +81,13 @@ UnempA2:
     min: 0.0
     max: 0.0
     step: 0.0
+    default: 0.0
+
+Deep0:
+    desc: 'Shifter on deep umemp logit (all education)'
+    min: -1.0
+    max: 1.0
+    step: 0.1
     default: 0.0
 
 DeepD:
