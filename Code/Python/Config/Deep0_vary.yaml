@@ -1,0 +1,64 @@
+# This config file perturbs the parameter Deep0 over 21 values between -1.0 and 1.0.
+
+Deep0_n1.000:
+    Deep0: -1.000
+
+Deep0_n0.900:
+    Deep0: -0.900
+
+Deep0_n0.800:
+    Deep0: -0.800
+
+Deep0_n0.700:
+    Deep0: -0.700
+
+Deep0_n0.600:
+    Deep0: -0.600
+
+Deep0_n0.500:
+    Deep0: -0.500
+
+Deep0_n0.400:
+    Deep0: -0.400
+
+Deep0_n0.300:
+    Deep0: -0.300
+
+Deep0_n0.200:
+    Deep0: -0.200
+
+Deep0_n0.100:
+    Deep0: -0.100
+
+Deep0_0.000:
+    Deep0: 0.000
+
+Deep0_0.100:
+    Deep0: 0.100
+
+Deep0_0.200:
+    Deep0: 0.200
+
+Deep0_0.300:
+    Deep0: 0.300
+
+Deep0_0.400:
+    Deep0: 0.400
+
+Deep0_0.500:
+    Deep0: 0.500
+
+Deep0_0.600:
+    Deep0: 0.600
+
+Deep0_0.700:
+    Deep0: 0.700
+
+Deep0_0.800:
+    Deep0: 0.800
+
+Deep0_0.900:
+    Deep0: 0.900
+
+Deep0_1.000:
+    Deep0: 1.000
