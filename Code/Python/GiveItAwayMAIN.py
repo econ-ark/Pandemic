@@ -186,10 +186,10 @@ if __name__ == '__main__':
     if (do_no_utility_loss):
         TypeList_no_utility_loss = []
         n = 0
-        for b in range(DiscFacDstns[0][0].size):
+        for b in range(DiscFacDstns[0].X.size):
             for e in range(3):
-                DiscFac = DiscFacDstns[e][1][b]
-                AgentCount = int(np.floor(AgentCountTotal*EducShares[e]*DiscFacDstns[e][0][b]))
+                DiscFac = DiscFacDstns[e].X[b]
+                AgentCount = int(np.floor(AgentCountTotal*EducShares[e]*DiscFacDstns[e].pmf[b]))
                 ThisType = deepcopy(BaseTypeList[e])
                 ThisType.AgentCount = AgentCount
                 ThisType.DiscFac = DiscFac
