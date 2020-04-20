@@ -15,7 +15,7 @@
 \usepackage{\econtexSetup}
 \usepackage{\econtexShortcuts}
 \usepackage[nolists,nomarkers,tablesonly]{endfloat}
-\usepackage{datetime}
+\usepackage[short,nodayofweek,yyyymmdd]{datetime}
 \usepackage{rotating}
 \setcounter{secnumdepth}{4}
 
@@ -23,7 +23,7 @@
 
 % \begin{Web}
 \provideboolean{ifWeb}
-\setboolean{ifWeb}{true}
+\setboolean{ifWeb}{false}
 \opt{Web}{\setboolean{ifWeb}{true}}
 \provideboolean{ifBig}
 \setboolean{ifBig}{true}

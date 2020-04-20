@@ -1,64 +1,64 @@
-# This config file perturbs the parameter DeepC over 21 values between -1.2 and -3.2.
+# This config file perturbs the parameter DeepC over 21 values between -3.2 and -1.2.
 
-DeepC_n1.200:
-    DeepC: -1.200
-
-DeepC_n1.300:
-    DeepC: -1.300
-
-DeepC_n1.400:
-    DeepC: -1.400
-
-DeepC_n1.500:
-    DeepC: -1.500
-
-DeepC_n1.600:
-    DeepC: -1.600
-
-DeepC_n1.700:
-    DeepC: -1.700
-
-DeepC_n1.800:
-    DeepC: -1.800
-
-DeepC_n1.900:
-    DeepC: -1.900
-
-DeepC_n2.000:
-    DeepC: -2.000
-
-DeepC_n2.100:
-    DeepC: -2.100
-
-DeepC_n2.200:
-    DeepC: -2.200
-
-DeepC_n2.300:
-    DeepC: -2.300
-
-DeepC_n2.400:
-    DeepC: -2.400
-
-DeepC_n2.500:
-    DeepC: -2.500
-
-DeepC_n2.600:
-    DeepC: -2.600
-
-DeepC_n2.700:
-    DeepC: -2.700
-
-DeepC_n2.800:
-    DeepC: -2.800
-
-DeepC_n2.900:
-    DeepC: -2.900
-
-DeepC_n3.000:
-    DeepC: -3.000
+DeepC_n3.200:
+    DeepC: -3.200
 
 DeepC_n3.100:
     DeepC: -3.100
 
-DeepC_n3.200:
-    DeepC: -3.200
+DeepC_n3.000:
+    DeepC: -3.000
+
+DeepC_n2.900:
+    DeepC: -2.900
+
+DeepC_n2.800:
+    DeepC: -2.800
+
+DeepC_n2.700:
+    DeepC: -2.700
+
+DeepC_n2.600:
+    DeepC: -2.600
+
+DeepC_n2.500:
+    DeepC: -2.500
+
+DeepC_n2.400:
+    DeepC: -2.400
+
+DeepC_n2.300:
+    DeepC: -2.300
+
+DeepC_n2.200:
+    DeepC: -2.200
+
+DeepC_n2.100:
+    DeepC: -2.100
+
+DeepC_n2.000:
+    DeepC: -2.000
+
+DeepC_n1.900:
+    DeepC: -1.900
+
+DeepC_n1.800:
+    DeepC: -1.800
+
+DeepC_n1.700:
+    DeepC: -1.700
+
+DeepC_n1.600:
+    DeepC: -1.600
+
+DeepC_n1.500:
+    DeepC: -1.500
+
+DeepC_n1.400:
+    DeepC: -1.400
+
+DeepC_n1.300:
+    DeepC: -1.300
+
+DeepC_n1.200:
+    DeepC: -1.200

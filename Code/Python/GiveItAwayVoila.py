@@ -4,6 +4,7 @@ the Consumption Response to the CARES Act" by Carroll, Crawley, Slacalek, and Wh
 The script produces only a small subset of figures.
 '''
 from HARK import multiThreadCommands
+from HARK.distribution import DiscreteDistribution
 from time import time
 import numpy as np
 from copy import deepcopy
@@ -63,7 +64,9 @@ def run_web(spec_name):
     base_dict['Agents'] = TypeList
     
     # Make a figure to show unemployment probabilities by demographics
-    data['fig6'] = makePandemicShockProbsFigure(BaseTypeList,'',**pandemic_changes)
+    pandemic_changes['show_fig'] = False
+    data['fig6'] = makePandemicShockProbsFigure(BaseTypeList,'TRASH',**pandemic_changes)
+    del pandemic_changes['show_fig']
     
     # Solve and simulate each type to get to the initial distribution of states
     # and then prepare for new counterfactual simulations
@@ -164,5 +167,5 @@ def run_web(spec_name):
 
     t1 = time()
     print('Running the specification called ' + spec_name + ' took ' + mystr(t1-t0) + ' seconds.')
-    with open(f"../../DashboardData/data_{spec_name}.pickle", "wb") as f:
+    with open(f"../../Data/Dashboard/data_{spec_name}.pickle", "wb") as f:
         pickle.dump(data, f)
