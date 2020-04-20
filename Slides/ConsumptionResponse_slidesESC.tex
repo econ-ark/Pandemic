@@ -1,0 +1,116 @@
+\input{./econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}
+\documentclass{beamer}
+\usepackage{etoolbox}
+\usepackage{comment}
+\usepackage{graphicx}
+%\usepackage{dtklogos}
+\usepackage{dsfont}
+\usepackage{amsmath,amssymb}
+\usepackage{\econtexShortcuts}
+\usepackage[english]{babel}
+\usepackage[svgnames,hyperref]{}
+\usepackage{empheq}
+\usepackage[many]{tcolorbox}
+\usepackage{remreset}
+\usepackage{tikz} 
+\usetikzlibrary{tikzmark,fit,shapes.geometric}
+\usetikzlibrary{tikzmark,calc,arrows,shapes,decorations.pathreplacing}
+\tikzset{every picture/.style={remember picture}}
+\usepackage{cancel}
+\usepackage{booktabs,natbib}
+\setbeamercovered{invisible}
+
+\usepackage{dcolumn}
+
+\tcbset{highlight math style={enhanced,
+		colframe=red!60!black,colback=yellow!50!white,arc=4pt,boxrule=1pt,
+}}
+
+
+\makeatletter
+\@removefromreset{subsection}{section}
+\patchcmd{\beamer@part}{\setcounter{subsection}{0}}{}{}
+\makeatother
+\setcounter{subsection}{1}
+\setbeamercovered{transparent}
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+\begin{comment}
+\setbeamertemplate{footline}
+{
+	\hbox{\begin{beamercolorbox}[wd=1\paperwidth,ht=2.25ex,dp=1ex,right]{framenumber}%
+			\usebeamerfont{framenumber}\insertframenumber{} \hspace*{2ex}
+	\end{beamercolorbox}}%
+	\vskip0pt%
+}
+\end{comment}
+
+
+\mode<presentation>{}
+
+\title[Modeling the Consumption Response to the CARES Act]{Modeling the Consumption Response\\ to the CARES Act}
+\author[]{Christopher D. Carroll \and Edmund Crawley \and Jiri Slacalek \and Matthew N. White}
+\date[04/21/2020]{April 21, 2020 \vspace{2cm} \\ \footnotesize Viewpoints and conclusions stated in this paper are the responsibility of the authors alone and do not necessarily reflect the viewpoints of the Federal Reserve Board or the ECB.}
+\usetheme{Frankfurt}
+
+\setbeamertemplate{navigation symbols}{}
+\makeatletter
+\setbeamertemplate{footline}
+{%
+	\hbox{\begin{beamercolorbox}[wd=1\paperwidth,ht=2.25ex,dp=1ex,right]{framenumber}%
+		\usebeamerfont{framenumber}\insertframenumber{} \hspace*{2ex}
+	\end{beamercolorbox}}%
+	\vskip0pt%
+	\pgfuseshading{beamer@barshade}%
+	\ifbeamer@sb@subsection%
+	\vskip-9.75ex%
+	\else%
+	\vskip-7ex%
+	\fi%
+	\begin{beamercolorbox}[ignorebg,ht=2.25ex,dp=3.75ex]{section in head/foot}
+		\insertnavigation{\paperwidth}
+	\end{beamercolorbox}%
+	\ifbeamer@sb@subsection%
+	\begin{beamercolorbox}[ignorebg,ht=2.125ex,dp=1.125ex,%
+		leftskip=.3cm,rightskip=.3cm plus1fil]{subsection in head/foot}
+		\usebeamerfont{subsection in head/foot}\insertsubsectionhead \insertframenumber{} \hspace*{2ex}
+	\end{beamercolorbox}%
+	\fi%
+}%
+\setbeamertemplate{headline}{%
+}
+\makeatother
+\begin{document}
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+%circled draws a circle around a number
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+\begin{frame}[plain]
+\titlepage
+\end{frame}
+\addtocounter{framenumber}{-1}
+\section{Introduction}
+\setbeamercovered{invisible}
+\frame{
+\frametitle{Motivation}
+}
+\frame{
+	\frametitle{What's Old}
+}
+\frame{
+	\frametitle{What's New}
+}
+\section{Results}
+\frame{
+	\frametitle{Aggregate Consumption Response}
+}
+
+\bibliographystyle{\econtexBibStyle}
+\newsavebox\mytempbib
+\savebox\mytempbib{\parbox{\textwidth}{\bibliography{\econtexRoot/AllPapers}}}
+
+
+\end{document}
+
+
