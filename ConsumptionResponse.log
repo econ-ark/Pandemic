@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2019.4.7)  20 APR 2020 20:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2019.4.7)  21 APR 2020 16:03
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1935,35 +1935,36 @@ LaTeX Font Info:    Try loading font information for U+wasy on input line 51.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-l. 76 Writing ConsumptionResponse.idv[1] (ConsumptionResponse0x.svg)
+l. 77 Writing ConsumptionResponse.idv[1] (ConsumptionResponse0x.svg)
+l. 77 Writing ConsumptionResponse.idv[2] (ConsumptionResponse1x.svg)
 
 [1
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 86.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 87.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [1] [2]
-l. 120 Writing ConsumptionResponse.idv[2] (ConsumptionResponse1x.svg)
+l. 121 Writing ConsumptionResponse.idv[3] (ConsumptionResponse2x.svg)
  [3] [4] [5] [6] [7] [8
 
 ]
-l. 221 --- needs --- ./Figures/UnempProbByDemogBasic.png ---
+l. 222 --- needs --- ./Figures/UnempProbByDemogBasic.png ---
  [9
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 229.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 230.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 229.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 230.
  [10
 
 ] [11
 
 ]
-l. 253 --- needs --- ./Figures/AggLT.png ---
+l. 254 --- needs --- ./Figures/AggLT.png ---
  [12
 
 ] [13
@@ -1971,7 +1972,7 @@ l. 253 --- needs --- ./Figures/AggLT.png ---
 ] [14
 
 ]
-l. 269 --- needs --- ./Figures/AggConResp_examples.png ---
+l. 270 --- needs --- ./Figures/AggConResp_examples.png ---
  [15
 
 ] [16
@@ -1979,7 +1980,7 @@ l. 269 --- needs --- ./Figures/AggConResp_examples.png ---
 ] [17
 
 ]
-l. 295 --- needs --- ./Figures/Decomposition.png ---
+l. 296 --- needs --- ./Figures/Decomposition.png ---
  [18
 
 ] [19
@@ -1987,8 +1988,8 @@ l. 295 --- needs --- ./Figures/Decomposition.png ---
 ] [20
 
 ]
-l. 315 --- needs --- ./Figures/ConRespByEmpStateNoStim.png ---
-l. 315 --- needs --- ./Figures/ConRespByEmpStateWStim.png ---
+l. 316 --- needs --- ./Figures/ConRespByEmpStateNoStim.png ---
+l. 316 --- needs --- ./Figures/ConRespByEmpStateWStim.png ---
  [21
 
 ] [22
@@ -1996,7 +1997,7 @@ l. 315 --- needs --- ./Figures/ConRespByEmpStateWStim.png ---
 ] [23
 
 ]
-l. 333 --- needs --- ./Figures/ConDeltaByEmpState.png ---
+l. 334 --- needs --- ./Figures/ConDeltaByEmpState.png ---
  [24
 
 ] [25
@@ -2004,7 +2005,7 @@ l. 333 --- needs --- ./Figures/ConDeltaByEmpState.png ---
 ] [26
 
 ]
-l. 349 --- needs --- ./Figures/Checks_vs_Unemp.png ---
+l. 350 --- needs --- ./Figures/Checks_vs_Unemp.png ---
 
 [27
 
@@ -2013,7 +2014,7 @@ l. 349 --- needs --- ./Figures/Checks_vs_Unemp.png ---
 ] [29
 
 ]
-l. 366 --- needs --- ./Figures/EffectTargeting.png ---
+l. 367 --- needs --- ./Figures/EffectTargeting.png ---
  [30
 
 ] [31
@@ -2021,7 +2022,7 @@ l. 366 --- needs --- ./Figures/EffectTargeting.png ---
 ] [32
 
 ]
-l. 385 --- needs --- ./Figures/AggLT_long_pandemic.png ---
+l. 386 --- needs --- ./Figures/AggLT_long_pandemic.png ---
  [33
 
 ] [34
@@ -2029,29 +2030,28 @@ l. 385 --- needs --- ./Figures/AggLT_long_pandemic.png ---
 ] [35
 
 ]
-l. 401 --- needs --- ./Figures/DeepPandemic.png ---
+l. 402 --- needs --- ./Figures/DeepPandemic.png ---
  [36
 
 ] (./ConsumptionResponse.bbl [37
 
 ] [38] [39] [40]) [41] (./ModelAppendix.tex (./LaTeX/econtexRoot.tex) (./LaTeX/onlyinsubfile.tex)
-l. 11 Writing ConsumptionResponse.idv[3] (ConsumptionResponse2x.svg)
 l. 11 Writing ConsumptionResponse.idv[4] (ConsumptionResponse3x.svg)
-l. 12 Writing ConsumptionResponse.idv[5] (ConsumptionResponse4x.svg)
+l. 11 Writing ConsumptionResponse.idv[5] (ConsumptionResponse4x.svg)
 l. 12 Writing ConsumptionResponse.idv[6] (ConsumptionResponse5x.svg)
 l. 12 Writing ConsumptionResponse.idv[7] (ConsumptionResponse6x.svg)
-l. 13 Writing ConsumptionResponse.idv[8] (ConsumptionResponse7x.svg)
+l. 12 Writing ConsumptionResponse.idv[8] (ConsumptionResponse7x.svg)
 l. 13 Writing ConsumptionResponse.idv[9] (ConsumptionResponse8x.svg)
 l. 13 Writing ConsumptionResponse.idv[10] (ConsumptionResponse9x.svg)
-l. 15 Writing ConsumptionResponse.idv[11] (ConsumptionResponse10x.svg)
+l. 13 Writing ConsumptionResponse.idv[11] (ConsumptionResponse10x.svg)
 l. 15 Writing ConsumptionResponse.idv[12] (ConsumptionResponse11x.svg)
 l. 15 Writing ConsumptionResponse.idv[13] (ConsumptionResponse12x.svg)
-l. 19 Writing ConsumptionResponse.idv[14] (ConsumptionResponse13x.svg)
+l. 15 Writing ConsumptionResponse.idv[14] (ConsumptionResponse13x.svg)
 l. 19 Writing ConsumptionResponse.idv[15] (ConsumptionResponse14x.svg)
 l. 19 Writing ConsumptionResponse.idv[16] (ConsumptionResponse15x.svg)
-l. 22 Writing ConsumptionResponse.idv[17] (ConsumptionResponse16x.svg)
+l. 19 Writing ConsumptionResponse.idv[17] (ConsumptionResponse16x.svg)
 l. 22 Writing ConsumptionResponse.idv[18] (ConsumptionResponse17x.svg)
-l. 24 Writing ConsumptionResponse.idv[19] (ConsumptionResponse18x.svg)
+l. 22 Writing ConsumptionResponse.idv[19] (ConsumptionResponse18x.svg)
 l. 24 Writing ConsumptionResponse.idv[20] (ConsumptionResponse19x.svg)
 l. 24 Writing ConsumptionResponse.idv[21] (ConsumptionResponse20x.svg)
 l. 24 Writing ConsumptionResponse.idv[22] (ConsumptionResponse21x.svg)
@@ -2059,90 +2059,91 @@ l. 24 Writing ConsumptionResponse.idv[23] (ConsumptionResponse22x.svg)
 l. 24 Writing ConsumptionResponse.idv[24] (ConsumptionResponse23x.svg)
 l. 24 Writing ConsumptionResponse.idv[25] (ConsumptionResponse24x.svg)
 l. 24 Writing ConsumptionResponse.idv[26] (ConsumptionResponse25x.svg)
-l. 25 Writing ConsumptionResponse.idv[27] (ConsumptionResponse26x.svg)
-l. 27 Writing ConsumptionResponse.idv[28] (ConsumptionResponse27x.svg)
-l. 28 Writing ConsumptionResponse.idv[29] (ConsumptionResponse28x.svg)
-l. 30 Writing ConsumptionResponse.idv[30] (ConsumptionResponse29x.svg)
+l. 24 Writing ConsumptionResponse.idv[27] (ConsumptionResponse26x.svg)
+l. 25 Writing ConsumptionResponse.idv[28] (ConsumptionResponse27x.svg)
+l. 27 Writing ConsumptionResponse.idv[29] (ConsumptionResponse28x.svg)
+l. 28 Writing ConsumptionResponse.idv[30] (ConsumptionResponse29x.svg)
+l. 30 Writing ConsumptionResponse.idv[31] (ConsumptionResponse30x.svg)
  [42]
-l. 33 Writing ConsumptionResponse.idv[31] (ConsumptionResponse30x.svg)
 l. 33 Writing ConsumptionResponse.idv[32] (ConsumptionResponse31x.svg)
 l. 33 Writing ConsumptionResponse.idv[33] (ConsumptionResponse32x.svg)
 l. 33 Writing ConsumptionResponse.idv[34] (ConsumptionResponse33x.svg)
-l. 34 Writing ConsumptionResponse.idv[35] (ConsumptionResponse34x.svg)
+l. 33 Writing ConsumptionResponse.idv[35] (ConsumptionResponse34x.svg)
 l. 34 Writing ConsumptionResponse.idv[36] (ConsumptionResponse35x.svg)
 l. 34 Writing ConsumptionResponse.idv[37] (ConsumptionResponse36x.svg)
-l. 36 Writing ConsumptionResponse.idv[38] (ConsumptionResponse37x.svg)
+l. 34 Writing ConsumptionResponse.idv[38] (ConsumptionResponse37x.svg)
 l. 36 Writing ConsumptionResponse.idv[39] (ConsumptionResponse38x.svg)
 l. 36 Writing ConsumptionResponse.idv[40] (ConsumptionResponse39x.svg)
-l. 39 Writing ConsumptionResponse.idv[41] (ConsumptionResponse40x.svg)
-l. 46 Writing ConsumptionResponse.idv[42] (ConsumptionResponse41x.svg)
-l. 54 Writing ConsumptionResponse.idv[43] (ConsumptionResponse42x.svg)
+l. 36 Writing ConsumptionResponse.idv[41] (ConsumptionResponse40x.svg)
+l. 39 Writing ConsumptionResponse.idv[42] (ConsumptionResponse41x.svg)
+l. 46 Writing ConsumptionResponse.idv[43] (ConsumptionResponse42x.svg)
 l. 54 Writing ConsumptionResponse.idv[44] (ConsumptionResponse43x.svg)
 l. 54 Writing ConsumptionResponse.idv[45] (ConsumptionResponse44x.svg)
 l. 54 Writing ConsumptionResponse.idv[46] (ConsumptionResponse45x.svg)
 l. 54 Writing ConsumptionResponse.idv[47] (ConsumptionResponse46x.svg)
 l. 54 Writing ConsumptionResponse.idv[48] (ConsumptionResponse47x.svg)
 l. 54 Writing ConsumptionResponse.idv[49] (ConsumptionResponse48x.svg)
-l. 55 Writing ConsumptionResponse.idv[50] (ConsumptionResponse49x.svg)
+l. 54 Writing ConsumptionResponse.idv[50] (ConsumptionResponse49x.svg)
 l. 55 Writing ConsumptionResponse.idv[51] (ConsumptionResponse50x.svg)
 l. 55 Writing ConsumptionResponse.idv[52] (ConsumptionResponse51x.svg)
+l. 55 Writing ConsumptionResponse.idv[53] (ConsumptionResponse52x.svg)
  [43]
-l. 57 Writing ConsumptionResponse.idv[53] (ConsumptionResponse52x.svg)
-l. 58 Writing ConsumptionResponse.idv[54] (ConsumptionResponse53x.svg)
-l. 59 Writing ConsumptionResponse.idv[55] (ConsumptionResponse54x.svg)
+l. 57 Writing ConsumptionResponse.idv[54] (ConsumptionResponse53x.svg)
+l. 58 Writing ConsumptionResponse.idv[55] (ConsumptionResponse54x.svg)
 l. 59 Writing ConsumptionResponse.idv[56] (ConsumptionResponse55x.svg)
-l. 63 Writing ConsumptionResponse.idv[57] (ConsumptionResponse56x.svg)
+l. 59 Writing ConsumptionResponse.idv[57] (ConsumptionResponse56x.svg)
 l. 63 Writing ConsumptionResponse.idv[58] (ConsumptionResponse57x.svg)
-l. 64 Writing ConsumptionResponse.idv[59] (ConsumptionResponse58x.svg)
+l. 63 Writing ConsumptionResponse.idv[59] (ConsumptionResponse58x.svg)
 l. 64 Writing ConsumptionResponse.idv[60] (ConsumptionResponse59x.svg)
 l. 64 Writing ConsumptionResponse.idv[61] (ConsumptionResponse60x.svg)
-l. 67 Writing ConsumptionResponse.idv[62] (ConsumptionResponse61x.svg)
+l. 64 Writing ConsumptionResponse.idv[62] (ConsumptionResponse61x.svg)
 l. 67 Writing ConsumptionResponse.idv[63] (ConsumptionResponse62x.svg)
-l. 68 Writing ConsumptionResponse.idv[64] (ConsumptionResponse63x.svg)
+l. 67 Writing ConsumptionResponse.idv[64] (ConsumptionResponse63x.svg)
 l. 68 Writing ConsumptionResponse.idv[65] (ConsumptionResponse64x.svg)
-l. 69 Writing ConsumptionResponse.idv[66] (ConsumptionResponse65x.svg)
-l. 70 Writing ConsumptionResponse.idv[67] (ConsumptionResponse66x.svg)
-l. 78 Writing ConsumptionResponse.idv[68] (ConsumptionResponse67x.svg)
+l. 68 Writing ConsumptionResponse.idv[66] (ConsumptionResponse65x.svg)
+l. 69 Writing ConsumptionResponse.idv[67] (ConsumptionResponse66x.svg)
+l. 70 Writing ConsumptionResponse.idv[68] (ConsumptionResponse67x.svg)
 l. 78 Writing ConsumptionResponse.idv[69] (ConsumptionResponse68x.svg)
 l. 78 Writing ConsumptionResponse.idv[70] (ConsumptionResponse69x.svg)
 l. 78 Writing ConsumptionResponse.idv[71] (ConsumptionResponse70x.svg)
 l. 78 Writing ConsumptionResponse.idv[72] (ConsumptionResponse71x.svg)
+l. 78 Writing ConsumptionResponse.idv[73] (ConsumptionResponse72x.svg)
  [44]
-l. 80 Writing ConsumptionResponse.idv[73] (ConsumptionResponse72x.svg)
-l. 82 Writing ConsumptionResponse.idv[74] (ConsumptionResponse73x.svg)
-l. 88 Writing ConsumptionResponse.idv[75] (ConsumptionResponse74x.svg)
+l. 80 Writing ConsumptionResponse.idv[74] (ConsumptionResponse73x.svg)
+l. 82 Writing ConsumptionResponse.idv[75] (ConsumptionResponse74x.svg)
+l. 88 Writing ConsumptionResponse.idv[76] (ConsumptionResponse75x.svg)
 LaTeX Font Info:    Try loading font information for U+euf on input line 89.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-l. 92 Writing ConsumptionResponse.idv[76] (ConsumptionResponse75x.svg)
 l. 92 Writing ConsumptionResponse.idv[77] (ConsumptionResponse76x.svg)
-l. 93 Writing ConsumptionResponse.idv[78] (ConsumptionResponse77x.svg)
-l. 94 Writing ConsumptionResponse.idv[79] (ConsumptionResponse78x.svg)
+l. 92 Writing ConsumptionResponse.idv[78] (ConsumptionResponse77x.svg)
+l. 93 Writing ConsumptionResponse.idv[79] (ConsumptionResponse78x.svg)
 l. 94 Writing ConsumptionResponse.idv[80] (ConsumptionResponse79x.svg)
+l. 94 Writing ConsumptionResponse.idv[81] (ConsumptionResponse80x.svg)
  [45]
-l. 97 Writing ConsumptionResponse.idv[81] (ConsumptionResponse80x.svg)
-l. 100 Writing ConsumptionResponse.idv[82] (ConsumptionResponse81x.svg)
+l. 97 Writing ConsumptionResponse.idv[82] (ConsumptionResponse81x.svg)
 l. 100 Writing ConsumptionResponse.idv[83] (ConsumptionResponse82x.svg)
 l. 100 Writing ConsumptionResponse.idv[84] (ConsumptionResponse83x.svg)
+l. 100 Writing ConsumptionResponse.idv[85] (ConsumptionResponse84x.svg)
 \openout3 = `ConsumptionResponse.ttt'.
 
  (ConsumptionResponse.ttt)
-l. 141 Writing ConsumptionResponse.idv[85] (ConsumptionResponse84x.svg)
 l. 141 Writing ConsumptionResponse.idv[86] (ConsumptionResponse85x.svg)
-l. 142 Writing ConsumptionResponse.idv[87] (ConsumptionResponse86x.svg)
-l. 145 Writing ConsumptionResponse.idv[88] (ConsumptionResponse87x.svg)
+l. 141 Writing ConsumptionResponse.idv[87] (ConsumptionResponse86x.svg)
+l. 142 Writing ConsumptionResponse.idv[88] (ConsumptionResponse87x.svg)
 l. 145 Writing ConsumptionResponse.idv[89] (ConsumptionResponse88x.svg)
 l. 145 Writing ConsumptionResponse.idv[90] (ConsumptionResponse89x.svg)
 l. 145 Writing ConsumptionResponse.idv[91] (ConsumptionResponse90x.svg)
-l. 146 Writing ConsumptionResponse.idv[92] (ConsumptionResponse91x.svg)
+l. 145 Writing ConsumptionResponse.idv[92] (ConsumptionResponse91x.svg)
+l. 146 Writing ConsumptionResponse.idv[93] (ConsumptionResponse92x.svg)
  [46]
-l. 239 Writing ConsumptionResponse.idv[93] (ConsumptionResponse92x.svg)
+l. 239 Writing ConsumptionResponse.idv[94] (ConsumptionResponse93x.svg)
 ) [47]
-l. 444 Writing ConsumptionResponse.idv[94] (ConsumptionResponse93x.svg)
-l. 444 Writing ConsumptionResponse.idv[95] (ConsumptionResponse94x.svg)
-l. 444 Writing ConsumptionResponse.idv[96] (ConsumptionResponse95x.svg)
-l. 444 Writing ConsumptionResponse.idv[97] (ConsumptionResponse96x.svg)
+l. 445 Writing ConsumptionResponse.idv[95] (ConsumptionResponse94x.svg)
+l. 445 Writing ConsumptionResponse.idv[96] (ConsumptionResponse95x.svg)
+l. 445 Writing ConsumptionResponse.idv[97] (ConsumptionResponse96x.svg)
+l. 445 Writing ConsumptionResponse.idv[98] (ConsumptionResponse97x.svg)
  [48] AED endfloat: Processing end Figures and Tables [49] [50
 
 ] (./ConsumptionResponse.ttt [51
@@ -2150,7 +2151,7 @@ l. 444 Writing ConsumptionResponse.idv[97] (ConsumptionResponse96x.svg)
 ] [52
 
 ]
-l. 5 Writing ConsumptionResponse.idv[98] (ConsumptionResponse97x.svg)
+l. 5 Writing ConsumptionResponse.idv[99] (ConsumptionResponse98x.svg)
  [53
 
 ] [54
@@ -2160,7 +2161,7 @@ l. 5 Writing ConsumptionResponse.idv[98] (ConsumptionResponse97x.svg)
 ] [56
 
 ]
-l. 44 Writing ConsumptionResponse.idv[99] (ConsumptionResponse98x.svg)
+l. 44 Writing ConsumptionResponse.idv[100] (ConsumptionResponse99x.svg)
  [57
 
 ] [58
@@ -2170,37 +2171,37 @@ l. 44 Writing ConsumptionResponse.idv[99] (ConsumptionResponse98x.svg)
 ] [60
 
 ]
-l. 89 Writing ConsumptionResponse.idv[100] (ConsumptionResponse99x.svg)
+l. 89 Writing ConsumptionResponse.idv[101] (ConsumptionResponse100x.svg)
  [61
 
 ]) [62
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 448.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 449.
  [63
 
 ]
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 448.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 449.
 \BKM@file=\write6
 \openout6 = `ConsumptionResponse.out.ps'.
 
  (./ConsumptionResponse.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 448.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 449.
 \snap@out=\write7
 \openout7 = `ConsumptionResponse.dep'.
 
 
 Dependency list written on ConsumptionResponse.dep.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 448.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 448.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 449.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 449.
  ) 
 Here is how much of TeX's memory you used:
  31204 strings out of 492617
  543543 string characters out of 6129024
- 842186 words of memory out of 5000000
+ 842192 words of memory out of 5000000
  34066 multiletter control sequences out of 15000+600000
  566151 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,14n,73p,9678b,639s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ConsumptionResponse.dvi (64 pages, 179252 bytes).
+Output written on ConsumptionResponse.dvi (64 pages, 180192 bytes).
