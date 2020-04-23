@@ -224,7 +224,7 @@ def runExperiment(Agents,PanShock,
 def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
                                  UnempD,UnempH,UnempC,UnempP,UnempA1,UnempA2,
                                  DeepD,DeepH,DeepC,DeepP,DeepA1,DeepA2,
-                                 show_fig=True):
+                                 show_fig=True, for_mini=False):
     '''
     Make figures showing the probability of becoming unemployed and deeply
     unemployed when the pandemic hits, by age, income, and education.
@@ -236,7 +236,8 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
         will actually be used by this function, and not changed at all--
         they are deepcopied and manipulated.
     spec_name : str
-        Filename suffix for figure to be saved.
+        Filename suffix for figure to be saved, or subdirectory of ./Figures/
+        for the figure to be saved (if for_mini is True)
     PanShock : bool
         This isn't used; it's here for technical reasons.
     UnempD : float
@@ -265,12 +266,20 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
         Coefficient on age squared in the Markov-shock logit for deep unemployment.
     show_fig : bool
         Indicator for whether the figure should be displayed to screen; default True.
+    for_mini : bool
+        Indicator for whether this call was from the MINI script, which changes the
+        target directory where the figure is saved.
         
     Returns
     -------
     data: Dict
         A dictionary with data to plot pandemic shock unemployment probablities.
     '''
+    if for_mini:
+        fig_name_base = figs_dir + spec_name + '/UbyDemog'
+    else:
+        fig_name_base = figs_dir + 'UnempProbByDemog' + spec_name
+    
     BigPop = 100000
     T = Agents[0].T_retire+1
     PlvlAgg_adjuster = Agents[0].PermGroFacAgg**(-np.arange(T))
@@ -446,9 +455,10 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     
     # Save the figure and display it to screen
     plt.suptitle('Unemployment probability after pandemic shock')
-    plt.savefig(figs_dir + 'UnempProbByDemog' + spec_name + '.pdf', bbox_inches='tight')
-    plt.savefig(figs_dir + 'UnempProbByDemog' + spec_name + '.png', bbox_inches='tight')
-    plt.savefig(figs_dir + 'UnempProbByDemog' + spec_name + '.svg', bbox_inches='tight')
+    plt.savefig(fig_name_base + '.pdf', bbox_inches='tight')
+    if not for_mini:
+        plt.savefig(fig_name_base + '.png', bbox_inches='tight')
+        plt.savefig(fig_name_base + '.svg', bbox_inches='tight')
     if show_fig:
         plt.show()
     else:
