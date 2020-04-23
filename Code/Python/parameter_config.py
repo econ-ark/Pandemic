@@ -1,8 +1,8 @@
 '''Configurable parameters. This file is edited by run_config.py by putting the new
 values at the bottom of the file, superseding the default value.
 '''
-
 import numpy as np
+spec_name = 'ChangeMe'  # String used by GiveItAwayMINI.py for saving figures to a subdirectory of ./Figures/
 
 # Parameters concerning the distribution of discount factors
 DiscFacMeanD = 0.9637   # Mean intertemporal discount factor for dropout types

@@ -13,13 +13,15 @@ from parameter_config import *
 
 ###############################################################################
 
+# Size of simulations
+AgentCountTotal = 50000 # Total simulated population
+T_sim = 13              # Number of quarters to simulate in counterfactuals
+
 # Basic lifecycle length parameters (don't touch these)
 init_age = 24
 working_T = 41*4        # Number of working periods
 retired_T = 55*4        # Number of retired periods
 T_cycle = working_T + retired_T
-AgentCountTotal = 50000 # Total simulated population
-T_sim = 13              # Number of quarters to simulate in counterfactuals
 
 # Define the distribution of the discount factor for each eduation level
 DiscFacCount = 7

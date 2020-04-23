@@ -1,35 +1,41 @@
 '''
 This script runs a stripped down version of the main code for the paper "Modeling
 the Consumption Response to the CARES Act" by Carroll, Crawley, Slacalek, and White.
-The script produces data that is used by the dashboard.
+The script produces only a small subset of the figures in the paper.  To use it,
+edit the parameter values in parameter_config.py, including the string spec_name,
+then run this script.  Figures will be displayed to screen and saved to
+./Figures/spec_name/ in PDF format.
 '''
-from HARK import multiThreadCommands
+from Parameters import T_sim, init_dropout, init_highschool, init_college, EducShares, DiscFacDstns,\
+     AgentCountTotal, base_dict, stimulus_changes, pandemic_changes, AggregationFactor, spec_name
+from GiveItAwayModel import GiveItAwayNowType
+from GiveItAwayTools import runExperiment, makePandemicShockProbsFigure
 from HARK.distribution import DiscreteDistribution
+from HARK import multiThreadCommands
 from time import time
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 from copy import deepcopy
-import pickle
-from HARK.distribution import DiscreteDistribution
-from importlib import reload
+import os
+sns.set()
 
-def run_web(spec_name):
-    # Keep parameters in check as they are changed by reloading them
-    import Parameters
-    reload(Parameters)
-    from Parameters import T_sim, init_dropout, init_highschool, init_college, EducShares, DiscFacDstns,\
-     AgentCountTotal, base_dict, stimulus_changes, pandemic_changes, AggregationFactor
-    from GiveItAwayModel import GiveItAwayNowType
-    from GiveItAwayTools import runExperiment, makePandemicShockProbsFigure
 
+if __name__ == '__main__':
     t0 = time()
-    data = dict()
+    
+    if spec_name == 'ChangeMe':
+        print("Hi! It looks like you've left spec_name in parameter_config.py at its default")
+        print("value of 'ChangeMe'.  This script will save some figures to ./Figures/ChangeMe/,")
+        print("which is fine, but probably not what you intended.  You should change spec_name")
+        print("so that your figures are saved in a different subdirectory of ./Figures/.")
+    
     mystr = lambda x : '{:.2f}'.format(x)
     figs_dir = '../../Figures/' + spec_name + '/'
-    
-    # debug
-    #print(pandemic_changes['DeepA1'], base_dict['Lspell_real'], init_dropout['uPfac_big'])
-    
-    # # Make baseline types
+    if not os.path.exists(figs_dir):
+        os.mkdir(figs_dir)
+
+    # Make baseline types
     DropoutType = GiveItAwayNowType(**init_dropout)
     HighschoolType = GiveItAwayNowType(**init_highschool)
     CollegeType = GiveItAwayNowType(**init_college)
@@ -51,7 +57,7 @@ def run_web(spec_name):
     # Make the overall list of types
     TypeList = []
     n = 0
-    for b in range(DiscFacDstns[0].X.size):
+    for b in range(DiscFacDstns[0].pmf.size):
         for e in range(3):
             DiscFac = DiscFacDstns[e].X[b]
             AgentCount = int(np.floor(AgentCountTotal*EducShares[e]*DiscFacDstns[e].pmf[b]))
@@ -64,9 +70,9 @@ def run_web(spec_name):
     base_dict['Agents'] = TypeList
     
     # Make a figure to show unemployment probabilities by demographics
-    pandemic_changes['show_fig'] = False
-    data['fig6'] = makePandemicShockProbsFigure(BaseTypeList,'TRASH',**pandemic_changes)
-    del pandemic_changes['show_fig']
+    pandemic_changes['for_mini'] = True
+    makePandemicShockProbsFigure(BaseTypeList,spec_name,**pandemic_changes)
+    del pandemic_changes['for_mini']
     
     # Solve and simulate each type to get to the initial distribution of states
     # and then prepare for new counterfactual simulations
@@ -121,51 +127,89 @@ def run_web(spec_name):
     LT_both[2,:] = np.sum(ltAll_both*Weight_base*Mrkv_pan[2,:], axis=1) / np.sum(Weight_base*Mrkv_pan[2,:], axis=1)
     LT_both[3,:] = np.sum(ltAll_both*Weight_base*Mrkv_pan[3,:], axis=1) / np.sum(Weight_base*Mrkv_pan[3,:], axis=1)
     LT_both_all = np.sum(ltAll_both*Weight_base, axis=1) / np.sum(Weight_base, axis=1)
-        
+    
+    quarter_labels=["Q2\n2020","Q3","Q4","Q1\n2021","Q2","Q3","Q4","Q1\n2022","Q2","Q3","Q4","Q1\n2023","Q2","Q3"]
+    
     # Plot the unemployment rate over time in baseline and pandemic
-    data["fig1"] = [U_base * 100, U_pan * 100]
-
+    plt.plot(U_base*100)
+    plt.plot(U_pan*100)
+    plt.xlabel('Quarter')
+    plt.ylabel('Unemployment rate (%)')
+    plt.title('Unemployment rate', fontsize=14)
+    plt.legend(['Baseline','Pandemic'], loc=1)
+    plt.xticks(ticks=range(T_sim), labels=quarter_labels)
+    plt.ylim(0.,22.)
+    plt.tight_layout()
+    plt.savefig(figs_dir + 'Urate.pdf')
+    plt.show()
+    
     # Plot aggregate consumption under baseline, pandemic, and pandemic + CARES Act
-    data["fig2"] = [
-            C_base * AggregationFactor,
-            C_pan * AggregationFactor,
-            C_both * AggregationFactor,
-        ]
+    plt.plot(C_base*AggregationFactor)
+    plt.plot(C_pan*AggregationFactor)
+    plt.plot(C_both*AggregationFactor)
+    plt.legend(["Baseline","Pandemic, no policy","Pandemic, CARES Act"], loc=4)
+    plt.xlabel('Quarter')
+    plt.ylabel('Aggregate quarterly consumption (billion $)')
+    plt.xticks(ticks=range(T_sim), labels=quarter_labels)
+    plt.title('Aggregate consumption', fontsize=14)
+    plt.ylim(2200.,3000.)
+    plt.tight_layout()
+    plt.savefig(figs_dir + 'AggC.pdf')
+    plt.show()
     
     # Plot aggregate income under baseline, pandemic, and pandemic + CARES Act
-    data["fig3"] = [
-            LT_base_all * AggregationFactor,
-            LT_pan_all * AggregationFactor,
-            LT_both_all * AggregationFactor,
-        ]
+    plt.plot(LT_base_all*AggregationFactor)
+    plt.plot(LT_pan_all*AggregationFactor)
+    plt.plot(LT_both_all*AggregationFactor)
+    plt.legend(["Baseline","Pandemic, no policy","Pandemic, CARES Act"], loc=4)
+    plt.xlabel('Quarter')
+    plt.ylabel('Aggregate labor and transfer income (billion $)')
+    plt.xticks(ticks=range(T_sim), labels=quarter_labels)
+    plt.title('Aggregate income', fontsize=14)
+    plt.ylim(2200.,3000.)
+    plt.tight_layout()
+    plt.savefig(figs_dir + 'AggLT.pdf')
+    plt.show()
     
     # Plot average consumption by initial employment state after pandemic
-    data["fig4"] = [
-            X_both[0, :] * 1000,
-            X_both[1, :] * 1000,
-            X_both[2, :] * 1000,
-            X_pan[0, :] * 1000,
-            X_pan[1, :] * 1000,
-            X_pan[2, :] * 1000,
-            X_alt[0, :] * 1000,
-            X_alt[1, :] * 1000,
-            X_alt[2, :] * 1000,
-        ]
+    plt.plot(X_both[0,:]*1000,'-b')
+    plt.plot(X_both[1,:]*1000,'-g')
+    plt.plot(X_both[2,:]*1000,'-r')
+    plt.plot(X_pan[0,:]*1000,'-.b')
+    plt.plot(X_pan[1,:]*1000,'-.g')
+    plt.plot(X_pan[2,:]*1000,'-.r')
+    plt.plot(X_alt[0,:]*1000,'--b')
+    plt.plot(X_alt[1,:]*1000,'--g')
+    plt.plot(X_alt[2,:]*1000,'--r')
+    plt.legend(["Employed after pandemic","Unemployed after pandemic","Deeply unemp after pandemic"], loc=4)
+    plt.xlabel('Quarter')
+    plt.ylabel('Average quarterly consumption ($)')
+    plt.title('Average consumption among working age population', fontsize=14)
+    plt.xticks(ticks=range(T_sim), labels=quarter_labels)
+    plt.ylim(6000,15000)
+    plt.tight_layout()
+    plt.savefig(figs_dir + 'CbyEmpState.pdf')
+    plt.show()
     
     # Plot average labor income plus transfers by initial employment state after pandemic
-    data["fig5"] = [
-            LT_both[0, :] * 1000,
-            LT_both[1, :] * 1000,
-            LT_both[2, :] * 1000,
-            LT_pan[0, :] * 1000,
-            LT_pan[1, :] * 1000,
-            LT_pan[2, :] * 1000,
-            LT_base[0, :] * 1000,
-            LT_base[1, :] * 1000,
-            LT_base[2, :] * 1000,
-        ]
-
+    plt.plot(LT_both[0,:]*1000,'-b')
+    plt.plot(LT_both[1,:]*1000,'-g')
+    plt.plot(LT_both[2,:]*1000,'-r')
+    plt.plot(LT_pan[0,:]*1000,'-.b')
+    plt.plot(LT_pan[1,:]*1000,'-.g')
+    plt.plot(LT_pan[2,:]*1000,'-.r')
+    plt.plot(LT_base[0,:]*1000,'--b')
+    plt.plot(LT_base[1,:]*1000,'--g')
+    plt.plot(LT_base[2,:]*1000,'--r')
+    plt.legend(["Employed after pandemic","Unemployed after pandemic","Deeply unemp after pandemic"], loc=4)
+    plt.xlabel('Quarter')
+    plt.ylabel('Average labor and transfer income ($)')
+    plt.title('Average income among working age population', fontsize=14)
+    plt.xticks(ticks=range(T_sim), labels=quarter_labels)
+    plt.ylim(2000,15000)
+    plt.tight_layout()
+    plt.savefig(figs_dir + 'LTbyEmpState.pdf')
+    plt.show()
+    
     t1 = time()
     print('Running the specification called ' + spec_name + ' took ' + mystr(t1-t0) + ' seconds.')
-    with open(f"../../Data/Dashboard/data_{spec_name}.pickle", "wb") as f:
-        pickle.dump(data, f)

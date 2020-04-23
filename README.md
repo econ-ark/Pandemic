@@ -19,17 +19,21 @@ to solve and simulate our model.  To install HARK, open a console (on Windows, u
 Prompt) and run `pip install econ-ark`.  This will put HARK and all of its dependencies in your
 Python package library.
 
-3. All code files are in the `./Code/Python` subdirectory of this repository.  If you've installed
+3. All code files are in the `./Code/Python/` subdirectory of this repository.  If you've installed
 Anaconda, our code can be run in a graphical iPython environment by opening up the Spyder IDE.
 
 4. The main script for this project is GiveItAwayNowMAIN.py.  You can run this file by clicking
 the green arrow "run" button in Spyder's toolbar.  Text will print to screen as it completes
-various computational tasks.  Most of these take about 1-2 minutes to run on a modern desktop.
-All figures are produced after running all counterfactual scenarios.
+various computational tasks.  Most of these take about 1-2 minutes to run on a modern desktop,
+but there are many of them.  The figures are produced after running all counterfactual scenarios.
 
-5. All figures are saved to the ./Figures subdirectory.
+5. We recommend that you instead run the script GiveItAwayNowMINI.py, which produces a smaller
+number of figures (and thus runs a smaller number of counterfactuals), saving the results to
+a subdirectory of `./Figures/` given by spec_name at the top of `parameter_config.py`.
 
-6. All parameters can be adjusted in ./Code/Python/parameter_config.py , and are described below.
+6. All figures are saved to the ./Figures subdirectory.
+
+7. All parameters can be adjusted in ./Code/Python/parameter_config.py , and are described below.
 Each parameter should have an in-line description to give you a pretty good sense of what it does.
 
 
@@ -66,7 +70,7 @@ level and the share of the education levels in the population.
 7. The remaining parameters specify the density of the grid that the problem is solved on and the
 discretization of the income shocks (for computing expectations).
 
-8. Most parameters below the line of pound signs should not be adjusted, as they concern objects
+8. Most parameters in `Parameters.py` should not be adjusted, as they concern objects
 constructed from the primitive parameters defined above or basic features of the lifecycle (such
 as the number of periods in the problem).  The number of periods simulated in the counterfactuals
 and the total number of simulated households can be safely changed.
