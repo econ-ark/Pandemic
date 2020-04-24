@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: ConsumptionResponse.aux
+The style file: ./LaTeX/texmf-local/bibtex/bst/econtex.bst
+Database file #1: LaTeX/ConsumptionResponse.bib
+Database file #2: LaTeX/ConsumptionResponse-Add.bib
+Database file #3: economics.bib
+Repeated entry---line 17 of file economics.bib
+ : @article{denmark_pandemics
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 26 of file economics.bib
+ : @techreport{hkpMemory
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1798 of file economics.bib
+ : @article{hrsHabit
+ :                  ,
+I'm skipping whatever remains of this entry
+Done.
+You've used 37 entries,
+            2309 wiz_defined-function locations,
+            800 strings with 11193 characters,
+and the built_in function-call counts, 18462 in all, are:
+= -- 1742
+> -- 1342
+< -- 7
++ -- 443
+- -- 410
+* -- 1709
+:= -- 3694
+add.period$ -- 38
+call.type$ -- 37
+change.case$ -- 263
+chr.to.int$ -- 35
+cite$ -- 37
+duplicate$ -- 581
+empty$ -- 946
+format.name$ -- 444
+if$ -- 3480
+int.to.chr$ -- 3
+int.to.str$ -- 0
+missing$ -- 16
+newline$ -- 118
+num.names$ -- 223
+pop$ -- 201
+preamble$ -- 2
+purify$ -- 250
+quote$ -- 0
+skip$ -- 531
+stack$ -- 0
+substring$ -- 756
+swap$ -- 105
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 407
+warning$ -- 0
+while$ -- 185
+width$ -- 0
+write$ -- 449
+(There were 3 error messages)
