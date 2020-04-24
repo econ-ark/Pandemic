@@ -1,7 +1,7 @@
 # Pandemic-ConsumptionResponse
  
-This repository is a complete software archive for the paper "Modeling the Consumption
-Response to the CARES Act" by Carroll, Crawley, Slacalek, and White (2020).  This README file
+This repository is a complete software archive for the paper ["Modeling the Consumption
+Response to the CARES Act"](https://econ-ark.github.io/Pandemic) by Carroll, Crawley, Slacalek, and White (2020).  This README file
 provides instructions for running our code on your own computer, as well as adjusting the
 parameters of the model to produce alternate versions of the figures in the paper.
 
