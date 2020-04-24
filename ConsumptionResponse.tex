@@ -5,11 +5,16 @@
 \usepackage{grfext}\PrependGraphicsExtensions*{.svg,.pdf,.PDF}
 \providecommand{\texname}{ConsumptionResponse}% Keyname for the bibtex entry corresponding to this paper
 \usepackage{\econtexRoot/LaTeX/ConsumptionResponse}
+% Needed to get nice fonts on ESC's machine
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} 
+
+
 
 %\usepackage[twoside,marginparwidth=0in,left=19.5mm,right=19.5mm,top=25.5mm,bottom=25.5mm]{geometry}\usepackage{layouts}
 \usepackage[twoside,marginparwidth=0in,left=19.5mm,right=19.5mm,top=25.5mm,bottom=25.5mm]{geometry}\usepackage{layouts}
 
-\renewcommand{\forcedate}{April 20, 2020 \\ Forthcoming, \href{https://cepr.org/content/covid-economics-vetted-and-real-time-papers-0}{Covid Economics}}
+\renewcommand{\forcedate}{April 24, 2020}
 
 \begin{document}
 
@@ -100,6 +105,7 @@
 
 \titlepagefinish\newpage\pagestyle{empty}
 
+
 % If web version, then just incorporate thanks at beginning of text
 % instead of in frontmatter
 \ifthenelse{\boolean{ifWeb}}{\medskip \noindent {\footnotesize
@@ -119,7 +125,7 @@ On the first count, we model the likelihood that many of the people unemployed d
 
 On the second count, we model the restricted spending options by assuming that during the lockdown spending is less enjoyable (there is a negative shock to the `marginal utility of consumption.')
 Based on a tally of sectors that we judge to be substantially shuttered during the `lockdown,' we calibrate an $11$ percent reduction to spending.
-Thus households will prefer to defer some of their consumption into the future, when it will yield them greater utility. (See \cite{SpanishSpending} for Spanish data already showing a strong effect of this kind in recent weeks, and \cite{denmark_pandemics} for similar evidence from Denmark).\footnote{A shock to marginal utility may not perfectly capture the essence of what depresses consumption spending, but it accomplishes our purposes and is a kind of shock commonly studied in the literature.  Any analysis of the welfare consequences of the lockdown would probably need a richer treatment to be credible.}
+Thus households will prefer to defer some of their consumption into the future, when it will yield them greater utility. (See \cite{SpanishSpending} for Spanish data already showing a strong effect of this kind in recent weeks, and \cite{denmark_pandemics} for similar evidence from Denmark).\footnote{A shock to marginal utility may not perfectly capture the essence of what depresses consumption spending, but it accomplishes our purposes and is a kind of shock commonly studied in the literature.  See Appendix \ref{mu_equivalency}.}
 In our primary scenario, we assume that this condition is removed with probability one-half after each quarter, so on average remains for two quarters.  When the `lockdown' ends, the buildup of savings by households who did not lose their jobs but whose spending was suppressed should result in a partial recovery in consumer spending, but in our primary scenario (without the CARES act), total consumer spending remains below its pre-crisis peak through the foreseeable future.
 
 Our model captures the two primary features of the CARES Act that aim to bolster consumer spending:
@@ -426,6 +432,8 @@ A fuller analysis that incorporates both the kinds of heterogeneity that are of 
 \small
 \bibliography{LaTeX/\texname,LaTeX/\texname-Add,economics}
 \normalsize
+
+
 \pagebreak
 \appendix
 \setcounter{table}{0}

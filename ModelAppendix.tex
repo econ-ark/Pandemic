@@ -244,7 +244,32 @@ We assume annual population growth of 1\%, so older simulated households are app
 Likewise, each successive cohort is slightly more productive than the last, with aggregate productivity growing at a rate of 1\% per year.
 The profile of average income by age in the population at any moment in time thus has more of an inverted-U shape than implied by the permanent income profiles from \cite{Cagetti}.
 
+\section{Marginal Utility Equivalence} \label{mu_equivalency}
+We model the `lockdown' as a reduction in the marginal utility of consumption.
+This can be interpreted as an increase in the quality-adjusted price of goods, where the quality of basic goods such as shelter and housing has not decreased, but more discretionary goods such as vacations and restaurants have decreased in quality.
 
+Figure \ref{concave_cons} shows how this works.
+In normal times, the cost of a consumption unit is equal to one, represented by the blue line.
+During the lockdown, the cost of a unit of consumption is increasing in the number of units bought.
+As shown here, the number of consumption units that can be bought follows the lower envelope of the blue and orange lines, where the orange line is equal to $\text{Cost}^\alpha$.
+As long as the household is consuming above the kink, their utility is $\log (\text{Cost}^\alpha) = \alpha \log (\text{Cost})$, exactly equivalent to the reduction in marginal utility we apply. Taking this interpretation seriously, the drop in marginal utility should not be applied to households with very low levels of consumption, below the kink.
+Our implementation abstracts from this, taking the marginal utility factor to be the same for all agents.
+\begin{figure}
+	\centering
+	\caption{Concave Cost of Consumption Units}
+	\label{concave_cons}
+	% \begin{Web}
+	\ifthenelse{\boolean{ifWeb}}{
+		\includegraphics[width=\webWidth\textwidth]{./Figures/QualityCost}
+	} %\end{Web}
+	{ \includegraphics[width=0.8\textwidth]{./Figures/QualityCost}}
+\end{figure}
+
+An alternative interpretation is that consumption is made up of a Cobb-Douglass aggregation of two goods:
+\begin{eqnarray*}
+	C = c_1^{\alpha}c_2^{1-\alpha}
+\end{eqnarray*}
+During the lockdown, the second good is replaced by home production at a fixed level $\bar{c_2}$. A log-utility function gives $\log(C) = \alpha\log(c_1) + (1-\alpha)\log(\bar{c_2})$, equivalent to our model in which we reduce marginal utility by a factor $\alpha$.
 
 
 
