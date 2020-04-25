@@ -1,7 +1,10 @@
 \RequireVersions{
   *{application}{TeX}     {1990/03/25 v3.x}
   *{format} {LaTeX2e}     {2018-12-01 v2.e}
-  *{file}   {ConsumptionResponse.tex}{0000/00/00 v0.0}
+  *{file}   {ModelAppendix.tex}{0000/00/00 v0.0}
+  *{file}   {LaTeX/econtexRoot.tex}{0000/00/00 v0.0}
+  *{class}  {subfiles}    {2018/07/31 v0.0}
+  *{file}   {./ConsumptionResponse.tex}{0000/00/00 v0.0}
   *{file}   {./LaTeX/econtexRoot.tex}{0000/00/00 v0.0}
   *{file}   {./LaTeX/econtexPaths.tex}{0000/00/00 v0.0}
   *{class}  {./LaTeX/texmf-local/tex/latex/econtex}{0000/00/00 v0.0}
@@ -135,6 +138,7 @@
   *{package}{lmodern}     {2009/10/30 v1.6}
   *{package}{geometry}    {2018/04/16 v5.8}
   *{package}{layouts}     {2009/09/02 v2.6d}
+  *{file}   {./LaTeX/onlyinsubfile.tex}{0000/00/00 v0.0}
   *{file}   {t3cmr.fd}    {2001/12/31 v0.0}
   *{file}   {t1lmr.fd}    {2009/10/30 v1.6}
   *{file}   {translations-basic-dictionary-english.trsl}{(english v0.0}
@@ -143,10 +147,11 @@
   *{file}   {epstopdf-sys.cfg}{2010/07/13 v1.3}
   *{package}{nameref}     {2016/05/21 v2.44}
   *{package}{gettitlestring}{2016/05/16 v1.5}
-  *{file}   {ConsumptionResponse.out}{0000/00/00 v0.0}
-  *{file}   {ConsumptionResponse.out}{0000/00/00 v0.0}
+  *{file}   {ModelAppendix.out}{0000/00/00 v0.0}
+  *{file}   {ModelAppendix.out}{0000/00/00 v0.0}
   *{package}{bookmark}    {2016/05/17 v1.26}
   *{file}   {bkm-pdftex.def}{2016/05/17 v1.26}
+  *{file}   {t1lmss.fd}   {2009/10/30 v1.6}
   *{file}   {ot1lmr.fd}   {2009/10/30 v1.6}
   *{file}   {omllmm.fd}   {2009/10/30 v1.6}
   *{file}   {omslmsy.fd}  {2009/10/30 v1.6}
@@ -155,25 +160,9 @@
   *{file}   {umsb.fd}     {2013/01/14 v3.01}
   *{file}   {ulasy.fd}    {1998/08/17 v2.2e}
   *{file}   {uwasy.fd}    {2003/10/30 v2.0}
-  *{file}   {t1lmtt.fd}   {2009/10/30 v1.6}
-  *{file}   {t1lmss.fd}   {2009/10/30 v1.6}
-  *{file}   {./Figures/UnempProbByDemogBasic.pdf}{0000/00/00 v0.0}
-  *{file}   {omslmr.fd}   {2009/10/30 v1.6}
-  *{file}   {./Figures/AggLT.pdf}{0000/00/00 v0.0}
-  *{file}   {./Figures/AggConResp_examples.pdf}{0000/00/00 v0.0}
-  *{file}   {./Figures/Decomposition.pdf}{0000/00/00 v0.0}
-  *{file}   {./Figures/ConRespByEmpStateNoStim.pdf}{0000/00/00 v0.0}
-  *{file}   {./Figures/ConRespByEmpStateWStim.pdf}{0000/00/00 v0.0}
-  *{file}   {./Figures/ConDeltaByEmpState.pdf}{0000/00/00 v0.0}
-  *{file}   {./Figures/Checks_vs_Unemp.pdf}{0000/00/00 v0.0}
-  *{file}   {./Figures/EffectTargeting.pdf}{0000/00/00 v0.0}
-  *{file}   {./Figures/AggLT_long_pandemic.pdf}{0000/00/00 v0.0}
-  *{file}   {./Figures/DeepPandemic.pdf}{0000/00/00 v0.0}
-  *{file}   {ConsumptionResponse.bbl}{0000/00/00 v0.0}
-  *{file}   {ModelAppendix.tex}{0000/00/00 v0.0}
-  *{file}   {LaTeX/econtexRoot.tex}{0000/00/00 v0.0}
-  *{file}   {./LaTeX/onlyinsubfile.tex}{0000/00/00 v0.0}
   *{file}   {ot1lmss.fd}  {2009/10/30 v1.6}
   *{file}   {ueuf.fd}     {2013/01/14 v3.01}
   *{file}   {./Figures/QualityCost.pdf}{0000/00/00 v0.0}
+  *{file}   {ModelAppendix.bbl}{0000/00/00 v0.0}
+  *{file}   {t1lmtt.fd}   {2009/10/30 v1.6}
 }
