@@ -23,7 +23,7 @@
 % \begin{Web}
 \provideboolean{ifWeb}
 \setboolean{ifWeb}{true}
-\setboolean{ifWeb}{true}
+\setboolean{ifWeb}{false}
 \opt{Web}{\setboolean{ifWeb}{true}}
 \provideboolean{ifBig}
 \setboolean{ifBig}{true}
@@ -31,11 +31,11 @@
 \newcommand{\Biggen}{\ifthenelse{\boolean{ifBig}}{\large}{}}
 % \end{Web}
 
-% Submission for IJCB requires figures at the end
-% For some reason make4ht does not work with the endfloat package; only run it if you're not making the web version
-\ifthenelse{\boolean{ifWeb}}{}{
+% Submission for IJCB requires figures at the end %%% 
+% For some reason make4ht does not work with the endfloat package; only run it if you're not making the web version %%% 
+\ifthenelse{\boolean{ifWeb}}{}{ %%% 
 \ifthenelse{\boolean{ifIJCB}}{\usepackage[nolists,nomarkers]{endfloat}}{\usepackage[nolists,nomarkers,tablesonly]{endfloat}} %%%
-}
+} %%%
 
 % \begin{Web}
 \ifthenelse{\boolean{ifWeb}}{\usepackage{grfext}
