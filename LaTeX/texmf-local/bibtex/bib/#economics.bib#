@@ -14,60 +14,6 @@
 |  BIBTEX ENTRIES   |
 `-------------------'
 
-
-@article{denmark_pandemics,
-  author =        {Asger Lau Andersen and Emil Toft Hansen and Niels Johannesen and Adam Sheridan},
-  journal =   {Covid Economics},
-  volume =        {7},
-  pages =         {88--111},
-  title =         {Consumer Responses to the COVID-19 Crisis: Evidence from Bank Account Transaction Data},
-  year =          {2020},
-}
-
-@techreport{hkpMemory,
- title = {On the Welfare Cost of Consumption Fluctuations in the Presence of Memorable Goods},
- author = {Hai, Rong and Krueger, Dirk and Postlewaite, Andrew},
- institution = {National Bureau of Economic Research},
- type = {working paper},
- number = {19386},
- year = {2013},
-}
-
-@inproceedings{carroll_et_al-proc-scipy-2018,
-	author =        {Christopher D. Carroll and
-	Alexander M. Kaufman and
-	Jacqueline L. Kazil and Nathan M. Palmer and
-	Matthew N. White},
-	booktitle =     {{P}roceedings of the 17th {P}ython in {S}cience
-	{C}onference},
-	editor =        {{F}atih {A}kici and {D}avid {L}ippa and
-	{D}illon {N}iederhut and {M} {P}acer},
-	pages =         {25 - 30},
-	title =         {{T}he {E}con-{A}{R}{K} and {H}{A}{R}{K}: {O}pen
-	{S}ource {T}ools for {C}omputational {E}conomics},
-	year =          {2018},
-	note =           {doi: \href{https://doi.org/10.5281/zenodo.1001067}{10.5281/zenodo.1001067}},
-}
-
-@techreport{hkpMemory,
- title = {On the Welfare Cost of Consumption Fluctuations in the Presence of Memorable Goods},
- author = {Hai, Rong and Krueger, Dirk and Postlewaite, Andrew},
- institution = {National Bureau of Economic Research},
- type = {working paper},
- number = {19386},
- year = {2013},
-}
-
-
-@article{denmark_pandemics,
-  author =        {Asger Lau Andersen and Emil Toft Hansen and Niels Johannesen and Adam Sheridan},
-  journal =   {Covid Economics},
-  volume =        {7},
-  pages =         {88--111},
-  title =         {Consumer Responses to the COVID-19 Crisis: Evidence from Bank Account Transaction Data},
-  year =          {2020},
-}
-
 @article{rsHANKandSAM,
   title={Macroeconomic fluctuations with HANK \& SAM: An analytical approach},
   author={Ravn, Morten O and Sterk, Vincent},
@@ -123,7 +69,7 @@
   month = {April}
 }
 
-@inproceedings{eaDiscrete,
+@inproceedings{eaDiscretize,
 	address = {Berlin, Heidelberg},
 	title = {Precise approximations of the probability distribution of a markov process in time: {An} application to probabilistic invariance},
 	isbn = {978-3-642-54862-8},
@@ -137,7 +83,16 @@
 	doi = {10.1007/978-3-642-54862-8_45}
 }
 
-@techreport{hkpMemorySSRN,
+@article{denmark_pandemics,
+  author =        {Asger Lau Andersen and Emil Toft Hansen and Niels Johannesen and Adam Sheridan},
+  journal =   {Covid Economics},
+  volume =        {7},
+  pages =         {88--111},
+  title =         {Consumer Responses to the COVID-19 Crisis: Evidence from Bank Account Transaction Data},
+  year =          {2020},
+}
+
+@techreport{hkpMemory,
  title = "On the Welfare Cost of Consumption Fluctuations in the Presence of Memorable Goods",
  author = "Hai, Rong and Krueger, Dirk and Postlewaite, Andrew",
  type = "Working Paper",

@@ -686,3 +686,22 @@ if __name__ == '__main__':
     plt.savefig(figs_dir + 'IncomeByEmpStateWStim_long.svg')
     plt.show()
     
+    # graph in appendix to show quality adjusted cost of consumption
+    marg_fac = 0.65
+    dollars_spent = np.linspace(0.0,3.0,200)
+    luxury_cost = dollars_spent**marg_fac
+    real_cost = np.minimum(dollars_spent,luxury_cost)
+    
+    plt.plot(dollars_spent,dollars_spent)
+    plt.plot(dollars_spent,luxury_cost)
+    plt.plot(dollars_spent,real_cost,color='black',linewidth=2)
+    plt.xlabel("Cost")
+    plt.ylabel("Number of consumption units")
+    plt.title("Quality Adjusted Cost of Consumption Units")
+    plt.legend(["Normal Times",r"$C^{\alpha}$","Lockdown"],loc="lower right")
+    plt.tight_layout()
+    plt.savefig(figs_dir + 'QualityCost.pdf')
+    plt.savefig(figs_dir + 'QualityCost.png')
+    plt.savefig(figs_dir + 'QualityCost.svg')
+    plt.show()
+    
