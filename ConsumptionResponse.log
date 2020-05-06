@@ -1,0 +1,2275 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2019.4.7)  6 MAY 2020 13:14
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCode"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\documentstyle\def\
+documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode ConsumptionResponse.cfg,svg,charset=utf-8,html5.a.b.c.\input "\
+detokenize{ConsumptionResponse}"
+(./ConsumptionResponse.tex (./LaTeX/econtexRoot.tex) (./LaTeX/econtexPaths.tex) (./LaTeX/texmf-local/tex/latex/econtex.cls
+
+LaTeX Warning: You have requested document class `./LaTeX/texmf-local/tex/latex/econtex',
+               but the document class provides `econtex'.
+
+Document Class: econtex 2017/08/01 LaTeX class for economics papers, handouts, and exam questions written by Christopher Carroll
+(/usr/local/texlive/texmf-local/tex/latex/snapshot.sty
+Package: snapshot 2002/03/05 v1.14
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count80
+\cp@tempcnt=\count81
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+\c@IncludeTitlePage=\count82
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
+Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2019/02/01 v3.26b KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2019/02/01 v3.26b KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2019/02/01 v3.26b KOMA-Script package (loading files)
+))) (/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2019/02/01 v3.26b KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip41
+\scr@dte@tocline@numbox=\box27
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 134.
+Class scrartcl Info: File `scrsize12pt.clo' used to setup font sizes on input line 2162.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrsize12pt.clo
+File: scrsize12pt.clo 2019/02/01 v3.26b KOMA-Script font size class option (12pt)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2019/02/01 v3.26b KOMA-Script package (type area)
+\ta@bcor=\skip42
+\ta@div=\count83
+Package typearea Info: You've used standard option `a4paper'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=a4'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=a4' there
+(typearea)             instead of `a4paper', too.
+\ta@hblk=\skip43
+\ta@vblk=\skip44
+\ta@temp=\skip45
+\footheight=\skip46
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 12
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 448.13095pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 2.4185pt
+(typearea)              \oddsidemargin  = 2.4185pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 635.5pt
+(typearea)              \topmargin      = -41.72441pt
+(typearea)              \headheight     = 18.125pt
+(typearea)              \headsep        = 21.75pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 50.75pt
+(typearea)              \baselineskip   = 14.5pt
+(typearea)              on input line 1715.
+)
+\c@part=\count84
+\c@section=\count85
+\c@subsection=\count86
+\c@subsubsection=\count87
+\c@paragraph=\count88
+\c@subparagraph=\count89
+\scr@dte@section@maxnumwidth=\skip47
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\section on input line 4489.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\section on input line 4489.
+\scr@dte@part@maxnumwidth=\skip48
+Class scrartcl Info: using compatibility default `afterindent=false'
+(scrartcl)           for `\part on input line 4497.
+\scr@dte@subsection@maxnumwidth=\skip49
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsection on input line 4507.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsection on input line 4507.
+\scr@dte@subsubsection@maxnumwidth=\skip50
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsubsection on input line 4517.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsubsection on input line 4517.
+\scr@dte@paragraph@maxnumwidth=\skip51
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\paragraph on input line 4527.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\paragraph on input line 4527.
+\scr@dte@subparagraph@maxnumwidth=\skip52
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subparagraph on input line 4537.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subparagraph on input line 4537.
+\abovecaptionskip=\skip53
+\belowcaptionskip=\skip54
+\c@pti@nb@sid@b@x=\box28
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 5781.
+\scr@dte@figure@maxnumwidth=\skip55
+\c@figure=\count90
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 5793.
+\scr@dte@table@maxnumwidth=\skip56
+\c@table=\count91
+Class scrartcl Info: Redefining `\numberline' on input line 5957.
+\bibindent=\dimen102
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/11/13 3.27 The Babel package
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/11/13 3.27 Babel switching mechanism
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/11/13 3.27 Babel common definitions
+\babel@savecnt=\count92
+\U@D=\dimen103
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count93
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count94
+\calc@Bcount=\count95
+\calc@Adimen=\dimen104
+\calc@Bdimen=\dimen105
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count96
+\calc@Cskip=\skip59
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks15
+\verbatim@line=\toks16
+\verbatim@in@stream=\read1
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip60
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen106
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen107
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count97
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count98
+\leftroot@=\count99
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count100
+\DOTSCASE@=\count101
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count102
+\c@MaxMatrixCols=\count103
+\dotsspace@=\muskip10
+\c@parentequation=\count104
+\dspbrk@lvl=\count105
+\tag@help=\toks18
+\row@=\count106
+\column@=\count107
+\maxfields@=\count108
+\andhelp@=\toks19
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks20
+\multlinegap=\skip61
+\multlinetaggap=\skip62
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip63
+\thm@postskip=\skip64
+\thm@headsep=\skip65
+\dth@everypar=\toks27
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box31
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen115
+\ar@mcellbox=\box32
+\extrarowheight=\dimen116
+\NC@list=\toks28
+\extratabsurround=\skip66
+\backup@length=\skip67
+\ar@cellbox=\box33
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
+\c@tracingmulticols=\count109
+\mult@box=\box34
+\multicol@leftmargin=\dimen117
+\c@unbalance=\count110
+\c@collectmore=\count111
+\doublecol@number=\count112
+\multicoltolerance=\count113
+\multicolpretolerance=\count114
+\full@width=\dimen118
+\page@free=\dimen119
+\premulticols=\dimen120
+\postmulticols=\dimen121
+\multicolsep=\skip68
+\multicolbaselineskip=\skip69
+\partial@page=\box35
+\last@line=\box36
+\maxbalancingoverflow=\dimen122
+\mult@rightbox=\box37
+\mult@grightbox=\box38
+\mult@gfirstbox=\box39
+\mult@firstbox=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\c@columnbadness=\count115
+\c@finalcolumnbadness=\count116
+\last@try=\dimen123
+\multicolovershoot=\dimen124
+\multicolundershoot=\dimen125
+\mult@nat@firstbox=\box58
+\colbreak@box=\box59
+\mc@col@check@num=\count117
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
+\multirow@colwidth=\skip70
+\multirow@cntb=\count118
+\multirow@dima=\skip71
+\bigstrutjot=\dimen126
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen127
+\lightrulewidth=\dimen128
+\cmidrulewidth=\dimen129
+\belowrulesep=\dimen130
+\belowbottomsep=\dimen131
+\aboverulesep=\dimen132
+\abovetopsep=\dimen133
+\cmidrulesep=\dimen134
+\cmidrulekern=\dimen135
+\defaultaddspace=\dimen136
+\@cmidla=\count119
+\@cmidlb=\count120
+\@aboverulesep=\dimen137
+\@belowrulesep=\dimen138
+\@thisruleclass=\count121
+\@lastruleclass=\count122
+\@thisrulewidth=\dimen139
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks29
+\AP@partial=\box60
+\AP@footins=\box61
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/enotez/enotez.sty (/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2019-02-15 L3 programming layer (loader) 
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2019-02-15 L3 programming layer (code)
+\c_max_int=\count123
+\l_tmpa_int=\count124
+\l_tmpb_int=\count125
+\g_tmpa_int=\count126
+\g_tmpb_int=\count127
+\g__kernel_prg_map_int=\count128
+\c_log_iow=\count129
+\l_iow_line_count_int=\count130
+\l__iow_line_target_int=\count131
+\l__iow_one_indent_int=\count132
+\l__iow_indent_int=\count133
+\c_zero_dim=\dimen140
+\c_max_dim=\dimen141
+\l_tmpa_dim=\dimen142
+\l_tmpb_dim=\dimen143
+\g_tmpa_dim=\dimen144
+\g_tmpb_dim=\dimen145
+\c_zero_skip=\skip72
+\c_max_skip=\skip73
+\l_tmpa_skip=\skip74
+\l_tmpb_skip=\skip75
+\g_tmpa_skip=\skip76
+\g_tmpb_skip=\skip77
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+\l_keys_choice_int=\count134
+\l__intarray_loop_int=\count135
+\c__intarray_sp_dim=\dimen146
+\g__intarray_font_int=\count136
+\c__fp_leading_shift_int=\count137
+\c__fp_middle_shift_int=\count138
+\c__fp_trailing_shift_int=\count139
+\c__fp_big_leading_shift_int=\count140
+\c__fp_big_middle_shift_int=\count141
+\c__fp_big_trailing_shift_int=\count142
+\c__fp_Bigg_leading_shift_int=\count143
+\c__fp_Bigg_middle_shift_int=\count144
+\c__fp_Bigg_trailing_shift_int=\count145
+\c__kernel_randint_max_int=\count146
+\g__fp_array_int=\count147
+\l__fp_array_loop_int=\count148
+\l__sort_length_int=\count149
+\l__sort_min_int=\count150
+\l__sort_top_int=\count151
+\l__sort_max_int=\count152
+\l__sort_true_max_int=\count153
+\l__sort_block_int=\count154
+\l__sort_begin_int=\count155
+\l__sort_end_int=\count156
+\l__sort_A_int=\count157
+\l__sort_B_int=\count158
+\l__sort_C_int=\count159
+\l__tl_analysis_normal_int=\count160
+\l__tl_analysis_index_int=\count161
+\l__tl_analysis_nesting_int=\count162
+\l__tl_analysis_type_int=\count163
+\l__regex_internal_a_int=\count164
+\l__regex_internal_b_int=\count165
+\l__regex_internal_c_int=\count166
+\l__regex_balance_int=\count167
+\l__regex_group_level_int=\count168
+\l__regex_mode_int=\count169
+\c__regex_cs_in_class_mode_int=\count170
+\c__regex_cs_mode_int=\count171
+\l__regex_catcodes_int=\count172
+\l__regex_default_catcodes_int=\count173
+\c__regex_catcode_D_int=\count174
+\c__regex_catcode_S_int=\count175
+\c__regex_catcode_L_int=\count176
+\c__regex_catcode_O_int=\count177
+\c__regex_catcode_A_int=\count178
+\c__regex_all_catcodes_int=\count179
+\l__regex_show_lines_int=\count180
+\l__regex_min_state_int=\count181
+\l__regex_max_state_int=\count182
+\l__regex_left_state_int=\count183
+\l__regex_right_state_int=\count184
+\l__regex_capturing_group_int=\count185
+\l__regex_min_pos_int=\count186
+\l__regex_max_pos_int=\count187
+\l__regex_curr_pos_int=\count188
+\l__regex_start_pos_int=\count189
+\l__regex_success_pos_int=\count190
+\l__regex_curr_char_int=\count191
+\l__regex_curr_catcode_int=\count192
+\l__regex_last_char_int=\count193
+\l__regex_case_changed_char_int=\count194
+\l__regex_curr_state_int=\count195
+\l__regex_step_int=\count196
+\l__regex_min_active_int=\count197
+\l__regex_max_active_int=\count198
+\l__regex_replacement_csnames_int=\count199
+\l__regex_match_count_int=\count266
+\l__regex_min_submatch_int=\count267
+\l__regex_submatch_int=\count268
+\l__regex_zeroth_submatch_int=\count269
+\g__regex_trace_regex_int=\count270
+\c_empty_box=\box62
+\l_tmpa_box=\box63
+\l_tmpb_box=\box64
+\g_tmpa_box=\box65
+\g_tmpb_box=\box66
+\l__box_top_dim=\dimen147
+\l__box_bottom_dim=\dimen148
+\l__box_left_dim=\dimen149
+\l__box_right_dim=\dimen150
+\l__box_top_new_dim=\dimen151
+\l__box_bottom_new_dim=\dimen152
+\l__box_left_new_dim=\dimen153
+\l__box_right_new_dim=\dimen154
+\l__box_internal_box=\box67
+\l__coffin_internal_box=\box68
+\l__coffin_internal_dim=\dimen155
+\l__coffin_offset_x_dim=\dimen156
+\l__coffin_offset_y_dim=\dimen157
+\l__coffin_x_dim=\dimen158
+\l__coffin_y_dim=\dimen159
+\l__coffin_x_prime_dim=\dimen160
+\l__coffin_y_prime_dim=\dimen161
+\c_empty_coffin=\box69
+\l__coffin_aligned_coffin=\box70
+\l__coffin_aligned_internal_coffin=\box71
+\l_tmpa_coffin=\box72
+\l_tmpb_coffin=\box73
+\g_tmpa_coffin=\box74
+\g_tmpb_coffin=\box75
+\c__coffin_empty_coffin=\box76
+\l__coffin_display_coffin=\box77
+\l__coffin_display_coord_coffin=\box78
+\l__coffin_display_pole_coffin=\box79
+\l__coffin_display_offset_dim=\dimen162
+\l__coffin_display_x_dim=\dimen163
+\l__coffin_display_y_dim=\dimen164
+\g__file_internal_ior=\read2
+\l__coffin_bounding_shift_dim=\dimen165
+\l__coffin_left_corner_dim=\dimen166
+\l__coffin_right_corner_dim=\dimen167
+\l__coffin_bottom_corner_dim=\dimen168
+\l__coffin_top_corner_dim=\dimen169
+\l__coffin_scaled_total_height_dim=\dimen170
+\l__coffin_scaled_width_dim=\dimen171
+\l__seq_internal_a_int=\count271
+\l__seq_internal_b_int=\count272
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/l3dvips.def
+File: l3dvips.def 2019-02-15 v L3 Experimental driver: dvips
+\g__driver_pdf_object_int=\count273
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2018-10-17 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count274
+\g__xparse_grabber_int=\count275
+\l__xparse_m_args_int=\count276
+\l__xparse_mandatory_args_int=\count277
+\l__xparse_v_nesting_int=\count278
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2018-10-17 LaTeX2e option processing using LaTeX3 keys
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2018-10-17 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen172
+\l__xtemplate_tmp_int=\count279
+\l__xtemplate_tmp_muskip=\muskip17
+\l__xtemplate_tmp_skip=\skip78
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count280
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/xpatch/xpatch.sty
+Package: xpatch 2012/10/02 v0.3 Extending etoolbox patching commands
+)
+Package: enotez 2017/04/24 v0.9a Endnotes for LaTeX2e
+\l__enotez_list_preamble_skip=\skip79
+\l__enotez_list_postamble_skip=\skip80
+\g__enotez_endnote_id_int=\count281
+\g__enotez_endnote_mark_int=\count282
+\c@endnote=\count283
+\g__enotez_list_printed_int=\count284
+\l__enotez_tmpa_int=\count285
+
+Package xtemplate Info: Declaring object type 'enotez-list' taking 1
+(xtemplate)             argument(s) on line 389.
+
+\l__enotez_list_notes_sep_dim=\dimen173
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2017/08/31 v1.7a internationalization of LaTeX2e packages (CN)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/moreverb/moreverb.sty
+Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
+\tab@position=\count286
+\tab@size=\count287
+\listing@line=\count288
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tipa/tipa.sty
+Package: tipa 2002/08/08 TIPA version 1.1
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+Now handling font encoding T3 ...
+... no UTF-8 mapping file for font encoding T3
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 357.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvips.def on input line 147.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/bezos/accents.sty
+Package: accents 2006/05/12 v1.4 Math Accent Tools
+\cc@skew=\dimen174
+\cc@wd=\dimen175
+\cc@code=\count289
+\cc@group=\count290
+\cc@skewchar=\count291
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count292
+\c@@ppsavesec=\count293
+\c@@ppsaveapp=\count294
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/eucal.sty
+Package: eucal 2009/06/22 v3.00 Euler Script fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
+(Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box80
+\UL@hyphenbox=\box81
+\UL@skip=\skip81
+\UL@hook=\toks30
+\UL@height=\dimen176
+\UL@pe=\count295
+\UL@pixel=\dimen177
+\ULC@box=\box82
+Package: ulem 2012/05/18
+\ULdepth=\dimen178
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+LaTeX Info: Redefining \bm on input line 207.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/bbm-macros/bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/optional/optional.sty
+Package: optional 2005/01/26 ver 2.2b;  Optional inclusion/omission
+)
+Using optional text marked with econtex. 
+(/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip82
+\bibsep=\skip83
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count296
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks31
+\footnotemargin=\dimen179
+\c@pp@next@reset=\count297
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/ncctools/manyfoot.sty
+Package: manyfoot 2005/09/11 v1.10 Many Footnote Levels Package (NCC)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ncctools/nccfoots.sty
+Package: nccfoots 2005/02/03 v1.2 NCC Footnotes Package (NCC)
+)
+\MFL@columnwidth=\dimen180
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/bigfoot/perpage.sty
+Package: perpage 2014/10/25 2.0 Reset/sort counters per page
+\c@abspage=\count298
+)
+Package footmisc Info: Declaring symbol style blank on input line 344.
+\footinsB=\insert252
+\c@footnoteB=\count299
+\c@pp@a@footnoteB=\count300
+\c@authornum=\count301
+\c@bottomauthor=\count302
+LaTeX Info: Redefining \rm on input line 399.
+LaTeX Info: Redefining \sf on input line 400.
+LaTeX Info: Redefining \tt on input line 401.
+LaTeX Info: Redefining \bf on input line 402.
+LaTeX Info: Redefining \it on input line 403.
+LaTeX Info: Redefining \sl on input line 404.
+LaTeX Info: Redefining \sc on input line 405.
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2018-06-12-16:01
+Package: tex4ht 
+--------------------------------------
+--- Note --- for _ at preamble, use the command line option `early_'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ at preamble, use the command line option `early^'
+--------------------------------------
+\tmp:toks=\toks32
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/usepackage.4ht
+version 2019-01-12-14:56
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps]
+(grfext)             \PrependGraphicsExtensions on input line 5.
+ (./LaTeX/ConsumptionResponse.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/usepackage.4ht
+version 2019-01-12-14:56
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/xr-hyper.sty
+Package: xr-hyper 2000/03/22 v6.00beta4 eXternal References (DPC)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/refcount.sty
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/subfiles/subfiles.sty
+Package: subfiles 2018/07/31 Federico Garcia, Gernot Salzer
+) (./LaTeX/texmf-local/tex/latex/econtexSetup.sty (/usr/local/texlive/2018/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/ibygrk/psibycus.sty
+Package: psibycus 2004/10/18 v4.5 Ibycus4 using Type1 fonts (P.A.MacKay/WaS)
+\digraphs=\toks33
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/ibygrk/ibycus4.map (/usr/local/texlive/2018/texmf-dist/tex/generic/ibygrk/tlgsqq.tex)) (/usr/local/texlive/2018/texmf-dist/tex/generic/ibygrk/Uibycus.fd
+File: Uibycus.fd 2004/10/18 v4.5 font definitions for Ibycus/Type1 (WaS)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/ibygrk/iby4extr.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/ibygrk/version4.tex Ibycus Greek. Version 4. 15 July 1997))) (/usr/local/texlive/2018/texmf-dist/tex/latex/ushort/ushort.sty
+ushort.sty by M. Vaeth: Release: 2.2 
+Package: ushort 2001/06/13 v2.2
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/usepackage.4ht
+version 2019-01-12-14:56
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 99.
+)
+\Gin@req@height=\dimen181
+\Gin@req@width=\dimen182
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \AP@enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package hobsub Info: Skipping package `refcount' (already loaded).
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+
+
+Package auxhook Warning: Cannot patch \document,
+(auxhook)                using \AtBeginDocument instead.
+
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen183
+\Hy@linkcounter=\count303
+\Hy@pagecounter=\count304
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count305
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4393.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4393.
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count306
+LaTeX Info: Redefining \url on input line 5125.
+\XeTeXLinkMargin=\dimen184
+\Fld@menulength=\count307
+\Field@Width=\dimen185
+\Fld@charsize=\dimen186
+\Field@toks=\toks34
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring ON on input line 6398.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count308
+
+
+Package hyperref Message: Stopped early.
+
+)
+Package hyperref Info: Driver: htex4ht.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/htex4ht.def
+File: htex4ht.def 2018/11/30 v6.88e Hyperref driver for TeX4ht
+Package hyperref Info: tex4ht is already loaded.
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 151.
+ Including MathFactsList.defs) (./LaTeX/texmf-local/tex/latex/econtexShortcuts.sty) (/usr/local/texlive/2018/texmf-dist/tex/latex/datetime/datetime.sty
+Package: datetime 2015/03/20 v2.60 Date Time Package
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2017/12/24 v3.05
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks35
+\XKV@tempa@toks=\toks36
+)
+\XKV@depth=\count309
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+Package: fcprefix 2012/09/28
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count310
+))
+\c@padzeroesN=\count311
+\fc@tmpcatcode=\count312
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fmtcount/fc-english.def
+File: fc-english.def 2016/01/12
+)
+\@DT@modctr=\count313
+\@ordinalctr=\count314
+\@orgargctr=\count315
+\@strctr=\count316
+\@tmpstrctr=\count317
+\@DT@loopN=\count318
+\@DT@X=\count319
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count320
+\@month=\count321
+\@year=\count322
+\c@HOUR=\count323
+\c@HOURXII=\count324
+\c@MINUTE=\count325
+\c@TOHOUR=\count326
+\c@TOMINUTE=\count327
+\c@SECOND=\count328
+\currenthour=\count329
+\currentminute=\count330
+\currentsecond=\count331
+Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
+\@dtctr=\count332
+\dayofyear=\count333
+\dayofweek=\count334
+LaTeX Info: Redefining \today on input line 736.
+\dt@a=\toks37
+\dt@b=\toks38
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count335
+\rotFPtop=\skip84
+\rotFPbot=\skip85
+\rot@float@box=\box83
+\rot@mess@toks=\toks39
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png]
+(grfext)             \PrependGraphicsExtensions on input line 40.
+\TableWidth=\skip86
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+\Gm@cnth=\count336
+\Gm@cntv=\count337
+\c@Gm@tempcnt=\count338
+\Gm@bindingoffset=\dimen187
+\Gm@wd@mp=\dimen188
+\Gm@odd@mp=\dimen189
+\Gm@even@mp=\dimen190
+\Gm@layoutwidth=\dimen191
+\Gm@layoutheight=\dimen192
+\Gm@layouthoffset=\dimen193
+\Gm@layoutvoffset=\dimen194
+\Gm@dimlist=\toks40
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/layouts/layouts.sty
+Package: layouts 2009/09/02 v2.6d graphical depiction of document elements
+\l@ylen=\skip87
+\layoutsbox=\box84
+\l@youtunitlength=\skip88
+\l@youtlinethick=\skip89
+\l@youtlinethickii=\skip90
+\l@ysetupparskip=\skip91
+\l@ysetupbaselineskip=\skip92
+\l@yonem=\skip93
+\l@yonex=\skip94
+\l@ylmarg=\skip95
+\l@yrmarg=\skip96
+\l@yitmindent=\skip97
+\l@ylblwidth=\skip98
+\l@ylblsep=\skip99
+\l@ylparindent=\skip100
+\l@ytsep=\skip101
+\l@ypskip=\skip102
+\l@yptsep=\skip103
+\l@ypsep=\skip104
+\l@yitmsep=\skip105
+\l@ytok=\toks41
+\l@youtpw=\count339
+\l@youtph=\count340
+\l@youthpi=\count341
+\l@youthpii=\count342
+\l@youthpiii=\count343
+\l@youthpiv=\count344
+\l@youthpv=\count345
+\l@youthpvi=\count346
+\l@youthpvii=\count347
+\l@youtparskip=\count348
+\l@youtvpi=\count349
+\l@youtvpii=\count350
+\l@youtvpiii=\count351
+\l@youtvpiv=\count352
+\l@youtvpv=\count353
+\l@youtvpvi=\count354
+\l@youtvpvii=\count355
+\l@youthdo=\count356
+\l@youthdi=\count357
+\l@youthdii=\count358
+\l@youthdiii=\count359
+\l@youthdiv=\count360
+\l@youthdv=\count361
+\l@youthdvi=\count362
+\l@youthdvii=\count363
+\l@youtvdo=\count364
+\l@youtvdi=\count365
+\l@youtvdii=\count366
+\l@youtvdiii=\count367
+\l@youtvdiv=\count368
+\l@youtvdv=\count369
+\l@youtvdvi=\count370
+\l@youtvdvii=\count371
+\l@youtvdviii=\count372
+\l@youtxci=\count373
+\l@youtxcii=\count374
+\l@youtxciii=\count375
+\l@youtxciv=\count376
+\l@youtxcv=\count377
+\l@youtxcvi=\count378
+\l@youtyci=\count379
+\l@youtycii=\count380
+\l@youtyciii=\count381
+\l@youtyciv=\count382
+\l@youtycv=\count383
+\l@youtycvi=\count384
+\l@youtycvii=\count385
+\l@youtycviii=\count386
+\l@youtxco=\count387
+\l@youtyco=\count388
+\l@ytempdima=\skip106
+\stockwidth=\skip107
+\stockheight=\skip108
+\trimedge=\skip109
+\trimtop=\skip110
+\uppermargin=\skip111
+\spinemargin=\skip112
+) (./ConsumptionResponse.cfg (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/tex4ht.4ht
+version 2018-12-30-09:29
+--------------------------------------
+--- Note --- for additional information, use the command line option `info'
+--------------------------------------
+
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2018-06-12-16:01
+
+--- needs --- tex4ht ConsumptionResponse ---
+\tmp:cnt=\count389
+\openout15 = `ConsumptionResponse.tmp'.
+
+(./ConsumptionResponse.tmp)
+\tmp:dim=\skip113
+--------------------------------------
+--- Note --- for XML code, use the command line option `xml' or `xhtml'
+--------------------------------------
+ (./ConsumptionResponse.xref)
+\:refout=\write3
+\openout3 = `ConsumptionResponse.xref'.
+
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+--------------------------------------
+--- Note --- to remove the <?xml version=...?> processing instruction use the command line option `no-VERSION'
+--------------------------------------
+--------------------------------------
+--- Note --- to remove the DOCTYPE declaration use the command line option `no-DOCTYPE'
+--------------------------------------
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+)
+--------------------------------------
+--- Note --- for marking of the base font, use the command line option `fonts+'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active _, use the command line option `no_'
+--------------------------------------
+--------------------------------------
+--- Note --- for _ of catcode 13, use the command line option `_13'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active ^, use the command line option `no^'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ of catcode 13, use the command line option `^13'
+--------------------------------------
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+--------------------------------------
+--- Note --- to ignore CSS font decoration, use the `NoFonts' command line option
+--------------------------------------
+--------------------------------------
+--- Note --- for jpg bitmaps of pictures, use the `jpg' command line option. (Character bitmaps are controled only by `g' records of tex4ht.env and `-g' switches of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for gif bitmaps of pictures, use the `gif' command line option. (Character bitmaps are controled only by `g' records of tex4ht.env and `-g' switches of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for content and toc in 2 frames, use the command line option `frames'
+--------------------------------------
+--------------------------------------
+--- Note --- for content, toc, and footnotes in 3 frames, use the command line option `frames-fn'
+--------------------------------------
+--------------------------------------
+--- Note --- for file extension name xht, use the command line option `xht'
+--------------------------------------
+TeX4ht package options: svg,charset=utf-8,html5,html,charset="utf-8",p-width,pic-align,pic-tabular
+--------------------------------------
+--- Note --- To print a timestamp, use the command line option timestamp
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS code, use the command line option `-css
+--------------------------------------
+--------------------------------------
+--- Note --- for inline CSS code, use the command line option `css-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for pop ups on mouse over, use the command line option `mouseover'
+--------------------------------------
+--------------------------------------
+--- Note --- for addressing images in a subdirectory, use the command line option `imgdir:.../'
+--------------------------------------
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+--------------------------------------
+--- Note --- for external SVG files try the command line options `svg-obj' and 'svg-'
+--------------------------------------
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+--------------------------------------
+--- Note --- To print a timestamp, use the command line option timestamp
+--------------------------------------
+)
+\:tokwrite=\toks42
+\:tokpage=\toks43
+--------------------------------------
+--- Note --- for back links to toc, use the command line option `sections+'
+--------------------------------------
+--------------------------------------
+--- Note --- for linear crosslinks of pages, use the command line option `next'
+--------------------------------------
+\openout15 = `ConsumptionResponse.4ct'.
+
+\:tocout=\write4
+\openout4 = `ConsumptionResponse.4tc'.
+
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/latex.4ht
+version 2018-12-05-15:46
+LaTeX Info: Redefining \_ on input line 168.
+--------------------------------------
+--- Note --- for links into captions, instead of float heads, use the command line option `refcaption'
+--------------------------------------
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+--------------------------------------
+--- Note --- For mini tocs immediately aftter the header use the command line option `minitoc<'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements with valued data, use the command line option `enumerate+'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements li's with value attributes, use the command line option `enumerate-'
+--------------------------------------
+--------------------------------------
+--- Note --- for CSS2 code, use the command line option `css2'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap fbox'es, use the command line option `pic-fbox'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap framebox'es, use the command line option `pic-framebox'
+--------------------------------------
+--------------------------------------
+--- Note --- for inline footnotes use command line option `fn-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for tracing of latex font commands, use the command line option `fonts'
+--------------------------------------
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+--------------------------------------
+--- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ environments, use the command line option `pic-m' (not recommended!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ and $$...$$ environments with latex alt, use the command line option `pic-m+' (not safe!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/fontmath.4ht
+version 2018-11-06-15:55
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/ifthen.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/scrartcl.4ht
+version 2018-10-20-15:45
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/article.4ht (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+--------------------------------------
+--- Note --- for automatic sectioning pagination, use the command line option `1', `2', `3', '4', '5', '6', or '7'
+--------------------------------------
+--------------------------------------
+--- Note --- for files named derived from section titles, use the command line option `sec-filename'
+--------------------------------------
+--------------------------------------
+--- Note --- for i-columns index, use the command line option `index=i' (e.g., index=2)
+--------------------------------------
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+)) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/babel.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/english.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/verbatim.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/amsmath.4ht
+version 2019-01-24-14:21
+\tmp:muskip=\muskip19
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/amstext.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/amsbsy.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/amsopn.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/amssymb.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/amsfonts.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/amsthm.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/dcolumn.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/array.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/multicol.4ht
+version 2013-07-31-09:45
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/multirow.4ht (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/booktabs.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/afterpage.4ht
+version 2009-05-21-09:32
+
+l.37 --- TeX4ht warning --- afterpage.sty not supported ---
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+)) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/moreverb.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+)) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/color.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+)) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/dvips.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+)) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/dvipsnam.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/accents.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/eucal.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/ulem.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/bm.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/url.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+--------------------------------------
+--- Note --- for URL encoding within href use the command line option `url-enc'
+--------------------------------------
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/natbib.4ht
+version 2013-01-19-12:33
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/footmisc.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/xr-hyper.4ht
+version 2016-12-21-15:03
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/ushort.4ht
+version 2009-05-21-09:32
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/graphicx.4ht
+version 2018-10-01-14:24
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/graphics.4ht (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+--------------------------------------
+--- Note --- if included graphics are of degraded quality, try the command line options `graphics-num' or `graphics-'. The `num' should provide the density of pixels in the bitmaps (e.g., 110). 
+--------------------------------------
+--------------------------------------
+--- Note --- for key dimensions try the option `Gin-dim'; for key dimensions when bounding box is unavailable try `Gin-dim+'; neither is recommended
+--------------------------------------
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/hyperref.4ht
+version 2016-01-12-16:05
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count390
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/nameref.4ht
+version 2017-11-27-09:16
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+))
+LaTeX Info: Redefining \autoref on input line 95.
+\Hy@SectionHShift=\skip114
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+)) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/pd1enc.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+)) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/rotating.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+)) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/geometry.4ht
+version 2016-07-01-08:55
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+)) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2019-01-30-15:45
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2018-12-05-18:11
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2018-05-05-08:44
+)) (./ConsumptionResponse.aux)
+\openout1 = `ConsumptionResponse.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 62.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 62.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 62.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 62.
+\AtBeginShipoutBox=\box85
+
+
+Package hyperref Warning: Height of page (\stockheight) is invalid (0.0pt),
+(hyperref)                using 11in.
+
+Package hyperref Info: Link coloring ON on input line 62.
+LaTeX Info: Redefining \ref on input line 62.
+LaTeX Info: Redefining \pageref on input line 62.
+LaTeX Info: Redefining \nameref on input line 62.
+Class scrartcl Info: loading recommended package `bookmark'.
+(scrartcl)           Using `bookmark' together with `hyperref' is recommended,
+(scrartcl)           because of handling of possible bookmark level gaps.
+(scrartcl)           You can avoid loading `bookmark' with KOMA-Script option
+(scrartcl)           `bookmarkpackage=false' before \begin{document} and
+(scrartcl)           you can avoid this message with `\usepackage{bookmark}'
+(scrartcl)           before \begin{document} on input line 62.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/bookmark.sty
+Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/bkm-dvips.def
+File: bkm-dvips.def 2016/05/17 v1.26 bookmark driver for dvips (HO)
+Package auxhook Info: \AddLineBeginMainAux comes a little late,
+(auxhook)             because the main .aux file is already opened on input line 209.
+\BKM@id=\count391
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(55.48286pt, 486.54214pt, 55.48286pt)
+* v-part:(T,H,B)=(72.55452pt, 699.9378pt, 72.55452pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=486.54214pt
+* \textheight=699.9378pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-39.59047pt
+* \headheight=18.125pt
+* \headsep=21.75pt
+* \topskip=12.0pt
+* \footskip=50.75pt
+* \marginparwidth=0.0pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Package layouts Warning: Layout scale set to 0.5 on input line 62.
+
+--- file ConsumptionResponse.css ---
+)
+
+Class econtex Warning: {\forcedate} is undefined in the .tex file; please define it and rerun.
+
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 57.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 57.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 57.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 57.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 57.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 57.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 57.
+LaTeX Font Info:    Try loading font information for U+msa on input line 57.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 57.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 57.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+wasy on input line 57.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 83.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 83.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 83.
+l. 83 Writing ConsumptionResponse.idv[1] (ConsumptionResponse0x.svg)
+l. 83 Writing ConsumptionResponse.idv[2] (ConsumptionResponse1x.svg)
+
+[1
+
+]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 93.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 93.
+ [1] [2]
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 120.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 128.
+l. 128 Writing ConsumptionResponse.idv[3] (ConsumptionResponse2x.svg)
+ [3] [4] [5] [6] [7] [8
+
+]
+l. 229 --- needs --- ./Figures/UnempProbByDemogBasic.png ---
+ [9
+
+]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 237.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 237.
+ [10
+
+] [11
+
+]
+l. 261 --- needs --- ./Figures/AggLT.png ---
+ [12
+
+] [13
+
+] [14
+
+]
+l. 277 --- needs --- ./Figures/AggConResp_examples.png ---
+ [15
+
+]
+[16
+
+] [17
+
+]
+l. 303 --- needs --- ./Figures/Decomposition.png ---
+ [18
+
+] [19
+
+] [20
+
+]
+l. 323 --- needs --- ./Figures/ConRespByEmpStateNoStim.png ---
+l. 323 --- needs --- ./Figures/ConRespByEmpStateWStim.png ---
+ [21
+
+] [22
+
+] [23
+
+]
+l. 341 --- needs --- ./Figures/ConDeltaByEmpState.png ---
+ [24
+
+] [25
+
+] [26
+
+]
+l. 357 --- needs --- ./Figures/Checks_vs_Unemp.png ---
+ [27
+
+] [28
+
+] [29
+
+]
+l. 374 --- needs --- ./Figures/EffectTargeting.png ---
+ [30
+
+] [31
+
+] [32
+
+]
+l. 393 --- needs --- ./Figures/AggLT_long_pandemic.png ---
+ [33
+
+] [34
+
+] [35
+
+]
+l. 409 --- needs --- ./Figures/DeepPandemic.png ---
+ [36
+
+] [37
+
+] (./ConsumptionResponse.bbl [38] [39] [40]) [41] (./ModelAppendix.tex (./LaTeX/econtexRoot.tex) (./LaTeX/onlyinsubfile.tex)
+l. 11 Writing ConsumptionResponse.idv[4] (ConsumptionResponse3x.svg)
+l. 11 Writing ConsumptionResponse.idv[5] (ConsumptionResponse4x.svg)
+l. 12 Writing ConsumptionResponse.idv[6] (ConsumptionResponse5x.svg)
+l. 12 Writing ConsumptionResponse.idv[7] (ConsumptionResponse6x.svg)
+l. 12 Writing ConsumptionResponse.idv[8] (ConsumptionResponse7x.svg)
+l. 13 Writing ConsumptionResponse.idv[9] (ConsumptionResponse8x.svg)
+l. 13 Writing ConsumptionResponse.idv[10] (ConsumptionResponse9x.svg)
+l. 13 Writing ConsumptionResponse.idv[11] (ConsumptionResponse10x.svg)
+l. 15 Writing ConsumptionResponse.idv[12] (ConsumptionResponse11x.svg)
+l. 15 Writing ConsumptionResponse.idv[13] (ConsumptionResponse12x.svg)
+l. 15 Writing ConsumptionResponse.idv[14] (ConsumptionResponse13x.svg)
+l. 19 Writing ConsumptionResponse.idv[15] (ConsumptionResponse14x.svg)
+l. 19 Writing ConsumptionResponse.idv[16] (ConsumptionResponse15x.svg)
+l. 19 Writing ConsumptionResponse.idv[17] (ConsumptionResponse16x.svg)
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 19.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmss.fd
+File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+l. 22 Writing ConsumptionResponse.idv[18] (ConsumptionResponse17x.svg)
+l. 22 Writing ConsumptionResponse.idv[19] (ConsumptionResponse18x.svg)
+l. 24 Writing ConsumptionResponse.idv[20] (ConsumptionResponse19x.svg)
+l. 24 Writing ConsumptionResponse.idv[21] (ConsumptionResponse20x.svg)
+l. 24 Writing ConsumptionResponse.idv[22] (ConsumptionResponse21x.svg)
+l. 24 Writing ConsumptionResponse.idv[23] (ConsumptionResponse22x.svg)
+l. 24 Writing ConsumptionResponse.idv[24] (ConsumptionResponse23x.svg)
+l. 24 Writing ConsumptionResponse.idv[25] (ConsumptionResponse24x.svg)
+l. 24 Writing ConsumptionResponse.idv[26] (ConsumptionResponse25x.svg)
+l. 24 Writing ConsumptionResponse.idv[27] (ConsumptionResponse26x.svg)
+l. 25 Writing ConsumptionResponse.idv[28] (ConsumptionResponse27x.svg)
+l. 27 Writing ConsumptionResponse.idv[29] (ConsumptionResponse28x.svg)
+l. 28 Writing ConsumptionResponse.idv[30] (ConsumptionResponse29x.svg)
+l. 30 Writing ConsumptionResponse.idv[31] (ConsumptionResponse30x.svg)
+ [42]
+l. 33 Writing ConsumptionResponse.idv[32] (ConsumptionResponse31x.svg)
+l. 33 Writing ConsumptionResponse.idv[33] (ConsumptionResponse32x.svg)
+l. 33 Writing ConsumptionResponse.idv[34] (ConsumptionResponse33x.svg)
+l. 33 Writing ConsumptionResponse.idv[35] (ConsumptionResponse34x.svg)
+l. 34 Writing ConsumptionResponse.idv[36] (ConsumptionResponse35x.svg)
+l. 34 Writing ConsumptionResponse.idv[37] (ConsumptionResponse36x.svg)
+l. 34 Writing ConsumptionResponse.idv[38] (ConsumptionResponse37x.svg)
+l. 36 Writing ConsumptionResponse.idv[39] (ConsumptionResponse38x.svg)
+l. 36 Writing ConsumptionResponse.idv[40] (ConsumptionResponse39x.svg)
+l. 36 Writing ConsumptionResponse.idv[41] (ConsumptionResponse40x.svg)
+l. 39 Writing ConsumptionResponse.idv[42] (ConsumptionResponse41x.svg)
+l. 46 Writing ConsumptionResponse.idv[43] (ConsumptionResponse42x.svg)
+l. 54 Writing ConsumptionResponse.idv[44] (ConsumptionResponse43x.svg)
+l. 54 Writing ConsumptionResponse.idv[45] (ConsumptionResponse44x.svg)
+l. 54 Writing ConsumptionResponse.idv[46] (ConsumptionResponse45x.svg)
+l. 54 Writing ConsumptionResponse.idv[47] (ConsumptionResponse46x.svg)
+l. 54 Writing ConsumptionResponse.idv[48] (ConsumptionResponse47x.svg)
+l. 54 Writing ConsumptionResponse.idv[49] (ConsumptionResponse48x.svg)
+l. 54 Writing ConsumptionResponse.idv[50] (ConsumptionResponse49x.svg)
+l. 55 Writing ConsumptionResponse.idv[51] (ConsumptionResponse50x.svg)
+l. 55 Writing ConsumptionResponse.idv[52] (ConsumptionResponse51x.svg)
+l. 55 Writing ConsumptionResponse.idv[53] (ConsumptionResponse52x.svg)
+ [43]
+l. 57 Writing ConsumptionResponse.idv[54] (ConsumptionResponse53x.svg)
+l. 58 Writing ConsumptionResponse.idv[55] (ConsumptionResponse54x.svg)
+l. 59 Writing ConsumptionResponse.idv[56] (ConsumptionResponse55x.svg)
+l. 59 Writing ConsumptionResponse.idv[57] (ConsumptionResponse56x.svg)
+l. 63 Writing ConsumptionResponse.idv[58] (ConsumptionResponse57x.svg)
+l. 63 Writing ConsumptionResponse.idv[59] (ConsumptionResponse58x.svg)
+l. 64 Writing ConsumptionResponse.idv[60] (ConsumptionResponse59x.svg)
+l. 64 Writing ConsumptionResponse.idv[61] (ConsumptionResponse60x.svg)
+l. 64 Writing ConsumptionResponse.idv[62] (ConsumptionResponse61x.svg)
+l. 67 Writing ConsumptionResponse.idv[63] (ConsumptionResponse62x.svg)
+l. 67 Writing ConsumptionResponse.idv[64] (ConsumptionResponse63x.svg)
+l. 68 Writing ConsumptionResponse.idv[65] (ConsumptionResponse64x.svg)
+l. 68 Writing ConsumptionResponse.idv[66] (ConsumptionResponse65x.svg)
+l. 69 Writing ConsumptionResponse.idv[67] (ConsumptionResponse66x.svg)
+l. 70 Writing ConsumptionResponse.idv[68] (ConsumptionResponse67x.svg)
+l. 78 Writing ConsumptionResponse.idv[69] (ConsumptionResponse68x.svg)
+l. 78 Writing ConsumptionResponse.idv[70] (ConsumptionResponse69x.svg)
+l. 78 Writing ConsumptionResponse.idv[71] (ConsumptionResponse70x.svg)
+l. 78 Writing ConsumptionResponse.idv[72] (ConsumptionResponse71x.svg)
+l. 78 Writing ConsumptionResponse.idv[73] (ConsumptionResponse72x.svg)
+ [44]
+l. 80 Writing ConsumptionResponse.idv[74] (ConsumptionResponse73x.svg)
+l. 82 Writing ConsumptionResponse.idv[75] (ConsumptionResponse74x.svg)
+l. 88 Writing ConsumptionResponse.idv[76] (ConsumptionResponse75x.svg)
+LaTeX Font Info:    Try loading font information for U+euf on input line 89.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+l. 92 Writing ConsumptionResponse.idv[77] (ConsumptionResponse76x.svg)
+l. 92 Writing ConsumptionResponse.idv[78] (ConsumptionResponse77x.svg)
+l. 93 Writing ConsumptionResponse.idv[79] (ConsumptionResponse78x.svg)
+l. 94 Writing ConsumptionResponse.idv[80] (ConsumptionResponse79x.svg)
+l. 94 Writing ConsumptionResponse.idv[81] (ConsumptionResponse80x.svg)
+ [45]
+l. 97 Writing ConsumptionResponse.idv[82] (ConsumptionResponse81x.svg)
+l. 100 Writing ConsumptionResponse.idv[83] (ConsumptionResponse82x.svg)
+l. 100 Writing ConsumptionResponse.idv[84] (ConsumptionResponse83x.svg)
+l. 100 Writing ConsumptionResponse.idv[85] (ConsumptionResponse84x.svg)
+ [46] [47
+
+]
+l. 106 Writing ConsumptionResponse.idv[86] (ConsumptionResponse85x.svg)
+ [48
+
+]
+l. 141 Writing ConsumptionResponse.idv[87] (ConsumptionResponse86x.svg)
+l. 141 Writing ConsumptionResponse.idv[88] (ConsumptionResponse87x.svg)
+l. 142 Writing ConsumptionResponse.idv[89] (ConsumptionResponse88x.svg)
+l. 145 Writing ConsumptionResponse.idv[90] (ConsumptionResponse89x.svg)
+l. 145 Writing ConsumptionResponse.idv[91] (ConsumptionResponse90x.svg)
+l. 145 Writing ConsumptionResponse.idv[92] (ConsumptionResponse91x.svg)
+l. 145 Writing ConsumptionResponse.idv[93] (ConsumptionResponse92x.svg)
+l. 146 Writing ConsumptionResponse.idv[94] (ConsumptionResponse93x.svg)
+ [49
+
+] [50
+
+]
+l. 156 Writing ConsumptionResponse.idv[95] (ConsumptionResponse94x.svg)
+ [51
+
+] [52
+
+] [53
+
+]
+l. 201 Writing ConsumptionResponse.idv[96] (ConsumptionResponse95x.svg)
+ [54
+
+]
+l. 239 Writing ConsumptionResponse.idv[97] (ConsumptionResponse96x.svg)
+l. 254 Writing ConsumptionResponse.idv[98] (ConsumptionResponse97x.svg)
+l. 255 Writing ConsumptionResponse.idv[99] (ConsumptionResponse98x.svg)
+ [55
+
+] [56] [57
+
+]
+l. 265 --- needs --- ./Figures/QualityCost.png ---
+ [58
+
+]
+l. 269 Writing ConsumptionResponse.idv[100] (ConsumptionResponse99x.svg)
+l. 272 Writing ConsumptionResponse.idv[101] (ConsumptionResponse100x.svg)
+l. 272 Writing ConsumptionResponse.idv[102] (ConsumptionResponse101x.svg)
+l. 272 Writing ConsumptionResponse.idv[103] (ConsumptionResponse102x.svg)
+) [59
+
+]
+l. 455 Writing ConsumptionResponse.idv[104] (ConsumptionResponse103x.svg)
+l. 455 Writing ConsumptionResponse.idv[105] (ConsumptionResponse104x.svg)
+l. 455 Writing ConsumptionResponse.idv[106] (ConsumptionResponse105x.svg)
+l. 455 Writing ConsumptionResponse.idv[107] (ConsumptionResponse106x.svg)
+ [60]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 459.
+ [61]
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 459.
+\BKM@file=\write5
+\openout5 = `ConsumptionResponse.out.ps'.
+
+ (./ConsumptionResponse.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 459.
+\snap@out=\write6
+\openout6 = `ConsumptionResponse.dep'.
+
+
+Dependency list written on ConsumptionResponse.dep.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 459.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 459.
+ ) 
+Here is how much of TeX's memory you used:
+ 31255 strings out of 492617
+ 545139 string characters out of 6129024
+ 839129 words of memory out of 5000000
+ 34102 multiletter control sequences out of 15000+600000
+ 671598 words of font info for 128 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 60i,14n,73p,9678b,679s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on ConsumptionResponse.dvi (62 pages, 186320 bytes).
