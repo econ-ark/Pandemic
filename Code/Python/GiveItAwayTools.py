@@ -148,21 +148,21 @@ def runExperiment(Agents,PanShock,
     multiThreadCommandsFake(Agents, experiment_commands)
     
     # Extract simulated consumption, labor income, and weight data
-    cNrm_all = np.concatenate([ThisType.cNrmNow_hist for ThisType in Agents], axis=1)
-    lLvl_all = np.concatenate([ThisType.lLvlNow_hist for ThisType in Agents], axis=1)
+    cNrm_all = np.concatenate([ThisType.history['cNrmNow'] for ThisType in Agents], axis=1)
+    lLvl_all = np.concatenate([ThisType.history['lLvlNow'] for ThisType in Agents], axis=1)
     
-    Mrkv_hist = np.concatenate([ThisType.MrkvNow_hist for ThisType in Agents], axis=1)
-    t_cycle_hist = np.concatenate([ThisType.t_cycle_hist for ThisType in Agents], axis=1)
-    u_all = np.concatenate([ThisType.uNow_hist for ThisType in Agents], axis=1)
-    w_all = np.concatenate([ThisType.wNow_hist for ThisType in Agents], axis=1)
-    pLvl_all = np.concatenate([ThisType.pLvlNow_hist for ThisType in Agents], axis=1)
-    Weight_all = np.concatenate([ThisType.Weight_hist for ThisType in Agents], axis=1)
+    Mrkv_hist = np.concatenate([ThisType.history['MrkvNow'] for ThisType in Agents], axis=1)
+    t_cycle_hist = np.concatenate([ThisType.history['t_cycle'] for ThisType in Agents], axis=1)
+    u_all = np.concatenate([ThisType.history['uNow'] for ThisType in Agents], axis=1)
+    w_all = np.concatenate([ThisType.history['wNow'] for ThisType in Agents], axis=1)
+    pLvl_all = np.concatenate([ThisType.history['pLvlNow'] for ThisType in Agents], axis=1)
+    Weight_all = np.concatenate([ThisType.history['Weight'] for ThisType in Agents], axis=1)
     pLvl_all /= PlvlAgg_adjuster
     lLvl_all /= PlvlAgg_adjuster
     cLvl_all = cNrm_all*pLvl_all
     
     # Get initial Markov states
-    Mrkv_init = np.concatenate([ThisType.MrkvNow_hist[0,:] for ThisType in Agents])
+    Mrkv_init = np.concatenate([ThisType.history['MrkvNow'][0,:] for ThisType in Agents])
     Age_init = np.concatenate([ThisType.age_base for ThisType in Agents])
     WorkingAge = Age_init <= 163
     Employed = np.logical_and(np.logical_or(Mrkv_init == 0, Mrkv_init == 3), WorkingAge)
@@ -186,8 +186,8 @@ def runExperiment(Agents,PanShock,
     laborandtransferLvl_all = yAlt_all
     
     # Partition the working age agents by the initial permanent income
-    pLvl_init = np.concatenate([ThisType.pLvlNow_hist[0,:] for ThisType in Agents])
-    Weight_init = np.concatenate([ThisType.Weight_hist[0,:] for ThisType in Agents])*WorkingAge
+    pLvl_init = np.concatenate([ThisType.history['pLvlNow'][0,:] for ThisType in Agents])
+    Weight_init = np.concatenate([ThisType.history['Weight'][0,:] for ThisType in Agents])*WorkingAge
     quintile_cuts = getPercentiles(pLvl_init, Weight_init, [0.2,0.4,0.6,0.8])
     inc_quint = np.zeros(PopCount)
     for q in range(4):
@@ -302,23 +302,23 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
         ThisType.initializeSim()
         pLvlInit = ThisType.pLvlNow.copy()
         ThisType.makeShockHistory()
-        ThisType.pLvlNow_hist = np.cumprod(ThisType.PermShkNow_hist, axis=0)
-        ThisType.pLvlNow_hist *= np.tile(np.reshape(pLvlInit,(1,ThisType.AgentCount)),(T,1))
-        ThisType.pLvlNow_hist *= np.tile(np.reshape(PlvlAgg_adjuster,(T,1)),(1,ThisType.AgentCount))
+        ThisType.history['pLvlNow'] = np.cumprod(ThisType.history['PermShkNow'], axis=0)
+        ThisType.history['pLvlNow'] *= np.tile(np.reshape(pLvlInit,(1,ThisType.AgentCount)),(T,1))
+        ThisType.history['pLvlNow'] *= np.tile(np.reshape(PlvlAgg_adjuster,(T,1)),(1,ThisType.AgentCount))
         for t in range(T):
-            pLvlPercentiles[n,:,t] = getPercentiles(ThisType.pLvlNow_hist[t,:],percentiles=pctiles)
+            pLvlPercentiles[n,:,t] = getPercentiles(ThisType.history['pLvlNow'][t,:],percentiles=pctiles)
         AgeArray = np.tile(np.reshape(np.arange(T)/4 + 24,(T,1)),(1,ThisType.AgentCount))
         AgeSqArray = np.tile(np.reshape(np.arange(T)/4 + 24,(T,1)),(1,ThisType.AgentCount))
-        UnempX = np.exp(Unemp0[e] + UnempP*np.log(ThisType.pLvlNow_hist) + UnempA1*AgeArray + UnempA2*AgeSqArray)
-        DeepX  = np.exp(Deep0[e]  + DeepP*np.log(ThisType.pLvlNow_hist)  + DeepA1*AgeArray  + DeepA2*AgeSqArray)
+        UnempX = np.exp(Unemp0[e] + UnempP*np.log(ThisType.history['pLvlNow']) + UnempA1*AgeArray + UnempA2*AgeSqArray)
+        DeepX  = np.exp(Deep0[e]  + DeepP*np.log(ThisType.history['pLvlNow'])  + DeepA1*AgeArray  + DeepA2*AgeSqArray)
         denom = (1. + UnempX + DeepX)
         UnempPrb = UnempX/denom
         DeepPrb = DeepX/denom
-        ThisType.UnempPrb_hist = UnempPrb
-        ThisType.DeepPrb_hist = DeepPrb
+        ThisType.history['UnempPrb'] = UnempPrb
+        ThisType.history['DeepPrb'] = DeepPrb
         
-    UnempPrbAll = np.concatenate([ThisType.UnempPrb_hist for ThisType in TempTypes], axis=1)
-    DeepPrbAll = np.concatenate([ThisType.DeepPrb_hist for ThisType in TempTypes], axis=1)
+    UnempPrbAll = np.concatenate([ThisType.history['UnempPrb'] for ThisType in TempTypes], axis=1)
+    DeepPrbAll = np.concatenate([ThisType.history['DeepPrb'] for ThisType in TempTypes], axis=1)
     
     # Get overall unemployment and deep unemployment probabilities at each age
     UnempPrbMean = np.mean(UnempPrbAll,axis=1)
@@ -327,9 +327,10 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     data = dict()
     # Plot overall unemployment probabilities in top left
     plt.subplot(2,2,1)
+    dashes2 = [10,2]
     AgeVec = np.arange(T)/4 + 24
     plt.plot(AgeVec,UnempPrbMean,'-b')
-    plt.plot(AgeVec,DeepPrbMean,'-r')
+    plt.plot(AgeVec,DeepPrbMean,'r',dashes=dashes2)
     data['overall'] = [AgeVec, UnempPrbMean, DeepPrbMean]
     plt.legend(['Unemployed', 'Deep unemp'], loc=1)
     plt.ylim(0,0.20)
@@ -348,8 +349,8 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     denom = (1. + UnempX + DeepX)
     UnempPrb = UnempX/denom
     DeepPrb = DeepX/denom
-    plt.plot(AgeVec,UnempPrb,'--b')
-    plt.plot(AgeVec,DeepPrb,'--r')
+    plt.plot(AgeVec,UnempPrb,':b')
+    plt.plot(AgeVec,DeepPrb,':r')
     data['dropout'][p] = [AgeVec, UnempPrb, DeepPrb]
 
     p = 4
@@ -358,8 +359,8 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     denom = (1. + UnempX + DeepX)
     UnempPrb = UnempX/denom
     DeepPrb = DeepX/denom
-    plt.plot(AgeVec,UnempPrb,'--b')
-    plt.plot(AgeVec,DeepPrb,'--r')
+    plt.plot(AgeVec,UnempPrb,':b')
+    plt.plot(AgeVec,DeepPrb,':r')
     data['dropout'][p] = [AgeVec, UnempPrb, DeepPrb]
 
     p = 2
@@ -369,7 +370,7 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     UnempPrb = UnempX/denom
     DeepPrb = DeepX/denom
     plt.plot(AgeVec,UnempPrb,'-b')
-    plt.plot(AgeVec,DeepPrb,'-r')
+    plt.plot(AgeVec,DeepPrb,'r',dashes=dashes2)
     plt.yticks([])
     plt.xticks([])
     plt.ylim(0,0.20)
@@ -386,8 +387,8 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     denom = (1. + UnempX + DeepX)
     UnempPrb = UnempX/denom
     DeepPrb = DeepX/denom
-    plt.plot(AgeVec,UnempPrb,'--b')
-    plt.plot(AgeVec,DeepPrb,'--r')
+    plt.plot(AgeVec,UnempPrb,':b')
+    plt.plot(AgeVec,DeepPrb,':r')
     data['highschool'][p] = [AgeVec, UnempPrb, DeepPrb]
 
     p = 4
@@ -396,8 +397,8 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     denom = (1. + UnempX + DeepX)
     UnempPrb = UnempX/denom
     DeepPrb = DeepX/denom
-    plt.plot(AgeVec,UnempPrb,'--b')
-    plt.plot(AgeVec,DeepPrb,'--r')
+    plt.plot(AgeVec,UnempPrb,':b')
+    plt.plot(AgeVec,DeepPrb,':r')
     data['highschool'][p] = [AgeVec, UnempPrb, DeepPrb]
 
     p = 2
@@ -407,7 +408,7 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     UnempPrb = UnempX/denom
     DeepPrb = DeepX/denom
     plt.plot(AgeVec,UnempPrb,'-b')
-    plt.plot(AgeVec,DeepPrb,'-r')
+    plt.plot(AgeVec,DeepPrb,'r',dashes=dashes2)
     data['highschool'][p] = [AgeVec, UnempPrb, DeepPrb]
     plt.ylim(0,0.20)
     plt.xlabel('Age')
@@ -425,8 +426,8 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     denom = (1. + UnempX + DeepX)
     UnempPrb = UnempX/denom
     DeepPrb = DeepX/denom
-    plt.plot(AgeVec,UnempPrb,'--b')
-    plt.plot(AgeVec,DeepPrb,'--r')
+    plt.plot(AgeVec,UnempPrb,':b')
+    plt.plot(AgeVec,DeepPrb,':r')
     data['college'][p] = [AgeVec, UnempPrb, DeepPrb]
 
     p = 4
@@ -435,8 +436,8 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     denom = (1. + UnempX + DeepX)
     UnempPrb = UnempX/denom
     DeepPrb = DeepX/denom
-    plt.plot(AgeVec,UnempPrb,'--b')
-    plt.plot(AgeVec,DeepPrb,'--r')
+    plt.plot(AgeVec,UnempPrb,':b')
+    plt.plot(AgeVec,DeepPrb,':r')
     data['college'][p] = [AgeVec, UnempPrb, DeepPrb]
 
     p = 2
@@ -446,7 +447,7 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
     UnempPrb = UnempX/denom
     DeepPrb = DeepX/denom
     plt.plot(AgeVec,UnempPrb,'-b')
-    plt.plot(AgeVec,DeepPrb,'-r')
+    plt.plot(AgeVec,DeepPrb,'r',dashes=dashes2)
     data['college'][p] = [AgeVec, UnempPrb, DeepPrb]
     plt.ylim(0,0.20)
     plt.xlabel('Age')

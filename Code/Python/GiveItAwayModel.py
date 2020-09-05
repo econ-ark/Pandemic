@@ -3,8 +3,7 @@ This file has an extension of MarkovConsumerType that is used for the GiveItAway
 '''
 import warnings
 import numpy as np
-from HARK.simulation import drawUniform, drawBernoulli
-from HARK.distribution import DiscreteDistribution
+from HARK.distribution import DiscreteDistribution, Bernoulli, Uniform
 from HARK.ConsumptionSaving.ConsMarkovModel import MarkovConsumerType
 from HARK.ConsumptionSaving.ConsIndShockModel import MargValueFunc, ConsumerSolution
 from HARK.interpolation import LinearInterp, LowerEnvelope
@@ -169,12 +168,12 @@ class GiveItAwayNowType(MarkovConsumerType):
             self.Mrkv_univ = j
             self.read_shocks = False
             self.makeShockHistory()
-            DeathHist[j,:,:] = self.who_dies_hist
-            MrkvHist[j,:,:] = self.MrkvNow_hist
-            PermShkHist[j,:,:] = self.PermShkNow_hist
-            TranShkHist[j,:,:] = self.TranShkNow_hist
+            DeathHist[j,:,:] = self.history['who_dies']
+            MrkvHist[j,:,:] = self.history['MrkvNow']
+            PermShkHist[j,:,:] = self.history['PermShkNow']
+            TranShkHist[j,:,:] = self.history['TranShkNow']
             self.read_mortality = True # Make sure that every death history is the same
-            self.who_dies_backup = self.who_dies_hist.copy()
+            self.who_dies_backup = self.history['who_dies'].copy()
         self.DeathHistAll = DeathHist
         self.MrkvHistAll = MrkvHist
         self.PermShkHistAll = PermShkHist
@@ -274,7 +273,7 @@ class GiveItAwayNowType(MarkovConsumerType):
         CumPrbArray = np.cumsum(PrbArray, axis=0)
         
         # Draw new Markov states for each agent
-        draws = drawUniform(self.AgentCount, seed=self.RNG.randint(0,2**31-1))
+        draws = Uniform().draw(self.AgentCount, seed=self.RNG.randint(0,2**31-1))
         draws = self.RNG.permutation(draws)
         MrkvNew = np.zeros(self.AgentCount, dtype=int)
         MrkvNew[draws > CumPrbArray[0]] = 1
@@ -291,16 +290,16 @@ class GiveItAwayNowType(MarkovConsumerType):
         J = self.MrkvArray[0].shape[0]
         for j in range(J):
             these = self.MrkvNow == j
-            self.who_dies_hist[:,these] = self.DeathHistAll[j,:,:][:,these]
-            self.MrkvNow_hist[:,these] = self.MrkvHistAll[j,:,:][:,these]
-            self.PermShkNow_hist[:,these] = self.PermShkHistAll[j,:,:][:,these]
-            self.TranShkNow_hist[:,these] = self.TranShkHistAll[j,:,:][:,these]
+            self.history['who_dies'][:,these] = self.DeathHistAll[j,:,:][:,these]
+            self.history['MrkvNow'][:,these] = self.MrkvHistAll[j,:,:][:,these]
+            self.history['PermShkNow'][:,these] = self.PermShkHistAll[j,:,:][:,these]
+            self.history['TranShkNow'][:,these] = self.TranShkHistAll[j,:,:][:,these]
         
         # If the lockdown is a common/shared event, rather than idiosyncratic, bump
         # everyone into the lockdown state for *exactly* T_lockdown periods
         if (self.PanShock and self.L_shared):
             T = self.T_lockdown
-            self.MrkvNow_hist[0:T,:] += 3
+            self.history['MrkvNow'][0:T,:] += 3
             
         # Edit the first period of the shock history to give all unemployed
         # people a bonus payment in just that quarter
@@ -312,8 +311,8 @@ class GiveItAwayNowType(MarkovConsumerType):
             young = self.age_base < self.T_retire
             unemp = np.logical_and(np.mod(self.MrkvNow,3) == 1, young)
             deep  = np.logical_and(np.mod(self.MrkvNow,3) == 2, young)
-            self.TranShkNow_hist[0,unemp] += self.BonusUnemp/(self.pLvlNow[unemp]*self.PermShkNow_hist[0,unemp])
-            self.TranShkNow_hist[0,deep]  += self.BonusDeep/(self.pLvlNow[deep]*self.PermShkNow_hist[0,deep])
+            self.history['TranShkNow'][0,unemp] += self.BonusUnemp/(self.pLvlNow[unemp]*self.history['PermShkNow'][0,unemp])
+            self.history['TranShkNow'][0,deep]  += self.BonusDeep/(self.pLvlNow[deep]*self.history['PermShkNow'][0,deep])
             
         
     def announceStimulus(self):
@@ -343,7 +342,7 @@ class GiveItAwayNowType(MarkovConsumerType):
         if self.T_til_check > 0:
             self.T_til_check -= 1
         
-        updaters = drawBernoulli(self.AgentCount, p=self.UpdatePrb, seed=self.RNG.randint(0,2**31-1))
+        updaters = Bernoulli(p=self.UpdatePrb).draw(self.AgentCount, seed=self.RNG.randint(0,2**31-1))
         if self.T_til_check == 0:
             updaters = np.ones(self.AgentCount, dtype=bool)
         
@@ -357,8 +356,8 @@ class GiveItAwayNowType(MarkovConsumerType):
         young = self.t_cycle < self.T_retire
         unemp = np.logical_and(self.MrkvNow == 4, young)
         deep  = np.logical_and(self.MrkvNow == 5, young)
-        self.mNrmNow[unemp] += self.BonusUnemp/(self.pLvlNow[unemp]*self.PermShkNow_hist[0,unemp])
-        self.mNrmNow[deep] += self.BonusDeep/(self.pLvlNow[deep]*self.PermShkNow_hist[0,deep])
+        self.mNrmNow[unemp] += self.BonusUnemp/(self.pLvlNow[unemp]*self.history['PermShkNow'][0,unemp])
+        self.mNrmNow[deep] += self.BonusDeep/(self.pLvlNow[deep]*self.history['PermShkNow'][0,deep])
         
         
 def solveConsMarkovALT(solution_next,IncomeDstn,LivPrb,DiscFac,CRRA,Rfree,PermGroFac,uPfac,
