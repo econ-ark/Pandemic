@@ -15,11 +15,14 @@
 \usepackage[twoside,marginparwidth=0in,left=19.5mm,right=19.5mm,top=25.5mm,bottom=25.5mm]{geometry}\usepackage{layouts}
 %\usepackage[twoside,marginparwidth=0in,left=19.5mm,right=19.5mm,top=25.5mm,bottom=25.5mm]{geometry}\usepackage{layouts}
 
-\renewcommand{\forcedate}{August 6, 2020}
+\renewcommand{\forcedate}{First Public Version: \href{https://github.com/econ-ark/Pandemic/blob/ccd3253fddac75e66cea8362aadd1fe1a13fe015/ConsumptionResponse.pdf}{April 15, 2020} \\
+  Published Preprint: \href{https://cepr.org/sites/default/files/news/CovidEconomics10.pdf}{April 27, 2020} \\
+This Version: September 5, 2020}
+
+\externaldocument{ModelAppendix}
 
 \begin{document}
 
-\externaldocument{ModelAppendix}
 
 \hfill{\tiny \jobname}
 
@@ -56,15 +59,6 @@
 \date{\forcedate}
 \maketitle
 
-\hypertarget{Abstract}{} \opt{JournalFormatting}{\doublespacing}
-\begin{abstract}
-  To predict the effects of the 2020 U.S.\ \href{https://en.wikipedia.org/wiki/Coronavirus_Aid,_Relief,_and_Economic_Security_Act}{CARES} Act on consumption, we extend \href{http://www.econ2.jhu.edu/people/ccarroll/papers/cAndCwithStickyE}{a model} that \href{http://www.econ2.jhu.edu/people/ccarroll/papers/cAndCwithStickyE/#Excess-Sensitivity}{matches responses of households to past consumption stimulus packages.}  The extension allows us to account for two novel features of the coronavirus crisis.
-  First, during the lockdown, many types of spending are undesirable or impossible.
-  Second, some of the jobs that disappear during the lockdown will not reappear when it is lifted.
-  We estimate that, if the lockdown is short-lived, the combination of expanded unemployment insurance benefits and stimulus payments should be sufficient to allow a swift recovery in consumer spending to its pre-crisis levels.  If the lockdown lasts longer, an extension of \href{https://www.dol.gov/coronavirus/unemployment-insurance}{enhanced unemployment benefits} will likely be necessary if consumption spending is to recover.
-  
-\end{abstract}
-
 \hypertarget{links}{}
 \begin{small}
   \parbox{\textwidth}{
@@ -80,11 +74,21 @@
   }
 \end{small}
 
+\opt{JournalFormatting}{\doublespacing}
+
+\hypertarget{Abstract}{} 
+\begin{abstract}
+  To predict the effects of the 2020 U.S.\ \href{https://en.wikipedia.org/wiki/Coronavirus_Aid,_Relief,_and_Economic_Security_Act}{CARES} Act on consumption, we extend \href{http://www.econ2.jhu.edu/people/ccarroll/papers/cAndCwithStickyE}{a model} that \href{http://www.econ2.jhu.edu/people/ccarroll/papers/cAndCwithStickyE/#Excess-Sensitivity}{matches responses of households to past consumption stimulus packages.}  The extension allows us to account for two novel features of the coronavirus crisis.
+  First, during the lockdown, many types of spending are undesirable or impossible.
+  Second, some of the jobs that disappear during the lockdown will not reappear when it is lifted.
+  We estimate that, if the lockdown is short-lived, the combination of expanded unemployment insurance benefits and stimulus payments should be sufficient to allow a swift recovery in consumer spending to its pre-crisis levels.  If the lockdown lasts longer, an extension of \href{https://www.dol.gov/coronavirus/unemployment-insurance}{enhanced unemployment benefits} will likely be necessary if consumption spending is to recover.
+  
+\end{abstract}
+
 % Thanks must be done differently for PDF and web versions; so write one version to filesystem
 % then read in separately for the two instances
 \newcommand{\thankstext}{The pre-print of this paper first appeared in CEPR's Covid Economics journal on April 27, 2020. Thanks to the \href{https://consumerfinance.gov}{Consumer Financial Protection Bureau} for funding the original creation of the \href{https://econ-ark.org}{Econ-ARK} toolkit, whose latest version we used to produce all the results in this paper; and to the Sloan Foundation for funding its extensive further development that brought it to the point where it could be used for this project.  The toolkit can be cited with its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001067}{10.5281/zenodo.1001067}, as is done in the paper's own references as \cite{carroll_et_al-proc-scipy-2018}.
   We are grateful to Kiichi Tokuoka, who provided valuable feedback and input as this project progressed, and to Mridul Seth, who created the dashboard and configurator.  The views presented in this paper are those of the authors, and should not be attributed to the Federal Reserve Board or the European Central Bank.}
-
 
 \begin{authorsinfo}
   \name{Carroll: Department of Economics, Johns Hopkins University, \url{http://econ.jhu.edu/people/ccarroll/}, \href{mailto:ccarroll@jhu.edu}{\texttt{ccarroll@jhu.edu}}}
@@ -176,7 +180,7 @@ Closest to our paper is some work analyzing the effects of the fiscal response t
 
 All of this work accounts for general equilibrium effects on consumption and employment, which we omit, but none of it is based on a modeling framework explicitly constructed to match micro and macroeconomic effects of past stimulus policies, as ours is.
 
-A separate strand of work focuses on empirical studies of how the economy reacts to pandemics; see, e.g., \cite{baker_Cpandemic}, \cite{jorda_pandemics}, \cite{verner_pandemics} and \cite{chetty_covidC}.
+A separate strand of work focuses on empirical studies of how the economy reacts to pandemics; see, e.g., \cite{baker_Cpandemic}, \cite{jorda_pandemics}, \cite{verner_pandemics}, \cite{chetty_covidC}, \cite{garner_receipt}, \cite{casado_stimulus} and \cite{coibion_stimulus}.
 
 \section{Modeling Setup}
 

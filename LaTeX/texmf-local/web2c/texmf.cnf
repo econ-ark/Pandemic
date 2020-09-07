@@ -1,6 +1,6 @@
 % (Public domain.)
 % This texmf.cnf file should contain only your personal changes from the
-s% original texmf.cnf (for example, as chosen in the installer).
+% original texmf.cnf (for example, as chosen in the installer).
 %
 % That is, if you need to make changes to texmf.cnf, put your custom
 % settings in this file, which is .../texlive/YYYY/texmf.cnf, rather than
