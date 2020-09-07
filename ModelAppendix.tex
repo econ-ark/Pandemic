@@ -233,7 +233,7 @@ Our model estimates the aggregate size of the stimulus checks to be \$267 billio
 This is somewhat of a coincidence: we overestimate the number of adults who will actually receive the stimulus, while excluding the \$500 payment to children.
 
 The aggregate cost of the extra unemployment benefits depends on the expected level of unemployment.
-Our estimate is \$137 billion, much less than the \$260 billion mentioned in several press reports, but in line with the extent of unemployment in our pandemic scenario.
+Our estimate is \$137 billion, much less than the \$260 billion mentioned in several press reports, but in line with the extent of unemployment in our pandemic scenario.\footnote{While \$260 billion was widely reported in the press, back-of-the-envelope calculations show this to be an extreme number. Furthermore, the origin of this reported number is unclear.} 
 We do not account for the extension of unemployment benefits to the self-employed and gig workers.
 
 Households enter the model at age $j=0$ with zero liquid assets.
@@ -260,9 +260,9 @@ Our implementation abstracts from this, taking the marginal utility factor to be
 	\label{concave_cons}
 	% \begin{Web}
 	\ifthenelse{\boolean{ifWeb}}{
-		\includegraphics[width=8in]{./Figures/QualityCost}
+		\includegraphics[width=\webWidth\textwidth]{./Figures/QualityCost}
 	} %\end{Web}
-	{ \includegraphics[width=8in]{./Figures/QualityCost}}
+	{ \includegraphics[width=0.8\textwidth]{./Figures/QualityCost}}
 \end{figure}
 
 An alternative interpretation is that consumption is made up of a Cobb-Douglass aggregation of two goods:

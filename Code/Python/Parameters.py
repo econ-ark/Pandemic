@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import csv
-from HARK.distribution import approxUniform
+from HARK.distribution import Uniform
 from importlib import reload
 figs_dir = '../../Figures/'
 
@@ -25,9 +25,9 @@ T_cycle = working_T + retired_T
 
 # Define the distribution of the discount factor for each eduation level
 DiscFacCount = 7
-DiscFacDstnD = approxUniform(DiscFacCount, DiscFacMeanD-DiscFacSpread, DiscFacMeanD+DiscFacSpread)
-DiscFacDstnH = approxUniform(DiscFacCount, DiscFacMeanH-DiscFacSpread, DiscFacMeanH+DiscFacSpread)
-DiscFacDstnC = approxUniform(DiscFacCount, DiscFacMeanC-DiscFacSpread, DiscFacMeanC+DiscFacSpread)
+DiscFacDstnD = Uniform(DiscFacMeanD-DiscFacSpread, DiscFacMeanD+DiscFacSpread).approx(DiscFacCount)
+DiscFacDstnH = Uniform(DiscFacMeanH-DiscFacSpread, DiscFacMeanH+DiscFacSpread).approx(DiscFacCount)
+DiscFacDstnC = Uniform(DiscFacMeanC-DiscFacSpread, DiscFacMeanC+DiscFacSpread).approx(DiscFacCount)
 DiscFacDstns = [DiscFacDstnD, DiscFacDstnH, DiscFacDstnC]
 
 # Define permanent income growth rates for each education level (from Cagetti 2003)

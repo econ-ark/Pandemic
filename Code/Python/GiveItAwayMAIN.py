@@ -284,6 +284,14 @@ if __name__ == '__main__':
     
     
     quarter_labels=["Q2\n2020","Q3","Q4","Q1\n2021","Q2","Q3","Q4","Q1\n2022","Q2","Q3","Q4","Q1\n2023","Q2","Q3"]
+    linestyle1 = "-"
+    linestyle2 = "--"
+    linestyle3 = ":"
+    dashes1 = [1,0]
+    dashes2 = [10,2]
+    dashes3 = [7,1]
+    dashes4 = [1,1]
+    dashes5 = [2,1,1,1]
     
     plt.plot(U_base*100)
     plt.plot(U_pan*100)
@@ -313,9 +321,9 @@ if __name__ == '__main__':
     plt.savefig(figs_dir + 'ConResp_examples.svg')
     plt.show()
     
-    plt.plot(C_base*AggregationFactor)
-    plt.plot(C_pan*AggregationFactor)
-    plt.plot(C_both*AggregationFactor)
+    plt.plot(C_base*AggregationFactor,dashes=dashes1)
+    plt.plot(C_pan*AggregationFactor,dashes=dashes2)
+    plt.plot(C_both*AggregationFactor,dashes=dashes3)
     plt.legend(["Baseline","Pandemic, no policy","Pandemic, CARES Act"])
     plt.xlabel('Quarter')
     plt.ylabel('Aggregate quarterly consumption (billion $)')
@@ -327,9 +335,9 @@ if __name__ == '__main__':
     plt.savefig(figs_dir + 'AggConResp_examples.svg')
     plt.show()
     
-    plt.plot(LT_base_all*AggregationFactor)
-    plt.plot(LT_pan_all*AggregationFactor)
-    plt.plot(LT_both_all*AggregationFactor)
+    plt.plot(LT_base_all*AggregationFactor,dashes=dashes1)
+    plt.plot(LT_pan_all*AggregationFactor,dashes=dashes2)
+    plt.plot(LT_both_all*AggregationFactor,dashes=dashes3)
     plt.legend(["Baseline","Pandemic, no policy","Pandemic, CARES Act"])
     plt.xlabel('Quarter')
     plt.ylabel('Aggregate labor and transfer income (billion $)')
@@ -354,12 +362,12 @@ if __name__ == '__main__':
     plt.savefig(figs_dir + 'ConResp_pandemic_vs_normal.svg')
     plt.show()
     
-    plt.plot(X_pan[0,:]*1000,'-b')
-    plt.plot(X_pan[1,:]*1000,'-g')
-    plt.plot(X_pan[2,:]*1000,'-r')
-    plt.plot(X_alt[0,:]*1000,'--b')
-    plt.plot(X_alt[1,:]*1000,'--g')
-    plt.plot(X_alt[2,:]*1000,'--r')
+    plt.plot(X_pan[0,:]*1000,'b',dashes=dashes1)
+    plt.plot(X_pan[1,:]*1000,'g',dashes=dashes2)
+    plt.plot(X_pan[2,:]*1000,'r',dashes=dashes3)
+    plt.plot(X_alt[0,:]*1000,':b')
+    plt.plot(X_alt[1,:]*1000,':g')
+    plt.plot(X_alt[2,:]*1000,':r')
     plt.legend(["Employed after pandemic","Unemployed after pandemic","Deeply unemp after pandemic"])
     plt.xlabel('Quarter')
     plt.ylabel('Average quarterly consumption ($)')
@@ -373,12 +381,12 @@ if __name__ == '__main__':
     plt.savefig(figs_dir + 'ConRespByEmpStateNoStim.svg')
     plt.show()
     
-    plt.plot(X_both[0,:]*1000,'-b')
-    plt.plot(X_both[1,:]*1000,'-g')
-    plt.plot(X_both[2,:]*1000,'-r')
-    plt.plot(X_alt[0,:]*1000,'--b')
-    plt.plot(X_alt[1,:]*1000,'--g')
-    plt.plot(X_alt[2,:]*1000,'--r')
+    plt.plot(X_both[0,:]*1000,'b',dashes=dashes1)
+    plt.plot(X_both[1,:]*1000,'g',dashes=dashes2)
+    plt.plot(X_both[2,:]*1000,'r',dashes=dashes3)
+    plt.plot(X_alt[0,:]*1000,':b')
+    plt.plot(X_alt[1,:]*1000,':g')
+    plt.plot(X_alt[2,:]*1000,':r')
     plt.legend(["Employed after pandemic","Unemployed after pandemic","Deeply unemp after pandemic"])
     plt.xlabel('Quarter')
     plt.ylabel('Average quarterly consumption ($)')
@@ -418,9 +426,9 @@ if __name__ == '__main__':
     plt.savefig(figs_dir + 'ConPctChangeByIncome.svg')
     plt.show()
         
-    plt.plot((C_both-C_pan)*AggregationFactor)
-    plt.plot((C_checks_pan-C_pan)*AggregationFactor)
-    plt.plot((C_unemp_pan-C_pan)*AggregationFactor)
+    plt.plot((C_both-C_pan)*AggregationFactor,dashes=dashes1)
+    plt.plot((C_checks_pan-C_pan)*AggregationFactor,dashes=dashes2)
+    plt.plot((C_unemp_pan-C_pan)*AggregationFactor,dashes=dashes3)
     plt.legend(["Checks and unemployment benefits","Stimulus checks only","Unemployment benefits only"])
     plt.xlabel('Quarter')
     plt.ylabel('Aggregate consumption response (billion $)')
@@ -500,11 +508,11 @@ if __name__ == '__main__':
     plt.savefig(figs_dir + 'IncomeByEmpStateWUnemp.svg')
     plt.show()
     
-    plt.plot((X_both[0,:]-X_pan[0,:])*1000,'-b')
-    plt.plot((X_both[1,:]-X_pan[1,:])*1000,'-g')
-    plt.plot((X_checks_pan[1,:]-X_pan[1,:])*1000,'--g')
-    plt.plot((X_both[2,:]-X_pan[2,:])*1000,'-r')
-    plt.plot((X_checks_pan[2,:]-X_pan[2,:])*1000,'--r')
+    plt.plot((X_both[0,:]-X_pan[0,:])*1000,'b',dashes=dashes1)
+    plt.plot((X_both[1,:]-X_pan[1,:])*1000,'g',dashes=dashes2)
+    plt.plot((X_checks_pan[1,:]-X_pan[1,:])*1000,'g',dashes=[3,1])
+    plt.plot((X_both[2,:]-X_pan[2,:])*1000,'r',dashes=dashes3)
+    plt.plot((X_checks_pan[2,:]-X_pan[2,:])*1000,':r')
     plt.legend(["Employed after pandemic","Unemployed after pandemic","(Stimulus checks only)","Deeply unemp after pandemic","(Stimulus checks only)"])
     plt.xlabel('Quarter')
     plt.ylabel('Consumption response from CARES Act ($)')
@@ -516,8 +524,8 @@ if __name__ == '__main__':
     plt.savefig(figs_dir + 'ConDeltaByEmpState.svg')
     plt.show()
     
-    plt.plot((C_both-C_pan)*AggregationFactor)
-    plt.plot((C_uniform_pan-C_pan)*AggregationFactor)
+    plt.plot((C_both-C_pan)*AggregationFactor,dashes=dashes1)
+    plt.plot((C_uniform_pan-C_pan)*AggregationFactor,dashes=dashes2)
     plt.xlabel('Quarter')
     plt.ylabel('Aggregate consumption response (billion $)')
     plt.title('Effect of targeted stimulus on aggregate consumption')
@@ -602,10 +610,10 @@ if __name__ == '__main__':
         plt.savefig(figs_dir + 'Decomposition.svg')
         plt.show()
         
-    plt.plot((C_base)*AggregationFactor)
-    plt.plot((C_long_pandemic)*AggregationFactor)
-    plt.plot((C_long_pandemic_stim)*AggregationFactor)
-    plt.plot((C_long_pandemic_cont)*AggregationFactor)
+    plt.plot((C_base)*AggregationFactor,dashes=dashes1)
+    plt.plot((C_long_pandemic)*AggregationFactor,dashes=dashes2)
+    plt.plot((C_long_pandemic_stim)*AggregationFactor,dashes=dashes3)
+    plt.plot((C_long_pandemic_cont)*AggregationFactor,dashes=[1,1])
     plt.legend(["Baseline","Long pandemic","Long pandemic with CARES act","Long pandemic, CARES act\nand continued unemployment payments"])
     plt.xlabel('Quarter')
     plt.ylabel('Aggregate quarterly consumption (billion $)')
@@ -617,10 +625,10 @@ if __name__ == '__main__':
     plt.savefig(figs_dir + 'DeepPandemic.svg')
     plt.show()
       
-    plt.plot(LT_base_all*AggregationFactor)
-    plt.plot(LT_long_pandemic_all*AggregationFactor)
-    plt.plot(LT_long_pandemic_stim_all*AggregationFactor)
-    plt.plot(LT_long_pandemic_cont_all*AggregationFactor)
+    plt.plot(LT_base_all*AggregationFactor,dashes=dashes1)
+    plt.plot(LT_long_pandemic_all*AggregationFactor,dashes=dashes2)
+    plt.plot(LT_long_pandemic_stim_all*AggregationFactor,dashes=dashes3)
+    plt.plot(LT_long_pandemic_cont_all*AggregationFactor,dashes=[1,1])
     plt.legend(["Baseline","Long pandemic","Long pandemic with CARES act","Long pandemic, CARES act\nand continued unemployment payments"])
     plt.xlabel('Quarter')
     plt.ylabel('Aggregate labor and transfer income (billion $)')
@@ -692,9 +700,9 @@ if __name__ == '__main__':
     luxury_cost = dollars_spent**marg_fac
     real_cost = np.minimum(dollars_spent,luxury_cost)
     
-    plt.plot(dollars_spent,dollars_spent)
-    plt.plot(dollars_spent,luxury_cost)
-    plt.plot(dollars_spent,real_cost,color='black',linewidth=2)
+    plt.plot(dollars_spent,dollars_spent,dashes=dashes2)
+    plt.plot(dollars_spent,luxury_cost,dashes=dashes3)
+    plt.plot(dollars_spent,real_cost,color='black',linewidth=2,dashes=dashes1)
     plt.xlabel("Cost")
     plt.ylabel("Number of consumption units")
     plt.title("Quality Adjusted Cost of Consumption Units")
