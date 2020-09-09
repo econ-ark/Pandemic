@@ -100,6 +100,7 @@ The standard envelope condition applies in this model, so that the marginal valu
 The marginal value function for age $j$ can then be used to solve the age $j-1$ problem, iterating backward until the initial age $j=0$ problem has been solved.
 
 \begin{table}
+  \centering
 	\caption{Parameter Values in the Baseline Model}
 	\label{table:ParametersLifeCycle}
 	\begin{center}
@@ -150,6 +151,7 @@ Our chosen logistic parameters are presented in Table~\ref{table:PandemicAssumpt
 
 
 \begin{table}
+  \centering
   \caption{Pandemic Assumptions}
   \label{table:PandemicAssumptions}
   \begin{center}
@@ -195,6 +197,7 @@ Our chosen logistic parameters are presented in Table~\ref{table:PandemicAssumpt
 
 
 \begin{table}
+  \centering
   \caption{Fiscal Stimulus Assumptions, CARES Act}
   \label{table:StimulusAssumptions}
   \begin{center}
@@ -212,10 +215,10 @@ Our chosen logistic parameters are presented in Table~\ref{table:PandemicAssumpt
       Deeply unemployed &\$7,800  \\
       \bottomrule
     \end{tabular}
-	\begin{flushleft}
+%	\begin{flushleft}
 	\footnotesize Note: The unemployment benefits are multiplied by 0.8 to account for the fact that 20 percent of the working age population is out of the labor force. See aggregation details in Appendix~\ref{sec:aggregation}.
 	\normalsize
-\end{flushleft}
+%\end{flushleft}
   \end{center}
 \end{table}
 
@@ -260,9 +263,9 @@ Our implementation abstracts from this, taking the marginal utility factor to be
 	\label{concave_cons}
 	% \begin{Web}
 	\ifthenelse{\boolean{ifWeb}}{
-		\includegraphics[width=8in]{./Figures/QualityCost}
+		\includegraphics[width=\webWidth\textwidth]{./Figures/QualityCost}
 	} %\end{Web}
-	{ \includegraphics[width=8in]{./Figures/QualityCost}}
+	{ \includegraphics[width=0.8\textwidth]{./Figures/QualityCost}}
 \end{figure}
 
 An alternative interpretation is that consumption is made up of a Cobb-Douglass aggregation of two goods:
