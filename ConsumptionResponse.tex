@@ -2,29 +2,31 @@
 %  The PDF file it generates is in ./LaTeX/ConsumptionResponse.pdf
 
 \input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage,a4paper]{\econtex}
+
+\provideboolean{ifIJCB}\setboolean{ifIJCB}{false} % If true, make ICJB version, otherwise regular
+
 \usepackage{grfext}\PrependGraphicsExtensions*{.svg,.pdf,.PDF}
 
 \providecommand{\texname}{ConsumptionResponse}% Keyname for the bibtex entry corresponding to this paper
+\ifthenelse{\boolean{ifIJCB}}{\usepackage[nolists,nomarkers]{endfloat}}{\usepackage[nolists,nomarkers,tablesonly]{endfloat}} 
 \usepackage{\econtexRoot/LaTeX/ConsumptionResponse}
 % Needed to get nice fonts on ESC's machine
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
-
-
-\usepackage[twoside,marginparwidth=0in,left=19.5mm,right=19.5mm,top=25.5mm,bottom=25.5mm]{geometry}\usepackage{layouts}
+\usepackage[twoside,marginparwidth=0in,left=1.25in,right=1.25in,top=1.25in,bottom=1.25in]{geometry}\usepackage{layouts}
 %\usepackage[twoside,marginparwidth=0in,left=19.5mm,right=19.5mm,top=25.5mm,bottom=25.5mm]{geometry}\usepackage{layouts}
 
-\renewcommand{\forcedate}{First Public Version: \href{https://github.com/econ-ark/Pandemic/blob/ccd3253fddac75e66cea8362aadd1fe1a13fe015/ConsumptionResponse.pdf}{April 15, 2020} \\
-  Published Preprint: \href{https://cepr.org/sites/default/files/news/CovidEconomics10.pdf}{April 27, 2020} \\
-This Version: September 5, 2020}
+%\small First Public Version: \href{https://github.com/econ-ark/Pandemic/blob/ccd3253fddac75e66cea8362aadd1fe1a13fe015/ConsumptionResponse.pdf}{April 15, 2020} \\
+% Published Preprint: \href{https://cepr.org/sites/default/files/news/CovidEconomics10.pdf}{April 27, 2020} \\ This Version: September 9, 2020} \\ \phantom{.}
+
+\renewcommand{\forcedate}{Forthcoming, \href{https://www.ijcb.org/}{\textit{International Journal of Central Banking}}}
 
 \externaldocument{ModelAppendix}
 
 \begin{document}
 
-
-\hfill{\tiny \jobname}
+\hfill{\tiny \jobname, \today}
 
 \title{Modeling the Consumption Response\\ to the CARES Act}
 
@@ -52,42 +54,73 @@ This Version: September 5, 2020}
   }
 } % End ifWeb
 
-\keywords{Consumption, Coronavirus, Stimulus}
-\jelclass{D83, D84, E21, E32}
+\keywords{\small{Consumption, COVID-19, Stimulus, Fiscal Policy}}
+\jelclass{\small{D83, D84, E21, E32}}
 
 
 \date{\forcedate}
 \maketitle
 
 \hypertarget{links}{}
-\begin{small}
-  \parbox{\textwidth}{
-    \begin{center}
-      \begin{tabbing}
-        \= \href{https://econ-ark.github.io/Pandemic}{econ-ark.github.io/Pandemic}     \= \textit{~~~~HTML version of paper}                                         \\
-        \> \href{https://econ-ark.org/pandemicdashboard}{Interactive-Jupyter-Notebook} \> \textit{~~~~Allows user to modify some assumptions}                      \\
-        \> \href{https://github.com/econ-ark/Pandemic}{github.com/econ-ark/Pandemic}   \> \textit{~~~~Full codebase; explore all assumptions} \\
-        \> \href{https://github.com/econ-ark/Pandemic/blob/master/LaTeX/ConsumptionResponse.pdf}{~~LaTeX subdirectory of $\uparrow$}     \> \textit{~~~~PDF version of paper}                                         \\
-        \> \href{https://github.com/econ-ark/Pandemic/blob/master/LaTeX/ConsumptionResponse-Slides.pdf}{~~LaTeX subdirectory of $\uparrow$}     \> \textit{~~~~Presentation slides}                                         \\
-      \end{tabbing}
-    \end{center}
-  }
-\end{small}
 
-\opt{JournalFormatting}{\doublespacing}
+\newcommand{\panmat}{econ-ark.org/materials/pandemic-dashboard}
+\newcommand{\dashtarg}{Live Dashboard}
+\newcommand{\htmltarg}{econ-ark.github.io/Pandemic}
+\newcommand{\githtarg}{github.com/econ-ark/Pandemic}
+\newcommand{\latetarg}{LaTeX directory in repo}
+\newcommand{\subttarg}{LaTeX directory in repo}
 
+\newcommand{\githrepo}{\href{https://github.com/econ-ark/Pandemic}{\githtarg}}
+\newcommand{\githtext}{\textit{Full codebase: Modify combos of assumptions}}
+\newcommand{\dashlive}{\href{https://econ-ark.org/materials/pandemic-dashboard}{\dashtarg}}
+\newcommand{\dashtext}{\textit{See effect of modifying main assumptions}}
+\newcommand{\htmlvers}{\href{https://econ-ark.github.io/Pandemic}{\htmltarg}}
+\newcommand{\htmltext}{\textit{HTML version of paper}}
+\newcommand{\pdfltsub}{\href{https://github.com/econ-ark/Pandemic/blob/master/LaTeX/ConsumptionResponse.pdf}{\latetarg}}
+\newcommand{\pdflttxt}{\textit{PDF version of paper}}
+\newcommand{\latexsub}{\href{https://github.com/econ-ark/Pandemic/blob/master/LaTeX/ConsumptionResponse.pdf}{\phantom{..}LaTeX subdirectory of repo $\uparrow$ }}
+\newcommand{\latextxt}{\textit{PDF version of paper}}
+\newcommand{\slidesub}{\href{https://github.com/econ-ark/Pandemic/blob/master/LaTeX/ConsumptionResponse-Slides.pdf}{\subttarg}}
+\newcommand{\slidetxt}{\textit{Presentation slides}}
+\newcommand{\bibtlink}{\href{https://raw.githubusercontent.com/econ-ark/Pandemic/gh-pages/LaTeX/ConsumptionResponse-Self.bib}{\subttarg}}
+\newcommand{\bibttext}{\textit{Preferred BibTeX citation}}
+\newcommand{\biblink}{\href{https://raw.githubusercontent.com/econ-ark/Pandemic/gh-pages/LaTeX/ConsumptionResponse-Self.bib}{\phantom{..}LaTeX subdirectory of repo}}
+\newcommand{\bibtext}{\textit{Preferred BibTeX citation}}
+
+\ifthenelse{\boolean{ifWeb}}{
+        \begin{tabbing}
+          \= {\small \texttt{\dashlive~~~~~~~~~~~~~~~}} \= {  }  \dashtext \\
+          \> {\small \texttt{\htmlvers~~}} \> {  }  \htmltext \\
+          \> {\small \texttt{\githrepo}~~} \> {  }  \githtext \\
+          \> {\small \texttt{~~\pdfltsub}~$\uparrow$~~~~ \phantom{}~} \> {  }  \pdflttxt \\ 
+          \> {\small \texttt{~~\slidesub}~\phantom{$\uparrow$}~~~~~~} \> {  }  \slidetxt \\
+          \> {\small \texttt{~~\bibtlink}~\phantom{$\uparrow$}~~~~~~} \> {  }  \bibttext 
+        \end{tabbing}
+}{% Not Web
+  \begin{small}
+    \begin{tabular}[c]{lll}
+      \dashlive && \dashtext \\
+      \htmlvers && \htmltext \\
+      \githrepo && \githtext \\
+      ~~\pdfltsub~$\uparrow$ && \pdflttxt \\
+      ~~\slidesub\phantom{~$\uparrow$} && \slidetxt \\
+      ~~\bibtlink\phantom{~$\uparrow$}  && \bibttext  
+    \end{tabular}
+  \end{small}
+}
 \hypertarget{Abstract}{} 
 \begin{abstract}
-  To predict the effects of the 2020 U.S.\ \href{https://en.wikipedia.org/wiki/Coronavirus_Aid,_Relief,_and_Economic_Security_Act}{CARES} Act on consumption, we extend \href{http://www.econ2.jhu.edu/people/ccarroll/papers/cAndCwithStickyE}{a model} that \href{http://www.econ2.jhu.edu/people/ccarroll/papers/cAndCwithStickyE/#Excess-Sensitivity}{matches responses of households to past consumption stimulus packages.}  The extension allows us to account for two novel features of the coronavirus crisis.
-  First, during the lockdown, many types of spending are undesirable or impossible.
-  Second, some of the jobs that disappear during the lockdown will not reappear when it is lifted.
-  We estimate that, if the lockdown is short-lived, the combination of expanded unemployment insurance benefits and stimulus payments should be sufficient to allow a swift recovery in consumer spending to its pre-crisis levels.  If the lockdown lasts longer, an extension of \href{https://www.dol.gov/coronavirus/unemployment-insurance}{enhanced unemployment benefits} will likely be necessary if consumption spending is to recover.
-  
+  To predict the effects of the 2020 U.S.\ \href{https://en.wikipedia.org/wiki/Coronavirus_Aid,_Relief,_and_Economic_Security_Act}{CARES} Act on consumption, we extend \href{http://www.econ2.jhu.edu/people/ccarroll/papers/cAndCwithStickyE}{a model} that \href{http://www.econ2.jhu.edu/people/ccarroll/papers/cAndCwithStickyE/#Excess-Sensitivity}{matches responses to past consumption stimulus packages.}  The extension allows us to account for two novel features of the coronavirus crisis.
+  First, during lockdowns, many types of spending are undesirable or impossible.
+  Second, some of the jobs that disappear during the lockdown will not reappear.
+  We estimate that, if the lockdown is short-lived (the median point of view in April 2020), the combination of expanded unemployment insurance benefits and stimulus payments should be sufficient to allow a swift recovery in consumer spending to pre-crisis levels.  If the lockdown lasts longer (or there is a `second wave'), an extension of \href{https://www.dol.gov/coronavirus/unemployment-insurance}{enhanced unemployment benefits} will likely be necessary for consumption spending to recover quickly.
 \end{abstract}
+
+%Existing Work on the Effects of the Pandemic
 
 % Thanks must be done differently for PDF and web versions; so write one version to filesystem
 % then read in separately for the two instances
-\newcommand{\thankstext}{The pre-print of this paper first appeared in CEPR's Covid Economics journal on April 27, 2020. Thanks to the \href{https://consumerfinance.gov}{Consumer Financial Protection Bureau} for funding the original creation of the \href{https://econ-ark.org}{Econ-ARK} toolkit, whose latest version we used to produce all the results in this paper; and to the Sloan Foundation for funding its extensive further development that brought it to the point where it could be used for this project.  The toolkit can be cited with its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001067}{10.5281/zenodo.1001067}, as is done in the paper's own references as \cite{carroll_et_al-proc-scipy-2018}.
+\newcommand{\thankstext}{The \href{https://github.com/econ-ark/Pandemic/blob/ccd3253fddac75e66cea8362aadd1fe1a13fe015/ConsumptionResponse.pdf}{first public version} of this paper appeared April 15, 2020.  A \href{https://cepr.org/sites/default/files/news/CovidEconomics10.pdf}{publicly available pre-print} appeared in the \href{https://cepr.org}{Centre for Economic Policy Research} pre-print journal \href{https://cepr.org/content/covid-economics-vetted-and-real-time-papers-0}{Covid Economics} on April 27, 2020 (as a pre-print journal, Covid Economics does not obtain copyright claims to its content, which is why the finished version of the paper can be published in a peer-reviewed journal which DOES obtain the copyright). \\ \\ \indent Thanks to the \href{https://consumerfinance.gov}{Consumer Financial Protection Bureau} for funding the original creation of the \href{https://econ-ark.org}{Econ-ARK} toolkit, whose latest version we used to produce all the results in this paper; and to the \href{}{Sloan Foundation} for funding Econ-ARK's \href{https://sloan.org/grant-detail/8071}{extensive further development} that brought it to the point where it could be used for this project.  The toolkit can be cited with its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001067}{10.5281/zenodo.1001067}, as is done in the paper's own references as \cite{carroll_et_al-proc-scipy-2018}.
   We are grateful to Kiichi Tokuoka, who provided valuable feedback and input as this project progressed, and to Mridul Seth, who created the dashboard and configurator.  The views presented in this paper are those of the authors, and should not be attributed to the Federal Reserve Board or the European Central Bank.}
 
 \begin{authorsinfo}
@@ -107,6 +140,7 @@ This Version: September 5, 2020}
 
 \titlepagefinish\newpage\pagestyle{empty}
 
+\ifthenelse{\boolean{ifIJCB}}{\doublespacing}{} 
 
 % If web version, then just incorporate thanks at beginning of text
 % instead of in frontmatter
@@ -120,7 +154,7 @@ This Version: September 5, 2020}
 
 \section{Introduction}
 
-In the decade since the Great Recession, macroeconomics has made great progress by insisting that models be consistent with microeconomic evidence (see \cite{kmpHandbook} for a survey).  To predict the effects of the 2020 CARES Act (Coronavirus Aid, Relief, and Economic Security) on consumption, we take from this new generation \href{https://econ.jhu.edu/people/ccarroll/papers/cAndCwithSTickyE}{one model} that is specifically focused on reconciling apparent conflicts between micro and macro evidence about consumption dynamics, as documented in \cite{hrsHabit}, and adapt it to incorporate two aspects of the coronavirus crisis.
+In the decade since the Great Recession, macroeconomics has made great progress by insisting that models be consistent with microeconomic evidence (see \cite{kmpHandbook} for a survey).  To predict the effects of the 2020 CARES Act (Coronavirus Aid, Relief, and Economic Security) on consumption, we take, from this new generation, \href{https://econ.jhu.edu/people/ccarroll/papers/cAndCwithSTickyE}{one model} that is specifically focused on reconciling apparent conflicts between micro and macro evidence about consumption dynamics,\footnote{As articulated long ago by \cite{deatonUnderstandingC} and documented recently \cite{hrsHabit}} and adapt it to incorporate two aspects of the coronavirus crisis.
 
 First, because the tidal wave of layoffs for employees of shuttered businesses will have a large impact on their income and spending, assumptions must be made about the employment dynamics of laid off workers. Specifically, the unemployed in our model consist of two categories: normal unemployed and deeply unemployed. Similar to a normal recession, the normal unemployed will be able to quickly return to their old jobs (or similar ones). However, in addition, some people become deeply unemployed, facing a more persistent unemployment shock. This feature reflects the fact that some kinds of jobs will not come back quickly after the lockdown, and that people who worked in these sectors will have more difficulty finding a new job.\footnote{The cruise industry, for example, is likely to take a long time to recover. Demand for airline travel is expected to remain depressed, with the International Air Traffic Association \href{https://www.iata.org/en/pressroom/pr/2020-07-28-02/}{projecting} that passenger travel will not return to pre-pandemic levels until 2024.}
 
@@ -169,7 +203,7 @@ For simplicity, our model does not include durable goods, because modeling spend
 But it is plausible that, when the lockdown ends, people may want to spend \textit{more} than usual on memorable or durable goods to make up for earlier missing spending.
 
 
-\subsection*{Existing Work on the Effects of the Pandemic}
+%\subsection*{Literature Review}
 
 Many papers have recently appeared on the economic effects of the pandemic and policies to manage it.
 Several papers combine the classic susceptible--infected--recovered (SIR) epidemiology model with dynamic economic models to study the interactions between health and economic policies (\cite{ert_covid} and \cite{aal_covid}, among others).
@@ -182,6 +216,7 @@ All of this work accounts for general equilibrium effects on consumption and emp
 
 A separate strand of work focuses on empirical studies of how the economy reacts to pandemics; see, e.g., \cite{baker_Cpandemic}, \cite{jorda_pandemics}, \cite{verner_pandemics}, \cite{chetty_covidC}, \cite{garner_receipt}, \cite{casado_stimulus} and \cite{coibion_stimulus}.
 
+\hypertarget{Modeling-Setup}{}
 \section{Modeling Setup}
 
 \subsection{The Baseline Model}
@@ -229,6 +264,7 @@ As we use a coefficient of risk aversion equal to one, we simply multiply utilit
 This calibration is in line with recent evidence in \cite{covidC_chase} and \cite{chetty_covidC}.
 Furthermore, we choose a one-half probability of exiting the period of lower marginal utility each quarter, accounting for the possibility of a `second wave' if restrictions are lifted too early --- see \cite{cyranoski_we_2020}.\footnote{The CBO expects social distancing to last for three months, and predicts it to have diminished, on average and in line with our calibration, by three-quarters in the second half of the year; see \cite{SwagelCBO2020}.}
 
+\hypertarget{unemployment-demographics}{}
 \begin{figure}
   \centering
   \caption{Unemployment Probability in Q2 2020 by Demographics}
@@ -257,6 +293,7 @@ The households that pay close attention to the announcement of the policy are as
 
 The extra unemployment benefits are assumed to both be announced and arrive at the beginning of the second quarter of 2020, and we assume that there is no delay in the response of unemployed households' consumption to these benefits.
 
+\hypertarget{labor-income}{}
 Figure~\ref{labor_income} shows the path of labor income --- exogenous in our model --- in the baseline and in the pandemic, both with and without the CARES Act.
 Income in quarters Q2 and Q3 2020 is substantially boosted (by around 10 percent) by the extra unemployment benefits and the stimulus checks.
 After two years, aggregate labor income is almost fully recovered.  See below for a brief discussion of analyses that attempt to endogenize labor supply and other equilibrium variables.
@@ -273,9 +310,11 @@ After two years, aggregate labor income is almost fully recovered.  See below fo
 \end{figure}
 
 
+\hypertarget{Results}{}
 \section{Results}
 
 This section presents our simulation results for the scenario described above. In addition, we then model a more pessimistic scenario with a longer lockdown and higher initial unemployment rate.
+\hypertarget{cons-response}{}
 
 \begin{figure}
   \centering
@@ -446,6 +485,7 @@ A fuller analysis that incorporates such heterogeneity, which is of intrinsic in
 \bibliography{LaTeX/\texname,LaTeX/\texname-Add,economics}
 \normalsize
 
+\ifthenelse{\boolean{ifIJCB}}{\processdelayedfloats}{} 
 
 \pagebreak
 \appendix
@@ -470,7 +510,7 @@ A fuller analysis that incorporates such heterogeneity, which is of intrinsic in
 \end{document}
 % Local Variables:
 % TeX-PDF-mode: t
-% TeX-command-extra-options: "-output-directory=LaTeX"
+% TeX-command-extra-options: "-output-directory=LaTeX -synctex=1 LaTeX/%o %s"
 % eval: (setq TeX-command-list  (remove '("BibTeX" "bibtex       %s" TeX-run-BibTeX nil t :help "Run BibTeX") TeX-command-list))
 % eval: (add-to-list 'TeX-command-list	'("BibTeX" "bibtex LaTeX/%s" TeX-run-BibTeX nil t :help "Run BibTeX") t)
 % eval: (setq TeX-view-program-selection '((output-pdf "Skim")))
