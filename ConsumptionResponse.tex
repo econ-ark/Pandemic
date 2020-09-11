@@ -1,24 +1,25 @@
-%  This file compiles on a standard distribution of LaTeX (say, TeXLive)
-%  The PDF file it generates is in ./LaTeX/ConsumptionResponse.pdf
+% This file compiles on a standard distribution of LaTeX (say, TeXLive)
+% The PDF file it generates is in ./LaTeX/ConsumptionResponse.pdf
 
-\input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage,letterpaper]{\econtex}
+\input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage,a4paper]{\econtex}
 
-\provideboolean{ifIJCB}\setboolean{ifIJCB}{false} % If true, make ICJB version, otherwise regular
-
-\usepackage{grfext}\PrependGraphicsExtensions*{.svg,.pdf,.PDF}
+\provideboolean{ifIJCB}\setboolean{ifIJCB}{true} % If true, make ICJB version, otherwise regular
+\providecommand{\versn}{}
+\ifthenelse{\boolean{ifIJCB}}{\renewcommand{\versn}{IJCB}}{}
 
 \providecommand{\texname}{ConsumptionResponse}% Keyname for the bibtex entry corresponding to this paper
-\ifthenelse{\boolean{ifIJCB}}{\usepackage[nolists,nomarkers]{endfloat}}{\usepackage[nolists,nomarkers,tablesonly]{endfloat}} 
+
 \usepackage{\econtexRoot/LaTeX/ConsumptionResponse}
-% Needed to get nice fonts on ESC's machine
+
+\ifthenelse{\boolean{ifIJCB}}{
+    \usepackage[nolists,nomarkers]{endfloat}}{\usepackage[nolists,nomarkers,tablesonly]{endfloat}
+}{} % end ifIJCB
+
+% Needed to get nice fonts on some machines
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
 \usepackage[twoside,marginparwidth=0in,left=1.25in,right=1.25in,top=1.25in,bottom=1.25in]{geometry}\usepackage{layouts}
-%\usepackage[twoside,marginparwidth=0in,left=19.5mm,right=19.5mm,top=25.5mm,bottom=25.5mm]{geometry}\usepackage{layouts}
-
-%\small First Public Version: \href{https://github.com/econ-ark/Pandemic/blob/ccd3253fddac75e66cea8362aadd1fe1a13fe015/ConsumptionResponse.pdf}{April 15, 2020} \\
-% Published Preprint: \href{https://cepr.org/sites/default/files/news/CovidEconomics10.pdf}{April 27, 2020} \\ This Version: September 9, 2020} \\ \phantom{.}
 
 \renewcommand{\forcedate}{Forthcoming, \href{https://www.ijcb.org/}{\textit{International Journal of Central Banking}}}
 
@@ -26,7 +27,7 @@
 
 \begin{document}
 
-\hfill{\tiny \jobname, \today}
+\hfill{\tiny \jobname, \versn, \today, \currenttime}
 
 \title{Modeling the Consumption Response\\ to the CARES Act}
 
@@ -63,6 +64,7 @@
 
 \hypertarget{links}{}
 
+% Set up inputs for table of links
 \newcommand{\panmat}{econ-ark.org/materials/pandemic-dashboard}
 \newcommand{\dashtarg}{Live Dashboard}
 \newcommand{\htmltarg}{econ-ark.github.io/Pandemic}
@@ -87,15 +89,16 @@
 \newcommand{\biblink}{\href{https://raw.githubusercontent.com/econ-ark/Pandemic/gh-pages/LaTeX/ConsumptionResponse-Self.bib}{\phantom{..}LaTeX subdirectory of repo}}
 \newcommand{\bibtext}{\textit{Preferred BibTeX citation}}
 
+
 \ifthenelse{\boolean{ifWeb}}{
-        \begin{tabbing}
-          \= {\small \texttt{\dashlive~~~~~~~~~~~~~~~}} \= {  }  \dashtext \\
-          \> {\small \texttt{\htmlvers~~}} \> {  }  \htmltext \\
-          \> {\small \texttt{\githrepo}~~} \> {  }  \githtext \\
-          \> {\small \texttt{~~\pdfltsub}~$\uparrow$~~~~ \phantom{}~} \> {  }  \pdflttxt \\ 
-          \> {\small \texttt{~~\slidesub}~\phantom{$\uparrow$}~~~~~~} \> {  }  \slidetxt \\
-          \> {\small \texttt{~~\bibtlink}~\phantom{$\uparrow$}~~~~~~} \> {  }  \bibttext 
-        \end{tabbing}
+  \begin{tabbing}
+    \= {\small \texttt{\dashlive~~~~~~~~~~~~~~~}} \= {  }  \dashtext \\
+    \> {\small \texttt{\htmlvers~~}} \> {  }  \htmltext \\
+    \> {\small \texttt{\githrepo}~~} \> {  }  \githtext \\
+    \> {\small \texttt{~~\pdfltsub}~$\uparrow$~~~~ \phantom{}~} \> {  }  \pdflttxt \\ 
+    \> {\small \texttt{~~\slidesub}~\phantom{$\uparrow$}~~~~~~} \> {  }  \slidetxt \\
+    \> {\small \texttt{~~\bibtlink}~\phantom{$\uparrow$}~~~~~~} \> {  }  \bibttext 
+  \end{tabbing}
 }{% Not Web
   \begin{small}
     \begin{tabular}[c]{lll}
@@ -116,11 +119,9 @@
   We estimate that, if the lockdown is short-lived (the median point of view in April 2020), the combination of expanded unemployment insurance benefits and stimulus payments should be sufficient to allow a swift recovery in consumer spending to pre-crisis levels.  If the lockdown lasts longer (or there is a `second wave'), an extension of \href{https://www.dol.gov/coronavirus/unemployment-insurance}{enhanced unemployment benefits} will likely be necessary for consumption spending to recover quickly.
 \end{abstract}
 
-%Existing Work on the Effects of the Pandemic
-
 % Thanks must be done differently for PDF and web versions; so write one version to filesystem
 % then read in separately for the two instances
-\newcommand{\thankstext}{The \href{https://github.com/econ-ark/Pandemic/blob/ccd3253fddac75e66cea8362aadd1fe1a13fe015/ConsumptionResponse.pdf}{first public version} of this paper appeared April 15, 2020.  A \href{https://cepr.org/sites/default/files/news/CovidEconomics10.pdf}{publicly available pre-print} appeared in the \href{https://cepr.org}{Centre for Economic Policy Research} pre-print journal \href{https://cepr.org/content/covid-economics-vetted-and-real-time-papers-0}{Covid Economics} on April 27, 2020 (as a pre-print journal, Covid Economics does not obtain copyright claims to its content, which is why the finished version of the paper can be published in a peer-reviewed journal which DOES obtain the copyright). \\ \\ \indent Thanks to the \href{https://consumerfinance.gov}{Consumer Financial Protection Bureau} for funding the original creation of the \href{https://econ-ark.org}{Econ-ARK} toolkit, whose latest version we used to produce all the results in this paper; and to the \href{}{Sloan Foundation} for funding Econ-ARK's \href{https://sloan.org/grant-detail/8071}{extensive further development} that brought it to the point where it could be used for this project.  The toolkit can be cited with its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001067}{10.5281/zenodo.1001067}, as is done in the paper's own references as \cite{carroll_et_al-proc-scipy-2018}.
+\newcommand{\thankstext}{The \href{https://github.com/econ-ark/Pandemic/blob/ccd3253fddac75e66cea8362aadd1fe1a13fe015/ConsumptionResponse.pdf}{first public version} of this paper appeared April 15, 2020.  A \href{https://cepr.org/sites/default/files/news/CovidEconomics10.pdf}{publicly available pre-print} appeared in the \href{https://cepr.org}{Centre for Economic Policy Research} pre-print journal \href{https://cepr.org/content/covid-economics-vetted-and-real-time-papers-0}{Covid Economics} on April 27, 2020 (as a pre-print journal, Covid Economics does not obtain copyright claims to its content, which is why the finished version of the paper can be published in a peer-reviewed journal which DOES obtain the copyright). \\ \\ \indent Thanks to the \href{https://consumerfinance.gov}{Consumer Financial Protection Bureau} for funding the original creation of the \href{https://econ-ark.org}{Econ-ARK} toolkit, whose latest version we used to produce all the results in this paper; and to the \href{https://sloan.org}{Sloan Foundation} for funding Econ-ARK's \href{https://sloan.org/grant-detail/8071}{extensive further development} that brought it to the point where it could be used for this project.  The toolkit can be cited with its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001067}{10.5281/zenodo.1001067}, as is done in the paper's own references as \cite{carroll_et_al-proc-scipy-2018}.
   We are grateful to Kiichi Tokuoka, who provided valuable feedback and input as this project progressed, and to Mridul Seth, who created the dashboard and configurator.  The views presented in this paper are those of the authors, and should not be attributed to the Federal Reserve Board or the European Central Bank.}
 
 \begin{authorsinfo}
@@ -128,13 +129,11 @@
   \name{Crawley: Federal Reserve Board, \href{mailto:ecrawle2@jhu.edu}{\texttt{edmund.s.crawley@frb.gov}}}
   \name{Slacalek: DG Research, European Central Bank, \url{http://www.slacalek.com/}, \href{mailto:jiri.slacalek@ecb.europa.eu}{\texttt{jiri.slacalek@ecb.europa.eu}}}
   \name{White: Department of Economics, University of Delaware,  \href{mailto:mnwecon@udel.edu}{\texttt{mnwecon@udel.edu}}
-     }
+  }
 \end{authorsinfo}
 
 % The \thanks thing only works on the PDF, not the web version of the paper
-\ifthenelse{\boolean{ifWeb}}{}{
-  \thanks{\thankstext}
- \medskip}
+\ifthenelse{\boolean{ifWeb}}{}{\thanks{\thankstext}\medskip}
 
 \setcounter{page}{1}
 
@@ -145,7 +144,7 @@
 % If web version, then just incorporate thanks at beginning of text
 % instead of in frontmatter
 \ifthenelse{\boolean{ifWeb}}{\medskip \noindent {\footnotesize
-\thankstext \medskip \medskip \medskip
+    \thankstext \medskip \medskip \medskip
   }}{\pagebreak
 } % \end{web}
 
@@ -203,7 +202,7 @@ For simplicity, our model does not include durable goods, because modeling spend
 But it is plausible that, when the lockdown ends, people may want to spend \textit{more} than usual on memorable or durable goods to make up for earlier missing spending.
 
 
-%\subsection*{Literature Review}
+% \subsection*{Literature Review}
 
 Many papers have recently appeared on the economic effects of the pandemic and policies to manage it.
 Several papers combine the classic susceptible--infected--recovered (SIR) epidemiology model with dynamic economic models to study the interactions between health and economic policies (\cite{ert_covid} and \cite{aal_covid}, among others).
@@ -248,14 +247,14 @@ The pandemic is modeled as an unexpected (MIT) shock, sending many households in
 The calibration choices for the pandemic scenario are very much open for debate. We have tried to capture something like median expectations from early analyses, but there is considerable variation in points of view around those medians.
 Section~\ref{sec:longPandemic} below presents a more adverse scenario with a longer lockdown and a larger increase in unemployment.
 
-Unemployment forecasts for Q2 2020 range widely, from less than 10 percent to over 30 percent, but all point to an unprecedented sudden increase in unemployment.\footnote{As of April 16, about 22 million new unemployment claims have been filed in four weeks, representing a loss of over 14 percent  of total jobs.  JP Morgan Global Research forecast 8.5 percent unemployment (\cite{JPMorganBlog2020}, from March 27); Treasury Secretary Steven Mnuchin predicted unemployment could rise to 20 percent without a significant fiscal response (\cite{Bloomberg1}); St.\ Louis Fed president James Bullard said the unemployment rate may hit 30 percent  (\cite{Bloomberg2} --- see \cite{FariaBlog2020} for the analysis behind this claim.  Based on a survey that closely follows the CPS, \cite{BickBlandin2020} calculate a 20.2 percent unemployment rate at the beginning of April.}
+Unemployment forecasts for Q2 2020 range widely, from less than 10 percent to over 30 percent, but all point to an unprecedented sudden increase in unemployment.\footnote{As of April 16, about 22 million new unemployment claims have been filed in four weeks, representing a loss of over 14 percent  of total jobs.  JP Morgan Global Research forecast 8.5 percent unemployment (\cite{JPMorganBlog2020}, from March 27); Treasury Secretary Steven Mnuchin predicted unemployment could rise to 20 percent without a significant fiscal response (\cite{Bloomberg1}); St.\ Louis Fed president James Bullard said the unemployment rate may hit 30 percent  (\cite{Bloomberg2} --- see \cite{FariaBlog2020} for the analysis behind this claim).  Based on a survey that closely follows the CPS, \cite{BickBlandin2020} calculate a 20.2 percent unemployment rate at the beginning of April.}
 We choose a total unemployment rate in Q2 2020 of just over 15 percent, consisting of five percent `deeply unemployed' and ten percent `normal unemployed' households.
 
 Our model assumes that the unemployment shock from the pandemic is a singular event, with no change in the longer run job separation rate for employed households (calibrated to generate a steady state unemployment rate of 5\%).
 Consequently, agents in our model who remain employed in Q2 2020 have no additional precautionary saving motive against a heightened risk of unemployment, and any change in their consumption behavior arises from the marginal utility shock.
 
 We calibrate the likelihood of becoming unemployed to match empirical facts about the relationship of unemployment to education level, permanent income and age, which is likely to matter because the hardest hit sectors skew young and unskilled.\footnote{See \cite{GasconCOVID2020}, \cite{LeiboviciSocial2020} and \cite{covid_USsurvey} for breakdowns of which workers are at most risk of unemployment from the crisis.
-See additional evidence in \cite{kmv_pandemics} and modeling of implications for optimal policies in \cite{healthWealth}.}
+  See additional evidence in \cite{kmv_pandemics} and modeling of implications for optimal policies in \cite{healthWealth}.}
 Figure \ref{unemployment_demographics} shows our assumptions on unemployment along these dimensions.
 In each education category, the solid or dashed line represents the probability of unemployment type (`normal' or `deep') for a household with the median permanent income at each age, while the dotted lines represent the probability of unemployment type for a household at the 5th and 95th percentile of permanent income at each age; Appendix \ref{model_details} with Table \ref{table:PandemicAssumptions} detail the parametrization and calibration we used.
 
@@ -508,6 +507,8 @@ A fuller analysis that incorporates such heterogeneity, which is of intrinsic in
 
 
 \end{document}
+% The variables below configure AucTeX to put the "junk" files in the LaTeX directory
+% If a different compilation system is used, other tweaks will be needed
 % Local Variables:
 % TeX-PDF-mode: t
 % TeX-command-extra-options: "-output-directory=LaTeX -synctex=1 LaTeX/%o %s"
