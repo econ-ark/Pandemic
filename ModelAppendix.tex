@@ -2,6 +2,8 @@
 
 
 \begin{document}\pagestyle{empty}
+\ifthenelse{\boolean{ifIJCB}}{\doublespacing}{}
+
 \appendix
 \section*{Appendices}
 
@@ -51,6 +53,7 @@ The income process for a household can be represented mathematically as:
   \end{cases}.
 \end{equation*}
 
+
 A working-age household's employment state $\ell_{it}$ evolves as a Markov process described by the matrix $\Xi$, where element $k,k'$ of $\Xi$ is the probability of transitioning from $\ell_{it} = k$ to $\ell_{it+1} = k'$.  During retirement, all households have $\ell_{it}=0$ (or any other trivializing assumption about the ``employment'' state of the retired).
 We assume that households treat $\Xi_{0,2}$ and $\Xi_{1,2}$ as zero: they do not consider the possibility of ever attaining the deep unemployment state $\ell_{it}=2$ from ``normal'' employment or unemployment, and thus it does not affect their consumption decision in those employment states.
 
@@ -59,7 +62,7 @@ The probability of transitioning from unemployment back to employment is thus $\
 The deeply unemployed expect to be unemployed for \textit{much} longer: we specify $\Xi_{2,0} = 0$ and $\Xi_{2,1} = \frac{1}{3}$, so that a deeply unemployed person remains so for three quarters on average before becoming ``normal'' unemployed (they cannot transition directly back to employment).
 Thus the unemployment spell for a deeply unemployed worker is 2 quarters at a minimum and 4.5 quarters on average.\footnote{Our computational model allows for workers' \textit{beliefs} about the average duration of deep unemployment to differ from the \textit{true} probability.  However, we do not present results based on this feature and thus will not further clutter the notation by formalizing it here.}
 
-%JS20200411: If \eta is common to all households, we should drop the i subscript in the sentences below.
+% JS20200411: If \eta is common to all households, we should drop the i subscript in the sentences below.
 Like the prospect of deep unemployment, the possibility that consumption might become less appealing (via marginal utility scaling factor $\eta_{it}<1$) does not affect the decision-making process of a household in the normal $\eta_{it} = 1$ state.
 If a household does find itself with $\eta_{it} = \underline{\eta}$, this condition is removed (returning to the normal state) with probability $0.5$ each quarter; the evolution of the marginal utility scaling factor is represented by the Markov matrix $H$.
 In this way, the consequences of a pandemic are fully unanticipated by households, a so-called ``MIT shock''; households act optimally once in these states, but did not account for them in their consumption--saving problem during ``normal'' times.\footnote{Our computational model also allows households' beliefs about the duration of the reduced marginal utility state (via social distancing) to deviate from the true probability.  The code also permits the possibility that the reduction in marginal utility is lifted as an aggregate or shared outcome, rather than idiosyncratically.  We do not present results utilizing these features here, but invite the reader to investigate their predicted consequences using our public repository.}
@@ -101,51 +104,51 @@ The marginal value function for age $j$ can then be used to solve the age $j-1$ 
 
 \begin{table}
   \centering
-	\caption{Parameter Values in the Baseline Model}
-	\label{table:ParametersLifeCycle}
-	\begin{center}
-		\begin{tabular}{@{}lcd{5}@{}}
-			\toprule
-			Description & Parameter & \multicolumn{1}{c}{Value} \\
-			\midrule
-			Coefficient of relative risk aversion & \CRRA & 1 \\
- 			Mean discount factor, high school dropout & $\grave{\Discount}_D$ & 0.9637 \\
- 			Mean discount factor, high school graduate & $\grave{\Discount}_{HS}$ & 0.9705 \\
- 			Mean discount factor, college graduate & $\grave{\Discount}_C$ & 0.9756 \\
-			Discount factor band (half width) & $\nabla$ & 0.0253 \\
-			\hline
- \multicolumn{3}{l}{Employment transition probabilities:} \\
-	        -- from normal unemployment to employment & $\Xi_{1,0}$ & 2/3 \\
-	        -- from deep unemployment to normal unemployment &  $\Xi_{2,1}$ & 1/3 \\
-	        -- from deep unemployment to employment &  $\Xi_{2,0}$ & 0 \\
-	        \hline
-	        Proportion of high school dropouts & $\theta_D$ & 0.11 \\
-			Proportion of high school graduates & $\theta_{HS}$ & 0.55 \\
-			Proportion of college graduates & $\theta_C$ & 0.34 \\
-			Average initial permanent income, dropout & $\overline{\pLev}_{D0}$ & 5000 \\
-			Average initial permanent income, high school & $\overline{\pLev}_{HS0}$ & 7500 \\
-			Average initial permanent income, college & $\overline{\pLev}_{C0}$ & 12000 \\
-			\hline
-			Steady state unemployment rate & $\urate$ & 0.05 \\
-			Unemployment insurance replacement rate & $\underline{\xi}$ & 0.30 \\
-			Skill rot of all unemployed &  $\underline{\Gamma}$ & 0.995 \\
-			\hline
-			Quarterly interest factor & $\RProd$ & 1.01 \\
-			Population growth factor & $N$ & 1.0025 \\
-			Technological growth factor & $\gimel$ & 1.0025 \\
-			\bottomrule
-		\end{tabular}
-	\end{center}
+  \caption{Parameter Values in the Baseline Model}
+  \label{table:ParametersLifeCycle}
+  \begin{center}
+    \begin{tabular}{@{}lcd{5}@{}}
+      \toprule
+      Description & Parameter & \multicolumn{1}{c}{Value} \\
+      \midrule
+      Coefficient of relative risk aversion & \CRRA & 1 \\
+      Mean discount factor, high school dropout & $\grave{\Discount}_D$ & 0.9637 \\
+      Mean discount factor, high school graduate & $\grave{\Discount}_{HS}$ & 0.9705 \\
+      Mean discount factor, college graduate & $\grave{\Discount}_C$ & 0.9756 \\
+      Discount factor band (half width) & $\nabla$ & 0.0253 \\
+      \hline
+      \multicolumn{3}{l}{Employment transition probabilities:} \\
+      -- from normal unemployment to employment & $\Xi_{1,0}$ & 2/3 \\
+      -- from deep unemployment to normal unemployment &  $\Xi_{2,1}$ & 1/3 \\
+      -- from deep unemployment to employment &  $\Xi_{2,0}$ & 0 \\
+      \hline
+      Proportion of high school dropouts & $\theta_D$ & 0.11 \\
+      Proportion of high school graduates & $\theta_{HS}$ & 0.55 \\
+      Proportion of college graduates & $\theta_C$ & 0.34 \\
+      Average initial permanent income, dropout & $\overline{\pLev}_{D0}$ & 5000 \\
+      Average initial permanent income, high school & $\overline{\pLev}_{HS0}$ & 7500 \\
+      Average initial permanent income, college & $\overline{\pLev}_{C0}$ & 12000 \\
+      \hline
+      Steady state unemployment rate & $\urate$ & 0.05 \\
+      Unemployment insurance replacement rate & $\underline{\xi}$ & 0.30 \\
+      Skill rot of all unemployed &  $\underline{\Gamma}$ & 0.995 \\
+      \hline
+      Quarterly interest factor & $\RProd$ & 1.01 \\
+      Population growth factor & $N$ & 1.0025 \\
+      Technological growth factor & $\gimel$ & 1.0025 \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
 \end{table}
 
 
 When the pandemic strikes, we draw a new employment state (employed, unemployed, deeply unemployed) for each working age household using a logistic distribution.  For each household $i$ at $t=0$ (the beginning of the pandemic and lockdown), we compute logistic weights for the employment states as:
 \begin{equation*}
-	\mathbb{P}_{i,\ell} = \alpha_{\ell,e} + \alpha_{\ell,p} \pLev_{i0} + \alpha_{\ell,j} j_{i0} ~~\text{for}~~\ell \in \{1,2\}, \qquad \mathbb{P}_{i,0} = 0,
+  \mathbb{P}_{i,\ell} = \alpha_{\ell,e} + \alpha_{\ell,p} \pLev_{i0} + \alpha_{\ell,j} j_{i0} ~~\text{for}~~\ell \in \{1,2\}, \qquad \mathbb{P}_{i,0} = 0,
 \end{equation*}
 where $e \in \{D,H,C\}$ for dropouts, high school graduates, and college graduates and $j$ is the household's age.  The probability that household $i$ draws employment state $\ell \in \{0,1,2\}$ is then calculated as:
 \begin{equation*}
-\Pr(\ell_{it} = \ell) = \exp(\mathbb{P}_{i,\ell}) \bigg/ \sum_{k=0}^2 \exp(\mathbb{P}_{i,k}).
+  \Pr(\ell_{it} = \ell) = \exp(\mathbb{P}_{i,\ell}) \bigg/ \sum_{k=0}^2 \exp(\mathbb{P}_{i,k}).
 \end{equation*}
 Our chosen logistic parameters are presented in Table~\ref{table:PandemicAssumptions}.
 
@@ -177,24 +180,23 @@ Our chosen logistic parameters are presented in Table~\ref{table:PandemicAssumpt
       \midrule
       Long, Deep Pandemic && \\
       \multicolumn{3}{l}{Logistic parametrization of unemployment probabilities} \\
-      	Constant for dropout, regular unemployment & $\alpha_{1,D}$ & -1.45\\
-		Constant for dropout, deep unemployment & $\alpha_{2,D}$ & -0.3\\
-		Constant for high school, regular unemployment & $\alpha_{1,H}$ & -1.6\\
-		Constant for high school, deep unemployment & $\alpha_{2,H}$ & -0.55\\
-		Constant for college, regular unemployment & $\alpha_{1,C}$ & -1.95\\
-		Constant for college, deep unemployment & $\alpha_{2,C}$ & -1.00\\
-		Coefficient on permanent income, regular unemployment & $\alpha_{1,p}$ & -0.2\\
-		Coefficient on permanent income, deep unemployment & $\alpha_{2,p}$ & -0.2\\
-		Coefficient on age, regular unemployment & $\alpha_{1,j}$ & -0.01\\
-		Coefficient on age, deep unemployment& $\alpha_{2,j}$ & -0.01\\
-		\multicolumn{3}{l}{Marginal Utility Shock} \\
-		Pandemic utility factor & $\underline{\eta}$ & 0.891 \\
-		Prob.\ exiting pandemic each quarter & $H_{1,0}$ & 0.25 \\
+      Constant for dropout, regular unemployment & $\alpha_{1,D}$ & -1.45\\
+      Constant for dropout, deep unemployment & $\alpha_{2,D}$ & -0.3\\
+      Constant for high school, regular unemployment & $\alpha_{1,H}$ & -1.6\\
+      Constant for high school, deep unemployment & $\alpha_{2,H}$ & -0.55\\
+      Constant for college, regular unemployment & $\alpha_{1,C}$ & -1.95\\
+      Constant for college, deep unemployment & $\alpha_{2,C}$ & -1.00\\
+      Coefficient on permanent income, regular unemployment & $\alpha_{1,p}$ & -0.2\\
+      Coefficient on permanent income, deep unemployment & $\alpha_{2,p}$ & -0.2\\
+      Coefficient on age, regular unemployment & $\alpha_{1,j}$ & -0.01\\
+      Coefficient on age, deep unemployment& $\alpha_{2,j}$ & -0.01\\
+      \multicolumn{3}{l}{Marginal Utility Shock} \\
+      Pandemic utility factor & $\underline{\eta}$ & 0.891 \\
+      Prob.\ exiting pandemic each quarter & $H_{1,0}$ & 0.25 \\
       \bottomrule
     \end{tabular}
   \end{center}
 \end{table}
-
 
 \begin{table}
   \centering
@@ -215,10 +217,10 @@ Our chosen logistic parameters are presented in Table~\ref{table:PandemicAssumpt
       Deeply unemployed &\$7,800  \\
       \bottomrule
     \end{tabular}
-%	\begin{flushleft}
-	\footnotesize Note: The unemployment benefits are multiplied by 0.8 to account for the fact that 20 percent of the working age population is out of the labor force. See aggregation details in Appendix~\ref{sec:aggregation}.
-	\normalsize
-%\end{flushleft}
+    \begin{flushleft}
+    \footnotesize Note: The unemployment benefits are multiplied by 0.8 to account for the fact that 20 percent of the working age population is out of the labor force. See aggregation details in Appendix~\ref{sec:aggregation}.
+    \normalsize
+    \end{flushleft}
   \end{center}
 \end{table}
 
@@ -231,6 +233,7 @@ To size the unemployment benefits correctly, we multiply the benefits per worker
 With this adjustment, there are 151 million workers eligible for unemployment benefits in the model.
 Aggregate consumption in our baseline for 2020 is just over \$11 trillion, a little less than total personal consumption expenditure, accounting for the fact that some consumption does not fit in the usual budget constraint.\footnote{PCE consumption in Q4 2019, from the NIPA tables, was \$14.8 trillion. Market based PCE, a measure that excludes expenditures without an observable price was \$12.9 trillion. Health care, much of which is paid by employers and not in the household's budget constraint, was \$2.5 trillion.}
 Aggregating in this way underweights the young, as our model excludes those under the age of 24.
+
 
 Our model estimates the aggregate size of the stimulus checks to be \$267 billion, matching the the Joint Committee on Taxation's estimate of disbursements in 2020.\footnote{The JCT's 26 March 2020 publication JCX-11-20 predicts disbursements of \$267 billion in 2020, followed by \$24 billion in 2021.}
 This is somewhat of a coincidence: we overestimate the number of adults who will actually receive the stimulus, while excluding the \$500 payment to children.
@@ -258,28 +261,34 @@ As shown here, the number of consumption units that can be bought follows the lo
 As long as the household is consuming above the kink, their utility is $\log (\text{Cost}^\alpha) = \alpha \log (\text{Cost})$, exactly equivalent to the reduction in marginal utility we apply. Taking this interpretation seriously, the drop in marginal utility should not be applied to households with very low levels of consumption, below the kink.
 Our implementation abstracts from this, taking the marginal utility factor to be the same for all agents.
 \begin{figure}
-	\centering
-	\caption{Concave Cost of Consumption Units}
-	\label{concave_cons}
-	% \begin{Web}
-	\ifthenelse{\boolean{ifWeb}}{
-		\includegraphics[width=8in]{./Figures/QualityCost}
-	} %\end{Web}
-	{ \includegraphics[width=8in]{./Figures/QualityCost}}
+  \centering
+  \caption{Concave Cost of Consumption Units}
+  \label{concave_cons}
+  % \begin{Web}
+  \ifthenelse{\boolean{ifWeb}}{
+    \includegraphics[width=\webWidth\textwidth]{./Figures/QualityCost}
+  } %\end{Web}
+  { \includegraphics[width=0.8\textwidth]{./Figures/QualityCost}}
 \end{figure}
 
 An alternative interpretation is that consumption is made up of a Cobb-Douglass aggregation of two goods:
 \begin{eqnarray*}
-	C = c_1^{\alpha}c_2^{1-\alpha}
+  C = c_1^{\alpha}c_2^{1-\alpha}
 \end{eqnarray*}
 During the lockdown, the second good is replaced by home production at a fixed level $\bar{c_2}$. A log-utility function gives $\log(C) = \alpha\log(c_1) + (1-\alpha)\log(\bar{c_2})$, equivalent to our model in which we reduce marginal utility by a factor $\alpha$.
 
 
 
-%\processdelayedfloats
+% \processdelayedfloats
 \onlyinsubfile{\bibliography{\econtexRoot/LaTeX/ConsumptionResponse}}
 \end{document}
+% The variables below configure AucTeX to put the "junk" files in the LaTeX directory
+% If a different compilation system is used, other tweaks will be needed
 % Local Variables:
 % TeX-PDF-mode: t
-% TeX-command-extra-options: "-output-directory=LaTeX"
+% TeX-command-extra-options: "-output-directory=LaTeX -synctex=1 LaTeX/%o %s"
+% eval: (setq TeX-command-list  (remove '("BibTeX" "bibtex       %s" TeX-run-BibTeX nil t :help "Run BibTeX") TeX-command-list))
+% eval: (add-to-list 'TeX-command-list	'("BibTeX" "bibtex LaTeX/%s" TeX-run-BibTeX nil t :help "Run BibTeX") t)
+% eval: (setq TeX-view-program-selection '((output-pdf "Skim")))
+% eval: (setq TeX-view-program-list '(("Skim" "/Applications/Skim.app/Contents/SharedSupport/displayline -b -g %n LaTeX/%o %b")))
 % End:
