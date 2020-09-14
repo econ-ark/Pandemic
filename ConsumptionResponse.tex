@@ -1,8 +1,8 @@
 % This file compiles on a standard distribution of LaTeX (say, TeXLive)
 % The PDF file it generates is in ./LaTeX/ConsumptionResponse.pdf
 
-\input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage,letterpaper]{\econtex}
-\synctex=1
+\input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage,a4paper]{\econtex}
+
 \provideboolean{ifIJCB}\setboolean{ifIJCB}{false} % If true, make ICJB version, otherwise regular
 \providecommand{\versn}{}
 \ifthenelse{\boolean{ifIJCB}}{\renewcommand{\versn}{IJCB}}{}
@@ -486,7 +486,7 @@ A fuller analysis that incorporates such heterogeneity, which is of intrinsic in
 \pagebreak
 
 \small
-\bibliography{LaTeX/\texname,LaTeX/\texname-Add,economics}
+\bibliography{LaTeX/\texname,LaTeX/\texname-Add,\economics}
 \normalsize
 
 \ifthenelse{\boolean{ifIJCB}}{\processdelayedfloats}{} 
