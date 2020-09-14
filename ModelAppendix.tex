@@ -2,7 +2,7 @@
 
 
 \begin{document}\pagestyle{empty}
-\ifthenelse{\boolean{ifIJCB}}{\doublespacing}{} 
+\ifthenelse{\boolean{ifIJCB}}{\doublespacing}{}
 
 \appendix
 \section*{Appendices}
@@ -52,6 +52,7 @@ The income process for a household can be represented mathematically as:
     \pLev_{it} & \text{if } j \geq 164 \qquad \qquad \qquad \qquad \text{Retired}
   \end{cases}.
 \end{equation*}
+
 
 A working-age household's employment state $\ell_{it}$ evolves as a Markov process described by the matrix $\Xi$, where element $k,k'$ of $\Xi$ is the probability of transitioning from $\ell_{it} = k$ to $\ell_{it+1} = k'$.  During retirement, all households have $\ell_{it}=0$ (or any other trivializing assumption about the ``employment'' state of the retired).
 We assume that households treat $\Xi_{0,2}$ and $\Xi_{1,2}$ as zero: they do not consider the possibility of ever attaining the deep unemployment state $\ell_{it}=2$ from ``normal'' employment or unemployment, and thus it does not affect their consumption decision in those employment states.
@@ -197,7 +198,6 @@ Our chosen logistic parameters are presented in Table~\ref{table:PandemicAssumpt
   \end{center}
 \end{table}
 
-
 \begin{table}
   \centering
   \caption{Fiscal Stimulus Assumptions, CARES Act}
@@ -233,6 +233,7 @@ To size the unemployment benefits correctly, we multiply the benefits per worker
 With this adjustment, there are 151 million workers eligible for unemployment benefits in the model.
 Aggregate consumption in our baseline for 2020 is just over \$11 trillion, a little less than total personal consumption expenditure, accounting for the fact that some consumption does not fit in the usual budget constraint.\footnote{PCE consumption in Q4 2019, from the NIPA tables, was \$14.8 trillion. Market based PCE, a measure that excludes expenditures without an observable price was \$12.9 trillion. Health care, much of which is paid by employers and not in the household's budget constraint, was \$2.5 trillion.}
 Aggregating in this way underweights the young, as our model excludes those under the age of 24.
+
 
 Our model estimates the aggregate size of the stimulus checks to be \$267 billion, matching the the Joint Committee on Taxation's estimate of disbursements in 2020.\footnote{The JCT's 26 March 2020 publication JCX-11-20 predicts disbursements of \$267 billion in 2020, followed by \$24 billion in 2021.}
 This is somewhat of a coincidence: we overestimate the number of adults who will actually receive the stimulus, while excluding the \$500 payment to children.

@@ -1,2 +1,4 @@
 $ENV{'BIBINPUTS'}='./LaTeX';
-latexmk -bibtex
+latexmk -bibtex ConsumptionResponse.tex;
+
+
