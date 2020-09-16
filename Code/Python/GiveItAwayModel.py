@@ -58,7 +58,29 @@ class GiveItAwayNowType(MarkovConsumerType):
             return np.zeros(self.AgentCount, dtype=bool)
         else:
             return MarkovConsumerType.simDeath(self)
-        
+
+
+    def getShocks(self):
+        MarkovConsumerType.getShocks(self)
+        if (hasattr(self,'Mrkv_univ') and self.Mrkv_univ is not None):
+            self.MrkvNow = self.MrkvNow_temp # Make sure real sequence is recorded
+
+
+    def getMarkovStates(self):
+        '''
+        A modified method that forces all agents to be in a particular Markov
+        state when the attribute Mrkv_univ is not None.  This allows us to draw
+        income shocks for every Markov state for each agent in each simulated
+        period when pre-specifying the shocks.  When the model is *actually*
+        simulated, this ensures that agent i in period t and Markov state k will
+        get the same income shocks *no matter which specification we use*.
+        '''
+        MarkovConsumerType.getMarkovStates(self) # Basic Markov state draw
+        if (hasattr(self,'Mrkv_univ') and self.Mrkv_univ is not None):
+            self.MrkvNow_temp = self.MrkvNow
+            self.MrkvNow = self.Mrkv_univ*np.ones(self.AgentCount, dtype=int)
+            # ^^ Store the real states but force income shocks to be based on one particular state
+            
         
     def getStates(self):
         MarkovConsumerType.getStates(self)
@@ -112,7 +134,8 @@ class GiveItAwayNowType(MarkovConsumerType):
             LRagePrbs = vecs[:,idx].astype(float)
         LRagePrbs /= np.sum(LRagePrbs)
         age_vec = np.arange(self.T_cycle+1).astype(int)
-        self.LRageDstn = DiscreteDistribution(LRagePrbs, age_vec)
+        self.LRageDstn = DiscreteDistribution(LRagePrbs, age_vec,
+                                seed=self.RNG.randint(0,2**31-1))
         
         
     def initializeAges(self):
@@ -120,8 +143,7 @@ class GiveItAwayNowType(MarkovConsumerType):
         Assign initial values of t_cycle to simulated agents, using the attribute
         LRageDstn as the distribution of discrete ages.
         '''
-        age = self.LRageDstn.drawDiscrete(self.AgentCount,
-                           seed=self.RNG.randint(0,2**31-1))
+        age = self.LRageDstn.drawDiscrete(self.AgentCount)
         age = age.astype(int)
         self.t_cycle = age
         self.t_age = age
@@ -160,24 +182,38 @@ class GiveItAwayNowType(MarkovConsumerType):
         '''
         self.MrkvArray = self.MrkvArray_sim
         J = self.MrkvArray[0].shape[0]
-        DeathHist = np.zeros((J,self.T_sim,self.AgentCount), dtype=bool)
-        MrkvHist = np.zeros((J,self.T_sim,self.AgentCount), dtype=int)
-        TranShkHist = np.zeros((J,self.T_sim,self.AgentCount))
-        PermShkHist = np.zeros((J,self.T_sim,self.AgentCount))
-        for j in range(6):
+        DeathHistAll = np.zeros((J,self.T_sim,self.AgentCount), dtype=bool)
+        MrkvHistAll = np.zeros((J,self.T_sim,self.AgentCount), dtype=int)
+        TranShkHistCond = np.zeros((J,self.T_sim,self.AgentCount))
+        PermShkHistCond = np.zeros((J,self.T_sim,self.AgentCount))
+        for j in range(J):
             self.Mrkv_univ = j
             self.read_shocks = False
             self.makeShockHistory()
-            DeathHist[j,:,:] = self.history['who_dies']
-            MrkvHist[j,:,:] = self.history['MrkvNow']
-            PermShkHist[j,:,:] = self.history['PermShkNow']
-            TranShkHist[j,:,:] = self.history['TranShkNow']
+            DeathHistAll[j,:,:] = self.history['who_dies']
+            MrkvHistAll[j,:,:] = self.history['MrkvNow']
+            PermShkHistCond[j,:,:] = self.history['PermShkNow']
+            TranShkHistCond[j,:,:] = self.history['TranShkNow']
             self.read_mortality = True # Make sure that every death history is the same
             self.who_dies_backup = self.history['who_dies'].copy()
-        self.DeathHistAll = DeathHist
-        self.MrkvHistAll = MrkvHist
-        self.PermShkHistAll = PermShkHist
-        self.TranShkHistAll = TranShkHist
+        
+        # Transfer income shocks conditional on each Markov state into the histories
+        # that start in each Markov state
+        TranShkHistAll = np.zeros((J,self.T_sim,self.AgentCount))
+        PermShkHistAll = np.zeros((J,self.T_sim,self.AgentCount))
+        for j in range(J):
+            for k in range(J):
+                these = MrkvHistAll[k,:,:] == j
+                PermShkHistAll[k,][these] = PermShkHistCond[j,][these]
+                TranShkHistAll[k,][these] = TranShkHistCond[j,][these]
+        
+        # Store as attributes of self
+        self.DeathHistAll = DeathHistAll
+        self.MrkvHistAll = MrkvHistAll
+        self.PermShkHistAll = PermShkHistAll
+        self.TranShkHistAll = TranShkHistAll
+        self.PermShkHistCond = PermShkHistCond
+        self.TranShkHistCond = TranShkHistCond
         self.Mrkv_univ = None
         self.MrkvArray_sim_prev = self.MrkvArray_sim
         self.L_shared_prev = self.L_shared
@@ -273,7 +309,7 @@ class GiveItAwayNowType(MarkovConsumerType):
         CumPrbArray = np.cumsum(PrbArray, axis=0)
         
         # Draw new Markov states for each agent
-        draws = Uniform().draw(self.AgentCount, seed=self.RNG.randint(0,2**31-1))
+        draws = Uniform(seed=self.RNG.randint(0,2**31-1)).draw(self.AgentCount)
         draws = self.RNG.permutation(draws)
         MrkvNew = np.zeros(self.AgentCount, dtype=int)
         MrkvNew[draws > CumPrbArray[0]] = 1
@@ -342,12 +378,13 @@ class GiveItAwayNowType(MarkovConsumerType):
         if self.T_til_check > 0:
             self.T_til_check -= 1
         
-        updaters = Bernoulli(p=self.UpdatePrb).draw(self.AgentCount, seed=self.RNG.randint(0,2**31-1))
+        updaters = Bernoulli(p=self.UpdatePrb, seed=self.RNG.randint(0,2**31-1)).draw(self.AgentCount)
         if self.T_til_check == 0:
             updaters = np.ones(self.AgentCount, dtype=bool)
         
         self.mNrmNow[updaters] += self.Stim_unnoticed[updaters]*self.StimLvl[updaters]/self.pLvlNow[updaters]*self.Rfree[0]**(-self.T_til_check)
         self.Stim_unnoticed[updaters] = False
+        
         
     def continueUnemploymentBenefits(self):
         '''
