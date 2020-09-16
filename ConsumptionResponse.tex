@@ -1,7 +1,7 @@
 % This file compiles on a standard distribution of LaTeX (say, TeXLive)
 % The PDF file it generates is in ./LaTeX/ConsumptionResponse.pdf
 
-\input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage,letterpaper]{\econtex}
+\input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage,a4paper]{\econtex}
 
 \provideboolean{ifIJCB}\setboolean{ifIJCB}{false} % If true, make ICJB version, otherwise regular
 \providecommand{\versn}{}
@@ -98,8 +98,8 @@
     \= {\small \texttt{\dashlive~~~~~~~~~~~~~~~}}               \= {  }  \dashtext \\
     \> {\small \texttt{\htmlvers~~}             }               \> {  }  \htmltext \\
     \> {\small \texttt{\githrepo}~~}                            \> {  }  \githtext \\
-    \> {\small \texttt{~~\zipflink}~~~$\uparrow$~~~~~~}          \> {  }  \zipftext \\
-    \> {\small \texttt{~~\pdfltsub}~$\uparrow$~~~~~~~}          \> {  }  \pdflttxt \\ 
+    \> {\small \texttt{~~\zipflink}~~~$\uparrow$~~~~~~}         \> {  }  \zipftext \\
+    \> {\small \texttt{~~\pdfltsub}~$\uparrow$~~~~~~~~}         \> {  }  \pdflttxt \\ 
     \> {\small \texttt{~~\slidesub}~\phantom{$\uparrow$}~~~~~~} \> {  }  \slidetxt \\
     \> {\small \texttt{~~\bibtlink}~\phantom{$\uparrow$}~~~~~~} \> {  }  \bibttext 
   \end{tabbing}
@@ -123,20 +123,20 @@
 To predict the effects of the 2020 U.S.\ \href{https://en.wikipedia.org/wiki/Coronavirus_Aid,_Relief,_and_Economic_Security_Act}{CARES} Act on consumption, we extend \href{http://www.econ2.jhu.edu/people/ccarroll/papers/cAndCwithStickyE}{a model} that \href{http://www.econ2.jhu.edu/people/ccarroll/papers/cAndCwithStickyE/#Excess-Sensitivity}{matches responses to past consumption stimulus packages}.  The extension allows us to account for two novel features of the coronavirus crisis.  First, during lockdowns, many types of spending are undesirable or impossible.  Second, some of the jobs that disappear during the lockdown will not reappear.  We estimate that, if the lockdown is short-lived (the median point of view in April 2020), the combination of expanded unemployment insurance benefits and stimulus payments should be sufficient to allow a swift recovery in consumer spending to pre-crisis levels.  If the lockdown lasts longer (or there is a `second wave'), an extension of \href{https://www.dol.gov/coronavirus/unemployment-insurance}{enhanced unemployment benefits} will likely be necessary for consumption spending to recover quickly.
 \end{abstract}
 
-% Thanks must be done differently for PDF and web versions; so write one version to filesystem
-% then read in separately for the two instances
-
 \begin{authorsinfo}
   \name{Carroll: Department of Economics, Johns Hopkins University, \url{http://econ.jhu.edu/people/ccarroll/}, \href{mailto:ccarroll@jhu.edu}{\texttt{ccarroll@jhu.edu}}}
   \name{Crawley: Federal Reserve Board, \href{mailto:ecrawle2@jhu.edu}{\texttt{edmund.s.crawley@frb.gov}}}
   \name{Slacalek: DG Research, European Central Bank, \url{http://www.slacalek.com/}, \href{mailto:jiri.slacalek@ecb.europa.eu}{\texttt{jiri.slacalek@ecb.europa.eu}}}
-  \name{White: Department of Economics, University of Delaware,  \href{mailto:mnwecon@udel.edu}{\texttt{mnwecon@udel.edu}}
-  }
+  \name{White: Department of Economics, University of Delaware,  \href{mailto:mnwecon@udel.edu}{\texttt{mnwecon@udel.edu}}}
 \end{authorsinfo}
 
+
+% Thanks must be done differently for PDF and web versions; so write one version to filesystem
+% then read in separately for the two instances
 \newcommand{\thankstext}{The \href{https://github.com/econ-ark/Pandemic/blob/ccd3253fddac75e66cea8362aadd1fe1a13fe015/ConsumptionResponse.pdf}{first public version} of this paper appeared April 15, 2020.  A \href{https://cepr.org/sites/default/files/news/CovidEconomics10.pdf}{publicly available pre-print} appeared in the \href{https://cepr.org}{Centre for Economic Policy Research} pre-print journal \href{https://cepr.org/content/covid-economics-vetted-and-real-time-papers-0}{Covid Economics} on April 27, 2020 (as a pre-print journal, Covid Economics does not obtain copyright claims to its content, which is why the finished version of the paper can be published in a peer-reviewed journal which DOES obtain the copyright). \\ \indent Thanks to the \href{https://consumerfinance.gov}{Consumer Financial Protection Bureau} for funding the original creation of the \href{https://econ-ark.org}{Econ-ARK} toolkit, whose latest version we used to produce all the results in this paper; and to the \href{https://sloan.org}{Sloan Foundation} for funding Econ-ARK's \href{https://sloan.org/grant-detail/8071}{extensive further development} that brought it to the point where it could be used for this project.  The toolkit can be cited with its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001067}{10.5281/zenodo.1001067}, as is done in the paper's own references as \cite{carroll_et_al-proc-scipy-2018}.  We are grateful to Kiichi Tokuoka, who provided valuable feedback and input as this project progressed, and to Mridul Seth, who created the dashboard and configurator.  The views presented in this paper are those of the authors, and should not be attributed to the Federal Reserve Board or the European Central Bank.}
 
 % The \thanks thing only works on the PDF, not the web version of the paper
+\ifthenelse{\boolean{ifWeb}}{}{\thanks{\thankstext}}
 
 \setcounter{page}{1}
 
@@ -241,7 +241,7 @@ First, our new category of `deeply unemployed' households was created to capture
 
 Each quarter, our `deeply unemployed' households have a two-thirds chance of remaining deeply unemployed, and a one-third chance of becoming `normal unemployed.'
 The expected time to re-employment for a `deeply unemployed' household is four and a half quarters, much longer than the historical average length of a typical unemployment spell.
-Reflecting recent literature on the `scarring effects' of unemployment spells (e.g., \cite{wachter_scarring} and \cite{hpv:cycleTrend}), permanent income of both `normal' and `deeply' households declines by 0.5 percent each quarter due to `skill rot' (rather than following the default age profile that would have been followed if the consumer had remained employed).
+Reflecting recent literature on the `scarring effects' of unemployment spells (e.g., \cite{wachter_scarring} and \cite{hpv:cycleTrend}), permanent income of both `normal' and `deeply' households declines by 0.5 percent each year due to `skill rot' (relative to following the default age profile that would have been followed if the consumer had remained employed).
 
 Second, a temporary negative shock to the \href{https://www.investopedia.com/terms/m/marginalutility.asp}{marginal utility of consumption} captures the idea that, during the period of the pandemic, many forms of consumption are undesirable or even impossible.\footnote{For the purposes of our paper, with log utility, modeling lockdowns as a shock to marginal utility is essentially equivalent to not allowing consumers to buy a subset of goods (which are combined into composite consumption by a Cobb--Douglas aggregator). However, the two approaches would yield different implications for normative evaluations of economic policies.}
 

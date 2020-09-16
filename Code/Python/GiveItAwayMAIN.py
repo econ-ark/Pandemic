@@ -96,7 +96,7 @@ if __name__ == '__main__':
     t0 = time()
     C_base, X_base, Z_base, cAll_base, Weight_base, Mrkv_base, U_base, ltAll_base, LT_by_inc_base = runExperiment(**base_dict)
     t1 = time()
-    print('Computing baseline consumption took ' + mystr(t1-t0) + ' seconds.')
+    print('Calculating baseline consumption took ' + mystr(t1-t0) + ' seconds.')
     
     # Get consumption when there's a stimulus (no pandemic)
     t0 = time()
@@ -178,7 +178,7 @@ if __name__ == '__main__':
     t0 = time()
     C_long_pandemic_cont, X_long_pandemic_cont, Z_long_pandemic_cont, cAll_long_pandemic_cont, Weight_long_pandemic_cont, Mrkv_long_pandemic_cont, U_long_pandemic_cont, ltAll_long_pandemic_cont, LT_by_inc_long_pandemic_cont = runExperiment(**long_pandemic_stim_dict)
     t1 = time()
-    print('Calculating consumption with long pandemic and coninued benefits took ' + mystr(t1-t0) + ' seconds.')
+    print('Calculating consumption with long pandemic and continued benefits took ' + mystr(t1-t0) + ' seconds.')
     for a in long_pandemic_dict['Agents']:
         a.ContUnempBenefits = False
 
@@ -283,7 +283,7 @@ if __name__ == '__main__':
     LT_long_pandemic_cont_all = np.sum(ltAll_long_pandemic_cont*Weight_base, axis=1) / np.sum(Weight_base, axis=1)
     
     
-    quarter_labels=["Q2\n2020","Q3","Q4","Q1\n2021","Q2","Q3","Q4","Q1\n2022","Q2","Q3","Q4","Q1\n2023","Q2","Q3"]
+    quarter_labels=["Q2\n2020","Q3","Q4","Q1\n2021","Q2","Q3","Q4","Q1\n2022","Q2","Q3","Q4","Q1\n2023","Q2"]
     linestyle1 = "-"
     linestyle2 = "--"
     linestyle3 = ":"

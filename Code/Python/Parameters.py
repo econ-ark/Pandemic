@@ -53,11 +53,17 @@ for j in range(len(PermGroRte_d_ann)):         # Make sequences of quarterly per
 PermGroFac_d[working_T-1] = 1 + PermGroRte_d_retire  # Put the big shock at retirement back into the sequence
 PermGroFac_h[working_T-1] = 1 + PermGroRte_h_retire
 PermGroFac_c[working_T-1] = 1 + PermGroRte_c_retire
-PermGroFac_unemp = (working_T-1)*[0.995] + (retired_T+1)*[1.0]
+SkillRot = 0.00125
 for t in range(T_cycle):
     PermGroFac_d[t] = PermGroFac_d[t]*np.ones(6)
+    PermGroFac_d[t][1:3] = PermGroFac_d[t][0] - SkillRot
+    PermGroFac_d[t][3:6] = PermGroFac_d[t][0] - SkillRot
     PermGroFac_h[t] = PermGroFac_h[t]*np.ones(6)
+    PermGroFac_h[t][1:3] = PermGroFac_h[t][0] - SkillRot
+    PermGroFac_h[t][3:6] = PermGroFac_h[t][0] - SkillRot
     PermGroFac_c[t] = PermGroFac_c[t]*np.ones(6)
+    PermGroFac_c[t][1:3] = PermGroFac_c[t][0] - SkillRot
+    PermGroFac_c[t][3:6] = PermGroFac_c[t][0] - SkillRot
 PermGroFac_d_small = [PermGroFac_d[t][:2] for t in range(T_cycle)]
 PermGroFac_h_small = [PermGroFac_h[t][:2] for t in range(T_cycle)]
 PermGroFac_c_small = [PermGroFac_c[t][:2] for t in range(T_cycle)]
