@@ -35,13 +35,13 @@ Labor income for working age households is subject to three risks: unemployment,
 Employed ($\ell_{it}=0$) households' permanent income grows by age-education-conditional factor $\Gamma_{ej}$ on average, subject to a mean one lognormal permanent income shock $\pshk_{it}$ with age-conditional underlying standard deviation of $\sigma_{\psi j}$.
 The household's labor income $\yLevBF_{it}$ is also subject to a mean one lognormal transitory shock $\tshk_{it}$ with age-conditional underlying standard deviation of $\sigma_{\tshk j}$.
 The age profiles of permanent and transitory income shock standard deviations are approximated from the results of \cite{SabelhausSong}, and the expected permanent income growth factors are adapted from \cite{Cagetti}.
-Normal unemployed and deeply unemployed households receive unemployment benefits equal to a fraction $\underline{\tshk}=0.3$ of their permanent income, $\yLevBF_{it} = \underline{\tshk} \pLev_{it}$; they are not subject to permanent nor transitory income risk, but their permanent income degrades at rate $\underline{\Gamma}$, representing ``skill rot''.\footnote{Unemployment is somewhat persistent in our model, so the utility risk from receiving 15\% of permanent income for one quarter (as in \cite{cstwMPC}) is roughly the same as the risk of receiving 30\% of permanent income for 1.5 quarters in expectation.}
+Normal unemployed and deeply unemployed households receive unemployment benefits equal to a fraction $\underline{\tshk}=0.3$ of their permanent income, $\yLevBF_{it} = \underline{\tshk} \pLev_{it}$; they are not subject to permanent nor transitory income risk, but their permanent income grows at rate $\chi$ less than if employed, representing ``skill rot''.\footnote{Unemployment is somewhat persistent in our model, so the utility risk from receiving 15\% of permanent income for one quarter (as in \cite{cstwMPC}) is roughly the same as the risk of receiving 30\% of permanent income for 1.5 quarters in expectation.}
 
 The income process for a household can be represented mathematically as:
 \begin{equation*}
   \pLev_{it} = \begin{cases}
     \pshk_{it} \Gamma_{ej} \pLev_{it-1} & \text{if } \ell_{it} = 0,~ j < 164 \qquad\text{Employed, working age}\\
-    \underline{\Gamma}\, \pLev_{it-1} & \text{if } \ell_{it} > 0,~ j < 164 \qquad\text{Unemployed, working age}\\
+    (\Gamma_{ej} - \chi)\, \pLev_{it-1} & \text{if } \ell_{it} > 0,~ j < 164 \qquad\text{Unemployed, working age}\\
     \Gamma_{ret} \pLev_{it-1} & \text{if } j \geq 164 \qquad \qquad \qquad \qquad \text{Retired}
   \end{cases},
 \end{equation*}
@@ -131,7 +131,7 @@ The marginal value function for age $j$ can then be used to solve the age $j-1$ 
       \hline
       Steady state unemployment rate & $\urate$ & 0.05 \\
       Unemployment insurance replacement rate & $\underline{\xi}$ & 0.30 \\
-      Skill rot of all unemployed &  $\underline{\Gamma}$ & 0.99875 \\
+      Skill rot of all unemployed &  $chi$ & 0.00125 \\
       \hline
       Quarterly interest factor & $\RProd$ & 1.01 \\
       Population growth factor & $N$ & 1.0025 \\
