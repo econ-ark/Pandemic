@@ -5,3 +5,5 @@ numpy==1.19.1
 pandas==1.1.1
 ipywidgets==7.5.1
 econ-ark==0.10.7
+#pyyaml issue with distutils
+pyyaml
