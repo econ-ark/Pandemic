@@ -16,8 +16,9 @@ of Python, available for download at https://www.anaconda.com/distribution/
 
 2. The code for this project uses the [Heterogeneous Agents Resources and toolKit](http://github.com/econ-ark/HARK)
 to solve and simulate our model.  To install HARK, open a console (on Windows, use the Anaconda
-Prompt) and run `pip install econ-ark`.  This will put HARK and all of its dependencies in your
-Python package library.
+Prompt) and run `pip install econ-ark==0.10.7`.  This will put HARK and all of its dependencies in
+your Python package library. HARK is still under development, so we strongly recommend you use this
+exact version in order to ensure the code runs properly.
 
 3. All code files are in the `./Code/Python/` subdirectory of this repository.  If you've installed
 Anaconda, our code can be run in a graphical iPython environment by opening up the Spyder IDE.
@@ -33,7 +34,7 @@ a subdirectory of `./Figures/` given by spec_name at the top of `parameter_confi
 
 6. All figures are saved to the ./Figures subdirectory.
 
-7. All parameters can be adjusted in ./Code/Python/parameter_config.py , and are described below.
+7. All parameters can be adjusted in ./Code/Python/parameter_config.py, and are described below.
 Each parameter should have an in-line description to give you a pretty good sense of what it does.
 
 
@@ -74,3 +75,9 @@ discretization of the income shocks (for computing expectations).
 constructed from the primitive parameters defined above or basic features of the lifecycle (such
 as the number of periods in the problem).  The number of periods simulated in the counterfactuals
 and the total number of simulated households can be safely changed.
+
+9. Because of rounding, the actual number of simulated agents might be slightly different than the
+number of agents specified in Parameters.py.  Agents are heterogeneous in their education level and
+intertemporal discount factor; the fraction of each type times the total number of agents is unlikely
+to result in a whole number, so the result is rounded. Summed across types, these rounded values do
+not necessarily sum to the requested number of agents.
