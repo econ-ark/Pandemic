@@ -1,0 +1,4 @@
+$ENV{'BIBINPUTS'}='./LaTeX//:' . $ENV{'BIBINPUTS'}; # Allows .bib file to be in LaTeX subdirectory 
+$bibtex_use=2;                                      # Make sure bibtex gets run
+@default_files = {'ConsumptionResponse.tex'};       # Define the 'root' file 
+latexmk                                             # pdflatex-bibtex-pdflatex-pdflatex sequence

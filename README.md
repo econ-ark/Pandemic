@@ -5,7 +5,15 @@ Response to the CARES Act"](https://econ-ark.github.io/Pandemic) by Carroll, Cra
 provides instructions for running our code on your own computer, as well as adjusting the
 parameters of the model to produce alternate versions of the figures in the paper.
 
-## REPRODUCTION INSTRUCTIONS
+## Reproduce using nbreproduce.
+
+This repository and the [paper](https://econ-ark.github.io/Pandemic) can be reproduced using [nbreproduce](https://econ-ark.github.io/nbreproduce/#installation) and the corresponding [docker image](https://hub.docker.com/repository/docker/econark/pandemic) of this repository.
+
+```
+$ nbreproduce --docker econark/pandemic
+```
+
+## REPRODUCTION INSTRUCTIONS in your local environment.
 
 0. All of the code for the project is written in Python 3, and is intended to be run in an
 iPython graphical environment.  Running the main script outside of iPython may cause unintended
