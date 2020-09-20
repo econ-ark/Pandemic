@@ -1,33 +1,33 @@
 % This file compiles on a standard distribution of LaTeX (say, TeXLive)
 % The PDF file it generates is in ./LaTeX/ConsumptionResponse.pdf
+\input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage,a4paper]{\econtex}
 
-\input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage,letterpaper]{\econtex}
-
-\provideboolean{ifIJCB}\setboolean{ifIJCB}{false} % If true, make ICJB version, otherwise regular
+\provideboolean{ifIJCB}\setboolean{ifIJCB}{false} % If true, make IJCB version, otherwise regular
+\provideboolean{ifECB}\setboolean{ifECB}{false} % If true, make ECB version, otherwise regular
 \providecommand{\versn}{}
-\ifthenelse{\boolean{ifIJCB}}{\renewcommand{\versn}{IJCB}}{}
+\ifthenelse{\boolean{ifIJCB}}{\renewcommand{\versn}{IJCB}}{} % Includes in tiny header 
 
 \providecommand{\texname}{ConsumptionResponse}% Keyname for the bibtex entry corresponding to this paper
 
-\usepackage{\econtexRoot/LaTeX/ConsumptionResponse}
+\usepackage{\econtexRoot/LaTeX/ConsumptionResponse} % defines ifWeb among other things
 
-\ifthenelse{\boolean{ifIJCB}}{
-    \usepackage[nolists,nomarkers]{endfloat}}{\usepackage[nolists,nomarkers,tablesonly]{endfloat}
+\ifthenelse{\boolean{ifIJCB}}{ 
+    \usepackage[nolists,nomarkers]{endfloat}}{\usepackage[nolists,nomarkers,tablesonly]{endfloat} % Put floats at end for IJCB version
 }{} % end ifIJCB
 
 % Needed to get nice fonts on some machines
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
+\usepackage[T1]{fontenc}\usepackage{lmodern}
 
 \usepackage[twoside,marginparwidth=0in,left=1.25in,right=1.25in,top=1.25in,bottom=1.25in]{geometry}\usepackage{layouts}
 
 \renewcommand{\forcedate}{Forthcoming, \href{https://www.ijcb.org/}{\textit{International Journal of Central Banking}}}
 
+\usepackage{fancyhdr}\fancyhf{}\cfoot{\thepage}\pagestyle{fancy}
 \externaldocument{ModelAppendix}
 
 \begin{document}
 
-\hfill{\tiny \jobname, \versn, \today, \currenttime}
+\hfill{\tiny \jobname \versn, \today, \currenttime}
 
 \title{Modeling the Consumption Response\\ to the CARES Act}
 
@@ -43,7 +43,7 @@
     Matthew N. White\authNum
   }
 } %\end{Web}
-{
+{% Not {Web}
   \author{
     Christopher D. Carroll\authNum \\ {\small JHU}
     \and
@@ -56,71 +56,68 @@
 } % End ifWeb
 
 \keywords{\small{Consumption, COVID-19, Stimulus, Fiscal Policy}}
-\jelclass{\small{D83, D84, E21, E32}}
-
-
+\jelclass{\small{D83, D84, E21, E32}\\
+\href{https://econ-ark.org}{\includegraphics[width=0.2\textwidth]{./Figures/PoweredByEconARK}}}
+  
 \date{\forcedate}
 \maketitle
 
 \hypertarget{links}{}
 
 % Set up inputs for table of links
-\newcommand{\panmat}{econ-ark.org/materials/pandemic-dashboard}
 \newcommand{\dashtarg}{Live Dashboard}
 \newcommand{\htmltarg}{econ-ark.github.io/Pandemic}
 \newcommand{\githtarg}{github.com/econ-ark/Pandemic}
-\newcommand{\zipftarg}{zip file: root of repo}
-\newcommand{\latetarg}{LaTeX directory in repo}
-\newcommand{\subttarg}{LaTeX directory in repo}
+\newcommand{\zipftarg}{zip~file:~~root~of~repo}
+\newcommand{\latetarg}{LaTeX~directory~in~repo}
+\newcommand{\subttarg}{LaTeX~directory~in~repo}
 
 \newcommand{\githrepo}{\href{https://github.com/econ-ark/Pandemic}{\githtarg}}
-\newcommand{\githtext}{\textit{Full codebase: Modify combos of assumptions}}
-\newcommand{\zipftext}{\textit{contains full replication files (code+text)}}
-\newcommand{\dashlive}{\href{https://econ-ark.org/materials/pandemic-dashboard}{\dashtarg}}
-\newcommand{\dashtext}{\textit{See effect of modifying main assumptions}}
+\newcommand{\githtext}{Full codebase: Modify combos of assumptions}
+\newcommand{\zipftext}{contains full replication files (code+text)}
+\newcommand{\dashlive}{\href{https://econ-ark.org/materials/pandemic\#dashboard}{\dashtarg}}
+\newcommand{\dashtext}{See effect of modifying main assumptions}
 \newcommand{\htmlvers}{\href{https://econ-ark.github.io/Pandemic}{\htmltarg}}
-\newcommand{\htmltext}{\textit{HTML version of paper}}
+\newcommand{\htmltext}{HTML version of paper}
 \newcommand{\pdfltsub}{\href{https://github.com/econ-ark/Pandemic/blob/master/LaTeX/ConsumptionResponse.pdf}{\latetarg}}
-\newcommand{\pdflttxt}{\textit{PDF version of paper}}
-\newcommand{\latexsub}{\href{https://github.com/econ-ark/Pandemic/blob/master/LaTeX/ConsumptionResponse.pdf}{\phantom{..}LaTeX subdirectory of repo $\uparrow$ }}
-\newcommand{\latextxt}{\textit{PDF version of paper}}
+\newcommand{\pdflttxt}{PDF~version~of~paper}
 \newcommand{\slidesub}{\href{https://github.com/econ-ark/Pandemic/blob/master/LaTeX/ConsumptionResponse-Slides.pdf}{\subttarg}}
-\newcommand{\slidetxt}{\textit{Presentation slides}}
+\newcommand{\slidetxt}{Presentation slides}
 \newcommand{\bibtlink}{\href{https://raw.githubusercontent.com/econ-ark/Pandemic/gh-pages/LaTeX/ConsumptionResponse-Self.bib}{\subttarg}}
-\newcommand{\bibttext}{\textit{Preferred BibTeX citation}}
+\newcommand{\bibttext}{Preferred BibTeX citation}
 \newcommand{\zipflink}{\href{https://github.com/econ-ark/Pandemic/raw/master/ConsumptionResponse.zip  }{\zipftarg}}
-\newcommand{\biblink}{\href{https://raw.githubusercontent.com/econ-ark/Pandemic/gh-pages/LaTeX/ConsumptionResponse-Self.bib}{\phantom{..}LaTeX subdirectory of repo}}
-\newcommand{\bibtext}{\textit{Preferred BibTeX citation}}
 
 
-\ifthenelse{\boolean{ifWeb}}{
+\ifthenelse{\boolean{ifWeb}}{%\begin{Web}
+  \begin{footnotesize}
   \begin{tabbing}
-    \= {\small \texttt{\dashlive~~~~~~~~~~~~~~~}}               \= {  }  \dashtext \\
-    \> {\small \texttt{\htmlvers~~}             }               \> {  }  \htmltext \\
-    \> {\small \texttt{\githrepo}~~}                            \> {  }  \githtext \\
-    \> {\small \texttt{~~\zipflink}~~~$\uparrow$~~~~~~}         \> {  }  \zipftext \\
-    \> {\small \texttt{~~\pdfltsub}~$\uparrow$~~~~~~~~}         \> {  }  \pdflttxt \\ 
-    \> {\small \texttt{~~\slidesub}~\phantom{$\uparrow$}~~~~~~} \> {  }  \slidetxt \\
-    \> {\small \texttt{~~\bibtlink}~\phantom{$\uparrow$}~~~~~~} \> {  }  \bibttext 
+    \= {\texttt{\dashlive~~~~~~~~~~~~~~~}}      \= \texttt{~~\dashtext} \\
+    \> {\texttt{\htmlvers~~}}                   \> \texttt{~~\htmltext} \\
+    \> {\texttt{\githrepo~}}                    \> \texttt{~~\githtext} \\
+    \> {\texttt{~~\zipflink}~$\uparrow$~~~~~~~} \> \texttt{~~\zipftext} \\
+    \> {\texttt{~~\pdfltsub}~$\uparrow$~~~~~~~} \> \texttt{~~\pdflttxt} \\ 
+    \> {\texttt{~~\slidesub}~$\uparrow$~~~~~~~} \> \texttt{~~\slidetxt} \\
+    \> {\texttt{~~\bibtlink}~$\uparrow$~~~~~~~} \> \texttt{~~\bibttext} 
   \end{tabbing}
-}{% Not Web
+  \end{footnotesize}
+}{% \end{Web}
   \begin{small}
         \begin{tabular}[c]{lll}
-      \texttt{\dashlive                       }  && \dashtext \\
-      \texttt{\htmlvers                       }  && \htmltext \\
-      \texttt{\githrepo                       }  && \githtext \\
-      \texttt{~~\zipflink~$\uparrow$          }  && \zipftext \\
-      \texttt{~~\pdfltsub~$\uparrow$          }  && \pdflttxt \\
-      \texttt{~~\slidesub\phantom{~$\uparrow$}}  && \slidetxt \\
-      \texttt{~~\bibtlink\phantom{~$\uparrow$}}  && \bibttext  
+      \texttt{\dashlive                       }  && \textit{\dashtext} \\
+      \texttt{\htmlvers                       }  && \textit{\htmltext} \\
+      \texttt{\githrepo                       }  && \textit{\githtext} \\
+      \texttt{~~\zipflink~$\uparrow$          }  && \textit{\zipftext} \\
+      \texttt{~~\pdfltsub~$\uparrow$          }  && \textit{\pdflttxt} \\
+      \texttt{~~\slidesub\phantom{~$\uparrow$}}  && \textit{\slidetxt} \\
+      \texttt{~~\bibtlink\phantom{~$\uparrow$}}  && \textit{\bibttext}  
     \end{tabular}
   \end{small}
-}
+} % End {ifWeb}
 
 \hypertarget{Abstract}{} 
 
 \begin{abstract}
-To predict the effects of the 2020 U.S.\ \href{https://en.wikipedia.org/wiki/Coronavirus_Aid,_Relief,_and_Economic_Security_Act}{CARES} Act on consumption, we extend \href{http://www.econ2.jhu.edu/people/ccarroll/papers/cAndCwithStickyE}{a model} that \href{http://www.econ2.jhu.edu/people/ccarroll/papers/cAndCwithStickyE/#Excess-Sensitivity}{matches responses to past consumption stimulus packages}.  The extension allows us to account for two novel features of the coronavirus crisis.  First, during lockdowns, many types of spending are undesirable or impossible.  Second, some of the jobs that disappear during the lockdown will not reappear.  We estimate that, if the lockdown is short-lived (the median point of view in April 2020), the combination of expanded unemployment insurance benefits and stimulus payments should be sufficient to allow a swift recovery in consumer spending to pre-crisis levels.  If the lockdown lasts longer (or there is a `second wave'), an extension of \href{https://www.dol.gov/coronavirus/unemployment-insurance}{enhanced unemployment benefits} will likely be necessary for consumption spending to recover quickly.
+To predict the effects of the 2020 U.S.\ \href{https://en.wikipedia.org/wiki/Coronavirus_Aid,_Relief,_and_Economic_Security_Act}{CARES} Act on consumption, we extend \href{https://llorracc.github.io/cAndCwithStickyE}{a model} that \href{https://llorracc.github.io/cAndCwithStickyE/#Excess-Sensitivity-Flag}{matches responses to past consumption stimulus packages}.  The extension allows us to account for two novel features of the coronavirus crisis.  First, during lockdowns, many types of spending are undesirable or impossible.  Second, some of the jobs that disappear during the lockdown will not reappear.  We estimate that, if the lockdown is short-lived (the median point of view as we are writing in April 2020), the combination of expanded unemployment insurance benefits and stimulus payments should be sufficient to allow a swift recovery in consumer spending to pre-crisis levels.  If the lockdown lasts longer (or there is a `second wave'), an extension of \href{https://www.dol.gov/coronavirus/unemployment-insurance}{enhanced unemployment benefits} will likely be necessary for consumption spending to recover quickly.
 \end{abstract}
 
 \begin{authorsinfo}
@@ -131,26 +128,26 @@ To predict the effects of the 2020 U.S.\ \href{https://en.wikipedia.org/wiki/Cor
 \end{authorsinfo}
 
 
-% Thanks must be done differently for PDF and web versions; so write one version to filesystem
-% then read in separately for the two instances
-\newcommand{\thankstext}{The \href{https://github.com/econ-ark/Pandemic/blob/ccd3253fddac75e66cea8362aadd1fe1a13fe015/ConsumptionResponse.pdf}{first public version} of this paper appeared April 15, 2020.  A \href{https://cepr.org/sites/default/files/news/CovidEconomics10.pdf}{publicly available pre-print} appeared in the \href{https://cepr.org}{Centre for Economic Policy Research} pre-print journal \href{https://cepr.org/content/covid-economics-vetted-and-real-time-papers-0}{Covid Economics} on April 27, 2020 (as a pre-print journal, Covid Economics does not obtain copyright claims to its content, which is why the finished version of the paper can be published in a peer-reviewed journal which DOES obtain the copyright). \\ \indent Thanks to the \href{https://consumerfinance.gov}{Consumer Financial Protection Bureau} for funding the original creation of the \href{https://econ-ark.org}{Econ-ARK} toolkit, whose latest version we used to produce all the results in this paper; and to the \href{https://sloan.org}{Sloan Foundation} for funding Econ-ARK's \href{https://sloan.org/grant-detail/8071}{extensive further development} that brought it to the point where it could be used for this project.  The toolkit can be cited with its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001067}{10.5281/zenodo.1001067}, as is done in the paper's own references as \cite{carroll_et_al-proc-scipy-2018}.  We are grateful to Kiichi Tokuoka, who provided valuable feedback and input as this project progressed, Mridul Seth, who created the dashboard and configurator, and to Luc Laeven, who swiftly handled our submission to IJCB.  The views presented in this paper are those of the authors, and should not be attributed to the Federal Reserve Board or the European Central Bank.}
+% Thanks must be done differently for PDF and web versions; so create one version but 
+% process differently in the two instances
+\newcommand{\thankstext}{The \href{https://github.com/econ-ark/Pandemic/blob/ccd3253fddac75e66cea8362aadd1fe1a13fe015/ConsumptionResponse.pdf}{first public version} of this paper appeared April 15, 2020.  A \href{https://cepr.org/sites/default/files/news/CovidEconomics10.pdf}{publicly available pre-print} appeared in the \href{https://cepr.org}{Centre for Economic Policy Research} pre-print journal \href{https://cepr.org/content/covid-economics-vetted-and-real-time-papers-0}{Covid Economics} on April 27, 2020 (as a pre-print journal, Covid Economics does not obtain copyright claims to its content, which is why the finished version of the paper can be published in a peer-reviewed journal which DOES obtain the copyright). \\ \indent ~~~~~Thanks to the \href{https://consumerfinance.gov}{Consumer Financial Protection Bureau} for funding the original creation of the \href{https://econ-ark.org}{Econ-ARK} toolkit, whose latest version we used to produce all the results in this paper; and to the \href{https://sloan.org}{Sloan Foundation} for funding Econ-ARK's \href{https://sloan.org/grant-detail/8071}{extensive further development} that brought it to the point where it could be used for this project.  The toolkit can be cited with its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001067}{10.5281/zenodo.1001067}, as is done in the paper's own references as \cite{carroll_et_al-proc-scipy-2018}.  We are grateful to Kiichi Tokuoka, who provided valuable feedback and input as this project progressed, Mridul Seth, who created the dashboard and configurator, and to Luc Laeven, who swiftly handled our submission to IJCB.  The views presented in this paper are those of the authors, and should not be attributed to the Federal Reserve Board or the European Central Bank.}
 
 % The \thanks thing only works on the PDF, not the web version of the paper
 \ifthenelse{\boolean{ifWeb}}{}{\thanks{\thankstext}}
 
 \setcounter{page}{1}
 
-\titlepagefinish\newpage\pagestyle{empty}
+\titlepagefinish
 
-\ifthenelse{\boolean{ifIJCB}}{\doublespacing}{} 
-
+% \begin{Web}
 % If web version, then just incorporate thanks at beginning of text
 % instead of in frontmatter
 \ifthenelse{\boolean{ifWeb}}{\medskip \noindent {\footnotesize
     \thankstext \medskip \medskip \medskip
-  }}{\pagebreak
-} % \end{web}
+  }}{\pagebreak 
+} % \end{Web}
 
+\ifthenelse{\boolean{ifIJCB}}{\doublespacing \pagestyle{empty}}{}
 
 \noindent \textit{\large ``Economic booms are all alike; each recession contracts output in its own way.''} --- with apologies to Leo Tolstoy
 
@@ -512,7 +509,7 @@ A fuller analysis that incorporates such heterogeneity, which is of intrinsic in
 
 
 \end{document}
-
+% Config for AucTeX on MacOS using Skim as previewer 
 % Local Variables:
 % TeX-PDF-mode: t
 % TeX-file-line-error: t
