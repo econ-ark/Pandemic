@@ -1,20 +1,28 @@
 #!/bin/bash
-# On a unix computer will all of the software requirements installed,
-# excution of this script should reproduce all of the results of the paper
-
-# On ANY computer with these two items installed:
+# There are three ways to reproduce the results of the paper, along with
+# the text and slides
+# 
+# 1. On ANY computer with these two items installed:
 # 
 #    [nbreproduce](https://github.com/econ-ark/nbreproduce)
 #    [docker](https://en.wikipedia.org/wiki/Docker_(software))
 #
-# All the results of the paper should be reproduced by invoking the command
+# From the root directory of the Pandemic project, execute the command
 # 
-#     nbreproduce --docker econark/pandemic
+#     nbreproduce
 #
-# If using the standard econ-ark-notebook docker image,      % MS: Please add link to your documentation explaining this
-# uncomment the following line to install the requirements. 
-#
+# 2. On any unix computer, 
+# First, git clone https://github.com/econ-ark/Pandemic
+# Next, install the requirements using the command on the next line:
 # python3 -m pip install -r requirements.txt
+#
+# and finally just execute this reproduce.sh script itself:
+# /bin/bash reproduce.sh
+
+# 3. Obtain the standard econ-ark docker image:
+# https://github.com/econ-ark/econ-ark-tools/blob/master/Virtual/Docker/README.md
+#
+# and then, after launching the docker machine, follow the instructions for unix above
 
 # Create all results
 cd Code/Python

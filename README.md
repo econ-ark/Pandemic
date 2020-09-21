@@ -33,8 +33,10 @@ Anaconda, our code can be run in a graphical iPython environment by opening up t
 
 4. The main script for this project is GiveItAwayNowMAIN.py.  You can run this file by clicking
 the green arrow "run" button in Spyder's toolbar.  Text will print to screen as it completes
-various computational tasks.  Most of these take about 1-2 minutes to run on a modern desktop,
-but there are many of them.  The figures are produced after running all counterfactual scenarios.
+various computational tasks.  Most of these take about 3 minutes to run on a modern desktop,
+but there are many of them.  The figures are produced after running all counterfactual scenarios,
+and the entire run time is about 75 minutes.  Our main results hold when many fewer simulated
+agents are used (say, 50,000 versus the 1,000,000 used in the code).
 
 5. We recommend that you instead run the script GiveItAwayNowMINI.py, which produces a smaller
 number of figures (and thus runs a smaller number of counterfactuals), saving the results to
