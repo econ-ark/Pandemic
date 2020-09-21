@@ -224,7 +224,7 @@ def runExperiment(Agents,PanShock,
 def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
                                  UnempD,UnempH,UnempC,UnempP,UnempA1,UnempA2,
                                  DeepD,DeepH,DeepC,DeepP,DeepA1,DeepA2,
-                                 show_fig=True, for_mini=False):
+                                 show_fig=False, for_mini=False):
     '''
     Make figures showing the probability of becoming unemployed and deeply
     unemployed when the pandemic hits, by age, income, and education.
@@ -464,7 +464,7 @@ def makePandemicShockProbsFigure(Agents,spec_name,PanShock,
         plt.show()
     else:
         plt.clf()
-    
+    plt.close()
     return data
     
     
