@@ -1,4 +1,6 @@
 # Pandemic-ConsumptionResponse
+
+[![DOI](https://zenodo.org/badge/256006739.svg)](https://zenodo.org/badge/latestdoi/256006739)
  
 This repository is a complete software archive for the paper ["Modeling the Consumption
 Response to the CARES Act"](https://econ-ark.github.io/Pandemic) by Carroll, Crawley, Slacalek, and White (2020).  This README file
@@ -10,7 +12,7 @@ parameters of the model to produce alternate versions of the figures in the pape
 This repository and the [paper](https://econ-ark.github.io/Pandemic) can be reproduced using [nbreproduce](https://econ-ark.github.io/nbreproduce/#installation) and the corresponding [docker image](https://hub.docker.com/repository/docker/econark/pandemic) of this repository.
 
 ```
-$ nbreproduce --docker econark/pandemic
+$ nbreproduce
 ```
 
 ## REPRODUCTION INSTRUCTIONS in your local environment.
