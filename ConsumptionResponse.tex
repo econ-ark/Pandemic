@@ -1,14 +1,11 @@
 % This file compiles on a standard distribution of LaTeX (say, TeXLive)
 % The PDF file it generates is in ./LaTeX/ConsumptionResponse.pdf
-\input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage,letterpaper]{\econtex}
+\input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage,a4paper]{\econtex}
 
-\provideboolean{ifNorm}\setboolean{ifNorm}{true} % If true, make 'normal' version
-\provideboolean{ifIJCB}\setboolean{ifIJCB}{false} % If true, make IJCB version, otherwise regular
-\provideboolean{ifNBER}\setboolean{ifNBER}{false} % If true, make NBER version, otherwise regular
+\provideboolean{ifIJCB}\setboolean{ifIJCB}{true} % If true, make IJCB version, otherwise regular
 \provideboolean{ifECB}\setboolean{ifECB}{false} % If true, make ECB version, otherwise regular
 \providecommand{\versn}{}
 \ifthenelse{\boolean{ifIJCB}}{\renewcommand{\versn}{IJCB}}{} % Includes in tiny header 
-\ifthenelse{\boolean{ifNBER}}{\renewcommand{\versn}{NBER}}{} % Includes in tiny header 
 
 \providecommand{\texname}{ConsumptionResponse}% Keyname for the bibtex entry corresponding to this paper
 
@@ -30,7 +27,7 @@
 
 \begin{document}
 
-\hfill{\tiny \jobname~\versn~\today, \tiny time: \DTMcurrenttime}
+\hfill{\tiny \jobname \versn, \today, \currenttime}
 
 \title{Modeling the Consumption Response\\ to the CARES Act}
 
@@ -48,7 +45,7 @@
 } %\end{Web}
 {% Not {Web}
   \author{
-    Christopher D. Carroll\authNum \\ {\small JHU and NBER}
+    Christopher D. Carroll\authNum \\ {\small JHU}
     \and
     Edmund Crawley\authNum   \\ {\small FRB}
     \and
@@ -61,7 +58,7 @@
 \keywords{\small{Consumption, COVID-19, Stimulus, Fiscal Policy}}
 \jelclass{\small{D83, D84, E21, E32}\\
 \href{https://econ-ark.org}{\includegraphics[width=0.2\textwidth]{./Figures/PoweredByEconARK}}}
-
+  
 \date{\forcedate}
 \maketitle
 
@@ -120,7 +117,7 @@
 \hypertarget{Abstract}{} 
 
 \begin{abstract}
-To predict the effects of the 2020 U.S.\ \href{https://en.wikipedia.org/wiki/Coronavirus_Aid,_Relief,_and_Economic_Security_Act}{CARES} Act on consumption, we extend \href{https://llorracc.github.io/cAndCwithStickyE}{a model} that \href{https://llorracc.github.io/cAndCwithStickyE/#Matches-Stimulus}{matches responses to past consumption stimulus packages}.  The extension allows us to account for two novel features of the coronavirus crisis.  First, during lockdowns, many types of spending are undesirable or impossible.  Second, some of the jobs that disappear during the lockdown will not reappear.  We estimate that, if the lockdown is short-lived (the median point of view as we are writing in April 2020), the combination of expanded unemployment insurance benefits and stimulus payments should be sufficient to allow a swift recovery in consumer spending to pre-crisis levels.  If the lockdown lasts longer (or there is a `second wave'), an extension of \href{https://www.dol.gov/coronavirus/unemployment-insurance}{enhanced unemployment benefits} will likely be necessary for consumption spending to recover quickly.
+To predict the effects of the 2020 U.S.\ \href{https://en.wikipedia.org/wiki/Coronavirus_Aid,_Relief,_and_Economic_Security_Act}{CARES} Act on consumption, we extend \href{https://llorracc.github.io/cAndCwithStickyE}{a model} that \href{https://llorracc.github.io/cAndCwithStickyE/#Excess-Sensitivity-Flag}{matches responses to past consumption stimulus packages}.  The extension allows us to account for two novel features of the coronavirus crisis.  First, during lockdowns, many types of spending are undesirable or impossible.  Second, some of the jobs that disappear during the lockdown will not reappear.  We estimate that, if the lockdown is short-lived (the median point of view as we are writing in April 2020), the combination of expanded unemployment insurance benefits and stimulus payments should be sufficient to allow a swift recovery in consumer spending to pre-crisis levels.  If the lockdown lasts longer (or there is a `second wave'), an extension of \href{https://www.dol.gov/coronavirus/unemployment-insurance}{enhanced unemployment benefits} will likely be necessary for consumption spending to recover quickly.
 \end{abstract}
 
 \begin{authorsinfo}
@@ -136,8 +133,7 @@ To predict the effects of the 2020 U.S.\ \href{https://en.wikipedia.org/wiki/Cor
 \newcommand{\thankstext}{The \href{https://github.com/econ-ark/Pandemic/blob/ccd3253fddac75e66cea8362aadd1fe1a13fe015/ConsumptionResponse.pdf}{first public version} of this paper appeared April 15, 2020.  A \href{https://cepr.org/sites/default/files/news/CovidEconomics10.pdf}{publicly available pre-print} appeared in the \href{https://cepr.org}{Centre for Economic Policy Research} pre-print journal \href{https://cepr.org/content/covid-economics-vetted-and-real-time-papers-0}{Covid Economics} on April 27, 2020 (as a pre-print journal, Covid Economics does not obtain copyright claims to its content, which is why the finished version of the paper can be published in a peer-reviewed journal which \textit{does} obtain the copyright). \\ \indent ~~~~~Thanks to the \href{https://consumerfinance.gov}{Consumer Financial Protection Bureau} for funding the original creation of the \href{https://econ-ark.org}{Econ-ARK} toolkit, whose latest version we used to produce all the results in this paper; and to the \href{https://sloan.org}{Sloan Foundation} for funding Econ-ARK's \href{https://sloan.org/grant-detail/8071}{extensive further development} that brought it to the point where it could be used for this project.  The toolkit can be cited with its digital object identifier, \href{https://doi.org/10.5281/zenodo.1001067}{10.5281/zenodo.1001067}, as is done in the paper's own references as \cite{carroll_et_al-proc-scipy-2018}.  We are grateful to Kiichi Tokuoka, who provided valuable feedback and input as this project progressed, Mridul Seth, who created the dashboard and configurator, and to Luc Laeven, who swiftly handled our submission to IJCB.  The views presented in this paper are those of the authors, and should not be attributed to the Federal Reserve Board or the European Central Bank.}
 
 % The \thanks thing only works on the PDF, not the web version of the paper
-\ifthenelse{\boolean{ifIJCB}}{\thanks{\thankstext}}{} % Normal and IJCB versions
-\ifthenelse{\boolean{ifNorm}}{\thanks{\thankstext}}{} % Thanks start onf first page
+\ifthenelse{\boolean{ifWeb}}{}{\thanks{\thankstext}}
 
 \setcounter{page}{1}
 
@@ -152,7 +148,6 @@ To predict the effects of the 2020 U.S.\ \href{https://en.wikipedia.org/wiki/Cor
 } % \end{Web}
 
 \ifthenelse{\boolean{ifIJCB}}{\doublespacing \pagestyle{empty}}{}
-\ifthenelse{\boolean{ifNBER}}{\thanks{\thankstext}}{} % Put thanks text on 2nd page for NBER because first page gets replaced with their version
 
 \noindent \textit{\large ``Economic booms are all alike; each recession contracts output in its own way.''} --- with apologies to Leo Tolstoy
 
