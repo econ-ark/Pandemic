@@ -1,5 +1,9 @@
 # Pandemic-ConsumptionResponse
- 
+
+
+[![DOI](https://zenodo.org/badge/256006739.svg)](https://zenodo.org/badge/latestdoi/256006739)
+
+
 This repository is a complete software archive for the paper ["Modeling the Consumption
 Response to the CARES Act"](https://econ-ark.github.io/Pandemic) by Carroll, Crawley, Slacalek, and White (2020).  This README file
 provides instructions for running our code on your own computer, as well as adjusting the
