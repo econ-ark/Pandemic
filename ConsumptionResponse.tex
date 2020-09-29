@@ -514,15 +514,13 @@ A fuller analysis that incorporates such heterogeneity, which is of intrinsic in
 
 
 \end{document}
-% Config for AucTeX on MacOS using Skim as previewer 
+% Config for AucTeX
 % Local Variables:
 % TeX-PDF-mode: t
 % TeX-file-line-error: t
 % TeX-command-extra-options: "-output-directory=LaTeX -shell-escape -interaction=nonstopmode -synctex=1"
 % eval: (setq TeX-command-list  (remove '("BibTeX" "%(bibtex) %s" TeX-run-BibTeX nil t :help "Run BibTeX") TeX-command-list))
 % eval: (add-to-list 'TeX-command-list	'("BibTeX" "%(bibtex) LaTeX/%s" TeX-run-BibTeX nil t :help "Run BibTeX") t)
-% eval: (setq TeX-view-program-selection '((output-pdf "Skim")))
-% eval: (setq TeX-view-program-list '(("Skim" "/Applications/Skim.app/Contents/SharedSupport/displayline -b -g %n LaTeX/%o %b")))
 % LaTeX-command-style: (("" "%(PDF)%(latex) %(file-line-error) %(extraopts) %S%(PDFout)"))
 % TeX-source-correlate-mode: t
 % TeX-source-correlate-start-server: 0
