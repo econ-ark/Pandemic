@@ -1,6 +1,6 @@
 % This file compiles on a standard distribution of LaTeX (say, TeXLive)
 % The PDF file it generates is in ./LaTeX/ConsumptionResponse.pdf
-\input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage,letterpaper]{\econtex}
+\input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage,a4paper]{\econtex}
 
 \provideboolean{ifNorm}\setboolean{ifNorm}{true} % If true, make Normal version, otherwise regular
 \provideboolean{ifIJCB}\setboolean{ifIJCB}{false} % If true, make IJCB version, otherwise regular
@@ -514,7 +514,6 @@ A fuller analysis that incorporates such heterogeneity, which is of intrinsic in
 
 
 \end{document}
-% Config for AucTeX
 % Replace defaults with commands that know that generated files are in ./LaTeX
 % Local Variables:
 % TeX-command-extra-options: "-output-directory=LaTeX -shell-escape -interaction=nonstopmode -synctex=1"

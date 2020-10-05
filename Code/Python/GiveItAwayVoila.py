@@ -26,10 +26,7 @@ def run_web(spec_name):
     mystr = lambda x : '{:.2f}'.format(x)
     figs_dir = '../../Figures/' + spec_name + '/'
     
-    # debug
-    #print(pandemic_changes['DeepA1'], base_dict['Lspell_real'], init_dropout['uPfac_big'])
-    
-    # # Make baseline types
+    # Make baseline types
     DropoutType = GiveItAwayNowType(**init_dropout)
     HighschoolType = GiveItAwayNowType(**init_highschool)
     CollegeType = GiveItAwayNowType(**init_college)

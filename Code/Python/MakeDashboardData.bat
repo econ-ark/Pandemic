@@ -9,11 +9,13 @@ python run_config.py ./Config/UpdatePrb_vary.yaml
 python run_config.py ./Config/StimMax_vary.yaml
 python run_config.py ./Config/StimCut0_vary.yaml
 python run_config.py ./Config/StimCut1_vary.yaml
+python run_config.py ./Config/Unemp0_vary.yaml
 python run_config.py ./Config/UnempD_vary.yaml
 python run_config.py ./Config/UnempH_vary.yaml
 python run_config.py ./Config/UnempC_vary.yaml
 python run_config.py ./Config/UnempP_vary.yaml
 python run_config.py ./Config/UnempA1_vary.yaml
+python run_config.py ./Config/Deep0_vary.yaml
 python run_config.py ./Config/DeepD_vary.yaml
 python run_config.py ./Config/DeepH_vary.yaml
 python run_config.py ./Config/DeepC_vary.yaml
