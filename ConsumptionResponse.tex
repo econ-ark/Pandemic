@@ -1,6 +1,6 @@
 % This file compiles on a standard distribution of LaTeX (say, TeXLive)
 % The PDF file it generates is in ./LaTeX/ConsumptionResponse.pdf
-\input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage,letterpaper]{\econtex}
+\input{./LaTeX/econtexRoot}\input{\econtexRoot/LaTeX/econtexPaths}\documentclass[titlepage,a4paper]{\econtex}
 
 \provideboolean{ifNorm}\setboolean{ifNorm}{true} % If true, make Normal version, otherwise regular
 \provideboolean{ifIJCB}\setboolean{ifIJCB}{false} % If true, make IJCB version, otherwise regular
@@ -78,7 +78,7 @@
 \newcommand{\githrepo}{\href{https://github.com/econ-ark/Pandemic}{\githtarg}}
 \newcommand{\githtext}{Full codebase: Modify combos of assumptions}
 \newcommand{\zipftext}{contains full replication files (code+text)}
-\newcommand{\dashlive}{\href{https://econ-ark.org/materials/pandemic\#dashboard}{\dashtarg}}
+\newcommand{\dashlive}{\href{https://econ-ark.org/materials/pandemic?dashboard}{\dashtarg}}
 \newcommand{\dashtext}{See effect of modifying main assumptions}
 \newcommand{\htmlvers}{\href{https://econ-ark.github.io/Pandemic}{\htmltarg}}
 \newcommand{\htmltext}{HTML version of paper}
@@ -146,7 +146,7 @@ To predict the effects of the 2020 U.S.\ \href{https://en.wikipedia.org/wiki/Cor
 % \begin{Web}
 % If web version, then just incorporate thanks at beginning of text
 % instead of in frontmatter
-\ifthenelse{\boolean{ifWeb}}{\medskip \noindent {\footnotesize
+\ifthenelse{\boolean{ifWeb}}{\medskip \noindent {\tiny
     \thankstext \medskip \medskip \medskip
   }}{\pagebreak 
 } % \end{Web}
