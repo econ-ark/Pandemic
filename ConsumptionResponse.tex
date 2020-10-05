@@ -515,12 +515,14 @@ A fuller analysis that incorporates such heterogeneity, which is of intrinsic in
 
 \end{document}
 % Config for AucTeX
+% Replace defaults with commands that know that generated files are in ./LaTeX
 % Local Variables:
+% TeX-command-extra-options: "-output-directory=LaTeX -shell-escape -interaction=nonstopmode -synctex=1"
+% eval: (setq TeX-command-list  (remove '("BibTeX" "%(bibtex) %s" TeX-run-BibTeX nil t                                                                              :help "Run BibTeX") TeX-command-list))
+% eval: (setq TeX-command-list  (remove '("BibTeX" "%(bibtex) %s" TeX-run-BibTeX nil (plain-tex-mode latex-mode doctex-mode ams-tex-mode texinfo-mode context-mode) :help "Run BibTeX") TeX-command-list))
+% eval: (add-to-list 'TeX-command-list	'("BibTeX" "%(bibtex) LaTeX/%s" TeX-run-BibTeX nil t :help "Run BibTeX") t)
 % TeX-PDF-mode: t
 % TeX-file-line-error: t
-% TeX-command-extra-options: "-output-directory=LaTeX -shell-escape -interaction=nonstopmode -synctex=1"
-% eval: (setq TeX-command-list  (remove '("BibTeX" "%(bibtex) %s" TeX-run-BibTeX nil t :help "Run BibTeX") TeX-command-list))
-% eval: (add-to-list 'TeX-command-list	'("BibTeX" "%(bibtex) LaTeX/%s" TeX-run-BibTeX nil t :help "Run BibTeX") t)
 % LaTeX-command-style: (("" "%(PDF)%(latex) %(file-line-error) %(extraopts) %S%(PDFout)"))
 % TeX-source-correlate-mode: t
 % TeX-source-correlate-start-server: 0
