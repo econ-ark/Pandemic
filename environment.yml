@@ -1,0 +1,14 @@
+channels:
+- conda-forge
+- defaults
+dependencies:
+- python=3.7
+- bqplot=0.12.36
+- scipy=1.5.2
+- voila=0.4.0
+- numpy=1.19.1
+- pandas=1.1.1
+- ipywidgets=8.0.3
+- econ-ark=0.10.7
+#pyyaml issue with distutils
+- pyyaml
