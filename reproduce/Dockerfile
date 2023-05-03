@@ -15,7 +15,7 @@ USER $NB_UID
 WORKDIR $HOME
 
 # install the required packages for pandemic repo.
-COPY requirements.txt /tmp/
-RUN pip install --requirement /tmp/requirements.txt && \
+COPY environment.yml /tmp/
+RUN conda env create -f /tmp/environment.yml && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
