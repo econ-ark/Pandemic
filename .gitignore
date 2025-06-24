@@ -169,3 +169,5 @@ dmypy.json
 
 ## Emacs auto-generated files
 auto
+.cursorindexingignore
+.specstory
