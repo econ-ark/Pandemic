@@ -13,6 +13,16 @@ This repository and the [paper](https://econ-ark.github.io/Pandemic) can be repr
 $ nbreproduce --docker econark/pandemic
 ```
 
+## Running the Dashboard locally.
+
+You can also run the dashboard locally using [pixi](https://pixi.sh/). If you do not have pixi installed on your machine you can follow the [installation instructions](https://pixi.sh/latest/installation/). Navigate to the `Pandemic` folder locally and run the following command:
+
+```
+$ pixi run dashboard
+```
+
+This should start up a local server for the dashboard and open up the dashboard in your default browser. Use `Ctrl + c` to stop the process in your terminal.
+
 ## REPRODUCTION INSTRUCTIONS in your local environment.
 
 0. All of the code for the project is written in Python 3, and is intended to be run in an

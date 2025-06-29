@@ -1,0 +1,18 @@
+[workspace]
+authors = ["Mridul Seth <git@mriduls.com>"]
+channels = ["conda-forge"]
+name = "Pandemic Dashboard"
+platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+dashboard = "voila Code/Python/dashboard.ipynb"
+
+[dependencies]
+numpy = "<2"
+pandas = ">=2.3.0,<3"
+bqplot = ">=0.12.43,<0.13"
+pyyaml = ">=6.0.2,<7"
+python = "3.10.*"
+voila = ">=0.5.8,<0.6"
+ipykernel = ">=6.29.5,<7"
