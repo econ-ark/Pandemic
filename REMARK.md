@@ -2,7 +2,6 @@
 # Econ-ARK website fields
 remark-version: "1.0" # required
 remark-name: Pandemic # required
-github_repo_url: https://github.com/econ-ark/Pandemic # required
 dashboards: # path to any dahsboards within the repo - optional
   - Code/Python/dashboard.ipynb
 identifiers-paper: # required for Replications; optional for Reproductions
