@@ -171,3 +171,7 @@ dmypy.json
 auto
 .cursorindexingignore
 .specstory
+
+# pixi environments
+.pixi
+*.egg-info
